@@ -50,7 +50,7 @@ Atear Beta is Wireless Penetration System For Open-source Version
 ### Running Video
 It will be released this month.
 
-# Best recommended system
+### Best recommended system
 `Developed by Ubuntu 14.04 LTS(amd64) and python 2.7v`
 
 ### Best recommended USB Lancard
@@ -113,7 +113,7 @@ It will be released this month.
 2. It will provide some of the latest firmware database of Access Point.
 3. Provide limited project management capabilities.
 4. It provides a report function.
-<red>Atear-Demo is limited use of 30days</red>
+***Atear-Demo is limited use of 30days***
 
 ### Atear-Demo version request
 [http://www.norma.co.kr](Norma homepage)
