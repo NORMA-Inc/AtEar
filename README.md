@@ -54,93 +54,55 @@ It will be released this month.
 `Developed by Ubuntu 14.04 LTS(amd64) and python 2.7v`
 
 ### Best recommended USB Lancard
-`asus WL-167g v2`
-
-`Airlink AWLL3026`
-
-`Alfa AWUS036E`
-
-`Alfa AWUS036G`
-
-`Alfa AWUS036S`
-
-`Alfa AWUS050NH`
-
-`Digitus DN-7003GS`
-
-`D-Link DWL-G122 B1`
-
-`D-Link DWL-G122 C1`
-
-`D-Link WUA-1340`
-
-`Edimax EW-7318USg`
-
-`Hawking HWUG1`
-
-`Linksys WUSB54G v4`
-
-`Linksys WUSB54GC v1`
-
-`Linksys WUSB54GC v2`
-
-`Netgear WG111 v1`
-
-`Netgear WG111 v2`
-
-`Netgear WG111 v3`
-
-`Netgear WNDA3100 v1`
-
-`TP-Link TL-WN321G`
-
-`TP-Link TL-WN321G v4`
-
-`Trendnet TEW-429UB C1`
-
-`ZyXEL AG-225H`
-
-`ZyXEL G-202`
-
+***It will aircrack-ng supoorted USB-Lancard***
+`asus WL-167g v2`<br>
+`Airlink AWLL3026`<br>
+`Alfa AWUS036E`<br>
+`Alfa AWUS036G`<br>
+`Alfa AWUS036S`<br>
+`Alfa AWUS050NH`<br>
+`Digitus DN-7003GS`<br>
+`D-Link DWL-G122 B1`<br>
+`D-Link DWL-G122 C1`<br>
+`D-Link WUA-1340`<br>
+`Edimax EW-7318USg`<br>
+`Hawking HWUG1`<br>
+`Linksys WUSB54G v4`<br>
+`Linksys WUSB54GC v1`<br>
+`Linksys WUSB54GC v2`<br>
+`Netgear WG111 v1`<br>
+`Netgear WG111 v2`<br>
+`Netgear WG111 v3`<br>
+`Netgear WNDA3100 v1`<br>
+`TP-Link TL-WN321G`<br>
+`TP-Link TL-WN321G v4`<br>
+`Trendnet TEW-429UB C1`<br>
+`ZyXEL AG-225H`<br>
+`ZyXEL G-202`<br>
 
 ### Defendency Program
-`aircrack-ng`
-
-`tshark`
-
-`hostapd`
-
-`python-dev`
-
-`python-flask`
-
-`python-paramiko`
-
-`python-psycopg2`
-
-`python-pyodbc`
-
-`python-sqlite`
-
-`python-pip`
+`aircrack-ng`<br>
+`tshark`<br>
+`hostapd`<br>
+`python-dev`<br>
+`python-flask`<br>
+`python-paramiko`<br>
+`python-psycopg2`<br>
+`python-pyodbc`<br>
+`python-sqlite`<br>
+`python-pip`<br>
 
 ### How to install your own Atear-Beta
-Clone a copy of the main Atear-Beta git repo by running:
-
-`git clone git://github.com/norma/atear-beta.git`
-Enter the Atear-Beta directory and run the install script:
-
-`cd ./Atear-Beta/`
-
-`sudo bash install.sh`
-
-`sudo pip install -r requirements.txt`
+Clone a copy of the main Atear-Beta git repo by running:<br>
+`git clone git://github.com/norma/atear-beta.git`<br>
+Enter the Atear-Beta directory and run the install script:<br>
+`cd ./Atear-Beta/`<br>
+`sudo bash install.sh`<br>
+`sudo pip install -r requirements.txt`<br>
 
 ### How to usage
-
-`cd ./Atear-Beta/]`
-
-`sudo python run.py &]`
+`cd ./Atear-Beta/`<br>
+`sudo python run.py &`<br>
 
 ### Dockerization
 It will be released this month.
@@ -149,11 +111,9 @@ It will be released this month.
 1. A wireless product portion to provide a database that can be specified.
 2. It will provide some of the latest firmware database of Access Point.
 3. Provide limited project management capabilities.
-4. It provides a report function.
-
+4. It provides a report function.<br>
 ***Atear-Demo is limited use of 30days***
 
 ### Atear-Demo version request
-[NORMA-Company Homepage](http://www.norma.co.kr)
-
+[NORMA-Company Homepage](http://www.norma.co.kr)<br>
 Contact us [contact@norma.co.kr](mailto:contact@norma.co.kr)
