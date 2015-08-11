@@ -1,9 +1,10 @@
 # Atear-Beta
 Atear Beta is Wireless Penetration System For Open-source Version
 
-In three words, [http://www.norma.co.kr](Atear-Beta) is a wireless pentest system.
-<Atear-Beta provides a web-based user interface.
-<Atear-Beta is easy and can be used quickly.
+# Intro
+In three words, [Atear-Beta](http://www.norma.co.kr) is a wireless pentest system.
+Atear-Beta provides a web-based user interface.
+Atear-Beta is easy and can be used quickly.
 
 Atear-Beta Features
 [
