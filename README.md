@@ -6,45 +6,44 @@ In three words, [Atear-Beta](http://www.norma.co.kr) is a wireless pentest syste
 Atear-Beta provides a web-based user interface.
 Atear-Beta is easy and can be used quickly.
 
-Atear-Beta Features
-[
-Wireless Scanning(Ad-Hoc, Station, Access Point, Soft-Acess Point)
-Wireless Chart(Channel, Encryption, Type)
-Wireless Pentesting(WEP, WPA1, WPA2)
-Network Information Getting(IP, Connected Host Info)
-Network Pentesting
-- FTP Brute Force
-- SSH Brute Force
-- Telnet Brute Force
-- SMTP Brute Force
-- POP Brute Force
-- IMAP Brute Force
-- LDAP Brute Force
-- SMB Brute Force
-- rlogin Brute Force
-- MSSQL Brute Force
-- MYSQL Brute Force
-- PGSQL Brute Force
-- VNC Brute Force
-- SNMP Brute Force
-Fake AP
-- Google Phishing Site
-- Facebook Phishing Site
-- Twitter Phishing Site
-WIDS
-- Disassocation Flood
-- Deauth Flood
-- WESSID-NG Attack
-- Koreck Chopchop attack
-- Fragmentation PGRA Attack
-- MDK MICHEAL SHUTDOWN Exploitation TKIP Attack
-- Attack By TKIPUN-NG
-- Authentication DOS Attack
-- Assocation Flood
-- High Amount of Assocation Sent
-- Suspect Rouge AP
-- Detected Beacon Flood
-]
+### Atear-Beta Features
+1. Wireless Scanning(Ad-Hoc, Station, Access Point, Soft-Acess Point)
+2. Wireless Chart(Channel, Encryption, Type)
+3. Wireless Pentesting(WEP, WPA1, WPA2)
+4. Network Information Getting(IP, Connected Host Info)
+5. Network Pentesting
+  - FTP Brute Force
+  - SSH Brute Force
+  - Telnet Brute Force
+  - SMTP Brute Force
+  - POP Brute Force
+  - IMAP Brute Force
+  - LDAP Brute Force
+  - SMB Brute Force
+  - rlogin Brute Force
+  - MSSQL Brute Force
+  - MYSQL Brute Force
+  - PGSQL Brute Force
+  - VNC Brute Force
+  - SNMP Brute Force
+6. Fake AP
+  - Google Phishing Site
+  - Facebook Phishing Site
+  - Twitter Phishing Site
+7. WIDS
+  - Disassocation Flood
+  - Deauth Flood
+  - WESSID-NG Attack
+  - Koreck Chopchop attack
+  - Fragmentation PGRA Attack
+  - MDK MICHEAL SHUTDOWN Exploitation TKIP Attack
+  - Attack By TKIPUN-NG
+  - Authentication DOS Attack
+  - Assocation Flood
+  - High Amount of Assocation Sent
+  - Suspect Rouge AP
+  - Detected Beacon Flood
+
 
 Running Video
 <Youtube Link>
