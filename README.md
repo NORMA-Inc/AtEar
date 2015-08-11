@@ -116,5 +116,5 @@ It will be released this month.
 ***Atear-Demo is limited use of 30days***
 
 ### Atear-Demo version request
-[http://www.norma.co.kr](Norma homepage)
-Contact us[mailto:contact@norma.co.kr](contact@norma.co.kr)
+[NORMA-Company Homepage](http://www.norma.co.kr)
+Contact us[contact@norma.co.kr](mailto:contact@norma.co.kr)
