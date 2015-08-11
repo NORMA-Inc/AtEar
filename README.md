@@ -54,7 +54,7 @@ It will be released this month.
 `Developed by Ubuntu 14.04 LTS(amd64) and python 2.7v`
 
 ### Best recommended USB Lancard
-***It will aircrack-ng supoorted USB-Lancard***
+***It will aircrack-ng supoorted USB-Lancard***<br>
 `asus WL-167g v2`<br>
 `Airlink AWLL3026`<br>
 `Alfa AWUS036E`<br>
