@@ -97,9 +97,9 @@ How to install your own Atear-Beta
 Clone a copy of the main Atear-Beta git repo by running:
 [git clone git://github.com/norma/atear-beta.git]
 Enter the Atear-Beta directory and run the install script:
-[cd ./Atear-Beta/]
-[sudo bash install.sh]
-[sudo pip install -r requirements.txt]
+    cd ./Atear-Beta/
+    sudo bash install.sh
+    sudo pip install -r requirements.txt
 
 How to usage
 [cd ./Atear-Beta/]
