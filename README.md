@@ -47,14 +47,14 @@ Atear Beta is Wireless Penetration System For Open-source Version
   - Detected Beacon Flood
 
 
-Running Video
-<Youtube Link>
+### Running Video
+It will be released this month.
 
-Best recommended system
-Developed by Ubuntu 14.04 LTS(amd64) and python 2.7v
+# Best recommended system
+`Developed by Ubuntu 14.04 LTS(amd64) and python 2.7v`
 
-Best recommended USB Lancard
-[
+# Best recommended USB Lancard
+`
 asus WL-167g v2
 Airlink AWLL3026
 Alfa AWUS036E
@@ -79,7 +79,7 @@ TP-Link TL-WN321G v4
 Trendnet TEW-429UB C1
 ZyXEL AG-225H
 ZyXEL G-202
-]
+`
 
 Defendency Program
 [
