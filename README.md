@@ -4,7 +4,9 @@ Atear Beta is Wireless Penetration System For Open-source Version
 # Intro
 
 > In three words, [Atear-Beta](http://www.norma.co.kr) is a wireless pentest system.
+
 > Atear-Beta provides a web-based user interface.
+
 > Atear-Beta is easy and can be used quickly.
 
 
@@ -55,54 +57,91 @@ It will be released this month.
 
 ### Best recommended USB Lancard
 `asus WL-167g v2`
+
 `Airlink AWLL3026`
+
 `Alfa AWUS036E`
+
 `Alfa AWUS036G`
+
 `Alfa AWUS036S`
+
 `Alfa AWUS050NH`
+
 `Digitus DN-7003GS`
+
 `D-Link DWL-G122 B1`
+
 `D-Link DWL-G122 C1`
+
 `D-Link WUA-1340`
+
 `Edimax EW-7318USg`
+
 `Hawking HWUG1`
+
 `Linksys WUSB54G v4`
+
 `Linksys WUSB54GC v1`
+
 `Linksys WUSB54GC v2`
+
 `Netgear WG111 v1`
+
 `Netgear WG111 v2`
+
 `Netgear WG111 v3`
+
 `Netgear WNDA3100 v1`
+
 `TP-Link TL-WN321G`
+
 `TP-Link TL-WN321G v4`
+
 `Trendnet TEW-429UB C1`
+
 `ZyXEL AG-225H`
+
 `ZyXEL G-202`
 
 
 ### Defendency Program
 `aircrack-ng`
-`tshark`
-`hostapd`
-`python-dev`
-`python-flask`
-`python-paramiko`
-`python-psycopg2`
-`python-pyodbc`
-`python-sqlite`
-`python-pip`
 
+`tshark`
+
+`hostapd`
+
+`python-dev`
+
+`python-flask`
+
+`python-paramiko`
+
+`python-psycopg2`
+
+`python-pyodbc`
+
+`python-sqlite`
+
+`python-pip`
 
 ### How to install your own Atear-Beta
 Clone a copy of the main Atear-Beta git repo by running:
+
 `git clone git://github.com/norma/atear-beta.git`
 Enter the Atear-Beta directory and run the install script:
+
 `cd ./Atear-Beta/`
+
 `sudo bash install.sh`
+
 `sudo pip install -r requirements.txt`
 
 ### How to usage
+
 `cd ./Atear-Beta/]`
+
 `sudo python run.py &]`
 
 ### Dockerization
@@ -113,8 +152,10 @@ It will be released this month.
 2. It will provide some of the latest firmware database of Access Point.
 3. Provide limited project management capabilities.
 4. It provides a report function.
+
 ***Atear-Demo is limited use of 30days***
 
 ### Atear-Demo version request
 [NORMA-Company Homepage](http://www.norma.co.kr)
-Contact us[contact@norma.co.kr](mailto:contact@norma.co.kr)
+
+Contact us [contact@norma.co.kr](mailto:contact@norma.co.kr)
