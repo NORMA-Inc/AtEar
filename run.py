@@ -246,4 +246,4 @@ if __name__ == '__main__':
     wids = Wireless_IDS('wlan0')
     wids_process = threading.Thread(target=wids.run)
     wids_process.start()
-    app.run(host='0.0.0.0', debug=True, port=8090)
+    app.run(host='0.0.0.0', debug=True, port=8080)

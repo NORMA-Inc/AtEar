@@ -107,6 +107,7 @@ Enter the Atear-Beta directory and run the install script:<br>
 ### How to usage
 `cd ./Atear-Beta/`<br>
 `sudo python run.py &`<br>
+`127.0.0.1:8080`<br>
 
 ### Dockerization
 It will be released this month.
