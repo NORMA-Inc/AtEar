@@ -1,0 +1,35 @@
+<div class="view content">
+	<i class="right floated remove icon"></i>
+	<i class="right floated write icon"></i>
+	<div class="header"><%= p_name %></div>
+	<div class="meta">
+		<span class="time">
+			<%= p_time %>
+		</span>
+	</div>
+	<div class="description">
+		<p><%= p_desc %></p>
+	</div>
+</div>
+<div class="edit content">
+	<i class="right floated remove icon"></i>
+	<div class="meta">Project Name</div>
+	<div class="ui fluid input">
+		<input type="text" placeholder="Project Name" class="p_name" value="<%= p_name %>">
+	</div>
+</div>
+<div class="edit content">
+	<div class="meta">Description</div>
+	<div class="ui fluid input">
+		<input type="text" placeholder="Project Description" class="p_desc" value="<%= p_desc %>">
+	</div>
+</div>
+<div class="view extra content">
+	<div class="ui label">g</div>
+</div>
+<div class="view ui bottom attached go button">
+	GO
+</div>
+<div class="edit ui bottom attached save button">
+	SAVE
+</div>

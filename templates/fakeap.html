@@ -1,0 +1,53 @@
+<div class="ui grid">
+	<div class="four wide widescreenMonitor six wide computer column">
+		<div class="ui raised segment">
+			<div class="ui form">
+				<div class="field">
+					<label>SSID</label>
+					<input type="text" name="ssid" placeholder="SSID">
+				</div>
+				<div class="field">
+					<label>Encryption</label>
+					<select class="ui fluid dropdown" name="enc">
+						<option value="">Encryption</option>
+						<option value="open">OPEN</option>
+						<option value="wep">WEP</option>
+						<option value="wpa">WPA</option>
+					</select>
+				</div>
+				<div class="password field">
+					<label>Password</label>
+					<input type="password" name="password" placeholder="Password">
+				</div>
+				<div class="ui fluid primary buttons">
+					<button class="ui start submit button"><i class="play icon"></i>START</button>
+					<buttons class="ui disabled pause button"><i class="pause icon"></i>Pause</buttons>
+					<button class="ui disabled stop button"><i class="stop icon"></i>STOP</button>					
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<div class="ten wide computer twelve wide widescreenMonitor column">
+		<div class="ui grid">
+			<div class="eight wide widescreenMonitor sixteen wide computer column">
+				<div class="ui raised segments">
+					<div class="ui segment">
+						<h4 class="ui header">Connected Station</h4>
+					</div>
+					<div id="conn-station" class="ui segment">
+					</div>
+				</div>
+			</div>
+			<div class="eight wide widescreenMonitor sixteen wide computer column">
+				<div class="ui raised segments">
+					<div class="ui segment">
+						<h4 class="ui header">Login Station</h4>
+					</div>
+					<div id="login-station" class="ui segment">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
