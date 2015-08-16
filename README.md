@@ -13,7 +13,25 @@ Atear Beta is Wireless Penetration System For Open-source Version
 2. Wireless Chart(Channel, Encryption, Type)
 3. Wireless Pentesting(WEP, WPA1, WPA2)
 4. Network Information Getting(IP, Connected Host Info)
-5. Network Pentesting
+5. Fake AP
+  - Google Phishing Site
+  - Facebook Phishing Site
+  - Twitter Phishing Site
+6. WIDS
+  - Disassocation Flood
+  - Deauth Flood
+  - WESSID-NG Attack
+  - Koreck Chopchop attack
+  - Fragmentation PGRA Attack
+  - MDK MICHEAL SHUTDOWN Exploitation TKIP Attack
+  - Attack By TKIPUN-NG
+  - Authentication DOS Attack
+  - Assocation Flood
+  - High Amount of Assocation Sent
+  - Suspect Rouge AP
+  - Detected Beacon Flood
+It will Append features<br>
+<b>Network Pentesting</b><br>
   - FTP Brute Force
   - SSH Brute Force
   - Telnet Brute Force
@@ -28,23 +46,6 @@ Atear Beta is Wireless Penetration System For Open-source Version
   - PGSQL Brute Force
   - VNC Brute Force
   - SNMP Brute Force
-6. Fake AP
-  - Google Phishing Site
-  - Facebook Phishing Site
-  - Twitter Phishing Site
-7. WIDS
-  - Disassocation Flood
-  - Deauth Flood
-  - WESSID-NG Attack
-  - Koreck Chopchop attack
-  - Fragmentation PGRA Attack
-  - MDK MICHEAL SHUTDOWN Exploitation TKIP Attack
-  - Attack By TKIPUN-NG
-  - Authentication DOS Attack
-  - Assocation Flood
-  - High Amount of Assocation Sent
-  - Suspect Rouge AP
-  - Detected Beacon Flood
 
 
 ### Running Video
