@@ -30,7 +30,8 @@ Atear Beta is Wireless Penetration System For Open-source Version
   - High Amount of Assocation Sent
   - Suspect Rouge AP
   - Detected Beacon Flood
-It will Append features<br>
+
+It will be released this month.
 <b>Network Pentesting</b><br>
   - FTP Brute Force
   - SSH Brute Force
