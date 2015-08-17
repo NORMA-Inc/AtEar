@@ -1,0 +1,6 @@
+Flask==0.10.1
+paramiko==1.15.1
+pysqlite==1.0.1
+psycopg2==2.5.3
+python-nmap==0.3.4
+scapy==2.2.0
