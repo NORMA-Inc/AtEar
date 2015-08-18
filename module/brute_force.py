@@ -125,7 +125,3 @@ def SMB(username, password, targetip, port, timeout):
 
 def oracle_db(username, password, targetip, port, timeout):
     print 'oracl'
-
-
-for text in brute_text_create(3):
-    print text

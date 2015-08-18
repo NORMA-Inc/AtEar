@@ -6,27 +6,10 @@ function($,_,Backbone, ScanStatus) {
 		
 		model: ScanStatus,
 
-		initialize: function(models,options){
-			this.id = options.id;
-			this.cell = null;
-		},
-
 		url: function(){
-			if(this.cell==null) {
-				return '/api/scanstatus/'+this.id;
-			} else {
-				return '/api/scanstatus/'+this.id+'/'+this.cell;
-			}
+			return '/api/scanstatus';
 		},
-
-		setCellName: function(cell){
-			this.cell = cell;
-		},
-
-		save: function(){
-			Backbone.sync('create',this,{});
-		},
-
+		
 		stop: function(){
 			this.cell = null;
 			this.reset();

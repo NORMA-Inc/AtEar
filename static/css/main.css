@@ -4,17 +4,7 @@ body {
 	background-attachment: fixed;
 	background-size: cover;
 }
-.mainmenu .selected.item,
-.project.mainmenu .unselected.item{
-	display:none !important;
-}
-.project.mainmenu .selected.item,
-.mainmenu .unselected.item{
-	display: -webkit-box !important;
-  	display: -webkit-flex !important;
-  	display: -ms-flexbox !important;
-  	display: flex !important;
-}
+
 .main.container{
 	padding-top:6em;
 }

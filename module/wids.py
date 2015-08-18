@@ -1,9 +1,9 @@
 __author__ = 'root'
 from subprocess import Popen, PIPE
 import os
-import json
-import datetime, time
-import threading
+import datetime
+import time
+
 
 class Wireless_IDS():
     def __init__(self, iface):
@@ -65,8 +65,6 @@ class Wireless_IDS():
         dump_proc.wait()
 
     def ConvertPackets(self):
-        if os.path.isfile(self.tcpdump_log):
-            os.remove(self.tcpdump_log)
         conv_cmd = 'tshark -r ' + self.tcpdump_cap + ' -n -t ad > ' + self.tcpdump_log
         conv_proc = Popen(conv_cmd, shell=True, stdout=PIPE, stderr=open(os.devnull, 'w'))
         conv_proc.wait()

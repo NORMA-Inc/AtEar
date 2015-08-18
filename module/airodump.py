@@ -19,10 +19,7 @@ class Reader(object):
         self._clients = defaultdict(dict)
         self.soft_ap = False
         soft_mac_list = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F']
-        try:
-            tmp_csv = open('/tmp/atear-01.csv', 'rb')
-        except:
-            return False
+        tmp_csv = open('/tmp/atear-01.csv', 'rb')
         data = tmp_csv.read()
         tmp_csv.close()
         new_csv = open('/tmp/atear.csv', 'wb')
@@ -74,7 +71,7 @@ class Reader(object):
                                 'type': 'SoftAp',
                             })
                             self.soft_ap = False
-                        elif line[8] == '-1':
+                        elif line[8] == -1:
                             self[line[0]].update({
                                 'type': 'ad-hoc',
                             })
@@ -86,8 +83,11 @@ class Reader(object):
                         pass
                 else:
                     try:
+                        sta_type = 'station'
+                        if int(line[3]) == -1:
+                            sta_type = 'ad-hoc'
                         self._clients[line[0]].update({
-                            'type': 'station',
+                            'type': sta_type,
                             'bssid': line[0],
                             'Time': line[2],
                             'essid': line[5].strip(),
@@ -146,19 +146,3 @@ class Scanner(object):
         except:
             return False
         return self._networks + self._clients
-
-
-class Ids(object):
-    def __init__(self, iface):
-        self.iface = iface
-        self.START_SIGNAL = True
-        self.PATH = '/tmp/'
-
-    def run(self):
-        print 'run'
-
-    def stop(self):
-        self.START_SIGNAL = False
-
-    def get_value(self):
-        print 'get_value'

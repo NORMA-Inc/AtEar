@@ -11,6 +11,7 @@
 
 	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/semantic.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
+	<link rel="shortcut icon" href="{{ url_for('static',filename='img/pavicon.ico') }}">
 	<script src="{{ url_for('static', filename='js/libs/jquery.js') }}"></script>
 	<script src="{{ url_for('static', filename='js/libs/semantic.js') }}"></script>
 	<script src="{{ url_for('static', filename='js/libs/typed.min.js') }}"></script>
@@ -88,7 +89,7 @@ $(document)
 			<img id="logo_img" class="ui image hidden" src="{{ url_for('static', filename='img/atear_logo_white.svg') }}" alt="">
 			>&nbsp;<span class="message" style="white-space:pre"></span>
 		</div>
-		<a href="{{ url_for('app_view') }}" class="ui fluid large teal button">
+		<a href="/app#status" class="ui fluid large teal button">
 			<i class="sign in icon"></i>Go
 		</a>
 

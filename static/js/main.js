@@ -29,17 +29,20 @@ function($, _, Backbone, HiddenView, HeaderView,
 
     var AppRouter = Backbone.Router.extend({
     	initialize:function(){
-            this.projectId = 0;
             this.hidden();
     	},
     	
     	routes: {
-            "": "project",
-    		":id/status": "status",
-            ":id/fakeap": "fakeap",
-            ":id/pentest": "pentest",
-            ":id/wids": "wids"
+            "": "redirect",
+    		"status": "status",
+            "fakeap": "fakeap",
+            "pentest": "pentest",
+            "wids": "wids"
     	},
+
+        redirect: function(){
+            app.navigate("status",{trigger:true});
+        },
 
         hidden: function(){
             if( this.hiddenView == undefined ) {
@@ -51,28 +54,7 @@ function($, _, Backbone, HiddenView, HeaderView,
             }
         },
 
-
-    	project: function(){
-            this.before(function() {
-                if(!this.projectList){
-                    this.projectList = new Projects();
-                    var self = this;
-                    this.projectList.fetch({
-                        success: function(){
-                            self.projectListView = new ProjectListView({
-                                model: self.projectList
-                            });
-                            self.showView('#content',self.projectListView);
-                        }
-                    });
-                } else{
-                    this.showView('#content',this.projectListView);
-                }
-            });
-    	},
-
-        status: function(id){
-            this.projectId = id;
+        status: function(){
             this.before(function() {
                 this.headerView.activeMenu(1);
                 this.statusView = new StatusView();
@@ -80,8 +62,7 @@ function($, _, Backbone, HiddenView, HeaderView,
             });
         },
 
-        fakeap: function(id){
-            this.projectId = id;
+        fakeap: function(){
             this.before(function() {
                 this.headerView.activeMenu(3);
                 this.fakeapView = new FakeapView();
@@ -90,8 +71,7 @@ function($, _, Backbone, HiddenView, HeaderView,
             });
         },
 
-        pentest: function(id){
-            this.projectId = id;
+        pentest: function(){
             this.before(function() {
                 this.headerView.activeMenu(2);
                 this.pentestView = new PentestView();
@@ -100,8 +80,7 @@ function($, _, Backbone, HiddenView, HeaderView,
             })
         },
 
-        wids: function(id){
-            this.projectId = id;
+        wids: function(){
             this.before(function() {
                 this.headerView.activeMenu(4);
                 this.widsView = new WidsView();
@@ -121,11 +100,11 @@ function($, _, Backbone, HiddenView, HeaderView,
 
         before: function(callback) {
             if ( this.headerView ) {
-                this.headerView.setProjectId(this.projectId).render();
+                this.headerView.render();
                 if (callback) callback.call(this);
             } else {
                 this.headerView = new HeaderView();
-                $('#header').html(this.headerView.setProjectId(this.projectId).render().el);
+                $('#header').html(this.headerView.render().el);
                 if (callback) callback.call(this);
             }
 
@@ -149,8 +128,9 @@ function($, _, Backbone, HiddenView, HeaderView,
         'pentest',
         'pentest-scantable',
         'pentest-scantable-list',
-        'pentest-typetable',
         'pentest-option',
+        'pentest-result',
+        'pentest-result-list',
         'wids',
         'wids-statistic',
         'wids-statistic-list',

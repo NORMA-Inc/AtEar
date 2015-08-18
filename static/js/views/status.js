@@ -55,7 +55,7 @@ function($, _, Backbone, $, tpl, ScanStatuses, StatusScanTableView, StatusScanCh
 
 		scanStart: function(){
 			if(this.scanStatusList==undefined){
-				this.scanStatusList = new ScanStatuses([],{ id:1 });	
+				this.scanStatusList = new ScanStatuses();	
 			}
 			
 			this.scanRun(10000);

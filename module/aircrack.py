@@ -2,6 +2,7 @@ from subprocess import Popen, PIPE
 import os
 from sys import stdout
 from signal import SIGINT
+import sched
 import signal
 import csv
 import time
@@ -39,6 +40,7 @@ class Attack():
         self.arp_req_sig = False
         self.crack_success = False
         self.timeout = int(timeout)
+        self.scheduler = sched.scheduler(time.time, time.sleep)
         self.pid_list = []
         self.password_list = '/tmp/password.lst'
 
@@ -118,12 +120,13 @@ class Attack():
         self.pid_list.append(arp_proc.pid)
 
     def run(self):
-        signal.signal(signal.SIGALRM, self.handler)
-        signal.alarm(self.timeout)
+        self.scheduler.enter(self.timeout, 1, self.handler, ())
         if self.enc_type == 'WEP':
             self.wep_run()
-        else:
+        elif self.enc_type == 'WPA':
             self.wpa_run()
+        else:
+            self.key = True
 
     def get_value(self):
         return_value = {'essid': self.essid,
@@ -188,7 +191,7 @@ class Attack():
                 try:
                     os.remove('/tmp/' + self.essid + '.key')
                 except OSError:
-                    print 'None Found'
+                    pass
                 airodump_proc.kill()
                 crack_cmd = ['aircrack-ng', '-w', self.password_list, '-b', self.bssid, '/tmp/' + self.essid + '-01.cap','-l', '/tmp/' + self.essid + '.key']
                 crack_proc = Popen(crack_cmd, stdout=DN)
@@ -215,7 +218,7 @@ class Attack():
             except OSError:
                 pass
 
-    def handler(self, signum, frame):
+    def handler(self):
         for pid in self.pid_list:
             try:
                 os.kill(pid, signal.SIGTERM)

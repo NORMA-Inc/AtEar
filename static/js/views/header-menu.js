@@ -10,12 +10,11 @@ function($, _, Backbone, $, tpl) {
 
 		initialize: function(){
 			this.template = _.template(tpl.get('header'));
-			this.username = $('#atear').data('username');
 		},
 
 
 		render: function() {
-			this.$el.html(this.template({ 'id':this.projectId }));
+			this.$el.html(this.template());
 			
 			this.widsCheckbox();
 			return this;
@@ -25,18 +24,6 @@ function($, _, Backbone, $, tpl) {
 			number = number.toString();
 			$('a.active.item').removeClass('active');
 			$('.'+number+'.item').addClass('active');
-
-			return this;
-		},
-
-		setProjectId: function(id) {
-			if (id > 0){
-				this.$el.addClass('project');
-			}
-			else {
-				this.$el.removeClass('project');
-			}
-			this.projectId = id;
 
 			return this;
 		},

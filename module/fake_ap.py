@@ -317,6 +317,7 @@ class WEBServer(object):
         self.logged_data = ''
         self.connect_user = dict()
         self.connect_data = ''
+
     def run(self):
         try:
             os.remove('/tmp/login.json')
@@ -449,17 +450,12 @@ class APCreate(object):
         os.system('iptables -A INPUT --in-interface ' + self.wlan + ' -j ACCEPT')
         os.system('hostapd -B ' + os.path.join(os.path.dirname(os.path.abspath(__file__))) + '/conf/run.conf')
         time.sleep(2)
-        print 'hostapd_start'
         self.dns_thread.start()
-        print 'DNS_START'
         self.dhcp_thread.start()
-        print 'DHCP_START'
         time.sleep(2)
         self.web_process.start()
-        print 'WEB_SERVER_START'
 
     def stop(self):
-        print 'stop in'
         try:
             self.dhcp.stop()
             self.dns_server.stop()
@@ -489,22 +485,3 @@ class APCreate(object):
             return get_values
         except:
             return json.dumps([{}])
-
-"""
-import sys
-AP = APCreate('wlan0', 'OPEN', 'ttttaaaa', 'ttttaaaa')
-AP.run()
-try:
-    while True:
-        time.sleep(10)
-        try:
-            print AP.get_values_connect()
-            print AP.get_values_login()
-        except IOError:
-            print 'is Running'
-            pass
-except KeyboardInterrupt:
-        AP.stop()
-        sys.exit()
-"""
-# APCreate('wlan0', 'OPN', 'ttttttt', 'ttttttt').stop()
