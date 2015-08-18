@@ -18,7 +18,7 @@ class Reader(object):
         self._networks = defaultdict(dict)
         self._clients = defaultdict(dict)
         self.soft_ap = False
-        soft_mac_list = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F']
+        soft_mac_list = ['2', '3', '6', '7', 'A', 'B', 'E', 'F']
         tmp_csv = open('/tmp/atear-01.csv', 'rb')
         data = tmp_csv.read()
         tmp_csv.close()
@@ -37,18 +37,8 @@ class Reader(object):
                 line = map(str, line)
                 if parsing_networks:
                     company = db_reader.oui_search(line[0])
-                    if company != 'Unknown':
-                        pass
-                    else:
-                        try:
-                            soft_mac = line[0][:1] + soft_mac_list[soft_mac_list.index(line[0][1]) - 2] + line[0][2:]
-                        except ValueError:
-                            pass
-                        except IndexError:
-                            pass
-                        company = db_reader.oui_search(soft_mac)
-                        if company != 'Unknown':
-                            self.soft_ap = True
+                    if line[0][1] in soft_mac_list:
+                        self.soft_ap = True
                     try:
                         self[line[0]].update({
                             'company': company,
