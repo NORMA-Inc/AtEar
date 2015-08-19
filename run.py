@@ -45,7 +45,7 @@ class main_app():
         self.app.add_url_rule('/api/wids', 'wids', self.wids, methods=['GET'])
         self.app.add_url_rule('/api/pentest', 'pentest', self.pentest, methods=['GET', 'POST'])
         self.app.add_url_rule('/api/hidden/<wids_option>', 'hidden', self.hidden, methods=['GET'])
-        self.app.run('0.0.0.0', port=8081, debug=False)
+        self.app.run('0.0.0.0', port=8080, debug=False)
 
     def index(self):
         return render_template('main.html')
