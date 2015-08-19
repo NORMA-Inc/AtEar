@@ -293,16 +293,16 @@ def auto_monitor():
                 monitor_support.append(interface)
 
     if ap_support:
-        res = Popen('iw phy ' + ap_support[0] + ' interface add atear_dump type monitor', shell=True, stdout=PIPE)
-        res = Popen('iw phy ' + ap_support[0] + ' interface add atear_wids type monitor', shell=True, stdout=PIPE)
-        res = Popen('iw phy ' + ap_support[0] + ' interface add atear_ap type monitor', shell=True, stdout=PIPE)
-        res = Popen('iw phy ' + ap_support[0] + ' interface add atear_pentest type monitor', shell=True, stdout=PIPE)
+        res = Popen('iw dev ' + ap_support[0] + ' interface add atear_dump type monitor', shell=True, stdout=PIPE)
+        res = Popen('iw dev ' + ap_support[0] + ' interface add atear_wids type monitor', shell=True, stdout=PIPE)
+        res = Popen('iw dev ' + ap_support[0] + ' interface add atear_ap type monitor', shell=True, stdout=PIPE)
+        res = Popen('iw dev ' + ap_support[0] + ' interface add atear_pentest type monitor', shell=True, stdout=PIPE)
         Popen('rfkill unblock all', shell=True)
     elif monitor_support:
-        res = Popen('iw phy ' + ap_support[0] + ' interface add atear_dump type monitor', shell=True, stdout=PIPE)
-        res = Popen('iw phy ' + ap_support[0] + ' interface add atear_wids type monitor', shell=True, stdout=PIPE)
-        res = Popen('iw phy ' + ap_support[0] + ' interface add atear_ap type monitor', shell=True, stdout=PIPE)
-        res = Popen('iw phy ' + ap_support[0] + ' interface add atear_pentest type monitor', shell=True, stdout=PIPE)
+        res = Popen('iw dev ' + ap_support[0] + ' interface add atear_dump type monitor', shell=True, stdout=PIPE)
+        res = Popen('iw dev ' + ap_support[0] + ' interface add atear_wids type monitor', shell=True, stdout=PIPE)
+        res = Popen('iw dev ' + ap_support[0] + ' interface add atear_ap type monitor', shell=True, stdout=PIPE)
+        res = Popen('iw dev ' + ap_support[0] + ' interface add atear_pentest type monitor', shell=True, stdout=PIPE)
         Popen('rfkill unblock all')
 
 
