@@ -96,6 +96,7 @@ It will be released this month.
 
 ### How to install your own Atear-Beta
 Clone a copy of the main Atear-Beta git repo by running:<br>
+`sudo apt-get install git`<br>
 `git clone git://github.com/norma/atear-beta.git`<br>
 Enter the Atear-Beta directory and run the install script:<br>
 `cd ./Atear-Beta/`<br>
