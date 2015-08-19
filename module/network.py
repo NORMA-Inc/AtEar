@@ -286,7 +286,6 @@ def auto_monitor():
         info = res.communicate()[0]
         sup = info[info.find('Supported interface modes:')+28:]
         support_list = sup[:sup.find(':')].replace('\t', '').replace(' ', '').replace('*', '').split('\n')[:-1]
-        print support_list
         for support in support_list:
             if support == 'AP':
                 ap_support.append(interface)

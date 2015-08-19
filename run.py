@@ -45,7 +45,7 @@ class main_app():
         self.app.add_url_rule('/api/wids', 'wids', self.wids, methods=['GET'])
         self.app.add_url_rule('/api/pentest', 'pentest', self.pentest, methods=['GET', 'POST'])
         self.app.add_url_rule('/api/hidden/<wids_option>', 'hidden', self.hidden, methods=['GET'])
-        self.app.run('0.0.0.0', port=8080, debug=True)
+        self.app.run('0.0.0.0', port=8081, debug=False)
 
     def index(self):
         return render_template('main.html')
@@ -88,11 +88,11 @@ class main_app():
                     connstation = connstation.replace('\\', '').replace('\"', '').replace(', ]', ']')
                     loginstation = self.fake_ap.get_values_login()
                     loginstation = loginstation.replace('\\', '').replace('\"', '').replace(', ]', ']')
-                    return json.dumps({"connstation:": connstation, "loginstation": loginstation})
+                    return json.dumps({"connstation": connstation, "loginstation": loginstation})
                 except:
-                    return json.dumps({"connstation:": '', "loginstation": ''})
+                    return json.dumps({"connstation": '', "loginstation": ''})
             else:
-                return json.dumps({"connstation:": '', "loginstation": ''})
+                return json.dumps({"connstation": '', "loginstation": ''})
         elif request.method == 'DELETE':
             self.fake_ap.stop()
             self.fake_ap = False

@@ -476,12 +476,16 @@ class APCreate(object):
 
     @staticmethod
     def get_values_login():
-        return json.dumps(open('/tmp/login.json', 'r').read())
+        try:
+            get_values = json.dumps(open('/tmp/login.json', 'r').read())
+            return get_values
+        except IOError:
+            return json.dumps([{}])
 
     @staticmethod
     def get_values_connect():
         try:
             get_values = json.dumps(open('/tmp/connect.json', 'r').read())
             return get_values
-        except:
+        except IOError:
             return json.dumps([{}])
