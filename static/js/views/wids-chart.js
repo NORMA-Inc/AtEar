@@ -9,19 +9,16 @@ function($, _, Backbone, $, tpl,Chart) {
 		className: 'ui raised segments',
 
 		initialize: function(){
-			console.log('init');
 			this.template = _.template(tpl.get('wids-chart'));
 		},
 
 		render: function(){
-			console.log('chartrender');
 			this.$el.html(this.template());
 
 			return this;
 		},
 
 		dataSet: function(){
-			console.log('chart dataSet');
 			var wids_labels = ['Dissassocation Flood',
 							'Deauth Flood',
 							'Wessid-NG Attack',
@@ -60,14 +57,11 @@ function($, _, Backbone, $, tpl,Chart) {
 		},
 
 		chartInit: function(){
-			console.log('chart Init');
 			Chart.defaults.global.responsive = true;
-			console.log(this.widsData);
 			this.ctx_wids = this.$el.find('.widschart').get(0).getContext('2d');
 
 			this.widsChart = new Chart(this.ctx_wids).Bar(this.widsData,{});
 
-			console.log('chart finish');
 
 			return this;
 		}

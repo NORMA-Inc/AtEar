@@ -13,12 +13,10 @@ function($,_,Backbone,$,tpl, HiddenModel) {
 		render: function(){
 			this.setElement(this.template());
 			this.pulling(5000);
-			console.log('hidden render');
 			return this.el;
 		},
 
 		pulling: function(interval){
-			console.log(interval);
 			var self = this;
 			this.model.fetch({
 				success: function(){

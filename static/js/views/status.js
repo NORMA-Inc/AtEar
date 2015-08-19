@@ -96,14 +96,12 @@ function($, _, Backbone, $, tpl, ScanStatuses, StatusScanTableView, StatusScanCh
 					update:true,
 					remove:false,
 					success: function(){
-						console.log('success in');
 						if( self.scanSignal ) {
 							if(self.scanStatusList.length>0 && self.statusScanTableView==undefined){
 							    
 								self.statusScanChartView = new StatusScanChartView({
 									model: self.scanStatusList
 								});
-                            	console.log('chart view create');
 								self.statusScanTableView = new StatusScanTableView({
 									model: self.scanStatusList
 								});
@@ -113,7 +111,6 @@ function($, _, Backbone, $, tpl, ScanStatuses, StatusScanTableView, StatusScanCh
 
 								self.$el.find('#scanChart').html(self.statusScanChartView.render().el);
 								self.statusScanChartView.dataSet().chartInit();
-								console.log('input');
 							}
 							setTimeout(function(){
 								self.scanAction();
@@ -130,12 +127,10 @@ function($, _, Backbone, $, tpl, ScanStatuses, StatusScanTableView, StatusScanCh
 
 		scanSaveCheckModal: function(){
 			var self = this;
-			console.log('/.');
 			$('.scan-save.check').modal({
 				allowMultiple:false,
 				closable: false,
 				onDeny: function(){
-					console.log('on deny');
 					self.scanStatusList.stop();
 					self.scanClear();
 					
@@ -160,7 +155,6 @@ function($, _, Backbone, $, tpl, ScanStatuses, StatusScanTableView, StatusScanCh
 		},
 
 		saveToLocalStorage: function(){
-			console.log(this.scanStatusList.toJSON());
 			var jsondata = this.scanStatusList.toJSON();
 			jsondata = JSON.stringify(jsondata);
 			localStorage.setItem('scannedAP',jsondata);

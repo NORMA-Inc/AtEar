@@ -9,19 +9,16 @@ function($, _, Backbone, $, tpl,Chart) {
 		className: 'ui raised segments',
 
 		initialize: function(){
-			console.log('init');
 			this.template = _.template(tpl.get('wids-statistic'));
 		},
 
 		render: function(){
-			console.log('statistic render');
 			this.$el.html(this.template());
 
 			return this;
 		},
 
 		dataSet: function(){
-			console.log('chart dataSet');
 			this.wids_labels = ['Dissassocation Flood',
 							'Deauth Flood',
 							'Wessid-NG Attack',

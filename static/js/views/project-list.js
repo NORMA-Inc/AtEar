@@ -100,7 +100,6 @@ function($,_,Backbone,$,tpl,Project) {
 				var self = this;
 				app.projectList.create(this.model,{
 					success: function(){
-						console.log('success');
 					}
 				});
 			} else {

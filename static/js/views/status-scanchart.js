@@ -9,7 +9,6 @@ function($, _, Backbone, $, tpl,Chart) {
 		className: 'ui centered grid',
 
 		initialize: function(){
-			console.log('init');
 			this.template = _.template(tpl.get('status-scanchart'));
 			this.model.bind("add",this.reRender,this);
 			this.colorcode1 = ['#DB2828','#F2711C','#FBBD08','#B5CC18','#21BA45','#00B5AD','#2185D0','#6435C9','#A333C8','#E03997','#A5673F','#767676','#1B1C1D','#FF695E','#FF851B','#FFE21F','#D9E778','#2ECC40'];
@@ -21,14 +20,12 @@ function($, _, Backbone, $, tpl,Chart) {
 		},
 
 		render: function(){
-			console.log('chart render');
 			this.$el.html(this.template());
 
 			return this;
 		},
 
 		reRender: function(){
-			console.log('chart re render');
 			
 			this.destroy().dataSet().chartInit();
 
@@ -37,7 +34,6 @@ function($, _, Backbone, $, tpl,Chart) {
 		},
 
 		dataSet: function(){
-			console.log('chart dataSet');
 			var type_labels = this.model.distinctKey('type');
 			var enc_labels = this.model.distinctKey('enc');
 			var ch_labels = this.model.distinctKey('ch');
@@ -93,7 +89,6 @@ function($, _, Backbone, $, tpl,Chart) {
 		},
 
 		chartInit: function(){
-			console.log('chartInit');
 			Chart.defaults.global.responsive = true;
 
 			this.ctx_type = this.$el.find('#typeChart').get(0).getContext('2d');
@@ -113,7 +108,6 @@ function($, _, Backbone, $, tpl,Chart) {
 			this.$el.find('#typeLegend').html(this.typeChart.generateLegend());
 			this.$el.find('#encLegend').html(this.encChart.generateLegend());
 			this.$el.find('#chLegend').html(this.chChart.generateLegend());
-			console.log('chartInit finish');
 
 			return this;
 		},

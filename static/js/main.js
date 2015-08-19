@@ -19,7 +19,6 @@ function($, _, Backbone, HiddenView, HeaderView,
     ProjectListView, StatusView, FakeapView, PentestView, WidsView, 
     tpl, HiddenModel, Project, Projects){
 	Backbone.View.prototype.close = function() {
-        console.log('Closing view ' + this);
         if (this.beforeClose) {
             this.beforeClose();
         }

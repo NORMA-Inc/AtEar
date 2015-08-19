@@ -48,7 +48,6 @@ function($,_,Backbone,$,tpl,FakeApConnStationView,FakeApLoginStationView, FakeAp
 					this.form.find('.field').removeClass('disabled');
 					break;
 				default:
-					console.log('error');
 					this.$el.find('.start.button').addClass('disabled');
 					this.$el.find('.pause.button').addClass('disabled');
 					this.$el.find('.stop.button').addClass('disabled');
