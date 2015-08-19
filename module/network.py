@@ -284,8 +284,9 @@ def auto_monitor():
         interface = interface.replace('#', '')
         res = Popen('iw phy ' + interface + ' info', shell=True, stdout=PIPE)
         info = res.communicate()[0]
-        support_list = info[info.find('Supported interface modes')+27:info.find('Band 1:')].replace('\t', '').replace('\n', '').replace(' ', '').split('*')
-        support_list = support_list[1:]
+        sup = info[info.find('Supported interface modes:')+28:]
+        support_list = sup[:sup.find(':')].replace('\t', '').replace(' ', '').replace('*', '').split('\n')[:-1]
+        print support_list
         for support in support_list:
             if support == 'AP':
                 ap_support.append(interface)

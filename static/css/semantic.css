@@ -14883,7 +14883,7 @@ ol.ui.horizontal.list li:before,
 }
 
 .ui.steps .step:last-child:after {
-  display: none;
+  display: none !important;
 }
 
 /*******************************

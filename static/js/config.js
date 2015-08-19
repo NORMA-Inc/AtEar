@@ -10,7 +10,7 @@ require.config({
     'jquery': "libs/jquery",
     'lodash': "libs/lodash.min",
     'backbone': "libs/backbone.min",
-    'semantic': "libs/semantic"
+    'semantic': "libs/semantic.min"
   },
 
   shim: {
