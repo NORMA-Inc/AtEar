@@ -282,7 +282,7 @@ def auto_monitor():
     monitor_support = []
     for interface in interface_list:
         interface = interface.replace('#', '')
-        res = Popen('iw phy ' + interface + ' info', shell=True, stdout=PIPE)
+        res = Popen('iw dev ' + interface + ' info', shell=True, stdout=PIPE)
         info = res.communicate()[0]
         support_list = info[info.find('Supported interface modes')+27:info.find('Band 1:')].replace('\t', '').replace('\n', '').replace(' ', '').split('*')
         support_list = support_list[1:]
