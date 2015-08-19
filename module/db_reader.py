@@ -3,6 +3,7 @@ import csv
 import os
 import string
 
+
 def oui_search(mac_addr):
     mac_addr = string.upper(mac_addr)
     path = os.path.abspath('./databases/oui_database.csv')
