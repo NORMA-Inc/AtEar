@@ -112,6 +112,10 @@ Enter the Atear-Beta directory and run the install script:<br>
 ### Dockerization
 It will be released this month.
 
+### Reference
+AtEar can overcome the limitation of WIPS with high mobility and convenience works. <br>
+It has resulted in partnership with SAMSUNG, KT. Besides, small middle business and public institutions have chosen AtEar as their wireless security solution because of convenience management and competitive cost. Some of them are the City Hall of Seoul, Korea Rail Network Authority and Korea University etc. <br>
+
 ### Atear-Demo add-on Features
 1. A wireless product portion to provide a database that can be specified.
 2. It will provide some of the latest firmware database of Access Point.
