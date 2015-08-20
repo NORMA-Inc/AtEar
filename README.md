@@ -1,5 +1,7 @@
 ## Atear-Beta
-Atear Beta is Wireless Penetration System For Open-source Version
+AtEar is expanding and efficiency is the first web-based wireless vulnerability assessment solution.<br>
+Wireless Vulnerability Analysis/Management Solution, AtEar, can be utilized in enterprises and at home. <br>
+In enterprises, AtEar fingerprints devices which get access to the enterprise network and analyze the current state of wireless. <br>Automatic Penetration Testing function also makes it possible to analyze wireless vulnerability conveniently and minutely. <br>AtEar for home network is for inspecting home network safety and monitoring unregistered devices. <br>
 
 # Intro
 
