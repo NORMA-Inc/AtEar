@@ -61,11 +61,10 @@ class main_app():
             if not self.scanner:
                 self.scanner = airodump.Scanner(self.scan_iface)
                 self.scanner.run()
-                time.sleep(2)
                 return "[]", 200
             else:
                 try:
-                    return Response(json.dumps(self.scanner.get_value(), cls=PythonObjectEncoder, ensure_ascii=False),
+                    return Response(json.dumps(self.scanner.get_value(), cls=PythonObjectEncoder, ensure_ascii=False, encoding='EUC-KR'),
                                     mimetype='application/json')
                 except:
                     return "[]", 200
