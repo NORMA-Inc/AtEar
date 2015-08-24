@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 from flask import Flask, request, render_template, Response
 import json
-import time
 from module import airodump
 from module.fake_ap import APCreate
 import pickle
