@@ -9,8 +9,7 @@ class Wireless_IDS():
     def __init__(self, iface):
         self.START_SIG = True
         self.iface = iface
-        self.captured_csv = '/tmp/atear.csv'
-        self.captured_cap = '/tmp/atear-01.cap'
+        self.captured_csv = '/tmp/atear_wids.csv'
         self.tcpdump_cap = '/tmp/atear_wids.pcap'
         self.tcpdump_log = '/tmp/tcpdump.log'
         self.essidfile = '/tmp/essidcount.log'
@@ -47,6 +46,7 @@ class Wireless_IDS():
         self.L_Data94 = []
         self.L_Data98 = []
         self.MACDetail = ""
+        os.system('rm -rf /tmp/atear_wids*')
         open(self.essidfile, "wb").write("")
         open(self.macfile, "wb").write("")
         open(self.json_logfile, "wb").write("")
@@ -68,8 +68,16 @@ class Wireless_IDS():
         conv_cmd = 'tshark -r ' + self.tcpdump_cap + ' -n -t ad > ' + self.tcpdump_log
         conv_proc = Popen(conv_cmd, shell=True, stdout=PIPE, stderr=open(os.devnull, 'w'))
         conv_proc.wait()
+        tmp_csv = open('/tmp/atear_wids-01.csv', 'rb')
+        data = tmp_csv.read()
+        tmp_csv.close()
+        new_csv = open(self.captured_csv, 'wb')
+        new_csv.write(data.replace('\x00', ''))
+        new_csv.close()
 
     def run(self):
+        airo_cmd = 'airodump-ng ' + self.iface + ' -w /tmp/atear_wids'
+        airo_proc = Popen(airo_cmd, shell=True, stdout=PIPE, stderr=PIPE)
         while self.START_SIG:
             self.CaptureTraffic()
             self.ConvertPackets()
@@ -1023,16 +1031,15 @@ class Wireless_IDS():
 
 """
 import threading
-from module.wids import Wireless_IDS
-wids = Wireless_IDS('wlan0')
+# from module.wids import Wireless_IDS
+wids = Wireless_IDS('atear_wids')
 wids_process = threading.Thread(target=wids.run)
 wids_process.start()
 while True:
     try:
         print 'Recent Log: ', wids.get_recent_values()
         print 'All Log: ', wids.get_values()
-        pass
+        time.sleep(20)
     except KeyboardInterrupt:
         wids.stop()
-    time.sleep(20)
 """

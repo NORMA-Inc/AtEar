@@ -112,7 +112,7 @@ class Scanner(object):
         self._clients = defaultdict(dict)
 
     def run(self):
-        remove_command = 'rm -rf ' + self.PATH + 'atear*'
+        remove_command = 'rm -rf ' + self.PATH + 'atear-*'
         try:
             os.system(remove_command)
         except OSError:
