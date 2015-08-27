@@ -2,8 +2,8 @@ import fcntl
 from libnmap.process import NmapProcess
 from libnmap.parser import NmapParser, NmapParserException
 from scapy.all import *
-from subprocess import Popen, PIPE, call
-from sys import stdout
+from subprocess import Popen, PIPE
+
 logging.getLogger("scapy.runtime").setLevel(logging.WARNING)
 logging.getLogger("scapy.runtime").setLevel(logging.ERROR)
 
