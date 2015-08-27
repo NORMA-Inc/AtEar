@@ -295,6 +295,7 @@ def auto_monitor():
         time.sleep(1)
         Popen('iw phy ' + ap_support[0] + ' interface add atear_pentest type monitor', shell=True, stdout=PIPE, stderr=None)
         time.sleep(1)
+        w_interface_up()
         Popen('rfkill unblock all', shell=True)
     elif monitor_support:
         w_interface_down()
@@ -304,6 +305,7 @@ def auto_monitor():
         time.sleep(1)
         Popen('iw phy ' + monitor_support[0] + ' interface add atear_pentest type monitor', shell=True, stdout=PIPE, stderr=None)
         time.sleep(1)
+        w_interface_up()
         Popen('rfkill unblock all', shell=True)
 
 
