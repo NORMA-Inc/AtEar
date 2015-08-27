@@ -139,11 +139,16 @@ class main_app():
 if __name__ == '__main__':
     from module.network import auto_monitor, stop_monitor
     try:
+        print "START AtEar-Beta...."
+        print "Check Monitor mode...."
         stop_monitor()
+        print "Setting Monitor mode...."
         auto_monitor()
+        print "START AtEar-WIDS"
         wids = Wireless_IDS('atear_wids')
         wids_process = Process(target=wids.run)
         wids_process.start()
+        print "START AtEar-UI"
         main_app()
     # Stop Signal
     except KeyboardInterrupt:
