@@ -296,7 +296,7 @@ def auto_monitor():
         Popen('iw phy ' + ap_support[0] + ' interface add atear_pentest type monitor', shell=True, stdout=PIPE, stderr=None)
         time.sleep(1)
         w_interface_down()
-        Popen('rfkill unblock all', shell=True)
+        Popen('rfkill unblock all', shell=True, stderr=None)
     elif monitor_support:
         w_interface_down()
         Popen('iw phy ' + monitor_support[0] + ' interface add atear_dump type monitor', shell=True, stdout=PIPE, stderr=None)
@@ -306,7 +306,7 @@ def auto_monitor():
         Popen('iw phy ' + monitor_support[0] + ' interface add atear_pentest type monitor', shell=True, stdout=PIPE, stderr=None)
         time.sleep(1)
         w_interface_down()
-        Popen('rfkill unblock all', shell=True)
+        Popen('rfkill unblock all', shell=True, stderr=None)
 
 
 def stop_monitor():
