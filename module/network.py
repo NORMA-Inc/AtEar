@@ -145,7 +145,7 @@ def get_ip_address(ifname):
 
 def get_l_gateway_ip(iface):
     command = 'nmcli dev list iface ' + iface + ' | grep IP4'
-    p = subprocess.Popen(command, shell=True, stdout=subprocess.PIPE)
+    p = subprocess.Popen(command, shell=True, stdout=subprocess.PIPE, stderr=None)
     output, errors = p.communicate()
     ip_address = output[output.find("gw = ")+5:output.find("\n")]
 
@@ -154,7 +154,7 @@ def get_l_gateway_ip(iface):
 
 def get_l_gateway_mac(iface):
     command = '/usr/bin/arping -c 1 -I ' + iface + ' ' + get_l_gateway_ip(iface)
-    p = subprocess.Popen(command, shell=True, stdout=subprocess.PIPE)
+    p = subprocess.Popen(command, shell=True, stdout=subprocess.PIPE, stderr=None)
     output, errors = p.communicate()
     if output is not None:
         mac_address = re.findall(r'(\[.*\])', output)[0].replace('[', '').replace(']', '')
@@ -165,7 +165,7 @@ def get_l_gateway_mac(iface):
 
 def get_remote_mac(iface, ipaddr):
     command = '/usr/bin/arping -c 1 -I ' + iface + ' ' + ipaddr
-    p = subprocess.Popen(command, shell=True, stdout=subprocess.PIPE)
+    p = subprocess.Popen(command, shell=True, stdout=subprocess.PIPE, stderr=None)
     output, erros = p.communicate()
     if output is not None:
         try:
@@ -218,8 +218,8 @@ def network_host_ip(interface):
 
 
 def arp_spoof(iface):
-    os.system('echo 1 > /proc/sys/net/ipv4/ip_forward')
-    os.system('service whoopsie stop')
+    Popen('echo 1 > /proc/sys/net/ipv4/ip_forward', shell=True, stdout=None, stderr=None)
+    Popen('service whoopsie stop', shell=True, stdout=None, stderr=None)
     victim_hosts = network_host_ip(iface)
     gateway_ip = get_l_gateway_ip(iface)
     while True:
@@ -237,17 +237,17 @@ def arp_spoof(iface):
 
 def set_new_connection(ssid, pw, iface):
     delete = ["nmcli", "connection", "delete", "id", ssid]
-    Popen(delete, stdout=PIPE).communicate()
+    Popen(delete, stdout=None, stderr=None).communicate()
     pw = str(pw).strip()
     new_conn = ["nmcli", "device", "wifi", "connect", ssid, "password", pw, 'ifname', iface]
-    res = Popen(new_conn, stdout=PIPE).communicate()
+    res = Popen(new_conn, stdout=PIPE, stderr=None).communicate()
     status = ["nmcli", "connection", "list", "id", ssid]
-    active = Popen(status, stdout=PIPE).communicate()[0]
+    active = Popen(status, stdout=PIPE, stderr=None).communicate()[0]
     # Delete connections with errors
     if "Error" in res and \
             ('activating' not in active or 'activated' not in active):
         delete = ["nmcli", "connection", "delete", ssid]
-        Popen(delete, stdout=PIPE).communicate()
+        Popen(delete, stdout=PIPE, stderr=None).communicate()
         return False
     else:
         return True

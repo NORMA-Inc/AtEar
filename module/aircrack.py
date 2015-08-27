@@ -139,13 +139,13 @@ class Attack():
 
     def wep_run(self):
         try:
-            os.system('rm -rf replay_arp*.cap')
+            Popen('rm -rf replay_arp*.cap', shell=True, stdout=None, stderr=None)
         except:
             pass
         self.channel_change()
         self.wep_inject()
         try:
-            os.system('rm -rf /tmp/' + self.essid + '*')
+            Popen('rm -rf /tmp/' + self.essid + '*', shell=True, stdout=None, stderr=None)
         except OSError:
             pass
         dump_cmd = ['airodump-ng', '-c', self.channel, '--bssid', self.bssid, '-w', '/tmp/' + self.essid, self.iface]
@@ -171,8 +171,8 @@ class Attack():
                         self.key = str(key.decode('hex'))
                         self.crack_success = True
                         airodump_proc.kill()
-                        os.system('killall aireplay-ng')
-                        os.system('killall aircrack-ng')
+                        Popen('killall aireplay-ng', shell=True, stdout=None, stderr=None)
+                        Popen('killall aircrack-ng', shell=True, stdout=None, stderr=None)
                     except IOError:
                         crack_iv = crack_iv + 5000
                 time.sleep(5)
@@ -202,8 +202,8 @@ class Attack():
                     self.key = key
                     self.crack_success = True
                     airodump_proc.kill()
-                    os.system('killall aireplay-ng')
-                    os.system('killall aircrack-ng')
+                    Popen('killall aireplay-ng', shell=True, stdout=None, stderr=None)
+                    Popen('killall aircrack-ng', shell=True, stdout=None, stderr=None)
                 except:
                     pass
             else:
