@@ -335,5 +335,3 @@ def w_interface_up():
     for interface in int_res:
         Popen('ifconfig ' + interface + ' down', shell=True, stdout=PIPE, stderr=None)
         time.sleep(1)
-
-auto_monitor()
