@@ -12,7 +12,7 @@ import struct
 import IN
 from collections import defaultdict
 import time
-
+from subprocess import Popen
 
 class DNSQuery:
     def __init__(self, data):
@@ -433,22 +433,23 @@ class APCreate(object):
 
     def run(self):
         self.config()
-        os.system('nmcli nm wifi off')
-        os.system('rfkill unblock wlan')
-        os.system('sleep 1')
+        Popen('nmcli nm wifi off', shell=True, stdout=None, stderr=None)
+        Popen('rfkill unblock wlan', shell=True, stdout=None, stderr=None)
+        Popen('sleep 1', shell=True, stdout=None, stderr=None)
         if_up_cmd = 'ifconfig ' + self.wlan + ' up ' + self.address + ' netmask ' + self.netmask
-        os.system(if_up_cmd)
+        Popen(if_up_cmd, shell=True, stdout=None, stderr=None)
         time.sleep(2)
-        os.system('killall hostapd')
-        os.system('sysctl -w net.ipv4.ip_forward=1')
-        os.system('iptables -X')
-        os.system('iptables -F')
-        os.system('iptables -t nat -F')
-        os.system('iptables -t nat -X')
-        os.system('iptables -t nat -A POSTROUTING -o %s -j MASQUERADE' % self.ppp)
-        os.system('iptables -A OUTPUT --out-interface ' + self.wlan + ' -j ACCEPT')
-        os.system('iptables -A INPUT --in-interface ' + self.wlan + ' -j ACCEPT')
-        os.system('hostapd -B ' + os.path.join(os.path.dirname(os.path.abspath(__file__))) + '/conf/run.conf')
+        Popen('killall hostapd', shell=True, stdout=None, stderr=None)
+        Popen('sysctl -w net.ipv4.ip_forward=1', shell=True, stdout=None, stderr=None)
+        Popen('iptables -X', shell=True, stdout=None, stderr=None)
+        Popen('iptables -F', shell=True, stdout=None, stderr=None)
+        Popen('iptables -t nat -F', shell=True, stdout=None, stderr=None)
+        Popen('iptables -t nat -X', shell=True, stdout=None, stderr=None)
+        Popen('iptables -t nat -A POSTROUTING -o %s -j MASQUERADE' % self.ppp, shell=True, stdout=None, stderr=None)
+        Popen('iptables -A OUTPUT --out-interface ' + self.wlan + ' -j ACCEPT', shell=True, stdout=None, stderr=None)
+        Popen('iptables -A INPUT --in-interface ' + self.wlan + ' -j ACCEPT', shell=True, stdout=None, stderr=None)
+        Popen('hostapd -B ' + os.path.join(os.path.dirname(os.path.abspath(__file__))) + '/conf/run.conf',
+              shell=True, stdout=None, stderr=None)
         time.sleep(2)
         self.dns_thread.start()
         self.dhcp_thread.start()
@@ -463,16 +464,16 @@ class APCreate(object):
         except:
             pass
         print 'try out'
-        os.system('iptables -P FORWARD DROP')
+        Popen('iptables -P FORWARD DROP', shell=True, stdout=None, stderr=None)
         if self.wlan:
-            os.system('iptables -D OUTPUT --out-interface ' + self.wlan + ' -j ACCEPT')
-            os.system('iptables -D INPUT --in-interface ' + self.wlan + ' -j ACCEPT')
-        os.system('iptables --table nat --delete-chain')
-        os.system('iptables --table nat -F')
-        os.system('iptables --table nat -X')
-        os.system('sysctl -w net.ipv4.ip_forward=0')
-        os.system('killall hostapd')
-        os.system('ifconfig ' + self.wlan + ' down')
+            Popen('iptables -D OUTPUT --out-interface ' + self.wlan + ' -j ACCEPT', shell=True, stdout=None, stderr=None)
+            Popen('iptables -D INPUT --in-interface ' + self.wlan + ' -j ACCEPT', shell=True, stdout=None, stderr=None)
+        Popen('iptables --table nat --delete-chain', shell=True, stdout=None, stderr=None)
+        Popen('iptables --table nat -F', shell=True, stdout=None, stderr=None)
+        Popen('iptables --table nat -X', shell=True, stdout=None, stderr=None)
+        Popen('sysctl -w net.ipv4.ip_forward=0', shell=True, stdout=None, stderr=None)
+        Popen('killall hostapd', shell=True, stdout=None, stderr=None)
+        Popen('ifconfig ' + self.wlan + ' down', shell=True, stdout=None, stderr=None)
 
     @staticmethod
     def get_values_login():

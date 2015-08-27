@@ -310,13 +310,13 @@ def auto_monitor():
 
 
 def stop_monitor():
-    Popen('iw dev atear_dump del', shell=True, stdout=PIPE, stderr=None)
+    Popen('iw dev atear_dump del', shell=True, stdout=None, stderr=None)
     time.sleep(1)
-    Popen('iw dev atear_wids del', shell=True, stdout=PIPE, stderr=None)
+    Popen('iw dev atear_wids del', shell=True, stdout=None, stderr=None)
     time.sleep(1)
-    Popen('iw dev atear_ap del', shell=True, stdout=PIPE, stderr=None)
+    Popen('iw dev atear_ap del', shell=True, stdout=None, stderr=None)
     time.sleep(1)
-    Popen('iw dev atear_pentest del', shell=True, stdout=PIPE, stderr=None)
+    Popen('iw dev atear_pentest del', shell=True, stdout=None, stderr=None)
     time.sleep(1)
     w_interface_up()
 

@@ -114,7 +114,7 @@ class Scanner(object):
     def run(self):
         remove_command = 'rm -rf ' + self.PATH + 'atear-*'
         try:
-            os.system(remove_command)
+            Popen(remove_command, shell=True, stdout=None, stderr=None)
         except OSError:
             pass
         dump_command = ['airodump-ng', self.iface, '-w', self.PATH + 'atear']

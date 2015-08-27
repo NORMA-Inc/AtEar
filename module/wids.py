@@ -46,7 +46,7 @@ class Wireless_IDS():
         self.L_Data94 = []
         self.L_Data98 = []
         self.MACDetail = ""
-        os.system('rm -rf /tmp/atear_wids*')
+        Popen('rm -rf /tmp/atear_wids*', shell=True, stdout=None, stderr=None)
         open(self.essidfile, "wb").write("")
         open(self.macfile, "wb").write("")
         open(self.json_logfile, "wb").write("")
@@ -902,7 +902,7 @@ class Wireless_IDS():
 
     def GetMACDetail(self, FrMAC, ToMAC):
         Privacy = ""
-        PRivacyBK = ""
+        PrivacyBK = ""
         Cipher = ""
         CipherBK = ""
         Authentication = ""
@@ -986,7 +986,7 @@ class Wireless_IDS():
                                     return ESSID
 
     def stop(self):
-        os.system("killall tshark")
+        Popen("killall tshark", shell=True, stdout=None, stderr=None)
         self.START_SIG = False
 
     def get_recent_values(self):
