@@ -14,6 +14,7 @@ from collections import defaultdict
 import time
 from subprocess import Popen
 
+
 class DNSQuery:
     def __init__(self, data):
         self.data = data
