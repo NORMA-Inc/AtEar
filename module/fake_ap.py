@@ -310,8 +310,8 @@ class WEBServer(object):
     def __init__(self, iface, address):
         self.address = address
         self.app = Flask(__name__,
-                         template_folder=os.path.join(os.path.dirname(os.path.abspath(__file__)), 'phshing/templates'),
-                         static_folder=os.path.join(os.path.dirname(os.path.abspath(__file__)), 'phshing/static'))
+                         template_folder=os.path.join(os.path.dirname(os.path.abspath(__file__)), 'phishing/templates'),
+                         static_folder=os.path.join(os.path.dirname(os.path.abspath(__file__)), 'phishing/static'))
         self.iface = iface
         self.logged_user = dict()
         self.logged_data = ''
@@ -395,7 +395,7 @@ class APCreate(object):
     def __init__(self, iface, enc, ssid, password):
         self.wlan = iface
         self.ppp = 'eth0'
-        self.enc = enc
+        self.enc = str(enc).upper()
         import network
 
         if network.get_ip_address(self.wlan):
@@ -425,7 +425,7 @@ class APCreate(object):
                   "wpa_key_mgmt=WPA-PSK\nwpa_pairwise=TKIP\nrsn_pairwise=CCMP"
             data += enc
         elif self.enc == 'WEP':
-            enc = 'auth_algs=1\nwep_default_key=0' + \
+            enc = 'auth_algs=3\nwep_default_key=0\n' + \
                   'wep_key0=' + self.password
             data += enc
         conf.write(data)
@@ -463,7 +463,6 @@ class APCreate(object):
             self.web_process.terminate()
         except:
             pass
-        print 'try out'
         Popen('iptables -P FORWARD DROP', shell=True, stdout=None, stderr=None)
         if self.wlan:
             Popen('iptables -D OUTPUT --out-interface ' + self.wlan + ' -j ACCEPT', shell=True, stdout=None, stderr=None)
