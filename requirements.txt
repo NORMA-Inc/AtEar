@@ -1,5 +1,4 @@
 flask==0.10.1
 paramiko==1.15.1
-psycopg2
 python-libnmap==0.3.4
 scapy
