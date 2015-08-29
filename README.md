@@ -1,16 +1,16 @@
-## Atear-Beta
+## AtEar-Beta
 AtEar is scalability and efficiency is the first web-based wireless vulnerability assessment solution.<br>
 Wireless Vulnerability Analysis/Management Solution, AtEar, can be utilized in enterprises and at home. <br>
 In enterprises, AtEar fingerprints devices which get access to the enterprise network and analyze the current state of wireless. <br>Automatic Penetration Testing function also makes it possible to analyze wireless vulnerability conveniently and minutely. <br>AtEar for home network is for inspecting home network safety and monitoring unregistered devices. <br>
 
 # Intro
 
-> In three words, [Atear-Beta](http://www.norma.co.kr) is a wireless pentest system.<br>
-> Atear-Beta provides a web-based user interface.<br>
-> Atear-Beta is easy and can be used quickly.<br>
+> In three words, [AtEar-Beta](http://www.norma.co.kr) is a wireless pentest system.<br>
+> AtEar-Beta provides a web-based user interface.<br>
+> AtEar-Beta is easy and can be used quickly.<br>
 
 
-### Atear-Beta Features
+### AtEar-Beta Features
 1. Wireless Scanning(Ad-Hoc, Station, Access Point, Soft-Acess Point)
 2. Wireless Chart(Channel, Encryption, Type)
 3. Wireless Pentesting(WEP, WPA1, WPA2)
@@ -96,16 +96,16 @@ It will be released this month.
 `python-sqlite`<br>
 `python-pip`<br>
 
-### How to install your own Atear-Beta
-Clone a copy of the main Atear-Beta git repo by running:<br>
+### How to install your own AtEar-Beta
+Clone a copy of the main AtEar-Beta git repo by running:<br>
 `sudo apt-get install git`<br>
-`git clone https://github.com/NORMA-Company/Atear-Beta.git`<br>
-Enter the Atear-Beta directory and run the install script:<br>
-`cd ./Atear-Beta/`<br>
+`git clone https://github.com/NORMA-Company/AtEar-Beta.git`<br>
+Enter the AtEar-Beta directory and run the install script:<br>
+`cd ./AtEar-Beta/`<br>
 `sudo bash install.sh`<br>
 
 ### How to usage
-`cd ./Atear-Beta/`<br>
+`cd ./AtEar-Beta/`<br>
 `sudo python run.py &`<br>
 `127.0.0.1:8080`<br>
 
@@ -116,13 +116,13 @@ It will be released this month.
 AtEar can overcome the limitation of WIPS with high mobility and convenience works. <br>
 It has resulted in partnership with SAMSUNG, KT. Besides, small middle business and public institutions have chosen AtEar as their wireless security solution because of convenience management and competitive cost. Some of them are the City Hall of Seoul, Korea Rail Network Authority and Korea University etc. <br>
 
-### Atear-Demo add-on Features
+### AtEar-Demo add-on Features
 1. A wireless product portion to provide a database that can be specified.
 2. It will provide some of the latest firmware database of Access Point.
 3. Provide limited project management capabilities.
 4. It provides a report function.<br>
-***Atear-Demo is limited use of 30days***
+***AteEr-Demo is limited use of 30days***
 
-### Atear-Demo version request
+### AtEar-Demo version request
 [NORMA-Company Homepage](http://www.norma.co.kr)<br>
 Contact us [contact@norma.co.kr](mailto:contact@norma.co.kr)
