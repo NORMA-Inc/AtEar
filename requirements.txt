@@ -1,4 +1,4 @@
-flask==0.10.1
-paramiko==1.15.1
-python-libnmap==0.3.4
+flask
+paramiko
+python-libnmap
 scapy
