@@ -101,7 +101,7 @@ class main_app():
         if request.method == 'GET':
             try:
                 return_value = ast.literal_eval(wids.get_values())
-                return json.dumps(return_value)
+                return json.dumps(return_value, ensure_ascii=False, encoding='EUC-KR')
             except:
                 return json.dumps([{}])
 
@@ -116,7 +116,7 @@ class main_app():
         elif request.method == 'GET':
             try:
                 return_values = ast.literal_eval(self.pentesting.get_values())
-                return json.dumps(return_values)
+                return json.dumps(return_values, ensure_ascii=False, encoding='EUC-KR')
             except:
                 return json.dumps([{}])
         return '', 200
@@ -127,7 +127,7 @@ class main_app():
                 recent_val = wids.get_recent_values()
                 try:
                     recent_val = ast.literal_eval(recent_val)
-                    return json.dumps({"message": recent_val})
+                    return json.dumps({"message": recent_val}, ensure_ascii=False, encoding='EUC-KR')
                 except:
                     return json.dumps({"message": []})
             elif wids_option == '0':
