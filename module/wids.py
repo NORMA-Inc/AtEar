@@ -86,7 +86,7 @@ class Wireless_IDS():
                     line = line.replace("\n", "")
                     line = line.replace("(TA)", "")
                     line = line.replace("(RA)", "")
-                    line = line.replace("(BSSID", "")
+                    line = line.replace("(BSSID)", "")
                     if len(line) > 15:
                         line = line.replace("[Malformed Packet]", "")
                         line = line + ", ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,"
