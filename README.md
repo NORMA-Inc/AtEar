@@ -1,3 +1,4 @@
+<center>><img src="https://raw.githubusercontent.com/NORMA-Company/AtEar-Beta/master/product_img/atearlogo.png"></center>
 ## AtEar-Beta
 AtEar is scalability and efficiency is the first web-based wireless vulnerability assessment solution.<br>
 Wireless Vulnerability Analysis/Management Solution, AtEar, can be utilized in enterprises and at home. <br>
