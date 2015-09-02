@@ -116,12 +116,15 @@ Enter the AtEar-Beta directory and run the install script:<br>
 
 ### AtEar Customers
 ![alt samsung] (https://raw.githubusercontent.com/NORMA-Company/AtEar-Beta/master/product_img/Samsung.png)
-![alt samsung] (https://raw.githubusercontent.com/NORMA-Company/AtEar-Beta/master/product_img/Samsung.png)
-![alt samsung] (https://raw.githubusercontent.com/NORMA-Company/AtEar-Beta/master/product_img/Samsung.png)
-![alt samsung] (https://raw.githubusercontent.com/NORMA-Company/AtEar-Beta/master/product_img/Samsung.png)
-![alt samsung] (https://raw.githubusercontent.com/NORMA-Company/AtEar-Beta/master/product_img/Samsung.png)
-![alt samsung] (https://raw.githubusercontent.com/NORMA-Company/AtEar-Beta/master/product_img/Samsung.png)
-![alt samsung] (https://raw.githubusercontent.com/NORMA-Company/AtEar-Beta/master/product_img/Samsung.png)
+![alt KoreaTelcom] (https://raw.githubusercontent.com/NORMA-Company/AtEar-Beta/master/product_img/KoreaTelecom.png)
+![alt KoreaPolice] (https://raw.githubusercontent.com/NORMA-Company/AtEar-Beta/master/product_img/police1.png)
+![alt DaejeonEdu] (https://raw.githubusercontent.com/NORMA-Company/AtEar-Beta/master/product_img/edu1.png)
+![alt korea rail] (https://raw.githubusercontent.com/NORMA-Company/AtEar-Beta/master/product_img/korea_rail.png)
+![alt Ministry_en] (https://raw.githubusercontent.com/NORMA-Company/AtEar-Beta/master/product_img/Ministry_en.png)
+![alt kgu] (https://raw.githubusercontent.com/NORMA-Company/AtEar-Beta/master/product_img/kgu.png)
+![alt Korea University] (https://raw.githubusercontent.com/NORMA-Company/AtEar-Beta/master/product_img/koreauniversity.png)
+![alt KBS] (https://raw.githubusercontent.com/NORMA-Company/AtEar-Beta/master/product_img/kbs.png)
+![alt kaits] (https://raw.githubusercontent.com/NORMA-Company/AtEar-Beta/master/product_img/kaits_.png)
 
 ### Reference
 AtEar can overcome the limitation of WIPS with high mobility and convenience works. <br>
