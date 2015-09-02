@@ -114,8 +114,14 @@ Enter the AtEar-Beta directory and run the install script:<br>
 `sudo python run.py &`<br>
 `127.0.0.1:8080`<br>
 
-### Dockerization
-It will be released this month.
+### AtEar Customers
+![alt samsung] (https://raw.githubusercontent.com/NORMA-Company/AtEar-Beta/master/product_img/Samsung.png)
+![alt samsung] (https://raw.githubusercontent.com/NORMA-Company/AtEar-Beta/master/product_img/Samsung.png)
+![alt samsung] (https://raw.githubusercontent.com/NORMA-Company/AtEar-Beta/master/product_img/Samsung.png)
+![alt samsung] (https://raw.githubusercontent.com/NORMA-Company/AtEar-Beta/master/product_img/Samsung.png)
+![alt samsung] (https://raw.githubusercontent.com/NORMA-Company/AtEar-Beta/master/product_img/Samsung.png)
+![alt samsung] (https://raw.githubusercontent.com/NORMA-Company/AtEar-Beta/master/product_img/Samsung.png)
+![alt samsung] (https://raw.githubusercontent.com/NORMA-Company/AtEar-Beta/master/product_img/Samsung.png)
 
 ### Reference
 AtEar can overcome the limitation of WIPS with high mobility and convenience works. <br>
