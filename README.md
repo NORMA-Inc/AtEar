@@ -12,7 +12,9 @@ In enterprises, AtEar fingerprints devices which get access to the enterprise ne
 > AtEar-Beta is easy and can be used quickly.<br>
 
 ![alt AtEar_Product] (https://raw.githubusercontent.com/NORMA-Company/AtEar-Beta/master/product_img/AtEar_Product.jpg)
-
+<h3>Is your company’s wireless network secure?<br>
+AtEar helps keep your wireless network safe from Hackers.<br></h3>
+<br>
 ### AtEar-Beta Features
 1. Wireless Scanning(Ad-Hoc, Station, Access Point, Soft-Acess Point)
 2. Wireless Chart(Channel, Encryption, Type)
