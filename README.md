@@ -1,4 +1,4 @@
-![logo]: (https://raw.githubusercontent.com/NORMA-Company/AtEar-Beta/master/product_img/atearlogo.png)
+![alt logo] (https://raw.githubusercontent.com/NORMA-Company/AtEar-Beta/master/product_img/atearlogo.png)
 <br>
 ## AtEar-Beta
 AtEar is scalability and efficiency is the first web-based wireless vulnerability assessment solution.<br>
@@ -11,7 +11,7 @@ In enterprises, AtEar fingerprints devices which get access to the enterprise ne
 > AtEar-Beta provides a web-based user interface.<br>
 > AtEar-Beta is easy and can be used quickly.<br>
 
-![AtEar_Product]: (https://raw.githubusercontent.com/NORMA-Company/AtEar-Beta/master/product_img/AtEar_Product.png)
+![alt AtEar_Product] ("https://raw.githubusercontent.com/NORMA-Company/AtEar-Beta/master/product_img/AtEar_Product.png")
 
 ### AtEar-Beta Features
 1. Wireless Scanning(Ad-Hoc, Station, Access Point, Soft-Acess Point)
