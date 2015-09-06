@@ -116,16 +116,16 @@ Enter the AtEar-Beta directory and run the install script:<br>
 `127.0.0.1:8080`<br>
 
 ### AtEar Customers
-![alt samsung] (https://raw.githubusercontent.com/NORMA-Company/AtEar-Beta/master/product_img/Samsung.png)
-![alt KoreaTelcom] (https://raw.githubusercontent.com/NORMA-Company/AtEar-Beta/master/product_img/KoreaTelecom.png)
-![alt KoreaPolice] (https://raw.githubusercontent.com/NORMA-Company/AtEar-Beta/master/product_img/police1.png)
-![alt DaejeonEdu] (https://raw.githubusercontent.com/NORMA-Company/AtEar-Beta/master/product_img/edu1.png)
-![alt korea rail] (https://raw.githubusercontent.com/NORMA-Company/AtEar-Beta/master/product_img/korea_rail.png)
-![alt Ministry_en] (https://raw.githubusercontent.com/NORMA-Company/AtEar-Beta/master/product_img/Ministry_en.png)
-![alt kgu] (https://raw.githubusercontent.com/NORMA-Company/AtEar-Beta/master/product_img/kgu.png)
-![alt Korea University] (https://raw.githubusercontent.com/NORMA-Company/AtEar-Beta/master/product_img/koreauniversity.png)
-![alt KBS] (https://raw.githubusercontent.com/NORMA-Company/AtEar-Beta/master/product_img/kbs.png)
-![alt kaits] (https://raw.githubusercontent.com/NORMA-Company/AtEar-Beta/master/product_img/kaits_.png)
+<img src="https://raw.githubusercontent.com/NORMA-Company/AtEar-Beta/master/product_img/Samsung.png" width="350">
+<img src="https://raw.githubusercontent.com/NORMA-Company/AtEar-Beta/master/product_img/KoreaTelecom.png" width="350">
+<img src="https://raw.githubusercontent.com/NORMA-Company/AtEar-Beta/master/product_img/police1.png" width="350">
+<img src="https://raw.githubusercontent.com/NORMA-Company/AtEar-Beta/master/product_img/edu1.png" width="350">
+<img src="https://raw.githubusercontent.com/NORMA-Company/AtEar-Beta/master/product_img/korea_rail.png" width="350">
+<img src="https://raw.githubusercontent.com/NORMA-Company/AtEar-Beta/master/product_img/Ministry_en.png" width="350">
+<img src="https://raw.githubusercontent.com/NORMA-Company/AtEar-Beta/master/product_img/kgu.png" width="350">
+<img src="https://raw.githubusercontent.com/NORMA-Company/AtEar-Beta/master/product_img/koreauniversity.png" width="350">
+<img src="https://raw.githubusercontent.com/NORMA-Company/AtEar-Beta/master/product_img/kbs.png" width="350">
+<img src="https://raw.githubusercontent.com/NORMA-Company/AtEar-Beta/master/product_img/kaits_.png" width="350">
 
 ### Reference
 AtEar’s flexible and convenient functionality can overcome the limitations of WIPS. <br>
