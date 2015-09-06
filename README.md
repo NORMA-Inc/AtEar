@@ -1,4 +1,4 @@
-![alt logo] (https://raw.githubusercontent.com/NORMA-Company/AtEar-Beta/master/product_img/atearlogo.png)
+<img src="https://raw.githubusercontent.com/NORMA-Company/AtEar-Beta/master/product_img/atearlogo.png" align="Center">
 <br>
 ## AtEar-Beta
 AtEar is a scalable and efficient system, and also the first web-based wireless vulnerability assessment solution. <br>
