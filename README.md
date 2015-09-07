@@ -24,7 +24,7 @@ AtEar helps keep your wireless network safe from hackers and intruders.<br></h3>
   - Google Phishing Sites
   - Facebook Phishing Sites
   - Twitter Phishing Sites
-6. WISD(Wireless intrusion detection system)
+6. WIDS(Wireless intrusion detection system)
   - Disassocation Flood
   - Deauth Flood
   - WESSID-NG Attack
