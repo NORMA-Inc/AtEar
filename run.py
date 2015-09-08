@@ -9,11 +9,16 @@ from module.pentest_open import auto_pentest
 from multiprocessing import Process
 import ast
 import sys
+
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
 
 class PythonObjectEncoder(json.JSONEncoder):
+    ''' @brief Encoder for hangul(Korean).
+        @param obj:
+        *    json.JSONEncoder
+    '''
     def default(self, obj):
         if isinstance(obj, (list, dict, str, unicode, int, float, bool, type(None))):
             return json.JSONEncoder.default(self, obj)
@@ -27,9 +32,18 @@ def as_python_object(dct):
 
 
 class main_app():
-    def __init__(self):
+    '''
+        @brief Flask module for interact with user.
+    '''
+    def __init__(self, wids):
+        '''
+            @brief Create flask-server module and run.
+            * Set running config.
+            * Run server 0.0.0.0:8080
+        '''
         self.app = Flask(__name__)
         self.run = False
+        self.wids_handle = wids
         self.scanner = False
         self.fake_ap = False
         self.pentesting = False
@@ -47,34 +61,44 @@ class main_app():
         self.app.run('0.0.0.0', port=8080, debug=False)
 
     def index(self):
+        ''' Render main.html '''
         return render_template('main.html')
 
     def load_tpl(self, name):
         return render_template(name+'.html')
 
     def app_view(self):
+        ''' Render index.html '''
         return render_template('index.html')
 
     def scanstatus(self):
+        ''' It responds to the airodump-scan results. '''
         if request.method == 'GET':
             if not self.scanner:
+                # Class Atear-Beta.module.airodump  line 106.
                 self.scanner = airodump.Scanner(self.scan_iface)
                 self.scanner.run()
                 return "[]", 200
             else:
                 try:
-                    return Response(json.dumps(self.scanner.get_value(), cls=PythonObjectEncoder, ensure_ascii=False, encoding='EUC-KR'),
-                                    mimetype='application/json')
+                    # Return the scan results.
+                    return Response(json.dumps(self.scanner.get_value(), cls=PythonObjectEncoder, ensure_ascii=False,
+                                               encoding='EUC-KR'), mimetype='application/json')
                 except:
                     return "[]", 200
         elif request.method == 'POST':
-            self.scanner.stop()
+            if self.scanner:
+                self.scanner.stop()
             self.scanner = False
             return '', 200
         return '', 200
 
     def fakeap(self):
+        '''
+            @brief Create fake-AP
+        '''
         if request.method == 'POST':
+            # Create Fake-AP with parameters from user selected.
             options = request.get_json()
             self.fake_ap = APCreate(self.ap_iface, options['enc'], options['ssid'], options['password'])
             self.fake_ap.run()
@@ -82,8 +106,10 @@ class main_app():
         elif request.method == 'GET':
             if self.fake_ap:
                 try:
+                    # Load the collected device information.
                     connstation = self.fake_ap.get_values_connect()
                     connstation = connstation.replace('\\', '').replace('\"', '').replace(', ]', ']')
+                    # Load the collected user login information.
                     loginstation = self.fake_ap.get_values_login()
                     loginstation = loginstation.replace('\\', '').replace('\"', '').replace(', ]', ']')
                     return json.dumps({"connstation": connstation, "loginstation": loginstation})
@@ -92,25 +118,33 @@ class main_app():
             else:
                 return json.dumps({"connstation": '', "loginstation": ''})
         elif request.method == 'DELETE':
+            # Stop fake_AP
             self.fake_ap.stop()
             self.fake_ap = False
             return '', 200
         return '', 200
 
     def wids(self):
+        '''
+            @brief Return the collected information from wids module.
+        '''
         if request.method == 'GET':
             try:
-                return_value = ast.literal_eval(wids.get_values())
+                return_value = ast.literal_eval(self.wids_handle.get_values())
                 return json.dumps(return_value, ensure_ascii=False, encoding='EUC-KR')
             except:
                 return json.dumps([{}])
 
     def pentest(self):
+        '''
+            @brief Allowing access to pentest function.
+            * POST  - Perform the pentest.
+            * GET   - Return the result of pentest.
+        '''
         if request.method == 'POST':
             options = request.get_json()
             self.pentesting = auto_pentest(self.pent_iface, options)
             self.pentesting.run()
-
             return '', 200
 
         elif request.method == 'GET':
@@ -122,35 +156,61 @@ class main_app():
         return '', 200
 
     def hidden(self, wids_option):
+        '''
+            @brief Return the result of the most recent attacks or not.
+            @param wids_option:
+            *   1 - Return the result of the most recent attacks.
+            *   0 - Return empty message.
+        '''
         if request.method == 'GET':
             if wids_option == '1':
-                recent_val = wids.get_recent_values()
+                recent_val = self.wids_handle.get_recent_values()
                 try:
                     recent_val = ast.literal_eval(recent_val)
                     return json.dumps({"message": recent_val}, ensure_ascii=False, encoding='EUC-KR')
                 except:
                     return json.dumps({"message": []})
             elif wids_option == '0':
-                wids.stop()
                 return json.dumps({"message": []})
         return '', 200
 
 
-if __name__ == '__main__':
+def main():
+    wids_process = False
     from module.network import auto_monitor, stop_monitor
     try:
         print "START AtEar-Beta...."
-        print "Check Monitor mode...."
+        # def AtEar-Beta.module.network.stop_monitor() line 314
+        # Clear the self-made device.
         stop_monitor()
-        print "Setting Monitor mode...."
-        auto_monitor()
+
+        # def AtEar-Beta.module.network.auto_monitor() line 272
+        # Search for wireless devices, ensure that the support AP mode or monitor mode,
+        # if support makes the device to the supported mode.
+        support = auto_monitor()
+        if support == False:
+            # Not supported
+            return -1
+
+        # class  	AtEar-Beta.module.wids.Wireless_IDS
+        # Prepare a file to store the results.
         print "START AtEar-WIDS"
         wids = Wireless_IDS('atear_wids')
+
+        # def AtEar-Beta.module.wids.Wireless_IDS.run(self) line 78
+        # Generate wids.run to child process.
         wids_process = Process(target=wids.run)
         wids_process.start()
         print "START AtEar-UI"
-        main_app()
+
+        # Class "main_app" is a flask module.
+        main_app(wids)
+
     # Stop Signal
     except KeyboardInterrupt:
         stop_monitor()
-        wids_process.terminate()
+        if wids_process:
+            wids_process.terminate()
+
+if __name__ == '__main__':
+    main()

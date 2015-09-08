@@ -16,11 +16,20 @@ from subprocess import Popen
 
 
 class DNSQuery:
+    '''
+        @brief
+        @see  rfc 1035
+    '''
     def __init__(self, data):
         self.data = data
         self.dominio = ''
+        # Copy Opcode to variable 'tipo'.
         tipo = (ord(data[2]) >> 3) & 15
-        if tipo == 0:
+        if tipo == 0: # Opcode 0 mean a standard query(QUERY)
+            '''
+            data[12] is Question-field.
+                ex) 6'google'3'com'00
+            '''
             ini = 12
             lon = ord(data[ini])
             while lon != 0:
@@ -31,11 +40,11 @@ class DNSQuery:
     def respuesta(self, ip):
         packet = ''
         if self.dominio:
-            packet += self.data[:2] + "\x81\x80"
-            packet += self.data[4:6] + self.data[4:6] + '\x00\x00\x00\x00'
-            packet += self.data[12:]
-            packet += '\xc0\x0c'
-            packet += '\x00\x01\x00\x01\x00\x00\x00\x3c\x00\x04'
+            packet += self.data[:2] + "\x81\x80"                            # Response & No error.
+            packet += self.data[4:6] + self.data[4:6] + '\x00\x00\x00\x00'  # Questions and Answers Counts.
+            packet += self.data[12:]                                        # Original Domain Name Question.
+            packet += '\xc0\x0c'                                            # A domain name to which this resource record pertains.
+            packet += '\x00\x01\x00\x01\x00\x00\x00\x3c\x00\x04'            # type, class, ttl, data-length
             packet += str.join('', map(lambda x: chr(int(x)), ip.split('.')))
         return packet
 
@@ -49,8 +58,8 @@ class DNSServer(object):
 
     def run(self):
         dns_sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM, socket.IPPROTO_UDP)
-        dns_sock.setblocking(0)
-        dns_sock.settimeout(3)
+        #dns_sock.setblocking(0)        # setblocking(False) is equivalent to settimeout(0.0).
+        dns_sock.settimeout(3)  # Set timeout on socket-operations.
         dns_sock.bind(('', 53))
         while self.START_SIGNAL:
             try:
@@ -58,6 +67,7 @@ class DNSServer(object):
             except:
                 continue
             packet = DNSQuery(data)
+            # Return own IP adress.
             dns_sock.sendto(packet.respuesta(self.address), addr)
         dns_sock.close()
 
@@ -77,6 +87,8 @@ class DHCPServer:
         and http://www.pix.net/software/pxeboot/archive/pxespec.pdf.
     '''
     def __init__(self, iface):
+        # If SO_BINDTODEVICE is present, it is possible for dhcpd to operate on Linux with more than one network interface.
+        # man 7 socket
         if not hasattr(IN, "SO_BINDTODEVICE"):
             IN.SO_BINDTODEVICE = 25
         self.iface = iface
@@ -88,6 +100,7 @@ class DHCPServer:
             self.ip = '192.168.103.1'
         self.port = 67
         self.elements_in_address = self.ip.split('.')
+        # IP pool x.x.x.100 ~ x.x.x.150
         self.offer_from = '.'.join(self.elements_in_address[0:3]) + '.100'
         self.offer_to = '.'.join(self.elements_in_address[0:3]) + '.150'
         self.subnet_mask = '255.255.255.0'
@@ -95,7 +108,7 @@ class DHCPServer:
         self.dns_server = self.ip
         self.broadcast = '<broadcast>'
         self.file_server = self.ip
-        self.file_name = ''
+        self.file_name = '' # ??
         if not self.file_name:
             self.force_file_name = False
             self.file_name = 'pxelinux.0'
@@ -107,7 +120,12 @@ class DHCPServer:
         self.static_config = dict()
         self.whitelist = False
         self.mode_debug = False
-        self.magic = struct.pack('!I', 0x63825363) # magic cookie
+        # The value of the magic-cookie is the 4 octet dotted decimal 99.130.83.99
+        #   (or hexadecimal number 63.82.53.63) in network byte order.
+        #   (this is the same magic cookie as is defined in RFC 1497 [17])
+        # In module struct '!' mean Big-endian
+        #   'I' mean unsigned int
+        self.magic = struct.pack('!I', 0x63825363) # magic cookie.
 
         self.sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
         self.sock.setsockopt(socket.SOL_SOCKET, IN.SO_BINDTODEVICE, self.iface + '\0')
@@ -115,7 +133,7 @@ class DHCPServer:
         self.sock.setsockopt(socket.SOL_SOCKET, socket.SO_BROADCAST, 1)
         self.sock.bind(('', self.port))
 
-        # key is MAC
+        # Specific key is MAC
         self.leases = defaultdict(lambda: {'ip': '', 'expire': 0, 'ipxe': self.ipxe})
 
     def get_namespaced_static(self, path, fallback = {}):
@@ -223,11 +241,11 @@ class DHCPServer:
 
     def craft_options(self, opt53, client_mac):
         '''
-            This method crafts the DHCP option fields
-            opt53:
-                2 - DHCPOFFER
-                5 - DHCPACK
-            See RFC2132 9.6 for details.
+            @brief This method crafts the DHCP option fields
+            @param opt53:
+            *    2 - DHCPOFFER
+            *    5 - DHCPACK
+            @see RFC2132 9.6 for details.
         '''
         response = self.tlv_encode(53, chr(opt53)) # message type, OFFER
         response += self.tlv_encode(54, socket.inet_aton(self.ip)) # DHCP Server
@@ -290,9 +308,21 @@ class DHCPServer:
         '''Main listen loop.'''
         while self.START_SIGNAL:
             message, address = self.sock.recvfrom(1024)
-            [client_mac] = struct.unpack('!28x6s', message[:34])
+            # 28 bytes of padding
+            # 6 bytes MAC to string.
+            [client_mac] = struct.unpack('!28x6s', message[:34])                # Get MAC address
             self.leases[client_mac]['options'] = self.tlv_parse(message[240:])
-            type = ord(self.leases[client_mac]['options'][53][0]) # see RFC2131, page 10
+            if self.leases[client_mac]['options'].has_key([12]) :               # code 12 is dns information
+                print self.leases[client_mac]['options'][12][0]                 # devce-name
+            type = ord(self.leases[client_mac]['options'][53][0])               # see RFC2131, page 10
+            # 1 = DHCP Discover message (DHCPDiscover).
+            # 2 = DHCP Offer message (DHCPOffer).
+            # 3 = DHCP Request message (DHCPRequest).
+            # 4 = DHCP Decline message (DHCPDecline).
+            # 5 = DHCP Acknowledgment message (DHCPAck).
+            # 6 = DHCP Negative Acknowledgment message (DHCPNak).
+            # 7 = DHCP Release message (DHCPRelease).
+            # 8 = DHCP Informational message (DHCPInform).
             if type == 1:
                 try:
                     self.dhcp_offer(message)
@@ -365,7 +395,7 @@ class WEBServer(object):
     def write_log(self, address):
         self.connect_user.update({
             'connected': address,
-            'host_name': NetBIOS.NetBIOS().queryIPForName(address),
+            'host_name': NetBIOS.NetBIOS().queryIPForName(address),                     # DNS Information
             'mac_addr': network.get_remote_mac(self.iface, address),
             'Time': datetime.datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d %H:%M:%S'),
         })
@@ -398,10 +428,11 @@ class APCreate(object):
         self.ppp = 'eth0'
         self.enc = str(enc).upper()
         import network
-
+        # Get my IP address and create thread for DHCPServer, DNSServer, WEBServer.
         if network.get_ip_address(self.wlan):
             self.address = network.get_ip_address(self.wlan)
         else:
+            # If self.address is missing then Set static IP address.
             self.address = '192.168.103.1'
         self.netmask = '255.255.255.0'
         self.ssid = ssid
@@ -414,6 +445,7 @@ class APCreate(object):
         self.web_process = Process(target=self.web_server.run)
 
     def config(self):
+        ''' Make config file for hostapd. '''
         conf_file = os.path.join(os.path.dirname(os.path.abspath(__file__))) + '/conf/run.conf'
         conf = open(conf_file, 'w')
         data = 'interface=' + self.wlan + '\n' + \
@@ -421,11 +453,13 @@ class APCreate(object):
                'ssid=' + self.ssid + '\n' + \
                'channel=11\n'
         if self.enc == 'WPA':
+            # When encryption mode is WPA, add WPA specific data.
             enc = 'auth_algs=1\nignore_broadcast_ssid=0\nwpa=3\n' + \
                   'wpa_passphrase=' + self.password + '\n' + \
                   "wpa_key_mgmt=WPA-PSK\nwpa_pairwise=TKIP\nrsn_pairwise=CCMP"
             data += enc
         elif self.enc == 'WEP':
+            # When encryption mode is WEP, add WEP specific data.
             enc = 'auth_algs=3\nwep_default_key=0\n' + \
                   'wep_key0=' + self.password
             data += enc
@@ -434,13 +468,13 @@ class APCreate(object):
 
     def run(self):
         self.config()
-        Popen('nmcli nm wifi off', shell=True, stdout=None, stderr=None)
         Popen('rfkill unblock wlan', shell=True, stdout=None, stderr=None)
-        Popen('sleep 1', shell=True, stdout=None, stderr=None)
+        time.sleep(1)
         if_up_cmd = 'ifconfig ' + self.wlan + ' up ' + self.address + ' netmask ' + self.netmask
         Popen(if_up_cmd, shell=True, stdout=None, stderr=None)
         time.sleep(2)
         Popen('killall hostapd', shell=True, stdout=None, stderr=None)
+        # Set IP table rules as packet-forwardable.
         Popen('sysctl -w net.ipv4.ip_forward=1', shell=True, stdout=None, stderr=None)
         Popen('iptables -X', shell=True, stdout=None, stderr=None)
         Popen('iptables -F', shell=True, stdout=None, stderr=None)
@@ -449,8 +483,9 @@ class APCreate(object):
         Popen('iptables -t nat -A POSTROUTING -o %s -j MASQUERADE' % self.ppp, shell=True, stdout=None, stderr=None)
         Popen('iptables -A OUTPUT --out-interface ' + self.wlan + ' -j ACCEPT', shell=True, stdout=None, stderr=None)
         Popen('iptables -A INPUT --in-interface ' + self.wlan + ' -j ACCEPT', shell=True, stdout=None, stderr=None)
+        # Run hostapd. Hostapd daemon supports make PC to AP.
         Popen('hostapd -B ' + os.path.join(os.path.dirname(os.path.abspath(__file__))) + '/conf/run.conf',
-              shell=True, stdout=None, stderr=None)
+              shell=True, stdout=None, stderr=None) # Consider manage pid of hostapd daemon.?
         time.sleep(2)
         self.dns_thread.start()
         self.dhcp_thread.start()
@@ -472,11 +507,14 @@ class APCreate(object):
         Popen('iptables --table nat -F', shell=True, stdout=None, stderr=None)
         Popen('iptables --table nat -X', shell=True, stdout=None, stderr=None)
         Popen('sysctl -w net.ipv4.ip_forward=0', shell=True, stdout=None, stderr=None)
-        Popen('killall hostapd', shell=True, stdout=None, stderr=None)
+        Popen('killall hostapd', shell=True, stdout=None, stderr=None) # Consider using it's pid.
         Popen('ifconfig ' + self.wlan + ' down', shell=True, stdout=None, stderr=None)
 
     @staticmethod
     def get_values_login():
+        '''
+            Returns the collected user login information.
+        '''
         try:
             get_values = json.dumps(open('/tmp/login.json', 'r').read())
             return get_values
@@ -485,6 +523,9 @@ class APCreate(object):
 
     @staticmethod
     def get_values_connect():
+        '''
+            Returns the collected device information.
+        '''
         try:
             get_values = json.dumps(open('/tmp/connect.json', 'r').read())
             return get_values

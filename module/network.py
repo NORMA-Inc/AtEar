@@ -268,6 +268,10 @@ def get_interfaces():
 
 
 def auto_monitor():
+    '''
+        @brief
+    '''
+    print "Check Monitor mode...."
     res = Popen('iw dev | grep phy', shell=True, stdout=PIPE, stderr=None)
     interface_list = res.communicate()[0].split('\n')
     interface_list.pop()
@@ -285,39 +289,36 @@ def auto_monitor():
             elif support == 'monitor':
                 monitor_support.append(interface)
 
+    if len(ap_support) == 0 or len(monitor_support) == 0:
+        print '\n'
+        print '[!!] I did not find the device to support the required mode.'
+        print '[!!] Please check that the WLAN device that supports monitor mode on your system.'
+        return False
+
+    print "Set Monitor mode...."
     if ap_support:
         w_interface_down()
-        Popen('iw phy ' + ap_support[0] + ' interface add atear_dump type monitor', shell=True, stdout=PIPE, stderr=None)
-        time.sleep(0.5)
-        Popen('iw phy ' + ap_support[0] + ' interface add atear_wids type monitor', shell=True, stdout=PIPE, stderr=None)
-        time.sleep(0.5)
-        Popen('iw phy ' + ap_support[0] + ' interface add atear_ap type monitor', shell=True, stdout=PIPE, stderr=None)
-        time.sleep(0.5)
-        Popen('iw phy ' + ap_support[0] + ' interface add atear_pentest type monitor', shell=True, stdout=PIPE, stderr=None)
-        time.sleep(0.5)
+        Popen('iw phy ' + ap_support[0] + ' interface add atear_dump type monitor', shell=True, stdout=PIPE, stderr=None).wait()
+        Popen('iw phy ' + ap_support[0] + ' interface add atear_wids type monitor', shell=True, stdout=PIPE, stderr=None).wait()
+        Popen('iw phy ' + ap_support[0] + ' interface add atear_ap type monitor', shell=True, stdout=PIPE, stderr=None).wait()
+        Popen('iw phy ' + ap_support[0] + ' interface add atear_pentest type monitor', shell=True, stdout=PIPE, stderr=None).wait()
         w_interface_down()
         Popen('rfkill unblock all', shell=True, stderr=None)
     elif monitor_support:
         w_interface_down()
-        Popen('iw phy ' + monitor_support[0] + ' interface add atear_dump type monitor', shell=True, stdout=PIPE, stderr=None)
-        time.sleep(0.5)
-        Popen('iw phy ' + monitor_support[0] + ' interface add atear_wids type monitor', shell=True, stdout=PIPE, stderr=None)
-        time.sleep(0.5)
-        Popen('iw phy ' + monitor_support[0] + ' interface add atear_pentest type monitor', shell=True, stdout=PIPE, stderr=None)
-        time.sleep(0.5)
+        Popen('iw phy ' + monitor_support[0] + ' interface add atear_dump type monitor', shell=True, stdout=PIPE, stderr=None).wait()
+        Popen('iw phy ' + monitor_support[0] + ' interface add atear_wids type monitor', shell=True, stdout=PIPE, stderr=None).wait()
+        Popen('iw phy ' + monitor_support[0] + ' interface add atear_pentest type monitor', shell=True, stdout=PIPE, stderr=None).wait()
         w_interface_down()
         Popen('rfkill unblock all', shell=True, stderr=None)
 
+    return True
 
 def stop_monitor():
-    Popen('iw dev atear_dump del', shell=True, stdout=None, stderr=None)
-    time.sleep(0.5)
-    Popen('iw dev atear_wids del', shell=True, stdout=None, stderr=None)
-    time.sleep(0.5)
-    Popen('iw dev atear_ap del', shell=True, stdout=None, stderr=None)
-    time.sleep(0.5)
-    Popen('iw dev atear_pentest del', shell=True, stdout=None, stderr=None)
-    time.sleep(0.5)
+    Popen('iw dev atear_dump del > /dev/null 2>&1', shell=True, stdout=None, stderr=None).wait()
+    Popen('iw dev atear_wids del > /dev/null 2>&1', shell=True, stdout=None, stderr=None).wait()
+    Popen('iw dev atear_ap del > /dev/null 2>&1', shell=True, stdout=None, stderr=None).wait()
+    Popen('iw dev atear_pentest del > /dev/null 2>&1', shell=True, stdout=None, stderr=None).wait()
     w_interface_up()
 
 

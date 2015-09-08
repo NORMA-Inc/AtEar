@@ -106,28 +106,26 @@ class Reader(object):
 class Scanner(object):
     def __init__(self, iface):
         self.iface = iface
-        self.START_SIGNAL = True
         self.PATH = '/tmp/'
         self._networks = defaultdict(lambda: {'clients': set()})
         self._clients = defaultdict(dict)
+        self.dump_proc = False
 
     def run(self):
+        ''' Start airodump-ng and dump '''
         remove_command = 'rm -rf ' + self.PATH + 'atear-*'
+        # Unused try and except, No Possibility.
         try:
             Popen(remove_command, shell=True, stdout=None, stderr=None)
         except OSError:
             pass
         dump_command = ['airodump-ng', self.iface, '-w', self.PATH + 'atear', '--channel', '1,2,3,4,5,6,7,8,9,10,11,12,13,36,40,44,48,52,56,60,64,100,104,108,112,116,120,124,128,132,136,140,144,149,153,161,165,169,38,46,54,62,102,110,118,126,134,142,151,157,159,42,58,106,122,138,155,50,114']
-        dump_proc = Popen(dump_command, stdout=DN, stderr=DN)
-        if self.START_SIGNAL:
-            pass
-        else:
-            dump_proc.kill()
+        self.dump_proc = Popen(dump_command, stdout=DN, stderr=DN)
 
     def stop(self):
-        command = ['killall', 'airodump-ng']
-        proc = Popen(command, stdout=DN, stderr=DN)
-        self.START_SIGNAL = False
+        if self.dump_proc:
+            self.dump_proc.kill()
+        self.dump_proc = False
 
     def get_value(self):
         try:
