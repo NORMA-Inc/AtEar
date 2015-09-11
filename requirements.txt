@@ -2,3 +2,4 @@ flask
 paramiko
 python-libnmap
 scapy
+Flask-SSLify
