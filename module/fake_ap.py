@@ -7,13 +7,15 @@ import re
 import network
 from multiprocessing import Process
 import datetime
+import NetBIOS
 import socket
 import struct
 import IN
 from collections import defaultdict
 import time
 from subprocess import Popen
-from OpenSSL import SSL
+from execute import execute
+
 
 class DNSQuery:
     '''
@@ -59,7 +61,8 @@ class DNSServer(object):
     def run(self):
         dns_sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM, socket.IPPROTO_UDP)
         dns_sock.settimeout(3)  # Set timeout on socket-operations.
-        Popen('fuser -k -n tcp 53', shell=True, stdout=None, stderr=None)
+        execute('fuser -k -n udp 53')
+        time.sleep(0.5)
         dns_sock.bind(('', 53))
         while self.START_SIGNAL:
             try:
@@ -355,9 +358,8 @@ class WEBServer(object):
         self.address = address
         self.app = Flask(__name__,
                          template_folder=os.path.join(os.path.dirname(os.path.abspath(__file__)), 'phishing/templates'),
-                         static_folder=os.path.join(os.path.dirname(os.path.abspath(__file__)), 'phishing/static'),)
-        self.context = (os.path.join(os.path.dirname(os.path.abspath(__file__)), 'conf/AtEar.crt'),
-                        os.path.join(os.path.dirname(os.path.abspath(__file__)), 'conf/AtEar.key'))
+                         static_folder=os.path.join(os.path.dirname(os.path.abspath(__file__)), 'phishing/static'))
+        #self.sslify = SSLify(self.app)
         self.iface = iface
         self.logged_user = dict()
         self.logged_data = ''
@@ -529,5 +531,3 @@ class APCreate(object):
             return get_values
         except IOError:
             return json.dumps([{}])
-
-APCreate('wlan0', 'OPEN', 'asdf', 'asdf').run()

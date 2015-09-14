@@ -9,6 +9,7 @@ from module.pentest_open import auto_pentest
 from multiprocessing import Process
 import ast
 import sys
+from module.execute import execute
 
 reload(sys)
 sys.setdefaultencoding('utf-8')
@@ -58,6 +59,7 @@ class main_app():
         self.app.add_url_rule('/api/wids', 'wids', self.wids, methods=['GET'])
         self.app.add_url_rule('/api/pentest', 'pentest', self.pentest, methods=['GET', 'POST'])
         self.app.add_url_rule('/api/hidden/<wids_option>', 'hidden', self.hidden, methods=['GET'])
+        execute('fuser -k -n tcp 8080') # If port 8080 is in use, close it.
         self.app.run('0.0.0.0', port=8080, debug=False)
 
     def index(self):
@@ -119,7 +121,8 @@ class main_app():
                 return json.dumps({"connstation": '', "loginstation": ''})
         elif request.method == 'DELETE':
             # Stop fake_AP
-            self.fake_ap.stop()
+            if self.fake_ap:
+                self.fake_ap.stop()
             self.fake_ap = False
             return '', 200
         return '', 200
@@ -187,9 +190,10 @@ def main():
         # def AtEar-Beta.module.network.auto_monitor() line 272
         # Search for wireless devices, ensure that the support AP mode or monitor mode,
         # if support makes the device to the supported mode.
-        support = auto_monitor()
-        if support == False:
-            # Not supported
+        ret = auto_monitor()
+        if ret == False:
+            # Not supported or Failed to create device in monitor.
+            stop_monitor()
             return -1
 
         # class  	AtEar-Beta.module.wids.Wireless_IDS

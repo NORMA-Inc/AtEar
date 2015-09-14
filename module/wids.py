@@ -3,10 +3,17 @@ from subprocess import Popen, PIPE
 import os
 import datetime
 import time
+from execute import execute
+import threading
 
 
 class Wireless_IDS():
     def __init__(self, iface):
+        '''
+            @brief Set the path of the file to store the result in a variable.
+            @param iface :
+            *   Devices that were added in auto_monitor.
+        '''
         self.START_SIG = True
         self.iface = iface
         self.captured_csv = '/tmp/atear_wids.csv'
@@ -18,8 +25,8 @@ class Wireless_IDS():
         self.macfile = '/tmp/macfile.log'
         self.resultlog = '/tmp/result.log'
         self.logfile = '/tmp/log.txt'
-        self.recent_logfile = '/tmp/recent_log.txt'
-        self.json_logfile = '/tmp/json_log.txt'
+        self.recent_logfile = '/tmp/recent_log.txt'         # The only information stored in the most recent attack.
+        self.json_logfile = '/tmp/json_log.txt'             # It stores a history of detected attacks. naming?
         self.L_FrMAC = []
         self.L_ToMAC = []
         self.L_Data = []
@@ -50,19 +57,15 @@ class Wireless_IDS():
         open(self.essidfile, "wb").write("")
         open(self.macfile, "wb").write("")
         open(self.json_logfile, "wb").write("")
-        open(self.essidfile, "wb").write("")
         open(self.essidlog, "wb").write("")
         open(self.resultlist, "wb").write("")
-        open(self.macfile, "wb").write("")
         open(self.resultlog, "wb").write("")
         open(self.logfile, "wb").write("")
         open(self.recent_logfile, "wb").write("")
-        open(self.json_logfile, "wb").write("")
 
     def CaptureTraffic(self):
         dump_cmd = 'tshark -i ' + self.iface + ' -w ' + self.tcpdump_cap + ' -n -t ad -a duration:20 > /dev/null 2>&1'
-        dump_proc = Popen(dump_cmd, shell=True, stdout=PIPE)
-        dump_proc.wait()
+        retval, out, err = execute(dump_cmd)
 
     def ConvertPackets(self):
         conv_cmd = 'tshark -r ' + self.tcpdump_cap + ' -n -t ad > ' + self.tcpdump_log
@@ -75,9 +78,10 @@ class Wireless_IDS():
         new_csv.write(data.replace('\x00', ''))
         new_csv.close()
 
+
     def run(self):
         airo_cmd = 'airodump-ng ' + self.iface + ' -w /tmp/atear_wids'
-        airo_proc = Popen(airo_cmd, shell=True, stdout=PIPE, stderr=PIPE)
+        Popen(airo_cmd, shell=True, stdout=PIPE, stderr=PIPE)
         while self.START_SIG:
             self.CaptureTraffic()
             self.ConvertPackets()
@@ -189,7 +193,10 @@ class Wireless_IDS():
                                     if FR_MAC in eline:
                                         ED_FRMAC = eline.split(', ')[0].replace(',', '')
                                         ED_TOMAC = eline.split(', ')[1].replace(',', '')
-                                        ED_CT = eline.split(', ')[2].replace(',', '')
+                                        try:
+                                            ED_CT = eline.split(', ')[2].replace(',', '')       # out of range
+                                        except:
+                                            pass
                                         if ED_TOMAC == ATO_MAC:
                                             try:
                                                 ED_CT = int(ED_CT) + 1
@@ -987,9 +994,13 @@ class Wireless_IDS():
 
     def stop(self):
         Popen("killall tshark", shell=True, stdout=None, stderr=None)
+
         self.START_SIG = False
 
     def get_recent_values(self):
+        '''
+            @brief Return the recent history of attacks and flush files.
+        '''
         values = open(self.recent_logfile, 'r').read()
         open(self.recent_logfile, 'w').write("")
         return values

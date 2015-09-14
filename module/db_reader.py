@@ -21,6 +21,6 @@ def product_search(mac_addr):
     # csv_file = open(path, 'rb')
     # reader = csv.reader(csv_file)
     # for row in reader:
-    #    if mac_addr[0:11] == row[0][0:11]:
+    #    if mac_addr[0:8] == row[0][0:8]:
     #        return row[1]
     return 'Unknown'

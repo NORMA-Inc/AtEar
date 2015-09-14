@@ -12,7 +12,13 @@ import re
 import random
 import urllib2 as urllib
 from ctypes import *
+from execute import execute
 
+
+_dev_name_list = ['atear_dump', 'atear_wids', 'atear_pentest','atear_deauth', 'atear_ap']
+# When MONITOR_SUPPORT can't create 'atear_ap'.
+_MONITOR_SUPPORT = 4
+_AP_SUPPORT = 5
 
 def myip():
     return IPgetter().get_externalip()
@@ -298,43 +304,76 @@ def auto_monitor():
     print "Set Monitor mode...."
     if ap_support:
         w_interface_down()
-        Popen('iw phy ' + ap_support[0] + ' interface add atear_dump type monitor', shell=True, stdout=PIPE, stderr=None).wait()
-        Popen('iw phy ' + ap_support[0] + ' interface add atear_wids type monitor', shell=True, stdout=PIPE, stderr=None).wait()
-        Popen('iw phy ' + ap_support[0] + ' interface add atear_ap type monitor', shell=True, stdout=PIPE, stderr=None).wait()
-        Popen('iw phy ' + ap_support[0] + ' interface add atear_pentest type monitor', shell=True, stdout=PIPE, stderr=None).wait()
+        for i in range(_AP_SUPPORT):
+            execute('iw phy ' + ap_support[0] + ' interface add '+_dev_name_list[i]+' type monitor')
+
         w_interface_down()
-        Popen('rfkill unblock all', shell=True, stderr=None)
+        ret = set_monitor_mode(_AP_SUPPORT)
+        if ret == False:
+            print '[!!] It failed to change the mode of the wireless LAN device.'
+            print '[!!] Please try again later.'
+            return False
+
+        w_interface_down()
+
     elif monitor_support:
         w_interface_down()
-        Popen('iw phy ' + monitor_support[0] + ' interface add atear_dump type monitor', shell=True, stdout=PIPE, stderr=None).wait()
-        Popen('iw phy ' + monitor_support[0] + ' interface add atear_wids type monitor', shell=True, stdout=PIPE, stderr=None).wait()
-        Popen('iw phy ' + monitor_support[0] + ' interface add atear_pentest type monitor', shell=True, stdout=PIPE, stderr=None).wait()
+        for i in range(_MONITOR_SUPPORT): # exclude atear_ap
+            execute('iw phy ' + ap_support[0] + ' interface add '+_dev_name_list[i]+' type monitor')
+
         w_interface_down()
-        Popen('rfkill unblock all', shell=True, stderr=None)
+        ret = set_monitor_mode(_MONITOR_SUPPORT)
+        if ret == False:
+            ret = set_monitor_mode(_MONITOR_SUPPORT)
+            if ret == False : return False
+        w_interface_down()
+    execute('nmcli radio wifi off')
+    execute('rfkill unblock wlan')
+    return True
+
+def set_monitor_mode(_SUPPORT):
+    for i in range(_SUPPORT):
+        dev = _dev_name_list[i]
+
+        execute('iwconfig '+ dev +' mode monitor')
+        time.sleep(1)
+        retval, out, err = execute('iwconfig '+ dev)
+
+        retry = 0
+        while out.find('Mode:Monitor') == -1: # If the mode is not changed properly, enter the loop and retry 60.
+            execute('ifconfig '+dev+' down')
+            execute('iwconfig '+ dev +' mode monitor')
+            time.sleep(0.5)
+            retval, out, err = execute('iwconfig '+ dev)
+            retry = retry + 1
+            if retry == 150:
+                break
+
+    time.sleep(2)
+    for i in range(_SUPPORT): # Reaffirm
+        dev = _dev_name_list[i]
+        retval, out, err = execute('iwconfig '+ dev)
+        if out.find('Mode:Monitor') == -1:
+            return False
 
     return True
 
+
 def stop_monitor():
-    Popen('iw dev atear_dump del > /dev/null 2>&1', shell=True, stdout=None, stderr=None).wait()
-    Popen('iw dev atear_wids del > /dev/null 2>&1', shell=True, stdout=None, stderr=None).wait()
-    Popen('iw dev atear_ap del > /dev/null 2>&1', shell=True, stdout=None, stderr=None).wait()
-    Popen('iw dev atear_pentest del > /dev/null 2>&1', shell=True, stdout=None, stderr=None).wait()
+    for i in range(_AP_SUPPORT):
+        execute('iw dev '+_dev_name_list[i]+' del > /dev/null 2>&1')
     w_interface_up()
 
 
 def w_interface_down():
-    res = Popen('iw dev | grep Interface', shell=True, stdout=PIPE, stderr=None)
-    int_res = res.communicate()[0].replace('\tInterface ', '').split('\n')
-    int_res.pop()
-    for interface in int_res:
-        Popen('ifconfig ' + interface + ' down', shell=True, stdout=PIPE, stderr=None)
-        time.sleep(1)
+    retval, out, err = execute('iw dev |grep Interface')
+    intf_list = out.replace('\tInterface','').split()
+    for interface in intf_list:
+        execute('ifconfig ' + interface + ' down')
 
 
 def w_interface_up():
-    res = Popen('iw dev | grep Interface', shell=True, stdout=PIPE, stderr=None)
-    int_res = res.communicate()[0].replace('\tInterface ', '').split('\n')
-    int_res.pop()
-    for interface in int_res:
-        Popen('ifconfig ' + interface + ' up', shell=True, stdout=PIPE, stderr=None)
-        time.sleep(1)
+    retval, out, err = execute('iw dev |grep Interface')
+    intf_list = out.replace('\tInterface','').split()
+    for interface in intf_list:
+        execute('ifconfig ' + interface + ' up')
