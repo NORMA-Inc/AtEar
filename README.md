@@ -1,9 +1,9 @@
-<img src="https://raw.githubusercontent.com/NORMA-Company/AtEar/master/product_img/atearlogo.png" align="Center">
+<img src="https://raw.githubusercontent.com/NORMA-Inc/AtEar/master/product_img/atearlogo.png" align="Center">
 <br>
 ## AtEar
 AtEar is a scalable and efficient system, and also the first web-based wireless vulnerability assessment solution. <br>
 This Wireless Vulnerability Analysis/Management Solution, AtEar, can be utilized both by businesses and in the home.  <br>
-For business use, AtEar utilizes fingerprint devices for access to the company network and to analyze the current wireless network conditions. <br>The automatic penetration testing function makes it possible to analyze wireless vulnerability conveniently and meticulously. <br>AtEar for home networks inspects network security conditions and monitors for any unregistered devices.  <br>
+For business use, AtEar utilizes fingerprint devices for access to the  network and to analyze the current wireless network conditions. <br>The automatic penetration testing function makes it possible to analyze wireless vulnerability conveniently and meticulously. <br>AtEar for home networks inspects network security conditions and monitors for any unregistered devices.  <br>
 
 # Intro
 
@@ -11,7 +11,7 @@ For business use, AtEar utilizes fingerprint devices for access to the company n
 > AtEar provides a web-based user interface.<br>
 > AtEar is easy and fast to use.<br>
 
-![alt AtEar_Product] (https://raw.githubusercontent.com/NORMA-Company/AtEar/master/product_img/AtEar_Product.jpg)
+![alt AtEar_Product] (https://raw.githubusercontent.com/NORMA-Inc/AtEar/master/product_img/AtEar_Product.jpg)
 <h3>Is your company’s wireless network secure?<br>
 AtEar helps keep your wireless network safe from hackers and intruders.<br></h3>
 <br>
@@ -104,7 +104,7 @@ To bereleased this month.
 ### AtEar Installation Instructions
 Clone a copy of the main AtEar git repo by running:<br>
 `sudo apt-get install git`<br>
-`git clone https://github.com/NORMA-Company/AtEar.git`<br>
+`git clone https://github.com/NORMA-Inc/AtEar.git`<br>
 Enter the AtEar directory and run the install script:<br>
 `cd ./AtEar/`<br>
 `sudo bash install.sh`<br>
@@ -116,16 +116,16 @@ Enter the AtEar directory and run the install script:<br>
 `127.0.0.1:8080`<br>
 
 ### AtEar Customers
-<img src="https://raw.githubusercontent.com/NORMA-Company/AtEar/master/product_img/Samsung.png" width="350">
-<img src="https://raw.githubusercontent.com/NORMA-Company/AtEar/master/product_img/KoreaTelecom.png" width="350">
-<img src="https://raw.githubusercontent.com/NORMA-Company/AtEar/master/product_img/police1.png" width="350">
-<img src="https://raw.githubusercontent.com/NORMA-Company/AtEar/master/product_img/edu1.png" width="350">
-<img src="https://raw.githubusercontent.com/NORMA-Company/AtEar/master/product_img/korea_rail.png" width="350">
-<img src="https://raw.githubusercontent.com/NORMA-Company/AtEar/master/product_img/Ministry_en.png" width="350">
-<img src="https://raw.githubusercontent.com/NORMA-Company/AtEar/master/product_img/kgu.png" width="350">
-<img src="https://raw.githubusercontent.com/NORMA-Company/AtEar/master/product_img/koreauniversity.png" width="350">
-<img src="https://raw.githubusercontent.com/NORMA-Company/AtEar/master/product_img/kbs.png" width="350">
-<img src="https://raw.githubusercontent.com/NORMA-Company/AtEar/master/product_img/kaits_.png" width="350">
+<img src="https://raw.githubusercontent.com/NORMA-Inc/AtEar/master/product_img/Samsung.png" width="350">
+<img src="https://raw.githubusercontent.com/NORMA-Inc/AtEar/master/product_img/KoreaTelecom.png" width="350">
+<img src="https://raw.githubusercontent.com/NORMA-Inc/AtEar/master/product_img/police1.png" width="350">
+<img src="https://raw.githubusercontent.com/NORMA-Inc/AtEar/master/product_img/edu1.png" width="350">
+<img src="https://raw.githubusercontent.com/NORMA-Inc/AtEar/master/product_img/korea_rail.png" width="350">
+<img src="https://raw.githubusercontent.com/NORMA-Inc/AtEar/master/product_img/Ministry_en.png" width="350">
+<img src="https://raw.githubusercontent.com/NORMA-Inc/AtEar/master/product_img/kgu.png" width="350">
+<img src="https://raw.githubusercontent.com/NORMA-Inc/AtEar/master/product_img/koreauniversity.png" width="350">
+<img src="https://raw.githubusercontent.com/NORMA-Inc/AtEar/master/product_img/kbs.png" width="350">
+<img src="https://raw.githubusercontent.com/NORMA-Inc/AtEar/master/product_img/kaits_.png" width="350">
 
 ### Reference
 AtEar’s flexible and convenient functionality can overcome the limitations of WIPS. <br>
@@ -139,5 +139,5 @@ This achievement has led to partnerships with telecommunications companies SAMSU
 ***AtEar-Demo is a free 30-Day Trial Version***
 
 ### Requesting the AtEar-Demo Version
-[NORMA-Company Homepage](http://www.norma.co.kr)<br>
+[NORMA-Inc Homepage](http://www.norma.co.kr)<br>
 Contact us [contact@norma.co.kr](mailto:contact@norma.co.kr)
