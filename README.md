@@ -15,6 +15,10 @@ For business use, AtEar utilizes fingerprint devices for access to the  network 
 <h3>Is your company’s wireless network secure?<br>
 AtEar helps keep your wireless network safe from hackers and intruders.<br></h3>
 <br>
+
+### Operation Video
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qkqEirRf88E" frameborder="0" allowfullscreen></iframe>
+<br>
 ### AtEar Features
 1. Wireless Scanning(Ad-Hoc, Station, Access Point, Soft-Acess Point)
 2. Wireless Chart(Channel, Encryption, Type)
@@ -54,10 +58,6 @@ These features will be released this month.<br>
   - PGSQL Brute Force
   - VNC Brute Force
   - SNMP Brute Force
-
-
-### Operation Video
-To bereleased this month.
 
 ### Most recommended systems
 `Developed by Ubuntu 14.04 LTS(amd64) and python 2.7v`
