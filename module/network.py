@@ -2,7 +2,7 @@ import fcntl
 from libnmap.process import NmapProcess
 from libnmap.parser import NmapParser, NmapParserException
 from scapy.all import *
-from subprocess import Popen, PIPE
+import commands
 
 logging.getLogger("scapy.runtime").setLevel(logging.WARNING)
 logging.getLogger("scapy.runtime").setLevel(logging.ERROR)
@@ -15,10 +15,8 @@ from ctypes import *
 from execute import execute
 
 
-_dev_name_list = ['atear_dump', 'atear_wids', 'atear_pentest','atear_deauth', 'atear_ap']
-# When MONITOR_SUPPORT can't create 'atear_ap'.
-_MONITOR_SUPPORT = 4
-_AP_SUPPORT = 5
+_dev_name_list = ['atear_dump', 'atear_wids','atear_deauth', 'atear_pentest', 'atear_ap']
+_mon_dev_list = ['atear_dump', 'atear_wids','atear_deauth']
 
 def myip():
     return IPgetter().get_externalip()
@@ -150,18 +148,16 @@ def get_ip_address(ifname):
 
 
 def get_l_gateway_ip(iface):
-    command = 'nmcli dev list iface ' + iface + ' | grep IP4'
-    p = subprocess.Popen(command, shell=True, stdout=subprocess.PIPE, stderr=None)
-    output, errors = p.communicate()
-    ip_address = output[output.find("gw = ")+5:output.find("\n")]
+    command = "route | grep default | awk -F' ' '{print $2}'"
+    p, ret, out, err = execute(command)
+    gw_address = out.replace('\n', '')
 
-    return ip_address
+    return gw_address
 
 
 def get_l_gateway_mac(iface):
     command = '/usr/bin/arping -c 1 -I ' + iface + ' ' + get_l_gateway_ip(iface)
-    p = subprocess.Popen(command, shell=True, stdout=subprocess.PIPE, stderr=None)
-    output, errors = p.communicate()
+    p, r, output, e = execute(command)
     if output is not None:
         mac_address = re.findall(r'(\[.*\])', output)[0].replace('[', '').replace(']', '')
         return mac_address
@@ -171,8 +167,7 @@ def get_l_gateway_mac(iface):
 
 def get_remote_mac(iface, ipaddr):
     command = '/usr/bin/arping -c 1 -I ' + iface + ' ' + ipaddr
-    p = subprocess.Popen(command, shell=True, stdout=subprocess.PIPE, stderr=None)
-    output, erros = p.communicate()
+    p, r, output, e = execute(command)
     if output is not None:
         try:
             mac_address = re.findall(r'(\[.*\])', output)[0].replace('[', '').replace(']', '')
@@ -224,8 +219,8 @@ def network_host_ip(interface):
 
 
 def arp_spoof(iface):
-    Popen('echo 1 > /proc/sys/net/ipv4/ip_forward', shell=True, stdout=None, stderr=None)
-    Popen('service whoopsie stop', shell=True, stdout=None, stderr=None)
+    execute('echo 1 > /proc/sys/net/ipv4/ip_forward')
+    execute('service whoopsie stop')
     victim_hosts = network_host_ip(iface)
     gateway_ip = get_l_gateway_ip(iface)
     while True:
@@ -241,22 +236,42 @@ def arp_spoof(iface):
             time.sleep(5)
 
 
-def set_new_connection(ssid, pw, iface):
-    delete = ["nmcli", "connection", "delete", "id", ssid]
-    Popen(delete, stdout=None, stderr=None).communicate()
-    pw = str(pw).strip()
-    new_conn = ["nmcli", "device", "wifi", "connect", ssid, "password", pw, 'ifname', iface]
-    res = Popen(new_conn, stdout=PIPE, stderr=None).communicate()
-    status = ["nmcli", "connection", "list", "id", ssid]
-    active = Popen(status, stdout=PIPE, stderr=None).communicate()[0]
-    # Delete connections with errors
-    if "Error" in res and \
-            ('activating' not in active or 'activated' not in active):
-        delete = ["nmcli", "connection", "delete", ssid]
-        Popen(delete, stdout=PIPE, stderr=None).communicate()
-        return False
-    else:
-        return True
+def set_new_connection(ssid, pw, iface, enc_type):
+    print ssid, pw, iface, enc_type
+    ssid = ssid.decode('utf-8').encode('euc-kr')
+    execute('killall dhcpcd-bin ')
+    execute('killall dhclient')
+    execute('killall wpa_supplicant')
+    execute('ifconfig '+iface+' down')
+    execute('iwconfig '+iface+' mode managed')
+    if "WEP" in enc_type.upper():
+        execute('iwconfig '+iface+' essid '+ ssid)
+        execute('iwconfig '+iface+' key s:'+ '\''+pw+'\'')
+        execute('ifconfig '+iface+' up')
+        time.sleep(1)
+        if commands.getoutput('iw dev '+iface+' link') is 'Not connected.':
+            return False
+        execute('dhclient '+iface)
+        pass
+    elif "WPA" in enc_type.upper():
+        execute('iwconfig '+iface+' essid '+ssid)
+        proc = Popen('/usr/bin/wpa_passphrase '+ssid+' > /etc/wpa_supplicant/wpa_supplicant.conf',\
+                     shell=True, stdin=PIPE, stdout=PIPE, stderr=PIPE)
+        proc.stdin.write(pw)
+        execute('/sbin/wpa_supplicant -i '+iface+' -B -c /etc/wpa_supplicant/wpa_supplicant.conf')
+        time.sleep(1)
+        if commands.getoutput('iw dev '+iface+' link') is 'Not connected.':
+            return False
+        execute('dhcpcd '+ iface)
+        pass
+    elif "OPN" in enc_type.upper():
+        execute('ifconfig '+iface+' up')
+        execute('iw dev '+iface+' connect '+ssid)
+        time.sleep(1)
+        if commands.getoutput('iw dev '+iface+' link') is 'Not connected.':
+            return False
+        execute('dhclient '+iface)
+        pass
 
 
 def get_interfaces():
@@ -275,19 +290,20 @@ def get_interfaces():
 
 def auto_monitor():
     '''
-        @brief
+        @brief Check monitor mode support. and set.
     '''
     print "Check Monitor mode...."
-    res = Popen('iw dev | grep phy', shell=True, stdout=PIPE, stderr=None)
-    interface_list = res.communicate()[0].split('\n')
+    p, r, out, err = execute('iw dev| grep phy')
+    interface_list = out.split('\n')
     interface_list.pop()
     ap_support = []
     monitor_support = []
     for interface in interface_list:
         interface = interface.replace('#', '')
-        res = Popen('iw phy ' + interface + ' info', shell=True, stdout=PIPE, stderr=None)
-        info = res.communicate()[0]
-        sup = info[info.find('Supported interface modes:')+28:]
+
+        p, r, out, err = execute('iw phy '+interface+' info')
+
+        sup = out[out.find('Supported interface modes:')+28:]
         support_list = sup[:sup.find(':')].replace('\t', '').replace(' ', '').replace('*', '').split('\n')[:-1]
         for support in support_list:
             if support == 'AP':
@@ -304,55 +320,59 @@ def auto_monitor():
     print "Set Monitor mode...."
     if ap_support:
         w_interface_down()
-        for i in range(_AP_SUPPORT):
-            execute('iw phy ' + ap_support[0] + ' interface add '+_dev_name_list[i]+' type monitor')
+        for dev in _dev_name_list:
+            execute('iw phy ' + ap_support[0] + ' interface add '+ dev +' type monitor')
 
         w_interface_down()
-        ret = set_monitor_mode(_AP_SUPPORT)
+        ret = set_monitor_mode()
         if ret == False:
             print '[!!] It failed to change the mode of the wireless LAN device.'
             print '[!!] Please try again later.'
             return False
-
         w_interface_down()
 
     elif monitor_support:
         w_interface_down()
-        for i in range(_MONITOR_SUPPORT): # exclude atear_ap
-            execute('iw phy ' + ap_support[0] + ' interface add '+_dev_name_list[i]+' type monitor')
+        for dev in _dev_name_list:
+            if dev == "atear_ap": continue
+            execute('iw phy ' + ap_support[0] + ' interface add '+ dev +' type monitor')
 
         w_interface_down()
-        ret = set_monitor_mode(_MONITOR_SUPPORT)
+        ret = set_monitor_mode()
         if ret == False:
-            ret = set_monitor_mode(_MONITOR_SUPPORT)
-            if ret == False : return False
+            print '[!!] It failed to change the mode of the wireless LAN device.'
+            print '[!!] Please try again later.'
+            return False
         w_interface_down()
-    execute('nmcli radio wifi off')
+
     execute('rfkill unblock wlan')
     return True
 
-def set_monitor_mode(_SUPPORT):
-    for i in range(_SUPPORT):
-        dev = _dev_name_list[i]
-
+def set_monitor_mode():
+    '''
+        @brief Set wlan device to monitor mode.
+        @return:
+            * success - True
+            * fail - False
+    '''
+    for dev in _mon_dev_list:
         execute('iwconfig '+ dev +' mode monitor')
         time.sleep(1)
-        retval, out, err = execute('iwconfig '+ dev)
+        p, retval, out, err = execute('iwconfig '+ dev)
 
         retry = 0
         while out.find('Mode:Monitor') == -1: # If the mode is not changed properly, enter the loop and retry 60.
             execute('ifconfig '+dev+' down')
             execute('iwconfig '+ dev +' mode monitor')
             time.sleep(0.5)
-            retval, out, err = execute('iwconfig '+ dev)
+            p, retval, out, err = execute('iwconfig '+ dev)
             retry = retry + 1
             if retry == 150:
                 break
 
     time.sleep(2)
-    for i in range(_SUPPORT): # Reaffirm
-        dev = _dev_name_list[i]
-        retval, out, err = execute('iwconfig '+ dev)
+    for dev in _mon_dev_list: # Reaffirm
+        p, retval, out, err = execute('iwconfig '+ dev)
         if out.find('Mode:Monitor') == -1:
             return False
 
@@ -360,20 +380,23 @@ def set_monitor_mode(_SUPPORT):
 
 
 def stop_monitor():
-    for i in range(_AP_SUPPORT):
-        execute('iw dev '+_dev_name_list[i]+' del > /dev/null 2>&1')
+    '''
+        @brief Delete wlan device.
+    '''
+    for dev in _dev_name_list:
+        execute('iw dev '+ dev +' del > /dev/null 2>&1')
     w_interface_up()
 
 
 def w_interface_down():
-    retval, out, err = execute('iw dev |grep Interface')
+    p, retval, out, err = execute('iw dev |grep Interface')
     intf_list = out.replace('\tInterface','').split()
     for interface in intf_list:
         execute('ifconfig ' + interface + ' down')
 
 
 def w_interface_up():
-    retval, out, err = execute('iw dev |grep Interface')
+    p, retval, out, err = execute('iw dev |grep Interface')
     intf_list = out.replace('\tInterface','').split()
     for interface in intf_list:
         execute('ifconfig ' + interface + ' up')

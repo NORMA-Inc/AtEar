@@ -12,7 +12,6 @@ def brute_text_create(min_length=1, max_length=3, letters=True, numbers=True, sy
     choices += _symbols if symbols else ''
     choices += _spaces if spaces else ''
     choices = ''.join(sample(choices, len(choices)))
-
     return (
         ''.join(candidate) for candidate in
         chain.from_iterable(

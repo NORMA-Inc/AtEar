@@ -468,24 +468,23 @@ class APCreate(object):
 
     def run(self):
         self.config()
-        Popen('rfkill unblock wlan', shell=True, stdout=None, stderr=None)
+        execute('rfkill unblock wlan')
         time.sleep(1)
         if_up_cmd = 'ifconfig ' + self.wlan + ' up ' + self.address + ' netmask ' + self.netmask
-        Popen(if_up_cmd, shell=True, stdout=None, stderr=None)
-        time.sleep(2)
-        Popen('killall hostapd', shell=True, stdout=None, stderr=None)
+        execute(if_up_cmd)
+        time.sleep(1)
+        execute('killall hostapd')
         # Set IP table rules as packet-forwardable.
-        Popen('sysctl -w net.ipv4.ip_forward=1', shell=True, stdout=None, stderr=None)
-        Popen('iptables -X', shell=True, stdout=None, stderr=None)
-        Popen('iptables -F', shell=True, stdout=None, stderr=None)
-        Popen('iptables -t nat -F', shell=True, stdout=None, stderr=None)
-        Popen('iptables -t nat -X', shell=True, stdout=None, stderr=None)
-        Popen('iptables -t nat -A POSTROUTING -o %s -j MASQUERADE' % self.ppp, shell=True, stdout=None, stderr=None)
-        Popen('iptables -A OUTPUT --out-interface ' + self.wlan + ' -j ACCEPT', shell=True, stdout=None, stderr=None)
-        Popen('iptables -A INPUT --in-interface ' + self.wlan + ' -j ACCEPT', shell=True, stdout=None, stderr=None)
+        execute('sysctl -w net.ipv4.ip_forward=1')
+        execute('iptables -X')
+        execute('iptables -F')
+        execute('iptables -t nat -F')
+        execute('iptables -t nat -X')
+        execute('iptables -t nat -A POSTROUTING -o ' + self.ppp + ' -j MASQUERADE')
+        execute('iptables -A OUTPUT --out-interface ' + self.wlan + ' -j ACCEPT')
+        execute('iptables -A INPUT --in-interface ' + self.wlan + ' -j ACCEPT')
         # Run hostapd. Hostapd daemon supports make PC to AP.
-        Popen('hostapd -B ' + os.path.join(os.path.dirname(os.path.abspath(__file__))) + '/conf/run.conf',
-              shell=True, stdout=None, stderr=None) # Consider manage pid of hostapd daemon.?
+        execute('hostapd -B ' + os.path.join(os.path.dirname(os.path.abspath(__file__))) + '/conf/run.conf')
         time.sleep(2)
         self.dns_thread.start()
         self.dhcp_thread.start()
@@ -499,16 +498,16 @@ class APCreate(object):
             self.web_process.terminate()
         except:
             pass
-        Popen('iptables -P FORWARD DROP', shell=True, stdout=None, stderr=None)
+        execute('iptables -P FORWARD DROP')
         if self.wlan:
-            Popen('iptables -D OUTPUT --out-interface ' + self.wlan + ' -j ACCEPT', shell=True, stdout=None, stderr=None)
-            Popen('iptables -D INPUT --in-interface ' + self.wlan + ' -j ACCEPT', shell=True, stdout=None, stderr=None)
-        Popen('iptables --table nat --delete-chain', shell=True, stdout=None, stderr=None)
-        Popen('iptables --table nat -F', shell=True, stdout=None, stderr=None)
-        Popen('iptables --table nat -X', shell=True, stdout=None, stderr=None)
-        Popen('sysctl -w net.ipv4.ip_forward=0', shell=True, stdout=None, stderr=None)
-        Popen('killall hostapd', shell=True, stdout=None, stderr=None) # Consider using it's pid.
-        Popen('ifconfig ' + self.wlan + ' down', shell=True, stdout=None, stderr=None)
+            execute('iptables -D OUTPUT --out-interface ' + self.wlan + ' -j ACCEPT')
+            execute('iptables -D INPUT --in-interface ' + self.wlan + ' -j ACCEPT')
+        execute('iptables --table nat --delete-chain')
+        execute('iptables --table nat -F')
+        execute('iptables --table nat -X')
+        execute('sysctl -w net.ipv4.ip_forward=0')
+        execute('killall hostapd')                  # Consider using it's pid.
+        execute('ifconfig ' + self.wlan + ' down')
 
     @staticmethod
     def get_values_login():

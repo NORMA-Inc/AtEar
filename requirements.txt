@@ -2,4 +2,3 @@ flask
 paramiko
 python-libnmap
 scapy
-flask_sslify

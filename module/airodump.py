@@ -1,10 +1,11 @@
 # -*- coding: utf-8 -*-
 import csv
 import os
-from subprocess import Popen
 import sys
 import db_reader
+import time
 from collections import defaultdict
+from execute import execute
 
 reload(sys)
 sys.setdefaultencoding('UTF-8')
@@ -14,19 +15,28 @@ OUTLOG = open(os.devnull, 'w')
 
 
 class Reader(object):
+    '''
+        Parse scan result and keep it in local variable.
+    '''
     def __init__(self):
         self._networks = defaultdict(dict)
         self._clients = defaultdict(dict)
         self.soft_ap = False
         soft_mac_list = ['2', '3', '6', '7', 'A', 'B', 'E', 'F']
-        tmp_csv = open('/tmp/atear-01.csv', 'rb')
-        data = tmp_csv.read()
+
+        # Copy and remove \x00 character.
+        scan_result_file = './log/air_scan_result' + '-01.csv'  # 'airodump' add a number such as -01 when save the file.
+        new_csv_file = './log/air_scan_result.csv'
+
+        tmp_csv = open(scan_result_file, 'rb')
+        scanned_data = tmp_csv.read()
         tmp_csv.close()
-        new_csv = open('/tmp/atear.csv', 'wb')
-        new_csv.write(data.replace('\x00', ''))
+
+        new_csv = open(new_csv_file, 'wb')
+        new_csv.write(scanned_data.replace('\x00', ''))
         new_csv.close()
-        csv_path = '/tmp/atear.csv'
-        with open(csv_path, 'rU') as f:
+
+        with open(new_csv_file, 'rU') as f:
             parsing_networks = True
             for line in csv.reader(f):
                 if not line or line[0] == 'BSSID':
@@ -104,23 +114,23 @@ class Reader(object):
 
 
 class Scanner(object):
+    '''
+        airodump-ng
+    '''
     def __init__(self, iface):
         self.iface = iface
         self.START_SIGNAL = True    # Meaningless variable.
-        self.PATH = '/tmp/'
+        self.air_scan_result = './log/air_scan_result'
         self._networks = defaultdict(lambda: {'clients': set()})
         self._clients = defaultdict(dict)
-        self.dumpproc = False
+        self.dump_proc = False
 
     def run(self):
         ''' Start airodump-ng and dump '''
-        remove_command = 'rm -rf ' + self.PATH + 'atear-*'
-        try: # Unused try and except, No Possibility.
-            Popen(remove_command, shell=True, stdout=None, stderr=None)
-        except OSError:
-            pass
-        dump_command = ['airodump-ng', self.iface, '-w', self.PATH + 'atear']
-        self.dump_proc = Popen(dump_command, stdout=DN, stderr=DN)
+        remove_command = 'rm -rf ' + self.air_scan_result + '*'
+        execute(remove_command)
+        dump_command = ['airodump-ng', self.iface, '-w', self.air_scan_result, '--output-format', 'csv']
+        self.dump_proc, unused_ret, unused_out, unused_err = execute(dump_command, wait=False)
 
     def stop(self):
         if self.dump_proc:
@@ -129,8 +139,9 @@ class Scanner(object):
 
     def get_value(self):
         try:
-            self._networks = Reader().get_sorted_networks()
-            self._clients = Reader().client_return().values()
+            r = Reader()
+            self._networks = r.get_sorted_networks()
+            self._clients = r.client_return().values()
         except:
             return False
         return self._networks + self._clients

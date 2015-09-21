@@ -40,5 +40,10 @@ then
     echo "Installed packages python-pyodbc"
     sudo apt-get --force-yes --yes install python-pyodbc
 fi
+if [ $(dpkg-query -W -f='${Status}' nmap 2>/dev/null | grep -c "ok installed") - eq 0];
+then
+    echo "Installed packages nmap"
+    sudo apt-get --force-yes --yes install nmap
+fi
 echo "Installed requirements python packages"
 sudo pip install -r requirements.txt

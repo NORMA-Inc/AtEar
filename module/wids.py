@@ -16,17 +16,17 @@ class Wireless_IDS():
         '''
         self.START_SIG = True
         self.iface = iface
-        self.captured_csv = '/tmp/atear_wids.csv'
-        self.tcpdump_cap = '/tmp/atear_wids.pcap'
-        self.tcpdump_log = '/tmp/tcpdump.log'
-        self.essidfile = '/tmp/essidcount.log'
-        self.essidlog = '/tmp/essidlog.txt'
-        self.resultlist = '/tmp/resultlist.log'
-        self.macfile = '/tmp/macfile.log'
-        self.resultlog = '/tmp/result.log'
-        self.logfile = '/tmp/log.txt'
-        self.recent_logfile = '/tmp/recent_log.txt'         # The only information stored in the most recent attack.
-        self.json_logfile = '/tmp/json_log.txt'             # It stores a history of detected attacks. naming?
+        self.captured_csv       = './log/atear_wids.csv'            #
+        self.tshark_pcap        = './log/tshark_wids.pcap'          # Captured file for WIDS(attack detector).
+        self.tshark_readable    = './log/tshark_readable.txt'       # Convert .pcap to human-redable-format.
+        self.essidfile          = './log/essidcount.log'
+        self.essidlog           = './log/essidlog.txt'
+        self.resultlist         = './log/resultlist.log'
+        self.macfile            = './log/macfile.log'
+        self.resultlog          = './log/result.log'
+        self.logfile            = './log/log.txt'
+        self.recently_detected  = './log/recently_detected.txt'     # Save the most recent attack information.
+        self.detection_list     = './log/detection_list.txt'        # It stores a history of detected attacks. naming?
         self.L_FrMAC = []
         self.L_ToMAC = []
         self.L_Data = []
@@ -53,39 +53,42 @@ class Wireless_IDS():
         self.L_Data94 = []
         self.L_Data98 = []
         self.MACDetail = ""
-        Popen('rm -rf /tmp/atear_wids*', shell=True, stdout=None, stderr=None)
+        execute('rm -rf ./log/atear_wids*')
         open(self.essidfile, "wb").write("")
         open(self.macfile, "wb").write("")
-        open(self.json_logfile, "wb").write("")
+        open(self.detection_list, "wb").write("")
         open(self.essidlog, "wb").write("")
         open(self.resultlist, "wb").write("")
         open(self.resultlog, "wb").write("")
         open(self.logfile, "wb").write("")
-        open(self.recent_logfile, "wb").write("")
+        open(self.recently_detected, "wb").write("")
 
     def CaptureTraffic(self):
-        dump_cmd = 'tshark -i ' + self.iface + ' -w ' + self.tcpdump_cap + ' -n -t ad -a duration:20 > /dev/null 2>&1'
-        retval, out, err = execute(dump_cmd)
+        dump_cmd = 'tshark -i ' + self.iface + ' -w ' + self.tshark_pcap + ' -n -t ad -a duration:20 > /dev/null 2>&1'
+        execute(dump_cmd)
 
     def ConvertPackets(self):
-        conv_cmd = 'tshark -r ' + self.tcpdump_cap + ' -n -t ad > ' + self.tcpdump_log
-        conv_proc = Popen(conv_cmd, shell=True, stdout=PIPE, stderr=open(os.devnull, 'w'))
-        conv_proc.wait()
-        tmp_csv = open('/tmp/atear_wids-01.csv', 'rb')
+        ''' Convert pcap file to human-redable.'''
+        # Convert
+        conv_cmd = 'tshark -r ' + self.tshark_pcap + ' -n -t ad > ' + self.tshark_readable
+        execute(conv_cmd)
+
+        # Copy and remove \x00 character.
+        tmp_csv = open('./log/atear_wids-01.csv', 'rb')
         data = tmp_csv.read()
         tmp_csv.close()
+
         new_csv = open(self.captured_csv, 'wb')
         new_csv.write(data.replace('\x00', ''))
         new_csv.close()
 
-
     def run(self):
-        airo_cmd = 'airodump-ng ' + self.iface + ' -w /tmp/atear_wids'
-        Popen(airo_cmd, shell=True, stdout=PIPE, stderr=PIPE)
+        airo_cmd = ['airodump-ng', self.iface, '-w', './log/atear_wids', '--output-format', 'csv']
+        execute(airo_cmd, wait=False)
         while self.START_SIG:
             self.CaptureTraffic()
             self.ConvertPackets()
-            with open(self.tcpdump_log, 'r') as f:
+            with open(self.tshark_readable, 'r') as f:
                 for line in f:
                     line = line.replace("\n", "")
                     line = line.replace("(TA)", "")
@@ -548,7 +551,7 @@ class Wireless_IDS():
                 if os.path.isfile(self.resultlist):
                     open(self.resultlist, "wb").write("" + "\n")
                 time_stamp = datetime.datetime.fromtimestamp((time.time())).strftime('%Y-%m-%d %H:%M:%S')
-                open(self.resultlist, "wb").write(self.tcpdump_log + "\n")
+                open(self.resultlist, "wb").write(self.tshark_readable + "\n")
                 open(self.resultlist, "a+b").write("Date Time \t" + str(time_stamp) + "\n")
                 x = 0
                 l = len(self.L_FrMAC)
@@ -842,13 +845,13 @@ class Wireless_IDS():
                         listsr += 1
 
                 recent_result += "]"
-                open(self.recent_logfile, 'w').write(recent_result)
-                Write_Result = "[" + open(self.json_logfile, 'r').read().replace("[", "").replace("]", "") + Write_Result + "]"
-                open(self.json_logfile, 'w').write(Write_Result)
+                open(self.recently_detected, 'w').write(recent_result)
+                Write_Result = "[" + open(self.detection_list, 'r').read().replace("[", "").replace("]", "") + Write_Result + "]"
+                open(self.detection_list, 'w').write(Write_Result)
                 Result = ""
                 if Concern == 0:
-                    if os.path.isfile(self.tcpdump_cap):
-                        if os.stat(self.tcpdump_cap).st_size >= 300:
+                    if os.path.isfile(self.tshark_pcap):
+                        if os.stat(self.tshark_pcap).st_size >= 300:
                             Result = ('Did not detect any suspicious activity \n')
                 else:
                     Result = time_stamp + " - " + " concerns found...\n"
@@ -993,7 +996,7 @@ class Wireless_IDS():
                                     return ESSID
 
     def stop(self):
-        Popen("killall tshark", shell=True, stdout=None, stderr=None)
+        execute('killall tshark')
 
         self.START_SIG = False
 
@@ -1001,12 +1004,12 @@ class Wireless_IDS():
         '''
             @brief Return the recent history of attacks and flush files.
         '''
-        values = open(self.recent_logfile, 'r').read()
-        open(self.recent_logfile, 'w').write("")
+        values = open(self.recently_detected, 'r').read()
+        open(self.recently_detected, 'w').write("")
         return values
 
     def get_values(self):
-        return open(self.json_logfile, 'r').read()
+        return open(self.detection_list, 'r').read()
 
     @staticmethod
     def RemoveUnwantMAC(MACAddr):
