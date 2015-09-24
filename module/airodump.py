@@ -135,6 +135,7 @@ class Scanner(object):
     def stop(self):
         if self.dump_proc:
             self.dump_proc.kill()
+            self.dump_proc.communicate()
         self.dump_proc = False
 
     def get_value(self):

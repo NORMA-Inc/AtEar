@@ -76,7 +76,7 @@ class main_app():
     def scanstatus(self):
         ''' It responds to the airodump-scan results. '''
         if request.method == 'GET':
-            if not self.scanner:
+            if self.scanner is False:
                 # Class Atear-Beta.module.airodump  line 106.
                 self.scanner = airodump.Scanner(self.scan_iface)
                 self.scanner.run()
@@ -138,6 +138,7 @@ class main_app():
             except:
                 return json.dumps([{}])
 
+
     def pentest(self):
         '''
             @brief Allowing access to pentest function.
@@ -158,6 +159,7 @@ class main_app():
                 return json.dumps([{}])
         return '', 200
 
+
     def hidden(self, wids_option):
         '''
             @brief Return the result of the most recent attacks or not.
@@ -173,12 +175,15 @@ class main_app():
                     return json.dumps({"message": recent_val}, ensure_ascii=False, encoding='EUC-KR')
                 except:
                     return json.dumps({"message": []})
-            elif wids_option == '0':
+            elif wids_option == '0': # alive reserve
                 return json.dumps({"message": []})
         return '', 200
 
 
 def main():
+    '''
+        @brief AtEar main function.
+    '''
     wids_process = False
     from module.network import auto_monitor, stop_monitor
     try:

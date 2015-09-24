@@ -16,7 +16,7 @@ from execute import execute
 
 
 _dev_name_list = ['atear_dump', 'atear_wids','atear_deauth', 'atear_pentest', 'atear_ap']
-_mon_dev_list = ['atear_dump', 'atear_wids','atear_deauth']
+_mon_dev_list = ['atear_dump', 'atear_wids','atear_deauth', 'atear_pentest', 'atear_ap']
 
 def myip():
     return IPgetter().get_externalip()
@@ -148,7 +148,7 @@ def get_ip_address(ifname):
 
 
 def get_l_gateway_ip(iface):
-    command = "route | grep default | awk -F' ' '{print $2}'"
+    command = "route |grep "+iface+"| grep default | awk -F' ' '{print $2}'"
     p, ret, out, err = execute(command)
     gw_address = out.replace('\n', '')
 
@@ -208,14 +208,16 @@ def network_host_ip(interface):
     except NmapParserException:
         print("Exception Network Error")
     up_hosts = []
+
     gateway = get_l_gateway_ip(interface)
     for host in parser.hosts:
         if str(host).find('up') is not -1:
             up_host = re.findall(r'(\[.*\()', str(host))[0].replace('[', '').replace(' (', '')
             up_hosts.append(up_host)
+
     up_hosts.remove(gateway)
     up_hosts.remove(ip)
-    return up_hosts
+    return ' / '.join(up_hosts)
 
 
 def arp_spoof(iface):
@@ -235,43 +237,93 @@ def arp_spoof(iface):
             send(to_gateway, verbose=0)
             time.sleep(5)
 
+def get_ap_info(essid, bssid, enc_type, pw, iface, need_public_info=False, need_conn_host_info=False):
+    success = False
+    public_ip = ''
+    conn_host = ''
+    if set_new_connection(essid, bssid, pw, iface, enc_type):
+        if need_public_info:
+            public_ip = myip()
+        if need_conn_host_info:
+            try:
+                conn_host = network_host_ip(iface)
+            except IOError:
+                conn_host = False
+    else: # if 'set_new_connection' function return false
+        print '[!!] Failed to connect to AP '+ essid
+    # Releqse Session
+    execute('iw dev '+iface+' disconnect')
+    execute('ifconfig '+iface+' down')
+    execute('dhcpcd -k '+ iface)
+    execute('killall wpa_supplicant')
+    return success, public_ip, conn_host
 
-def set_new_connection(ssid, pw, iface, enc_type):
-    print ssid, pw, iface, enc_type
-    ssid = ssid.decode('utf-8').encode('euc-kr')
-    execute('killall dhcpcd-bin ')
+
+def set_new_connection(essid, bssid, pw, iface, enc_type):
+    '''
+        @brief This function is a part that connects to the AP in pentest module.
+            The connection method varies depending on the protocol used.
+            Use the iw dev utility to verify that connection.
+    '''
+    execute('killall dhcpcd-bin')
     execute('killall dhclient')
     execute('killall wpa_supplicant')
     execute('ifconfig '+iface+' down')
     execute('iwconfig '+iface+' mode managed')
+    time.sleep(1)
     if "WEP" in enc_type.upper():
-        execute('iwconfig '+iface+' essid '+ ssid)
+        # If AP is encrypted with WEP, connect using the 'iwconfig' utility.
+        execute('iwconfig '+iface+' essid '+ essid)
         execute('iwconfig '+iface+' key s:'+ '\''+pw+'\'')
-        execute('ifconfig '+iface+' up')
         time.sleep(1)
-        if commands.getoutput('iw dev '+iface+' link') is 'Not connected.':
+        execute('ifconfig '+iface+' up')
+        time.sleep(3)
+
+        link = commands.getoutput('iw dev '+iface+' link')
+        if 'Not connected.' in link: # verify
             return False
-        execute('dhclient '+iface)
-        pass
+
+        p, r, out, err = execute('dhclient '+iface)
+        return True
+
     elif "WPA" in enc_type.upper():
-        execute('iwconfig '+iface+' essid '+ssid)
-        proc = Popen('/usr/bin/wpa_passphrase '+ssid+' > /etc/wpa_supplicant/wpa_supplicant.conf',\
+        # If AP is encrypted with WPA, connect using the 'wpa_supplicant' utility.
+        execute('iwconfig '+iface+' essid '+essid)
+        proc = Popen('/usr/bin/wpa_passphrase '+essid+' > /etc/wpa_supplicant/wpa_supplicant.conf',\
                      shell=True, stdin=PIPE, stdout=PIPE, stderr=PIPE)
         proc.stdin.write(pw)
+        proc.communicate()
         execute('/sbin/wpa_supplicant -i '+iface+' -B -c /etc/wpa_supplicant/wpa_supplicant.conf')
-        time.sleep(1)
-        if commands.getoutput('iw dev '+iface+' link') is 'Not connected.':
+        time.sleep(3)
+        link = commands.getoutput('iw dev '+iface+' link')
+        if 'Not connected.' in link: # verify
             return False
-        execute('dhcpcd '+ iface)
-        pass
+        p, r, out, err = execute('dhcpcd '+ iface+' -t 10') # wait 10 seconds
+
+        # Sometime dhcpcd occur the error and set invalid IP address.
+        if "timed out" in err:
+            for i in range(0, 5): # retry count 5
+                execute('dhcpcd -k '+iface)
+                execute('killall wpa_supplicant')
+                time.sleep(1)
+                execute('/sbin/wpa_supplicant -i '+iface+' -B -c /etc/wpa_supplicant/wpa_supplicant.conf')
+                time.sleep(1)
+                p, r, out, err = execute('dhcpcd '+ iface+' -t 10') # wait 10 seconds
+                if "timed out" not in err: # quit loop
+                    break
+                elif i == 4: # 4 is last chance
+                    return False
+        return True
+
     elif "OPN" in enc_type.upper():
+        # If AP is encrypted with WPA, connect using the 'iw' utility.
         execute('ifconfig '+iface+' up')
-        execute('iw dev '+iface+' connect '+ssid)
+        execute('iw dev '+iface+' connect '+essid)
         time.sleep(1)
-        if commands.getoutput('iw dev '+iface+' link') is 'Not connected.':
+        if commands.getoutput('iw dev '+iface+' link') is 'Not connected.': # verify
             return False
         execute('dhclient '+iface)
-        pass
+        return True
 
 
 def get_interfaces():
@@ -347,6 +399,7 @@ def auto_monitor():
 
     execute('rfkill unblock wlan')
     return True
+
 
 def set_monitor_mode():
     '''
