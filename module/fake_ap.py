@@ -1,19 +1,16 @@
 import os
 import threading
 from flask import Flask, request, render_template, redirect, url_for
-from flask_sslify import SSLify
 import json
 import re
 import network
 from multiprocessing import Process
 import datetime
-import NetBIOS
 import socket
 import struct
 import IN
 from collections import defaultdict
 import time
-from subprocess import Popen
 from execute import execute
 
 
