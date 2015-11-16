@@ -143,6 +143,7 @@ class Scanner(object):
             r = Reader()
             self._networks = r.get_sorted_networks()
             self._clients = r.client_return().values()
-        except:
+        except Exception, e:
+            print e
             return False
         return self._networks + self._clients

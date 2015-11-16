@@ -1,11 +1,13 @@
+#-*- coding:utf-8 -*-
 __author__ = 'root'
 from subprocess import Popen, PIPE
-import os
+import os, sys
 import datetime
 import time
 from execute import execute
 import threading
-
+reload(sys)
+sys.setdefaultencoding('utf-8')
 
 class Wireless_IDS():
     def __init__(self, iface):
@@ -66,13 +68,13 @@ class Wireless_IDS():
 
     def CaptureTraffic(self):
         dump_cmd = 'tshark -i ' + self.iface + ' -w ' + self.tshark_pcap + ' -n -t ad -a duration:20 > /dev/null 2>&1'
-        execute(dump_cmd)
+        execute(dump_cmd, wait=True)
 
     def ConvertPackets(self):
         ''' Convert pcap file to human-redable.'''
         # Convert
         conv_cmd = 'tshark -r ' + self.tshark_pcap + ' -n -t ad > ' + self.tshark_readable
-        execute(conv_cmd)
+        execute(conv_cmd, wait=True)
 
         # Copy and remove \x00 character.
         tmp_csv = open('./log/atear_wids-01.csv', 'rb')
@@ -121,6 +123,8 @@ class Wireless_IDS():
                         PSSID = line.split(', ')[4].replace(',', '').replace('(', '')
                         ATO_MAC = ''
 
+
+                        # To맥 구하고
                         if len(TO_MAC1) == 17:
                             ATO_MAC = TO_MAC1
                         if len(TO_MAC2) == 17:
@@ -129,6 +133,7 @@ class Wireless_IDS():
                         if SSID == ".":
                             SSID = ""
 
+                        # SSID 구하고
                         if PSSID != "" and PSSID[:5] == "SSID=":
                             if PSSID[-18:] == "[Malformed Packet]":
                                 PSSID = PSSID[:-18]
@@ -142,29 +147,43 @@ class Wireless_IDS():
                             SSID = SSID[5:]
                             AESSID = SSID
 
+                        # EAPOL이 아니면 6번째 필드는 DTYPE
                         if line.find(str('EAPOL')) != -1:
                             DTYPE = line.split()[6].replace(',', '').replace(')', '').upper()
 
+
+                        # Address type 3종류 분류, 해서 STYPE을 바르게 구함.
+                        # Beacon, Probe, QoS Data, QoS Null function 등이 해당
                         if len(FR_MAC) == 17 and len(TO_MAC1) == 17:
                             FoundType = 1
                             STYPE = DTYPE
+                        # ACK, CTS 등이 해당
                         if len(TO_MAC2) == 17:
                             FoundType = 2
                             STYPE = DTYPE2
+
+                        # addr1,2,3 모두 17자리가 아니면 RESERVED FRAME
+                        # STYPE = RESERVED FRAME
                         if len(FR_MAC) != 17 and len(TO_MAC1) != 17 and len(TO_MAC2) != 17:
                             FoundType = 3
                             STYPE = DTYPE2
                             DTYPEA = str(DTYPE2) + " " + str(DTYPE)
                             if DTYPEA == "RESERVED FRAME":
                                 STYPE = DTYPEA
+
+                        # STYPE = NULL FUNCTION
                         if DTYPE == "NULL" and DTYPE3 == "FUNCTION":
                             DTYPEA = str(DTYPE) + " " + str(DTYPE3)
                             STYPE = DTYPEA + ""
 
+                        # STYPE = BEACON FRAME
                         if DTYPE == "BEACON" and DTYPE3 == "FRAME":
                             DTYPEA = str(DTYPE) + " " + str(DTYPE3)
                             STYPE = DTYPEA
                             FOUND_REC = ""
+                            # SSID가 있고, FR_MAC이 정상이면
+                            # essidcount.log
+                            #    BSSID, ESSID, COUNT 형식
                             if SSID != "" and len(FR_MAC) == 17:
                                 with open(self.essidfile, 'r+') as essidf:
                                     elines = essidf.readlines()
@@ -173,9 +192,9 @@ class Wireless_IDS():
                                     for eline in elines:
                                         eline = eline.replace("\n", "")
                                         if FR_MAC in eline:
-                                            ED_MAC = eline.split(', ')[0]
-                                            ED_NAME = eline.split(', ')[1]
-                                            ED_CT = eline.split(', ')[2]
+                                            ED_MAC = eline.split(', ')[0]   # MAC
+                                            ED_NAME = eline.split(', ')[1]  # ESSID
+                                            ED_CT = eline.split(', ')[2]    # COUNT
                                             if ED_NAME == SSID:
                                                 try:
                                                     ED_CT = int(ED_CT) + 1
@@ -186,7 +205,11 @@ class Wireless_IDS():
                                         essidf.write(eline + "\n")
                                     if FOUND_REC == "":
                                         essidf.write(FR_MAC + ", " + SSID + ", 1")
+
                         FOUND_REC = ""
+                        # 송수신 MAC Address가 둘다 있으면 macfile에 적용.
+                        # macfile.log
+                        #   FRMAC, TOMAC, COUNT 형식
                         if len(FR_MAC) == 17 and len(ATO_MAC) == 17:
                             with open(self.macfile, 'r+') as rf:
                                 elines = rf.readlines()
@@ -213,25 +236,35 @@ class Wireless_IDS():
                                     rf.write(FR_MAC + ", " + ATO_MAC + ", 1")
 
                         DTYPEA = str(DTYPE) + " " + str(DTYPE3)
+                        # STYPE = PROBE RESPONSE
                         if DTYPEA == "PROBE RESPONSE":
                             STYPE = DTYPEA
+                        # STYPE = PROBE REQUEST
                         if DTYPEA == "PROBE REQUEST":
                             STYPE = DTYPEA
 
                         if WPS1 == "EAP" and WPS2 == "WPS":
                             STYPE = "WPS"
 
+
+                        # BROADCAST~
                         if str(TO_MAC1) == "FF:FF:FF:FF:FF:FF":
                             BCast = 1
                         else:
                             BCast = 0
 
+
                         if len(FR_MAC) != 17:
                             FR_MAC = ""
+
+                        # TOMAC1,2 TO_MAC1로
                         if len(TO_MAC1) != 17 and len(TO_MAC2) == 17:
                             TO_MAC1 = TO_MAC2
+                        # TOMAC2 17자리 아니면
                         if len(TO_MAC2) != 17:
                             TO_MAC2 = ""
+
+                        # FRMAC이 있긴 있으면 BAK_FR_MAC에 저장
                         if FR_MAC != "":
                             BAK_FR_MAC = FR_MAC
 
@@ -274,25 +307,53 @@ class Wireless_IDS():
                         GET_DATA98 = "0"
                         GET_DATA94 = "0"
 
+                        # STYPE이 QOS 또는 DATA고, 목적지가 Broadcast면,
+                        # GET_DATA를 1
                         if STYPE == "DATA" or STYPE == "QOS":
                             if TO_MAC1 == "FF:FF:FF:FF:FF:FF":
                                 GET_DATA = "1"
 
+
+                        # 98, 94, 86, etc.. mean packet length
+                        #   it references aireplay-ng work packet
+                        #   wireshark filter -> frame.len == n
+
                         if STYPE == "DATA":
+                            # STYPE이 DATA고, DTYPE2가 71이나 73이면서,
+                            #   TOMAC이 IPv4 멀티캐스트 주소면,
+                            #   GET_DATA
                             if DTYPE2 == "71" or DTYPE2 == "73":
                                 if TO_MAC1[:9] == "01:00:5E:":
                                     GET_DATA = "1"
+
+                            # STYPE이 DATA고, DTYPE2가 98이고, 플래그가
+                            #    .P....F.C면, GET_DATA98
+                            #    PROTECTED, FROM-DS
                             if DTYPE2 == "98" and WPS2 == ".P....F.C":
                                 GET_DATA98 = "1"
+
+                            # STYPE이 DATA고, DTYPE2가 94이고, 플래그가
+                            #   .P...M.T.C면, GET_DATA94
+                            #   PROTECTED, MORE-FRAGMENTS, TO-DS
                             if DTYPE == "94" and WPS2 == ".P...M.T.C":
-                                GET_DAYA94 = "1"
+                                GET_DATA94 = "1"
+
+                            # STYPE이 DATA고, 플래그가 .P.....TC고,
+                            #   FG_MAC이 00:00:00으로 시작하면,
+                            #   GET_DATE86
                             if WPS2 == ".P.....TC":
                                 if FR_MAC[9:] == ":00:00:00":
                                     GET_DATA86 = "1"
+
+                            # STYPE이 DATA고, TOMAC 이 FF:F3:18이면,
+                            #   GET_DATA
                             if TO_MAC1[:9] == "FF:F3:18:":
                                 GET_DATA = "1"
 
                         if STYPE == "QOS":
+                            # STYPE이 QOS고, 플래그가 .P....F.C면,
+                            #    GET_QOS
+                            #   PROTECTED, FROM-DS
                             if WPS3 == ".P....F.C" or WPS2 == ".P....F.C":
                                 GET_QOS = "1"
 
@@ -445,13 +506,17 @@ class Wireless_IDS():
                                             self.L_ProbeName[ExistList] = ""
                                         self.L_ProbeName[ExistList] = self.L_ProbeName[ExistList] + str(
                                             PSSID) + ", "
-                                if STYPE == "DATA" and DTYPE2 == "98" and WPS2 == ".P....F.C":
+
+                                if STYPE == "DATA" and DTYPE2 == "98" and WPS2 == ".P....F.C":      # chopchop??
+                                    # PROTECTED, FROM-DS
                                     GET_DATA98 = str(int(GET_DATA98) + 1)
 
-                                if STYPE == "DATA" and DTYPE == "98" and WPS2 == ".P.....TC":
+                                if STYPE == "DATA" and DTYPE == "98" and WPS2 == ".P.....TC":       # Interactive Replay ??
+                                    # PROTECTED, TO-DS
                                     GET_DATA98 = str(int(GET_DATA98) + 1)
 
-                                if STYPE == "DATA" and DTYPE2 == "94" and WPS2 == ".P...M.TC":
+                                if STYPE == "DATA" and DTYPE2 == "94" and WPS2 == ".P...M.TC":      # fragment PRGA
+                                    # PROTECTED, TO-DS, MORE-FRAGMENTS
                                     GET_DATA94 = str(int(GET_DATA94) + 1)
 
                                 if STYPE == "DATA" or STYPE == "QOS":
@@ -465,7 +530,7 @@ class Wireless_IDS():
                                     if TO_MAC1[:9] != "FF:FF:FF:" and TO_MAC1[:3] == "FF:":
                                         GET_DATA = str(int(GET_DATA) + 1)
 
-                                if STYPE == "DATA" and WPS2 == ".P.....TC":
+                                if STYPE == "DATA" and WPS2 == ".P.....TC":                         # MDK mICHAEL SHUTDOWN EXPLOIT (TKIP)
                                     if FR_MAC[9:] == "00:00:00":
                                         GET_DATA86 = str(int(GET_DATA86) + 1)
 
@@ -608,6 +673,8 @@ class Wireless_IDS():
                         tml = 0
                         Multicast = 0
                         Chopchop = 0
+                        # TO MAC 리스트를 조사. 멀티캐스트나, 브로드 캐스트
+                        # 조사. 브로드캐스트면 chopchop?
                         while tml < len(TOMACLIST):
                             ChkMAC = TOMACLIST[tml]
                             if ChkMAC[:9] == "01:00:5E:":
@@ -676,6 +743,7 @@ class Wireless_IDS():
                                 if str(GenPrivacy) == "WEP":
                                     AWEP = "1"
 
+                            # Multicast가 5개 이상이고, 암호화가 WEP면,
                             if Multicast > 5:
                                 Concern += 1
                                 AType = "BCDATA"
@@ -688,6 +756,7 @@ class Wireless_IDS():
                                 recent_result += '{"attack": "Wessid-NG Attack", "src_mac": "' + FrMAC + '", "dst_mac": "' + ToMAC + \
                                                 '", "Possible": "Wesside-NG", "Time": "' + time_stamp + '"}, '
 
+                            # ChopChop이 5개 이상이고, 암호화가 WEP면,
                             if Chopchop > 5:
                                 Concern += 1
                                 AType = "BCDATA"
@@ -1023,11 +1092,11 @@ class Wireless_IDS():
             sMAC[x] = MAC_ADR
             if MAC_ADR[:12] == "FF:FF:FF:FF:":
                 sMAC[x] = ""
-            if MAC_ADR[:6] == "33:33:":
+            if MAC_ADR[:6] == "33:33:":     # in Ethernet IPv6 multicast rfc 1112
                 sMAC[x] = ""
-            if MAC_ADR[:9] == "01:80:C2:":
+            if MAC_ADR[:9] == "01:80:C2:":  # in Ethernet IPv4 multicast rfc 2464
                 sMAC[x] = ""
-            if MAC_ADR[:9] == "01:00:5E:":
+            if MAC_ADR[:9] == "01:00:5E:":  #
                 sMAC[x] = ""
             if MAC_ADR[:3] == "FF:":
                 sMAC[x] = ""
