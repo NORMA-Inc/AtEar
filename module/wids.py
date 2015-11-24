@@ -9,6 +9,16 @@ import threading
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
+import re
+specific_address = re.compile("""^01:00:5E:[00-7F]   # IPv4 Multicast RFC 1112
+                     |^FF:FF:FF             # Broadcast
+                     |^33:33                # IPv6 Multicast RFC 2464
+                     |^01:00:0C:CC:CC:C[CD]  # CDP, VTP, Cisco shared spanning Tree Protocol Address
+                     |^01:80:C2:00:00:0[01238E] # Link Layer discovery Protocol, Spanning Tree Protocol.....
+                     |^01:80:C2:00:00:3[0-F]    # Ethernet CFM Protocol IEEE 802.1ag
+                     |^01:1B:19:00:00:00        # Precision Time Protocol
+                     """, re.I | re.X)
+
 class Wireless_IDS():
     def __init__(self, iface):
         '''
@@ -1090,6 +1100,12 @@ class Wireless_IDS():
             MAC_ADR = sMAC[x]
             MAC_ADR = MAC_ADR.lstrip().rstrip()
             sMAC[x] = MAC_ADR
+
+            if specific_address.match(MAC_ADR):
+                sMAC[x] = ""
+            elif MAC_ADR == "":
+                sMAC[x] = ""
+            """
             if MAC_ADR[:12] == "FF:FF:FF:FF:":
                 sMAC[x] = ""
             if MAC_ADR[:6] == "33:33:":     # in Ethernet IPv6 multicast rfc 1112
@@ -1100,8 +1116,7 @@ class Wireless_IDS():
                 sMAC[x] = ""
             if MAC_ADR[:3] == "FF:":
                 sMAC[x] = ""
-            if MAC_ADR == "":
-                sMAC[x] = ""
+            """
             x += 1
         x = 0
         NewMAC = ""
@@ -1112,6 +1127,7 @@ class Wireless_IDS():
         if NewMAC[-3:] == " / ":
             NewMAC = NewMAC[:-3]
         return NewMAC
+
 
 """
 import threading
