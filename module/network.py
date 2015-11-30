@@ -13,6 +13,7 @@ import random
 import urllib2 as urllib
 from ctypes import *
 from execute import execute
+import signal
 
 
 _dev_name_list = ['atear_dump', 'atear_wids','atear_deauth', 'atear_pentest', 'atear_ap']
@@ -237,11 +238,11 @@ def arp_spoof(iface):
             send(to_gateway, verbose=0)
             time.sleep(5)
 
-def get_ap_info(essid, bssid, enc_type, pw, iface, need_public_info=False, need_conn_host_info=False):
+def get_ap_info(essid, channel, enc_type, pw, iface, need_public_info=False, need_conn_host_info=False):
     success = False
     public_ip = ''
     conn_host = ''
-    if set_new_connection(essid, bssid, pw, iface, enc_type):
+    if set_new_connection(essid, channel, pw, iface, enc_type):
         if need_public_info:
             public_ip = myip()
         if need_conn_host_info:
@@ -259,15 +260,42 @@ def get_ap_info(essid, bssid, enc_type, pw, iface, need_public_info=False, need_
     return success, public_ip, conn_host
 
 
-def set_new_connection(essid, bssid, pw, iface, enc_type):
+def set_new_connection(essid, channel, pw, iface, enc_type):
     '''
         @brief This function is a part that connects to the AP in pentest module.
             The connection method varies depending on the protocol used.
             Use the iw dev utility to verify that connection.
     '''
-    execute('killall dhcpcd-bin')
-    execute('killall dhclient')
-    execute('killall wpa_supplicant')
+    p,r,o,e = execute("ps -ef |grep dhcpcd-bin")
+    if o:
+        ol = o.split('\n')
+        for out1 in ol:
+            if out1.find(iface) != -1:
+                if out1.split()[1].isdigit():
+                    os.kill(int(out1.split()[1]), signal.SIGKILL)
+                    print out1.split()[1]
+    p.communicate()
+
+    p,r,o,e = execute("ps -ef |grep dhclient")
+    if o:
+        ol = o.split('\n')
+        for out1 in ol:
+            if out1.find(iface) != -1:
+                if out1.split()[1].isdigit():
+                    os.kill(int(out1.split()[1]), signal.SIGKILL)
+                    print out1.split()[1]
+    p.communicate()
+
+    p,r,o,e = execute("ps -ef |grep wpa_supplicant")
+    if o:
+        ol = o.split('\n')
+        for out1 in ol:
+            if out1.find(iface) != -1:
+                if out1.split()[1].isdigit():
+                    os.kill(int(out1.split()[1]), signal.SIGKILL)
+                    print out1.split()[1]
+    p.communicate()
+
     execute('ifconfig '+iface+' down')
     execute('iwconfig '+iface+' mode managed')
     time.sleep(1)
