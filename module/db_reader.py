@@ -3,10 +3,11 @@ import csv
 import os
 import string
 
+BASEPATH = os.path.dirname(os.path.abspath(__file__))
 
 def oui_search(mac_addr):
     mac_addr = string.upper(mac_addr)
-    path = os.path.abspath('./databases/oui_database.csv')
+    path = os.path.join(BASEPATH, '../databases/oui_database.csv')
     csv_file = open(path, 'rb')
     reader = csv.reader(csv_file)
     for row in reader:

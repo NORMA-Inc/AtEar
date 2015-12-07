@@ -6,10 +6,12 @@ import datetime
 import time
 from execute import execute
 import threading
+import re
+
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
-import re
+BASEPATH = os.path.dirname(os.path.abspath(__file__))
 specific_address = re.compile("""^01:00:5E:[00-7F]   # IPv4 Multicast RFC 1112
                      |^FF:FF:FF             # Broadcast
                      |^33:33                # IPv6 Multicast RFC 2464
@@ -28,17 +30,17 @@ class Wireless_IDS():
         '''
         self.START_SIG = True
         self.iface = iface
-        self.captured_csv       = './log/atear_wids.csv'            #
-        self.tshark_pcap        = './log/tshark_wids.pcap'          # Captured file for WIDS(attack detector).
-        self.tshark_readable    = './log/tshark_readable.txt'       # Convert .pcap to human-redable-format.
-        self.essidfile          = './log/essidcount.log'
-        self.essidlog           = './log/essidlog.txt'
-        self.resultlist         = './log/resultlist.log'
-        self.macfile            = './log/macfile.log'
-        self.resultlog          = './log/result.log'
-        self.logfile            = './log/log.txt'
-        self.recently_detected  = './log/recently_detected.txt'     # Save the most recent attack information.
-        self.detection_list     = './log/detection_list.txt'        # It stores a history of detected attacks. naming?
+        self.captured_csv       = os.path.join(BASEPATH, '../log/atear_wids.csv')            #
+        self.tshark_pcap        = os.path.join(BASEPATH, '../log/tshark_wids.pcap')          # Captured file for WIDS(attack detector).
+        self.tshark_readable    = os.path.join(BASEPATH, '../log/tshark_readable.txt')       # Convert .pcap to human-redable-format.
+        self.essidfile          = os.path.join(BASEPATH, '../log/essidcount.log')
+        self.essidlog           = os.path.join(BASEPATH, '../log/essidlog.txt')
+        self.resultlist         = os.path.join(BASEPATH, '../log/resultlist.log')
+        self.macfile            = os.path.join(BASEPATH, '../log/macfile.log')
+        self.resultlog          = os.path.join(BASEPATH, '../log/result.log')
+        self.logfile            = os.path.join(BASEPATH, '../log/log.txt')
+        self.recently_detected  = os.path.join(BASEPATH, '../log/recently_detected.txt')     # Save the most recent attack information.
+        self.detection_list     = os.path.join(BASEPATH, '../log/detection_list.txt')        # It stores a history of detected attacks. naming?
         self.L_FrMAC = []
         self.L_ToMAC = []
         self.L_Data = []
@@ -65,7 +67,8 @@ class Wireless_IDS():
         self.L_Data94 = []
         self.L_Data98 = []
         self.MACDetail = ""
-        execute('rm -rf ./log/atear_wids*')
+        cmd_rmlog = "rm -rf %s" %(os.path.join(BASEPATH, '../log/atear_wids*'))
+        execute(cmd_rmlog)
         #execute('rm -rf ./log/air_scan_result*')
         open(self.essidfile, "wb").write("")
         open(self.macfile, "wb").write("")
@@ -87,7 +90,7 @@ class Wireless_IDS():
         execute(conv_cmd, wait=True)
 
         # Copy and remove \x00 character.
-        tmp_csv = open('./log/atear_wids-01.csv', 'rb')
+        tmp_csv = open(os.path.join(BASEPATH, '../log/atear_wids-01.csv'), 'rb')
         data = tmp_csv.read()
         tmp_csv.close()
 
@@ -96,7 +99,7 @@ class Wireless_IDS():
         new_csv.close()
 
     def run(self):
-        airo_cmd = ['airodump-ng', self.iface, '-w', './log/atear_wids', '--output-format', 'csv']
+        airo_cmd = ['airodump-ng', self.iface, '-w', os.path.join(BASEPATH, '../log/atear_wids'), '--output-format', 'csv']
         execute(airo_cmd, wait=False)
         while self.START_SIG:
             self.CaptureTraffic()
