@@ -440,6 +440,7 @@ class APCreate(object):
         self.dns_thread = threading.Thread(target=self.dns_server.run)
         self.web_server = WEBServer(self.wlan, self.address)
         self.web_process = Process(target=self.web_server.run)
+        self.isRunning = False
 
     def config(self):
         ''' Make config file for hostapd. '''
@@ -465,6 +466,8 @@ class APCreate(object):
 
     def run(self):
         self.config()
+        # Clean
+        self.stop()
         execute('rfkill unblock wlan')
         time.sleep(1)
         if_up_cmd = 'ifconfig ' + self.wlan + ' up ' + self.address + ' netmask ' + self.netmask
@@ -487,24 +490,28 @@ class APCreate(object):
         self.dhcp_thread.start()
         time.sleep(2)
         self.web_process.start()
+        self.isRunning = True
 
     def stop(self):
-        try:
-            self.dhcp.stop()
-            self.dns_server.stop()
-            self.web_process.terminate()
-        except:
-            pass
-        execute('iptables -P FORWARD DROP')
-        if self.wlan:
-            execute('iptables -D OUTPUT --out-interface ' + self.wlan + ' -j ACCEPT')
-            execute('iptables -D INPUT --in-interface ' + self.wlan + ' -j ACCEPT')
-        execute('iptables --table nat --delete-chain')
-        execute('iptables --table nat -F')
-        execute('iptables --table nat -X')
-        execute('sysctl -w net.ipv4.ip_forward=0')
-        execute('killall hostapd')                  # Consider using it's pid.
-        execute('ifconfig ' + self.wlan + ' down')
+        print "[*] FAKE_AP RECEIVED STOP SIGNAL"
+        if self.isRunning:
+            try:
+                self.dhcp.stop()
+                self.dns_server.stop()
+                self.web_process.terminate()
+            except:
+                pass
+            execute('iptables -P FORWARD DROP')
+            if self.wlan:
+                execute('iptables -D OUTPUT --out-interface ' + self.wlan + ' -j ACCEPT')
+                execute('iptables -D INPUT --in-interface ' + self.wlan + ' -j ACCEPT')
+            execute('iptables --table nat --delete-chain')
+            execute('iptables --table nat -F')
+            execute('iptables --table nat -X')
+            execute('sysctl -w net.ipv4.ip_forward=0')
+            execute('killall hostapd')                  # Consider using it's pid.
+            execute('ifconfig ' + self.wlan + ' down')
+        self.isRunning = False
 
     @staticmethod
     def get_values_login():

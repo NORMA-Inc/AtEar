@@ -4,9 +4,11 @@ from subprocess import Popen, PIPE
 import os, sys
 import datetime
 import time
+import multiprocessing
 from execute import execute
 import threading
 import re
+import signal
 
 reload(sys)
 sys.setdefaultencoding('utf-8')
@@ -21,13 +23,29 @@ specific_address = re.compile("""^01:00:5E:[00-7F]   # IPv4 Multicast RFC 1112
                      |^01:1B:19:00:00:00        # Precision Time Protocol
                      """, re.I | re.X)
 
-class Wireless_IDS():
+G_WIDS = None
+def signal_handler(signum, frame):
+    print "[*] WIDS RECEIVED STOP SIGNAL"
+    print "[*]   WIDS's subprocess count : %d" %len(G_WIDS.proc_list)
+    for proc in G_WIDS.proc_list:
+        try:
+            if proc.poll() == None:
+                proc.send_signal(signal.SIGTERM)
+                proc.join()
+        except:
+            pass
+    print "[*] WIDS CLEAN"
+    exit()
+
+
+class Wireless_IDS(multiprocessing.Process):
     def __init__(self, iface):
         '''
             @brief Set the path of the file to store the result in a variable.
             @param iface :
             *   Devices that were added in auto_monitor.
         '''
+        super(Wireless_IDS,self).__init__()
         self.START_SIG = True
         self.iface = iface
         self.captured_csv       = os.path.join(BASEPATH, '../log/atear_wids.csv')            #
@@ -67,6 +85,13 @@ class Wireless_IDS():
         self.L_Data94 = []
         self.L_Data98 = []
         self.MACDetail = ""
+        self.proc_list = []
+
+        signal.signal(signal.SIGTERM, signal_handler)
+
+        global G_WIDS
+        G_WIDS = self
+
         cmd_rmlog = "rm -rf %s" %(os.path.join(BASEPATH, '../log/atear_wids*'))
         execute(cmd_rmlog)
         #execute('rm -rf ./log/air_scan_result*')
@@ -80,14 +105,18 @@ class Wireless_IDS():
         open(self.recently_detected, "wb").write("")
 
     def CaptureTraffic(self):
-        dump_cmd = 'tshark -i ' + self.iface + ' -w ' + self.tshark_pcap + ' -n -t ad -a duration:20 > /dev/null 2>&1'
-        execute(dump_cmd, wait=True)
+        dump_cmd = 'tshark -i ' + self.iface + ' -w ' + self.tshark_pcap + ' -n -t ad -a duration:20'# > /dev/null 2>&1'
+        p,r,o,e = execute(dump_cmd.split(), wait=False)
+        self.proc_list.append(p)
+        time.sleep(20)
+        p.communicate()
+        self.proc_list.pop(self.proc_list.index(p))
 
     def ConvertPackets(self):
         ''' Convert pcap file to human-redable.'''
         # Convert
         conv_cmd = 'tshark -r ' + self.tshark_pcap + ' -n -t ad > ' + self.tshark_readable
-        execute(conv_cmd, wait=True)
+        p, r, o, e = execute(conv_cmd, wait=True)
 
         # Copy and remove \x00 character.
         tmp_csv = open(os.path.join(BASEPATH, '../log/atear_wids-01.csv'), 'rb')
@@ -100,7 +129,10 @@ class Wireless_IDS():
 
     def run(self):
         airo_cmd = ['airodump-ng', self.iface, '-w', os.path.join(BASEPATH, '../log/atear_wids'), '--output-format', 'csv']
-        execute(airo_cmd, wait=False)
+        p,r,o,e = execute(airo_cmd, wait=False)
+
+        self.proc_list.append(p)
+
         while self.START_SIG:
             self.CaptureTraffic()
             self.ConvertPackets()
@@ -1079,8 +1111,8 @@ class Wireless_IDS():
                                     return ESSID
 
     def stop(self):
+        print "[*] WIDS RECEIVED STOP SIGNAL"
         execute('killall tshark')
-
         self.START_SIG = False
 
     def get_recent_values(self):

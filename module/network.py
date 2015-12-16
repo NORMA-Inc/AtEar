@@ -17,7 +17,6 @@ import signal
 
 
 _dev_name_list = ['atear_dump', 'atear_wids','atear_deauth', 'atear_pentest', 'atear_ap']
-_mon_dev_list = ['atear_dump', 'atear_wids','atear_deauth', 'atear_pentest', 'atear_ap']
 
 def myip():
     return IPgetter().get_externalip()
@@ -274,7 +273,6 @@ def set_new_connection(essid, channel, pw, iface, enc_type):
                 if out1.split()[1].isdigit():
                     os.kill(int(out1.split()[1]), signal.SIGKILL)
                     print out1.split()[1]
-    p.communicate()
 
     p,r,o,e = execute("ps -ef |grep dhclient")
     if o:
@@ -284,7 +282,6 @@ def set_new_connection(essid, channel, pw, iface, enc_type):
                 if out1.split()[1].isdigit():
                     os.kill(int(out1.split()[1]), signal.SIGKILL)
                     print out1.split()[1]
-    p.communicate()
 
     p,r,o,e = execute("ps -ef |grep wpa_supplicant")
     if o:
@@ -294,7 +291,6 @@ def set_new_connection(essid, channel, pw, iface, enc_type):
                 if out1.split()[1].isdigit():
                     os.kill(int(out1.split()[1]), signal.SIGKILL)
                     print out1.split()[1]
-    p.communicate()
 
     execute('ifconfig '+iface+' down')
     execute('iwconfig '+iface+' mode managed')
@@ -320,7 +316,7 @@ def set_new_connection(essid, channel, pw, iface, enc_type):
         proc = Popen('/usr/bin/wpa_passphrase '+essid+' > /etc/wpa_supplicant/wpa_supplicant.conf',\
                      shell=True, stdin=PIPE, stdout=PIPE, stderr=PIPE)
         proc.stdin.write(pw)
-        proc.communicate()
+
         execute('/sbin/wpa_supplicant -i '+iface+' -B -c /etc/wpa_supplicant/wpa_supplicant.conf')
         time.sleep(3)
         link = commands.getoutput('iw dev '+iface+' link')
@@ -367,95 +363,90 @@ def get_interfaces():
     libc.freeifaddrs(head)
     return interfaces
 
+def disable_wlan_interface():
+    p,r,o,e = execute("iwconfig |grep wlan |awk '{print $1}'")
+    intf_list = o.split('\n')
+    for intf in intf_list:
+        execute("ifconfig %s down"%(intf))
+
+def is_fit_in(interface):
+
+    isSupportMon = False
+    isSupportAP = False
+    p, r, out, err = execute('iw phy '+interface+' info |grep "Supported interface modes" -A 10 |grep "*"')
+    support_list = out.replace('\t', '').replace('*', '').replace(' ','').split('\n')
+
+    for support in support_list:
+        if support == 'AP':
+            isSupportAP = True
+        elif support == 'monitor':
+            isSupportMon = True
+
+    if isSupportAP and isSupportMon:
+        return True
+    else:
+        return False
+
 
 def auto_monitor():
     '''
         @brief Check monitor mode support. and set.
     '''
-    print "Check Monitor mode...."
+    stop_monitor()
+    disable_wlan_interface()
+
+    # Get Wireless Interface
     p, r, out, err = execute('iw dev| grep phy')
-    interface_list = out.split('\n')
+    interface_list = out.replace('#','').split('\n')
     interface_list.pop()
-    ap_support = []
-    monitor_support = []
-    for interface in interface_list:
-        interface = interface.replace('#', '')
 
-        p, r, out, err = execute('iw phy '+interface+' info')
+    print "[*] Check Monitor mode...."
+    isAPSupport = False
+    isMonSupport = False
+    if not interface_list:
+        print "\nCouldn't find Wireless device"
+        return False
 
-        sup = out[out.find('Supported interface modes:')+28:]
-        support_list = sup[:sup.find(':')].replace('\t', '').replace(' ', '').replace('*', '').split('\n')[:-1]
-        for support in support_list:
-            if support == 'AP':
-                ap_support.append(interface)
-            elif support == 'monitor':
-                monitor_support.append(interface)
+    interface = None
+    for intf in interface_list:
+        if is_fit_in(intf):
+            interface = intf
+            break
 
-    if len(ap_support) == 0 or len(monitor_support) == 0:
+    if interface == None:
         print '\n'
-        print '[!!] I did not find the device to support the required mode.'
+        print '[!!] Could not find the device to support the required mode.'
         print '[!!] Please check that the WLAN device that supports monitor mode on your system.'
         return False
 
-    print "Set Monitor mode...."
-    if ap_support:
-        w_interface_down()
-        for dev in _dev_name_list:
-            execute('iw phy ' + ap_support[0] + ' interface add '+ dev +' type monitor')
-
-        w_interface_down()
-        ret = set_monitor_mode()
-        if ret == False:
+    # Make Interface at monitor mode
+    print "[*] Set Monitor mode...."
+    for dev in _dev_name_list:
+        execute('iw phy ' + interface + ' interface add '+ dev +' type monitor')
+        time.sleep(0.5)
+        if set_monitor_mode(dev) == False: # if Fail to Set up Monitor mode
             print '[!!] It failed to change the mode of the wireless LAN device.'
             print '[!!] Please try again later.'
             return False
-        w_interface_down()
-
-    elif monitor_support:
-        w_interface_down()
-        for dev in _dev_name_list:
-            if dev == "atear_ap": continue
-            execute('iw phy ' + ap_support[0] + ' interface add '+ dev +' type monitor')
-
-        w_interface_down()
-        ret = set_monitor_mode()
-        if ret == False:
-            print '[!!] It failed to change the mode of the wireless LAN device.'
-            print '[!!] Please try again later.'
-            return False
-        w_interface_down()
 
     execute('rfkill unblock wlan')
     return True
 
 
-def set_monitor_mode():
+def set_monitor_mode(dev):
     '''
         @brief Set wlan device to monitor mode.
         @return:
             * success - True
             * fail - False
     '''
-    for dev in _mon_dev_list:
-        execute('iwconfig '+ dev +' mode monitor')
-        time.sleep(1)
-        p, retval, out, err = execute('iwconfig '+ dev)
+    cmd = "ifconfig %s down;iwconfig %s mode monitor;ifconfig %s up" %(dev, dev, dev)
+    execute(cmd)
+    time.sleep(0.5)
 
-        retry = 0
-        while out.find('Mode:Monitor') == -1: # If the mode is not changed properly, enter the loop and retry 60.
-            execute('ifconfig '+dev+' down')
-            execute('iwconfig '+ dev +' mode monitor')
-            time.sleep(0.5)
-            p, retval, out, err = execute('iwconfig '+ dev)
-            retry = retry + 1
-            if retry == 150:
-                break
-
-    time.sleep(2)
-    for dev in _mon_dev_list: # Reaffirm
-        p, retval, out, err = execute('iwconfig '+ dev)
-        if out.find('Mode:Monitor') == -1:
-            return False
+    p, r, out, e = execute('iwconfig '+ dev)
+    if "Mode:Monitor" not in out:
+        return False
 
     return True
 
@@ -466,7 +457,7 @@ def stop_monitor():
     '''
     for dev in _dev_name_list:
         execute('iw dev '+ dev +' del > /dev/null 2>&1')
-    w_interface_up()
+    #w_interface_up()
 
 
 def w_interface_down():

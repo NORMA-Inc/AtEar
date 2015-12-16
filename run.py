@@ -9,6 +9,7 @@ from module.pentest_open import auto_pentest
 from multiprocessing import Process
 import ast
 import sys
+import time, os
 from module.execute import execute
 
 reload(sys)
@@ -45,9 +46,9 @@ class main_app():
         self.app = Flask(__name__)
         self.run = False
         self.wids_handle = wids
-        self.scanner = False
-        self.fake_ap = False
-        self.pentesting = False
+        self.scanner = None
+        self.fake_ap = None
+        self.pentesting = None
         self.scan_iface = 'atear_dump'
         self.pent_iface = 'atear_pentest'
         self.ap_iface = 'atear_ap'
@@ -75,36 +76,65 @@ class main_app():
 
     def scanstatus(self):
         ''' It responds to the airodump-scan results. '''
+        # 먼저 진행 중이던 작업을 취소.
+        print self.scanner, self.pentesting, self.fake_ap, self.wids_handle
+        if self.pentesting:
+            self.pentesting.stop()
+            self.pentesting = None
+
+        if self.fake_ap:
+            self.fake_ap.stop()
+            self.fake_ap = None
+
         if request.method == 'GET':
-            if self.scanner is False:
+            if not self.scanner:
                 # Class Atear-Beta.module.airodump  line 106.
                 self.scanner = airodump.Scanner(self.scan_iface)
                 self.scanner.run()
                 return "[]", 200
+
             else:
                 try:
                     # Return the scan results.
                     return Response(json.dumps(self.scanner.get_value(), cls=PythonObjectEncoder, ensure_ascii=False,
-                                               encoding='EUC-KR'), mimetype='application/json')
+                                                encoding='EUC-KR'), mimetype='application/json')
                 except:
                     return "[]", 200
+
         elif request.method == 'POST':
             if self.scanner:
                 self.scanner.stop()
-            self.scanner = False
+                self.scanner = None
             return '', 200
+
         return '', 200
 
     def fakeap(self):
         '''
             @brief Create fake-AP
         '''
+        # 먼저 진행 중이던 작업을 취소.
+        if self.wids_handle:
+            self.wids_handle.terminate()
+            self.wids_handle.join()
+            self.wids_handle = None
+
+        if self.scanner:
+            self.scanner.stop()
+            self.scanner = None
+
+        if self.pentesting:
+            self.pentesting.stop()
+            self.pentesting = None
+
         if request.method == 'POST':
             # Create Fake-AP with parameters from user selected.
+            if self.fake_ap:
+                self.fake_ap.stop()
             options = request.get_json()
             self.fake_ap = APCreate(self.ap_iface, options['enc'], options['ssid'], options['password'])
             self.fake_ap.run()
-            return '', 200
+
         elif request.method == 'GET':
             if self.fake_ap:
                 try:
@@ -119,18 +149,35 @@ class main_app():
                     return json.dumps({"connstation": '', "loginstation": ''})
             else:
                 return json.dumps({"connstation": '', "loginstation": ''})
+
         elif request.method == 'DELETE':
             # Stop fake_AP
             if self.fake_ap:
                 self.fake_ap.stop()
-            self.fake_ap = False
-            return '', 200
+            self.fake_ap = None
+
         return '', 200
 
     def wids(self):
         '''
             @brief Return the collected information from wids module.
         '''
+        # 먼저 진행 중이던 작업을 취소.
+        if self.pentesting:
+            self.pentesting.stop()
+            self.pentesting = None
+
+        if self.scanner:
+            self.scanner.stop()
+            self.scanner = None
+
+        if self.fake_ap:
+            self.fake_ap.stop()
+            self.fake_ap = None
+
+        if not self.wids_handle:
+            self.wids_handle = Wireless_IDS('atear_wids')
+            self.wids_handle.start()
         if request.method == 'GET':
             try:
                 return_value = ast.literal_eval(self.wids_handle.get_values())
@@ -145,7 +192,23 @@ class main_app():
             * POST  - Perform the pentest.
             * GET   - Return the result of pentest.
         '''
+        # 먼저 진행 중이던 작업을 취소.
+        if self.wids_handle:
+            self.wids_handle.terminate()
+            self.wids_handle.join()
+            self.wids_handle = None
+
+        if self.scanner:
+            self.scanner.stop()
+            self.scanner = None
+
+        if self.fake_ap:
+            self.fake_ap.stop()
+            self.fake_ap = None
+
         if request.method == 'POST':
+            if self.pentesting:
+                self.pentesting.stop()
             options = request.get_json()
             self.pentesting = auto_pentest(self.pent_iface, options)
             self.pentesting.run()
@@ -153,7 +216,7 @@ class main_app():
 
         elif request.method == 'GET':
             try:
-                return_values = ast.literal_eval(self.pentesting.get_values())
+                return_values = self.pentesting.get_values()
                 return json.dumps(return_values, ensure_ascii=False, encoding='EUC-KR')
             except:
                 return json.dumps([{}])
@@ -203,14 +266,13 @@ def main():
 
         # class  	AtEar-Beta.module.wids.Wireless_IDS
         # Prepare a file to store the results.
-        print "START AtEar-WIDS"
+        print "[*] START AtEar-WIDS"
         wids = Wireless_IDS('atear_wids')
 
         # def AtEar-Beta.module.wids.Wireless_IDS.run(self) line 78
         # Generate wids.run to child process.
-        wids_process = Process(target=wids.run)
-        wids_process.start()
-        print "START AtEar-UI"
+        wids.start()
+        print "[*] START AtEar-UI"
 
         # Class "main_app" is a flask module.
         main_app(wids)
