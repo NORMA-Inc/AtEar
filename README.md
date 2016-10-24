@@ -111,7 +111,7 @@ Enter the AtEar directory and run the install script:<br>
 
 ### How to Run
 `cd ./AtEar/`<br>
-`sudo python run.py &`<br>
+`sudo python run.py --iface wlan* <br>
 `Open Web Browsers`<br>
 `127.0.0.1:8080`<br>
 
