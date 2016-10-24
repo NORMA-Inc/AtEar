@@ -222,8 +222,7 @@ def network_host_ip(interface):
 def monitormode_change(iface):
     cmd = "rfkill unblock wlan"
     Popen(cmd, shell=True).communicate()
-    time.sleep(0.5)
-
+    time.sleep(0.3)
     cmd = "ifconfig %s down"%(iface)
     Popen(cmd, shell=True).communicate()
     time.sleep(0.5)
@@ -504,4 +503,4 @@ def w_interface_up():
 
 
 
-print get_interfaces()
+#print get_interfaces()

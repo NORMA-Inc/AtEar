@@ -1,274 +1,382 @@
 /home/atear/Desktop/AtEar_Demo/module/../log/tshark_readable.txt
-Date Time 	2016-10-24 16:38:23
+Date Time 	2016-10-24 16:48:59
 SN	FR MAC 			BF   	IsAP? 	ECT  	Data 	Data86 	Dat94  	Dat98 	QOS	Auth 	Deauth 	Assoc 	R.Asc 	D.Asc 	RTS 	CTS 	ACK 	EAPOL 	WPS 	RQX 	Resp 	NULL
-0	90:9F:33:BE:3B:4C	11	Yes	32	0	0	0	0	0	0	0	0	0	0	0	0	6	6	0	0	21	0
-ESSID	Norma_2.4G_test, Norma_2.4G_test, Norma_2.4G_test, Norma_2.4G_test, Norma_2.4G_test, Norma_2.4G_test, Norma_2.4G_test, Norma_2.4G_test, Norma_2.4G_test, Norma_2.4G_test, Norma_2.4G_test, Norma_2.4G_test, Norma_2.4G_test, Norma_2.4G_test, Norma_2.4G_test, Norma_2.4G_test, Norma_2.4G_test, Norma_2.4G_test, Norma_2.4G_test, Norma_2.4G_test, Norma_2.4G_test, Norma_2.4G_test, Norma_2.4G_test, Norma_2.4G_test, Norma_2.4G_test, Norma_2.4G_test, Norma_2.4G_test, Norma_2.4G_test, Norma_2.4G_test, Norma_2.4G_test, Norma_2.4G_test, Norma_2.4G_test
+0	88:63:DF:BA:73:C7	0	NO	0	0	0	0	0	0	0	0	0	0	0	8	27	2	2	0	0	0	0
+ESSID	
 Probe	
-DEST	FF:FF:FF:FF:FF:FF / BC:44:86:B1:A0:0B / 64:BC:0C:25:82:EB / B8:27:EB:14:B9:21
+DEST	64:E5:99:CB:3B:FA / 64:E5:99:CB:3B:F8
 
 SN	FR MAC 			BF   	IsAP? 	ECT  	Data 	Data86 	Dat94  	Dat98 	QOS	Auth 	Deauth 	Assoc 	R.Asc 	D.Asc 	RTS 	CTS 	ACK 	EAPOL 	WPS 	RQX 	Resp 	NULL
-1	00:40:5A:AE:E8:78	4	Yes	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+1	64:E5:99:CB:3B:FA	14	Yes	5	0	0	0	0	0	0	0	0	0	0	9	11	2	2	0	0	4	0
+ESSID	kounosoft, kounosoft, kounosoft, kounosoft, kounosoftkounosoft, kounosoft, kounosoft, kounosoft, kounosoft, kounosoft, kounosoftkounosoft, kounosoft, kounosoft, kounosoft, kounosoft, kounosoft
+Probe	
+DEST	88:63:DF:BA:73:C7 / AC:EE:9E:A9:30:90 / FF:FF:FF:FF:FF:FF / B8:27:EB:1C:35:63 / B4:B6:76:C0:32:CB / B8:27:EB:14:B9:21
+
+SN	FR MAC 			BF   	IsAP? 	ECT  	Data 	Data86 	Dat94  	Dat98 	QOS	Auth 	Deauth 	Assoc 	R.Asc 	D.Asc 	RTS 	CTS 	ACK 	EAPOL 	WPS 	RQX 	Resp 	NULL
+2	64:E5:99:CB:3B:F8	0	NO	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+ESSID	
+Probe	
+DEST	88:63:DF:BA:73:C7 / AC:5A:14:0D:DD:7A / B8:27:EB:1C:35:63 / B8:27:EB:14:B9:21
+
+SN	FR MAC 			BF   	IsAP? 	ECT  	Data 	Data86 	Dat94  	Dat98 	QOS	Auth 	Deauth 	Assoc 	R.Asc 	D.Asc 	RTS 	CTS 	ACK 	EAPOL 	WPS 	RQX 	Resp 	NULL
+3	AC:EE:9E:A9:30:90	0	NO	0	0	0	0	0	0	0	0	0	0	0	1	2	1	1	0	0	0	0
+ESSID	
+Probe	
+DEST	64:E5:99:51:E4:78
+
+SN	FR MAC 			BF   	IsAP? 	ECT  	Data 	Data86 	Dat94  	Dat98 	QOS	Auth 	Deauth 	Assoc 	R.Asc 	D.Asc 	RTS 	CTS 	ACK 	EAPOL 	WPS 	RQX 	Resp 	NULL
+4	08:5D:DD:24:8A:85	14	Yes	6	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+ESSID	olleh_WiFi_8A81, olleh_WiFi_8A81, olleh_WiFi_8A81, olleh_WiFi_8A81, olleh_WiFi_8A81, olleh_WiFi_8A81olleh_WiFi_8A81, olleh_WiFi_8A81, olleh_WiFi_8A81, olleh_WiFi_8A81olleh_WiFi_8A81, olleh_WiFi_8A81, olleh_WiFi_8A81, olleh_WiFi_8A81
+Probe	
+DEST	FF:FF:FF:FF:FF:FF
+
+SN	FR MAC 			BF   	IsAP? 	ECT  	Data 	Data86 	Dat94  	Dat98 	QOS	Auth 	Deauth 	Assoc 	R.Asc 	D.Asc 	RTS 	CTS 	ACK 	EAPOL 	WPS 	RQX 	Resp 	NULL
+5	64:E5:99:A5:9F:AC	11	Yes	4	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+ESSID	ropnt, ropnt, ropnt, ropntropnt, ropnt, ropnt, ropntropnt, ropnt, ropnt
+Probe	
+DEST	FF:FF:FF:FF:FF:FF
+
+SN	FR MAC 			BF   	IsAP? 	ECT  	Data 	Data86 	Dat94  	Dat98 	QOS	Auth 	Deauth 	Assoc 	R.Asc 	D.Asc 	RTS 	CTS 	ACK 	EAPOL 	WPS 	RQX 	Resp 	NULL
+6	90:9F:33:8F:F8:C0	7	Yes	3	0	0	0	0	0	0	0	0	0	0	0	0	3	3	0	0	2	0
+ESSID	unifams, unifams, unifamsunifams, unifamsunifams, unifams, unifams, unifams
+Probe	
+DEST	FF:FF:FF:FF:FF:FF / 44:1C:A8:EC:10:CB
+
+SN	FR MAC 			BF   	IsAP? 	ECT  	Data 	Data86 	Dat94  	Dat98 	QOS	Auth 	Deauth 	Assoc 	R.Asc 	D.Asc 	RTS 	CTS 	ACK 	EAPOL 	WPS 	RQX 	Resp 	NULL
+7	90:9F:33:90:06:A0	10	Yes	4	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+ESSID	chamenc, chamenc, chamenc, chamencchamenc, chamenc, chamencchamenc, chamenc, chamenc
+Probe	
+DEST	FF:FF:FF:FF:FF:FF
+
+SN	FR MAC 			BF   	IsAP? 	ECT  	Data 	Data86 	Dat94  	Dat98 	QOS	Auth 	Deauth 	Assoc 	R.Asc 	D.Asc 	RTS 	CTS 	ACK 	EAPOL 	WPS 	RQX 	Resp 	NULL
+8	04:8D:38:64:5C:40	11	Yes	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
 ESSID	
 Probe	
 DEST	FF:FF:FF:FF:FF:FF
 
 SN	FR MAC 			BF   	IsAP? 	ECT  	Data 	Data86 	Dat94  	Dat98 	QOS	Auth 	Deauth 	Assoc 	R.Asc 	D.Asc 	RTS 	CTS 	ACK 	EAPOL 	WPS 	RQX 	Resp 	NULL
-2	00:26:66:CD:34:24	5	Yes	5	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-ESSID	GHD151222-001, GHD151222-001, GHD151222-001, GHD151222-001, GHD151222-001
+9	00:40:5A:AE:E8:78	18	Yes	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+ESSID	
 Probe	
 DEST	FF:FF:FF:FF:FF:FF
 
 SN	FR MAC 			BF   	IsAP? 	ECT  	Data 	Data86 	Dat94  	Dat98 	QOS	Auth 	Deauth 	Assoc 	R.Asc 	D.Asc 	RTS 	CTS 	ACK 	EAPOL 	WPS 	RQX 	Resp 	NULL
-3	90:9F:33:D3:B8:A2	7	Yes	7	0	0	0	0	0	0	0	0	0	0	0	0	9	9	0	0	0	0
-ESSID	Norma_b, Norma_b, Norma_b, Norma_b, Norma_b, Norma_b, Norma_b
+10	04:8D:38:64:5C:41	10	Yes	5	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+ESSID	SO070VOIP5C3F, SO070VOIP5C3F, SO070VOIP5C3F, SO070VOIP5C3F, SO070VOIP5C3FSO070VOIP5C3F, SO070VOIP5C3FSO070VOIP5C3F, SO070VOIP5C3F, SO070VOIP5C3F
 Probe	
 DEST	FF:FF:FF:FF:FF:FF
 
 SN	FR MAC 			BF   	IsAP? 	ECT  	Data 	Data86 	Dat94  	Dat98 	QOS	Auth 	Deauth 	Assoc 	R.Asc 	D.Asc 	RTS 	CTS 	ACK 	EAPOL 	WPS 	RQX 	Resp 	NULL
-4	06:09:B4:75:E3:93	6	Yes	6	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-ESSID	ollehWiFi , ollehWiFi , ollehWiFi , ollehWiFi , ollehWiFi , ollehWiFi 
+11	00:40:5A:AE:E8:79	16	Yes	9	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0
+ESSID	U+Net_Nex, U+Net_Nex, U+Net_Nex, U+Net_Nex, U+Net_Nex, U+Net_Nex, U+Net_Nex, U+Net_Nex, U+Net_NexU+Net_Nex, U+Net_Nex, U+Net_Nex, U+Net_NexU+Net_Nex, U+Net_Nex, U+Net_Nex, U+Net_Nex
+Probe	
+DEST	FF:FF:FF:FF:FF:FF / 00:21:5D:31:0C:0A
+
+SN	FR MAC 			BF   	IsAP? 	ECT  	Data 	Data86 	Dat94  	Dat98 	QOS	Auth 	Deauth 	Assoc 	R.Asc 	D.Asc 	RTS 	CTS 	ACK 	EAPOL 	WPS 	RQX 	Resp 	NULL
+12	00:26:66:7B:10:9C	6	Yes	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+ESSID	WEPL_multi
 Probe	
 DEST	FF:FF:FF:FF:FF:FF
 
 SN	FR MAC 			BF   	IsAP? 	ECT  	Data 	Data86 	Dat94  	Dat98 	QOS	Auth 	Deauth 	Assoc 	R.Asc 	D.Asc 	RTS 	CTS 	ACK 	EAPOL 	WPS 	RQX 	Resp 	NULL
-5	64:E5:99:5B:4A:C0	7	Yes	7	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0
-ESSID	Norma_Phone, Norma_Phone, Norma_Phone, Norma_Phone, Norma_Phone, Norma_Phone, Norma_Phone
-Probe	
-DEST	FF:FF:FF:FF:FF:FF / 00:1F:96:34:79:DE
-
-SN	FR MAC 			BF   	IsAP? 	ECT  	Data 	Data86 	Dat94  	Dat98 	QOS	Auth 	Deauth 	Assoc 	R.Asc 	D.Asc 	RTS 	CTS 	ACK 	EAPOL 	WPS 	RQX 	Resp 	NULL
-6	90:9F:33:64:76:B8	3	Yes	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-ESSID	neuracle, neuracle, neuracle
+13	90:9F:33:7B:C3:D4	12	Yes	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+ESSID	kumath, kumath, kumathkumath, kumath, kumath, kumath, kumath, kumathkumath, kumath, kumath
 Probe	
 DEST	FF:FF:FF:FF:FF:FF
 
 SN	FR MAC 			BF   	IsAP? 	ECT  	Data 	Data86 	Dat94  	Dat98 	QOS	Auth 	Deauth 	Assoc 	R.Asc 	D.Asc 	RTS 	CTS 	ACK 	EAPOL 	WPS 	RQX 	Resp 	NULL
-7	00:09:B4:75:E3:93	6	Yes	6	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+14	08:5D:DD:16:D8:CA	2	Yes	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+ESSID	U+NetD8CC
+Probe	
+DEST	FF:FF:FF:FF:FF:FF
+
+SN	FR MAC 			BF   	IsAP? 	ECT  	Data 	Data86 	Dat94  	Dat98 	QOS	Auth 	Deauth 	Assoc 	R.Asc 	D.Asc 	RTS 	CTS 	ACK 	EAPOL 	WPS 	RQX 	Resp 	NULL
+15	00:30:0D:D4:05:50	2	Yes	6	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	15	0
 ESSID	ollehWiFi, ollehWiFi, ollehWiFi, ollehWiFi, ollehWiFi, ollehWiFi
 Probe	
-DEST	FF:FF:FF:FF:FF:FF
+DEST	24:F5:AA:70:A9:A3 / D0:57:85:A2:24:BD / 24:4B:81:B6:F8:F2 / FF:FF:FF:FF:FF:FF / 84:2E:27:6F:0A:C7
 
 SN	FR MAC 			BF   	IsAP? 	ECT  	Data 	Data86 	Dat94  	Dat98 	QOS	Auth 	Deauth 	Assoc 	R.Asc 	D.Asc 	RTS 	CTS 	ACK 	EAPOL 	WPS 	RQX 	Resp 	NULL
-8	90:9F:33:5F:E2:24	8	Yes	8	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-ESSID	kouno, kouno, kouno, kouno, kouno, kouno, kouno, kouno
-Probe	
-DEST	FF:FF:FF:FF:FF:FF
-
-SN	FR MAC 			BF   	IsAP? 	ECT  	Data 	Data86 	Dat94  	Dat98 	QOS	Auth 	Deauth 	Assoc 	R.Asc 	D.Asc 	RTS 	CTS 	ACK 	EAPOL 	WPS 	RQX 	Resp 	NULL
-9	00:1D:7D:01:B3:B9	0	NO	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-ESSID	
-Probe	
-DEST	FF:FF:FF:FF:FF:FF
-
-SN	FR MAC 			BF   	IsAP? 	ECT  	Data 	Data86 	Dat94  	Dat98 	QOS	Auth 	Deauth 	Assoc 	R.Asc 	D.Asc 	RTS 	CTS 	ACK 	EAPOL 	WPS 	RQX 	Resp 	NULL
-10	1C:A5:32:70:75:90	5	Yes	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-ESSID	
-Probe	
-DEST	FF:FF:FF:FF:FF:FF
-
-SN	FR MAC 			BF   	IsAP? 	ECT  	Data 	Data86 	Dat94  	Dat98 	QOS	Auth 	Deauth 	Assoc 	R.Asc 	D.Asc 	RTS 	CTS 	ACK 	EAPOL 	WPS 	RQX 	Resp 	NULL
-11	1C:A5:32:70:75:91	5	Yes	5	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-ESSID	U+Net7593, U+Net7593, U+Net7593, U+Net7593, U+Net7593
-Probe	
-DEST	FF:FF:FF:FF:FF:FF
-
-SN	FR MAC 			BF   	IsAP? 	ECT  	Data 	Data86 	Dat94  	Dat98 	QOS	Auth 	Deauth 	Assoc 	R.Asc 	D.Asc 	RTS 	CTS 	ACK 	EAPOL 	WPS 	RQX 	Resp 	NULL
-12	BC:96:80:99:CF:F0	4	Yes	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-ESSID	
-Probe	
-DEST	FF:FF:FF:FF:FF:FF
-
-SN	FR MAC 			BF   	IsAP? 	ECT  	Data 	Data86 	Dat94  	Dat98 	QOS	Auth 	Deauth 	Assoc 	R.Asc 	D.Asc 	RTS 	CTS 	ACK 	EAPOL 	WPS 	RQX 	Resp 	NULL
-13	00:09:B4:75:1C:2B	5	Yes	5	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-ESSID	ollehWiFi, ollehWiFi, ollehWiFi, ollehWiFi, ollehWiFi
-Probe	
-DEST	FF:FF:FF:FF:FF:FF
-
-SN	FR MAC 			BF   	IsAP? 	ECT  	Data 	Data86 	Dat94  	Dat98 	QOS	Auth 	Deauth 	Assoc 	R.Asc 	D.Asc 	RTS 	CTS 	ACK 	EAPOL 	WPS 	RQX 	Resp 	NULL
-14	00:27:1C:AD:1A:D9	4	Yes	4	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-ESSID	U+Net1ADB, U+Net1ADB, U+Net1ADB, U+Net1ADB
-Probe	
-DEST	FF:FF:FF:FF:FF:FF
-
-SN	FR MAC 			BF   	IsAP? 	ECT  	Data 	Data86 	Dat94  	Dat98 	QOS	Auth 	Deauth 	Assoc 	R.Asc 	D.Asc 	RTS 	CTS 	ACK 	EAPOL 	WPS 	RQX 	Resp 	NULL
-15	00:09:B4:75:65:7B	5	Yes	5	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-ESSID	ollehWiFi, ollehWiFi, ollehWiFi, ollehWiFi, ollehWiFi
-Probe	
-DEST	FF:FF:FF:FF:FF:FF
-
-SN	FR MAC 			BF   	IsAP? 	ECT  	Data 	Data86 	Dat94  	Dat98 	QOS	Auth 	Deauth 	Assoc 	R.Asc 	D.Asc 	RTS 	CTS 	ACK 	EAPOL 	WPS 	RQX 	Resp 	NULL
-16	00:09:B4:75:1C:3B	4	Yes	4	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-ESSID	ollehWiFi, ollehWiFi, ollehWiFi, ollehWiFi
-Probe	
-DEST	FF:FF:FF:FF:FF:FF
-
-SN	FR MAC 			BF   	IsAP? 	ECT  	Data 	Data86 	Dat94  	Dat98 	QOS	Auth 	Deauth 	Assoc 	R.Asc 	D.Asc 	RTS 	CTS 	ACK 	EAPOL 	WPS 	RQX 	Resp 	NULL
-17	04:8D:38:B6:D2:5E	3	Yes	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-ESSID	SO070VOIPD25C, SO070VOIPD25C, SO070VOIPD25C
-Probe	
-DEST	FF:FF:FF:FF:FF:FF
-
-SN	FR MAC 			BF   	IsAP? 	ECT  	Data 	Data86 	Dat94  	Dat98 	QOS	Auth 	Deauth 	Assoc 	R.Asc 	D.Asc 	RTS 	CTS 	ACK 	EAPOL 	WPS 	RQX 	Resp 	NULL
-18	00:27:1C:AD:1A:D8	1	YES	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-ESSID	
-Probe	
-DEST	FF:FF:FF:FF:FF:FF
-
-SN	FR MAC 			BF   	IsAP? 	ECT  	Data 	Data86 	Dat94  	Dat98 	QOS	Auth 	Deauth 	Assoc 	R.Asc 	D.Asc 	RTS 	CTS 	ACK 	EAPOL 	WPS 	RQX 	Resp 	NULL
-19	06:09:B4:75:1C:2B	2	Yes	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+16	06:30:0D:D4:05:51	3	Yes	2	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	13	0
 ESSID	ollehWiFi , ollehWiFi 
 Probe	
-DEST	FF:FF:FF:FF:FF:FF
+DEST	24:F5:AA:70:A9:A3 / 24:4B:81:B6:F8:F2 / 84:2E:27:6F:0A:C7 / FF:FF:FF:FF:FF:FF
 
 SN	FR MAC 			BF   	IsAP? 	ECT  	Data 	Data86 	Dat94  	Dat98 	QOS	Auth 	Deauth 	Assoc 	R.Asc 	D.Asc 	RTS 	CTS 	ACK 	EAPOL 	WPS 	RQX 	Resp 	NULL
-20	00:09:B4:75:1C:2D	1	YES	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-ESSID	
+17	90:9F:33:5F:E2:24	1	YES	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+ESSID	kouno
 Probe	
 DEST	FF:FF:FF:FF:FF:FF
 
 SN	FR MAC 			BF   	IsAP? 	ECT  	Data 	Data86 	Dat94  	Dat98 	QOS	Auth 	Deauth 	Assoc 	R.Asc 	D.Asc 	RTS 	CTS 	ACK 	EAPOL 	WPS 	RQX 	Resp 	NULL
-21	64:E5:99:51:E4:78	5	Yes	5	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-ESSID	Norma_2.4G, Norma_2.4G, Norma_2.4G, Norma_2.4G, Norma_2.4G
+18	90:9F:33:D6:F2:74	5	Yes	2	0	0	0	0	0	0	0	0	0	0	0	0	2	2	0	0	0	0
+ESSID	Mureung, MureungMureung, MureungMureung
 Probe	
 DEST	FF:FF:FF:FF:FF:FF
 
 SN	FR MAC 			BF   	IsAP? 	ECT  	Data 	Data86 	Dat94  	Dat98 	QOS	Auth 	Deauth 	Assoc 	R.Asc 	D.Asc 	RTS 	CTS 	ACK 	EAPOL 	WPS 	RQX 	Resp 	NULL
-22	00:30:0D:D4:3A:30	3	Yes	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-ESSID	ollehWiFi, ollehWiFi, ollehWiFi
+19	32:CD:A7:3E:B0:43	2	Yes	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+ESSID	DIRECT-FjM2070 Series
 Probe	
 DEST	FF:FF:FF:FF:FF:FF
 
 SN	FR MAC 			BF   	IsAP? 	ECT  	Data 	Data86 	Dat94  	Dat98 	QOS	Auth 	Deauth 	Assoc 	R.Asc 	D.Asc 	RTS 	CTS 	ACK 	EAPOL 	WPS 	RQX 	Resp 	NULL
-23	06:30:0D:D4:3A:31	3	Yes	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-ESSID	ollehWiFi , ollehWiFi , ollehWiFi 
+20	90:9F:33:7E:D8:50	9	Yes	6	0	0	0	0	0	0	0	0	0	0	0	0	6	6	0	0	0	0
+ESSID	haimbio, haimbio, haimbio, haimbio, haimbio, haimbiohaimbio, haimbio, haimbio
 Probe	
 DEST	FF:FF:FF:FF:FF:FF
 
 SN	FR MAC 			BF   	IsAP? 	ECT  	Data 	Data86 	Dat94  	Dat98 	QOS	Auth 	Deauth 	Assoc 	R.Asc 	D.Asc 	RTS 	CTS 	ACK 	EAPOL 	WPS 	RQX 	Resp 	NULL
-24	06:09:B4:75:2E:8B	5	Yes	5	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-ESSID	ollehWiFi , ollehWiFi , ollehWiFi , ollehWiFi , ollehWiFi 
+21	32:CD:A7:30:9B:55	15	Yes	4	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+ESSID	DIRECT-OHC470 Series, DIRECT-OHC470 Series, DIRECT-OHC470 Series, DIRECT-OHC470 SeriesDIRECT-OHC470 Series, DIRECT-OHC470 Series, DIRECT-OHC470 SeriesDIRECT-OHC470 Series, DIRECT-OHC470 Series, DIRECT-OHC470 Series, DIRECT-OHC470 Series, DIRECT-OHC470 Series, DIRECT-OHC470 Series, DIRECT-OHC470 Series, DIRECT-OHC470 Series
 Probe	
 DEST	FF:FF:FF:FF:FF:FF
 
 SN	FR MAC 			BF   	IsAP? 	ECT  	Data 	Data86 	Dat94  	Dat98 	QOS	Auth 	Deauth 	Assoc 	R.Asc 	D.Asc 	RTS 	CTS 	ACK 	EAPOL 	WPS 	RQX 	Resp 	NULL
-25	90:9F:33:63:1A:76	4	Yes	4	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-ESSID	Haimnano, Haimnano, Haimnano, Haimnano
+22	64:E5:99:74:7A:4C	18	Yes	6	0	0	0	0	0	0	0	0	0	0	0	0	6	6	0	0	5	0
+ESSID	iptimea-aaa, iptimea-aaa, iptimea-aaa, iptimea-aaa, iptimea-aaa, iptimea-aaaiptimea-aaa, iptimea-aaa, iptimea-aaa, iptimea-aaa, iptimea-aaa, iptimea-aaaiptimea-aaa, iptimea-aaa, iptimea-aaa, iptimea-aaa, iptimea-aaa, iptimea-aaa, iptimea-aaa, iptimea-aaa, iptimea-aaa, iptimea-aaa, iptimea-aaa
+Probe	
+DEST	FF:FF:FF:FF:FF:FF / B8:27:EB:1C:35:63 / 84:2E:27:6F:0A:C7
+
+SN	FR MAC 			BF   	IsAP? 	ECT  	Data 	Data86 	Dat94  	Dat98 	QOS	Auth 	Deauth 	Assoc 	R.Asc 	D.Asc 	RTS 	CTS 	ACK 	EAPOL 	WPS 	RQX 	Resp 	NULL
+23	90:9F:33:BE:3B:4C	13	Yes	11	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	9	0
+ESSID	Norma_2.4G_test, Norma_2.4G_test, Norma_2.4G_test, Norma_2.4G_test, Norma_2.4G_test, Norma_2.4G_test, Norma_2.4G_test, Norma_2.4G_test, Norma_2.4G_test, Norma_2.4G_test, Norma_2.4G_testNorma_2.4G_test, Norma_2.4G_test, Norma_2.4G_test, Norma_2.4G_test, Norma_2.4G_test, Norma_2.4G_test, Norma_2.4G_testNorma_2.4G_test, Norma_2.4G_test, Norma_2.4G_test, Norma_2.4G_test
+Probe	
+DEST	B8:27:EB:1C:35:63 / FF:FF:FF:FF:FF:FF / 40:40:A7:3A:9C:42 / 58:94:6B:2A:7E:30 / E0:99:71:34:14:EE / 24:4B:81:B6:F8:F2 / C4:88:E5:05:A9:00
+
+SN	FR MAC 			BF   	IsAP? 	ECT  	Data 	Data86 	Dat94  	Dat98 	QOS	Auth 	Deauth 	Assoc 	R.Asc 	D.Asc 	RTS 	CTS 	ACK 	EAPOL 	WPS 	RQX 	Resp 	NULL
+24	00:26:66:38:52:3C	18	Yes	6	0	0	0	0	0	0	0	0	0	0	0	0	2	2	0	0	3	0
+ESSID	ssongnim, ssongnim, ssongnim, ssongnim, ssongnim, ssongnimssongnim, ssongnim, ssongnim, ssongnim, ssongnim, ssongnim, ssongnim, ssongnim, ssongnim, ssongnimssongnim, ssongnim, ssongnim, ssongnim, ssongnim
+Probe	
+DEST	FF:FF:FF:FF:FF:FF / 3C:A1:0D:1D:B4:C1 / 68:5D:43:00:99:25
+
+SN	FR MAC 			BF   	IsAP? 	ECT  	Data 	Data86 	Dat94  	Dat98 	QOS	Auth 	Deauth 	Assoc 	R.Asc 	D.Asc 	RTS 	CTS 	ACK 	EAPOL 	WPS 	RQX 	Resp 	NULL
+25	90:9F:33:8A:70:16	9	Yes	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+ESSID	iptime1111, iptime1111, iptime1111iptime1111, iptime1111iptime1111, iptime1111, iptime1111, iptime1111
 Probe	
 DEST	FF:FF:FF:FF:FF:FF
 
 SN	FR MAC 			BF   	IsAP? 	ECT  	Data 	Data86 	Dat94  	Dat98 	QOS	Auth 	Deauth 	Assoc 	R.Asc 	D.Asc 	RTS 	CTS 	ACK 	EAPOL 	WPS 	RQX 	Resp 	NULL
-26	00:30:0D:D3:C8:50	1	YES	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-ESSID	ollehWiFi
-Probe	
-DEST	FF:FF:FF:FF:FF:FF
-
-SN	FR MAC 			BF   	IsAP? 	ECT  	Data 	Data86 	Dat94  	Dat98 	QOS	Auth 	Deauth 	Assoc 	R.Asc 	D.Asc 	RTS 	CTS 	ACK 	EAPOL 	WPS 	RQX 	Resp 	NULL
-27	90:9F:33:D6:F2:74	4	Yes	8	0	0	0	0	0	0	0	0	0	0	0	0	2	2	0	0	4	0
-ESSID	Mureung, Mureung, Mureung, Mureung, Mureung, Mureung, Mureung, Mureung
-Probe	
-DEST	FF:FF:FF:FF:FF:FF / BC:44:86:B1:A0:0B
-
-SN	FR MAC 			BF   	IsAP? 	ECT  	Data 	Data86 	Dat94  	Dat98 	QOS	Auth 	Deauth 	Assoc 	R.Asc 	D.Asc 	RTS 	CTS 	ACK 	EAPOL 	WPS 	RQX 	Resp 	NULL
-28	00:23:AA:60:4E:ED	2	Yes	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-ESSID	SK_WiFiGIGA4EEE, SK_WiFiGIGA4EEE
-Probe	
-DEST	FF:FF:FF:FF:FF:FF
-
-SN	FR MAC 			BF   	IsAP? 	ECT  	Data 	Data86 	Dat94  	Dat98 	QOS	Auth 	Deauth 	Assoc 	R.Asc 	D.Asc 	RTS 	CTS 	ACK 	EAPOL 	WPS 	RQX 	Resp 	NULL
-29	BC:44:86:B1:A0:0B	0	NO	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0
-ESSID	
-Probe	Broadcast, Broadcast
-DEST	FF:FF:FF:FF:FF:FF
-
-SN	FR MAC 			BF   	IsAP? 	ECT  	Data 	Data86 	Dat94  	Dat98 	QOS	Auth 	Deauth 	Assoc 	R.Asc 	D.Asc 	RTS 	CTS 	ACK 	EAPOL 	WPS 	RQX 	Resp 	NULL
-30	12:23:AA:60:4E:ED	2	Yes	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-ESSID	
-Probe	
-DEST	FF:FF:FF:FF:FF:FF
-
-SN	FR MAC 			BF   	IsAP? 	ECT  	Data 	Data86 	Dat94  	Dat98 	QOS	Auth 	Deauth 	Assoc 	R.Asc 	D.Asc 	RTS 	CTS 	ACK 	EAPOL 	WPS 	RQX 	Resp 	NULL
-31	64:BC:0C:25:82:EB	0	NO	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0
-ESSID	
-Probe	Broadcast
-DEST	FF:FF:FF:FF:FF:FF
-
-SN	FR MAC 			BF   	IsAP? 	ECT  	Data 	Data86 	Dat94  	Dat98 	QOS	Auth 	Deauth 	Assoc 	R.Asc 	D.Asc 	RTS 	CTS 	ACK 	EAPOL 	WPS 	RQX 	Resp 	NULL
-32	00:40:5A:AE:E8:79	2	Yes	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0
-ESSID	U+Net_Nex, U+Net_Nex, U+Net_Nex
-Probe	
-DEST	FF:FF:FF:FF:FF:FF / AC:5A:14:0C:8E:E4
-
-SN	FR MAC 			BF   	IsAP? 	ECT  	Data 	Data86 	Dat94  	Dat98 	QOS	Auth 	Deauth 	Assoc 	R.Asc 	D.Asc 	RTS 	CTS 	ACK 	EAPOL 	WPS 	RQX 	Resp 	NULL
-33	00:1F:96:34:79:DE	0	NO	0	0	0	0	0	0	0	0	0	0	0	0	0	2	2	0	0	0	0
-ESSID	
-Probe	
-DEST	64:E5:99:5B:4A:C0
-
-SN	FR MAC 			BF   	IsAP? 	ECT  	Data 	Data86 	Dat94  	Dat98 	QOS	Auth 	Deauth 	Assoc 	R.Asc 	D.Asc 	RTS 	CTS 	ACK 	EAPOL 	WPS 	RQX 	Resp 	NULL
-34	BC:96:80:99:CF:F1	1	YES	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-ESSID	U+NetCFF3
-Probe	
-DEST	FF:FF:FF:FF:FF:FF
-
-SN	FR MAC 			BF   	IsAP? 	ECT  	Data 	Data86 	Dat94  	Dat98 	QOS	Auth 	Deauth 	Assoc 	R.Asc 	D.Asc 	RTS 	CTS 	ACK 	EAPOL 	WPS 	RQX 	Resp 	NULL
-35	00:09:B4:75:E3:95	3	Yes	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-ESSID	
-Probe	
-DEST	FF:FF:FF:FF:FF:FF
-
-SN	FR MAC 			BF   	IsAP? 	ECT  	Data 	Data86 	Dat94  	Dat98 	QOS	Auth 	Deauth 	Assoc 	R.Asc 	D.Asc 	RTS 	CTS 	ACK 	EAPOL 	WPS 	RQX 	Resp 	NULL
-36	00:09:B4:75:E4:25	1	YES	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-ESSID	
-Probe	
-DEST	FF:FF:FF:FF:FF:FF
-
-SN	FR MAC 			BF   	IsAP? 	ECT  	Data 	Data86 	Dat94  	Dat98 	QOS	Auth 	Deauth 	Assoc 	R.Asc 	D.Asc 	RTS 	CTS 	ACK 	EAPOL 	WPS 	RQX 	Resp 	NULL
-37	00:09:B4:75:65:4B	1	YES	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-ESSID	ollehWiFi
-Probe	
-DEST	FF:FF:FF:FF:FF:FF
-
-SN	FR MAC 			BF   	IsAP? 	ECT  	Data 	Data86 	Dat94  	Dat98 	QOS	Auth 	Deauth 	Assoc 	R.Asc 	D.Asc 	RTS 	CTS 	ACK 	EAPOL 	WPS 	RQX 	Resp 	NULL
-38	00:09:B4:75:2E:8D	2	Yes	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-ESSID	
-Probe	
-DEST	FF:FF:FF:FF:FF:FF
-
-SN	FR MAC 			BF   	IsAP? 	ECT  	Data 	Data86 	Dat94  	Dat98 	QOS	Auth 	Deauth 	Assoc 	R.Asc 	D.Asc 	RTS 	CTS 	ACK 	EAPOL 	WPS 	RQX 	Resp 	NULL
-39	AC:EE:9E:A9:30:90	0	NO	0	0	0	0	0	0	0	0	0	0	0	0	0	2	2	0	0	0	7
-ESSID	
-Probe	
-DEST	64:E5:99:51:E4:78
-
-SN	FR MAC 			BF   	IsAP? 	ECT  	Data 	Data86 	Dat94  	Dat98 	QOS	Auth 	Deauth 	Assoc 	R.Asc 	D.Asc 	RTS 	CTS 	ACK 	EAPOL 	WPS 	RQX 	Resp 	NULL
-40	68:5D:43:00:99:25	0	NO	0	0	0	0	0	0	0	0	0	0	0	0	0	3	3	0	0	0	0
-ESSID	
-Probe	
-DEST	64:E5:99:51:E4:78
-
-SN	FR MAC 			BF   	IsAP? 	ECT  	Data 	Data86 	Dat94  	Dat98 	QOS	Auth 	Deauth 	Assoc 	R.Asc 	D.Asc 	RTS 	CTS 	ACK 	EAPOL 	WPS 	RQX 	Resp 	NULL
-41	B8:27:EB:14:B9:21	0	NO	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0
-ESSID	
-Probe	Broadcast, Broadcast
-DEST	FF:FF:FF:FF:FF:FF
-
-SN	FR MAC 			BF   	IsAP? 	ECT  	Data 	Data86 	Dat94  	Dat98 	QOS	Auth 	Deauth 	Assoc 	R.Asc 	D.Asc 	RTS 	CTS 	ACK 	EAPOL 	WPS 	RQX 	Resp 	NULL
-42	3C:A1:0D:1D:B4:C1	0	NO	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0
+26	AC:5A:14:0D:DD:7A	0	NO	0	0	0	0	0	0	0	0	0	0	0	1	1	4	4	0	0	0	0
 ESSID	
 Probe	
 DEST	64:E5:99:CB:3B:FA
 
 SN	FR MAC 			BF   	IsAP? 	ECT  	Data 	Data86 	Dat94  	Dat98 	QOS	Auth 	Deauth 	Assoc 	R.Asc 	D.Asc 	RTS 	CTS 	ACK 	EAPOL 	WPS 	RQX 	Resp 	NULL
-43	90:9F:33:D3:B8:A0	0	NO	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-ESSID	
+27	64:E5:99:6C:8D:D8	10	Yes	4	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+ESSID	edu_tosel, edu_tosel, edu_tosel, edu_toseledu_tosel, edu_tosel, edu_toseledu_tosel, edu_tosel, edu_tosel
 Probe	
-DEST	78:59:5E:44:FB:59
+DEST	FF:FF:FF:FF:FF:FF
 
 SN	FR MAC 			BF   	IsAP? 	ECT  	Data 	Data86 	Dat94  	Dat98 	QOS	Auth 	Deauth 	Assoc 	R.Asc 	D.Asc 	RTS 	CTS 	ACK 	EAPOL 	WPS 	RQX 	Resp 	NULL
-44	78:59:5E:44:FB:59	0	NO	0	0	0	0	0	0	0	0	0	0	0	20	19	0	0	0	0	0	0
+28	B8:27:EB:1C:35:63	0	NO	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	0	0	0	0
 ESSID	
 Probe	
-DEST	90:9F:33:D3:B8:A2 / 90:9F:33:D3:B8:A0
+DEST	64:E5:99:CB:3B:FA / 64:E5:99:CB:3B:F8
+
+SN	FR MAC 			BF   	IsAP? 	ECT  	Data 	Data86 	Dat94  	Dat98 	QOS	Auth 	Deauth 	Assoc 	R.Asc 	D.Asc 	RTS 	CTS 	ACK 	EAPOL 	WPS 	RQX 	Resp 	NULL
+29	84:B5:9C:8F:5E:53	0	NO	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+ESSID	
+Probe	
+DEST	01:80:C2:00:00:00
+
+SN	FR MAC 			BF   	IsAP? 	ECT  	Data 	Data86 	Dat94  	Dat98 	QOS	Auth 	Deauth 	Assoc 	R.Asc 	D.Asc 	RTS 	CTS 	ACK 	EAPOL 	WPS 	RQX 	Resp 	NULL
+30	00:27:1C:38:40:34	3	Yes	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+ESSID	SK_WiFi4032, SK_WiFi4032SK_WiFi4032
+Probe	
+DEST	FF:FF:FF:FF:FF:FF
+
+SN	FR MAC 			BF   	IsAP? 	ECT  	Data 	Data86 	Dat94  	Dat98 	QOS	Auth 	Deauth 	Assoc 	R.Asc 	D.Asc 	RTS 	CTS 	ACK 	EAPOL 	WPS 	RQX 	Resp 	NULL
+31	00:09:B4:75:E3:93	1	YES	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+ESSID	ollehWiFi
+Probe	
+DEST	FF:FF:FF:FF:FF:FF
+
+SN	FR MAC 			BF   	IsAP? 	ECT  	Data 	Data86 	Dat94  	Dat98 	QOS	Auth 	Deauth 	Assoc 	R.Asc 	D.Asc 	RTS 	CTS 	ACK 	EAPOL 	WPS 	RQX 	Resp 	NULL
+32	90:9F:33:8F:F1:AE	5	Yes	1	0	0	0	0	0	0	0	0	0	0	0	0	3	3	0	0	8	0
+ESSID	overdam
+Probe	
+DEST	58:94:6B:2A:7E:30 / FF:FF:FF:FF:FF:FF / 00:03:2A:F3:87:B5 / 30:52:CB:50:89:11
+
+SN	FR MAC 			BF   	IsAP? 	ECT  	Data 	Data86 	Dat94  	Dat98 	QOS	Auth 	Deauth 	Assoc 	R.Asc 	D.Asc 	RTS 	CTS 	ACK 	EAPOL 	WPS 	RQX 	Resp 	NULL
+33	AC:3F:A4:0A:1C:2A	0	NO	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+ESSID	
+Probe	
+DEST	FF:FF:FF:FF:FF:FF
+
+SN	FR MAC 			BF   	IsAP? 	ECT  	Data 	Data86 	Dat94  	Dat98 	QOS	Auth 	Deauth 	Assoc 	R.Asc 	D.Asc 	RTS 	CTS 	ACK 	EAPOL 	WPS 	RQX 	Resp 	NULL
+34	84:2E:27:87:07:CD	0	NO	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0
+ESSID	
+Probe	Broadcast
+DEST	FF:FF:FF:FF:FF:FF
+
+SN	FR MAC 			BF   	IsAP? 	ECT  	Data 	Data86 	Dat94  	Dat98 	QOS	Auth 	Deauth 	Assoc 	R.Asc 	D.Asc 	RTS 	CTS 	ACK 	EAPOL 	WPS 	RQX 	Resp 	NULL
+35	58:94:6B:2A:7E:30	0	NO	0	1	0	0	0	0	0	0	0	0	0	0	0	9	9	0	0	0	0
+ESSID	
+Probe	
+DEST	90:9F:33:7E:D8:50 / FF:FF:FF:FF:FF:FF / 01:00:5E:00:00:FC
+
+SN	FR MAC 			BF   	IsAP? 	ECT  	Data 	Data86 	Dat94  	Dat98 	QOS	Auth 	Deauth 	Assoc 	R.Asc 	D.Asc 	RTS 	CTS 	ACK 	EAPOL 	WPS 	RQX 	Resp 	NULL
+36	3C:A1:0D:1D:B4:C1	0	NO	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0
+ESSID	
+Probe	Broadcast, Broadcast
+DEST	FF:FF:FF:FF:FF:FF / 64:E5:99:CB:3B:FA
+
+SN	FR MAC 			BF   	IsAP? 	ECT  	Data 	Data86 	Dat94  	Dat98 	QOS	Auth 	Deauth 	Assoc 	R.Asc 	D.Asc 	RTS 	CTS 	ACK 	EAPOL 	WPS 	RQX 	Resp 	NULL
+37	90:9F:33:F5:B8:84	7	Yes	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+ESSID	Anam
+Probe	
+DEST	FF:FF:FF:FF:FF:FF
+
+SN	FR MAC 			BF   	IsAP? 	ECT  	Data 	Data86 	Dat94  	Dat98 	QOS	Auth 	Deauth 	Assoc 	R.Asc 	D.Asc 	RTS 	CTS 	ACK 	EAPOL 	WPS 	RQX 	Resp 	NULL
+38	64:E5:99:51:E4:78	1	Yes	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	1	0
+ESSID	Norma_2.4G, Norma_2.4G
+Probe	
+DEST	68:5D:43:00:99:25 / FF:FF:FF:FF:FF:FF
+
+SN	FR MAC 			BF   	IsAP? 	ECT  	Data 	Data86 	Dat94  	Dat98 	QOS	Auth 	Deauth 	Assoc 	R.Asc 	D.Asc 	RTS 	CTS 	ACK 	EAPOL 	WPS 	RQX 	Resp 	NULL
+39	C8:3A:35:5E:21:B8	2	Yes	11	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+ESSID	Tenda_5E21B8, Tenda_5E21B8
+Probe	
+DEST	FF:FF:FF:FF:FF:FF
+
+SN	FR MAC 			BF   	IsAP? 	ECT  	Data 	Data86 	Dat94  	Dat98 	QOS	Auth 	Deauth 	Assoc 	R.Asc 	D.Asc 	RTS 	CTS 	ACK 	EAPOL 	WPS 	RQX 	Resp 	NULL
+40	B8:27:EB:14:B9:21	0	NO	0	0	0	0	0	0	0	0	0	0	0	5	5	2	2	0	0	0	0
+ESSID	
+Probe	
+DEST	64:E5:99:CB:3B:FA / 64:E5:99:CB:3B:F8
+
+SN	FR MAC 			BF   	IsAP? 	ECT  	Data 	Data86 	Dat94  	Dat98 	QOS	Auth 	Deauth 	Assoc 	R.Asc 	D.Asc 	RTS 	CTS 	ACK 	EAPOL 	WPS 	RQX 	Resp 	NULL
+41	06:09:B4:75:1C:3C	1	YES	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+ESSID	ollehWiFi 
+Probe	
+DEST	FF:FF:FF:FF:FF:FF
+
+SN	FR MAC 			BF   	IsAP? 	ECT  	Data 	Data86 	Dat94  	Dat98 	QOS	Auth 	Deauth 	Assoc 	R.Asc 	D.Asc 	RTS 	CTS 	ACK 	EAPOL 	WPS 	RQX 	Resp 	NULL
+42	90:9F:33:D3:B8:A2	3	Yes	9	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+ESSID	Norma_b
+Probe	
+DEST	FF:FF:FF:FF:FF:FF
+
+SN	FR MAC 			BF   	IsAP? 	ECT  	Data 	Data86 	Dat94  	Dat98 	QOS	Auth 	Deauth 	Assoc 	R.Asc 	D.Asc 	RTS 	CTS 	ACK 	EAPOL 	WPS 	RQX 	Resp 	NULL
+43	64:E5:99:1C:C1:1C	5	Yes	7	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+ESSID	Charmfre_CNS, Charmfre_CNS, Charmfre_CNS, Charmfre_CNSCharmfre_CNS
+Probe	
+DEST	FF:FF:FF:FF:FF:FF
+
+SN	FR MAC 			BF   	IsAP? 	ECT  	Data 	Data86 	Dat94  	Dat98 	QOS	Auth 	Deauth 	Assoc 	R.Asc 	D.Asc 	RTS 	CTS 	ACK 	EAPOL 	WPS 	RQX 	Resp 	NULL
+44	74:D4:35:13:3D:06	0	NO	4	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+ESSID	
+Probe	
+DEST	01:00:5E:7F:FF:FA / FF:FF:FF:FF:FF:FF
+
+SN	FR MAC 			BF   	IsAP? 	ECT  	Data 	Data86 	Dat94  	Dat98 	QOS	Auth 	Deauth 	Assoc 	R.Asc 	D.Asc 	RTS 	CTS 	ACK 	EAPOL 	WPS 	RQX 	Resp 	NULL
+45	00:1D:7D:01:B3:B9	0	NO	6	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+ESSID	
+Probe	
+DEST	FF:FF:FF:FF:FF:FF
+
+SN	FR MAC 			BF   	IsAP? 	ECT  	Data 	Data86 	Dat94  	Dat98 	QOS	Auth 	Deauth 	Assoc 	R.Asc 	D.Asc 	RTS 	CTS 	ACK 	EAPOL 	WPS 	RQX 	Resp 	NULL
+46	00:27:1C:71:94:47	2	Yes	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+ESSID	SK_WiFi9445, SK_WiFi9445
+Probe	
+DEST	FF:FF:FF:FF:FF:FF
+
+SN	FR MAC 			BF   	IsAP? 	ECT  	Data 	Data86 	Dat94  	Dat98 	QOS	Auth 	Deauth 	Assoc 	R.Asc 	D.Asc 	RTS 	CTS 	ACK 	EAPOL 	WPS 	RQX 	Resp 	NULL
+47	64:E5:99:51:E4:7C	1	YES	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+ESSID	Norma_radius2
+Probe	
+DEST	FF:FF:FF:FF:FF:FF
+
+SN	FR MAC 			BF   	IsAP? 	ECT  	Data 	Data86 	Dat94  	Dat98 	QOS	Auth 	Deauth 	Assoc 	R.Asc 	D.Asc 	RTS 	CTS 	ACK 	EAPOL 	WPS 	RQX 	Resp 	NULL
+48	00:08:9F:94:06:53	0	NO	6	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+ESSID	
+Probe	
+DEST	FF:FF:FF:FF:FF:FF
+
+SN	FR MAC 			BF   	IsAP? 	ECT  	Data 	Data86 	Dat94  	Dat98 	QOS	Auth 	Deauth 	Assoc 	R.Asc 	D.Asc 	RTS 	CTS 	ACK 	EAPOL 	WPS 	RQX 	Resp 	NULL
+49	FC:AA:14:7A:6E:26	0	NO	12	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+ESSID	
+Probe	
+DEST	01:00:5E:7F:FF:FA
+
+SN	FR MAC 			BF   	IsAP? 	ECT  	Data 	Data86 	Dat94  	Dat98 	QOS	Auth 	Deauth 	Assoc 	R.Asc 	D.Asc 	RTS 	CTS 	ACK 	EAPOL 	WPS 	RQX 	Resp 	NULL
+50	64:E5:99:39:15:88	1	YES	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+ESSID	hantechmedia
+Probe	
+DEST	FF:FF:FF:FF:FF:FF
+
+SN	FR MAC 			BF   	IsAP? 	ECT  	Data 	Data86 	Dat94  	Dat98 	QOS	Auth 	Deauth 	Assoc 	R.Asc 	D.Asc 	RTS 	CTS 	ACK 	EAPOL 	WPS 	RQX 	Resp 	NULL
+51	12:23:AA:60:4E:ED	2	Yes	8	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+ESSID	
+Probe	
+DEST	FF:FF:FF:FF:FF:FF
+
+SN	FR MAC 			BF   	IsAP? 	ECT  	Data 	Data86 	Dat94  	Dat98 	QOS	Auth 	Deauth 	Assoc 	R.Asc 	D.Asc 	RTS 	CTS 	ACK 	EAPOL 	WPS 	RQX 	Resp 	NULL
+52	00:90:4C:7E:00:64	1	YES	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+ESSID	3H
+Probe	
+DEST	FF:FF:FF:FF:FF:FF
+
+SN	FR MAC 			BF   	IsAP? 	ECT  	Data 	Data86 	Dat94  	Dat98 	QOS	Auth 	Deauth 	Assoc 	R.Asc 	D.Asc 	RTS 	CTS 	ACK 	EAPOL 	WPS 	RQX 	Resp 	NULL
+53	A0:B4:A5:90:AB:F3	0	NO	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+ESSID	
+Probe	
+DEST	00:23:AA:3E:26:1D
+
+SN	FR MAC 			BF   	IsAP? 	ECT  	Data 	Data86 	Dat94  	Dat98 	QOS	Auth 	Deauth 	Assoc 	R.Asc 	D.Asc 	RTS 	CTS 	ACK 	EAPOL 	WPS 	RQX 	Resp 	NULL
+54	84:2E:27:6F:0A:C7	0	NO	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0
+ESSID	
+Probe	Broadcast
+DEST	FF:FF:FF:FF:FF:FF
+
+SN	FR MAC 			BF   	IsAP? 	ECT  	Data 	Data86 	Dat94  	Dat98 	QOS	Auth 	Deauth 	Assoc 	R.Asc 	D.Asc 	RTS 	CTS 	ACK 	EAPOL 	WPS 	RQX 	Resp 	NULL
+55	00:26:66:7B:10:9D	0	NO	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+ESSID	
+Probe	
+DEST	FF:FF:FF:FF:FF:FF
+
+SN	FR MAC 			BF   	IsAP? 	ECT  	Data 	Data86 	Dat94  	Dat98 	QOS	Auth 	Deauth 	Assoc 	R.Asc 	D.Asc 	RTS 	CTS 	ACK 	EAPOL 	WPS 	RQX 	Resp 	NULL
+56	18:67:B0:9A:D2:2C	0	NO	3	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+ESSID	
+Probe	
+DEST	FF:FF:FF:FF:FF:FF
+
+SN	FR MAC 			BF   	IsAP? 	ECT  	Data 	Data86 	Dat94  	Dat98 	QOS	Auth 	Deauth 	Assoc 	R.Asc 	D.Asc 	RTS 	CTS 	ACK 	EAPOL 	WPS 	RQX 	Resp 	NULL
+57	00:09:B4:75:2E:8C	1	YES	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+ESSID	ollehWiFi
+Probe	
+DEST	FF:FF:FF:FF:FF:FF
+
+SN	FR MAC 			BF   	IsAP? 	ECT  	Data 	Data86 	Dat94  	Dat98 	QOS	Auth 	Deauth 	Assoc 	R.Asc 	D.Asc 	RTS 	CTS 	ACK 	EAPOL 	WPS 	RQX 	Resp 	NULL
+58	44:1C:A8:EC:10:CB	0	NO	8	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0
+ESSID	
+Probe	Broadcast
+DEST	FF:FF:FF:FF:FF:FF
+
+SN	FR MAC 			BF   	IsAP? 	ECT  	Data 	Data86 	Dat94  	Dat98 	QOS	Auth 	Deauth 	Assoc 	R.Asc 	D.Asc 	RTS 	CTS 	ACK 	EAPOL 	WPS 	RQX 	Resp 	NULL
+59	38:2C:4A:A0:F8:F1	0	NO	6	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+ESSID	
+Probe	
+DEST	01:80:C2:00:00:00
+
+SN	FR MAC 			BF   	IsAP? 	ECT  	Data 	Data86 	Dat94  	Dat98 	QOS	Auth 	Deauth 	Assoc 	R.Asc 	D.Asc 	RTS 	CTS 	ACK 	EAPOL 	WPS 	RQX 	Resp 	NULL
+60	38:2C:4A:A0:F8:F0	0	NO	11	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+ESSID	
+Probe	
+DEST	01:80:C2:00:00:00
+
+SN	FR MAC 			BF   	IsAP? 	ECT  	Data 	Data86 	Dat94  	Dat98 	QOS	Auth 	Deauth 	Assoc 	R.Asc 	D.Asc 	RTS 	CTS 	ACK 	EAPOL 	WPS 	RQX 	Resp 	NULL
+61	30:52:CB:50:89:11	0	NO	17	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0
+ESSID	
+Probe	Broadcast
+DEST	FF:FF:FF:FF:FF:FF
+
+SN	FR MAC 			BF   	IsAP? 	ECT  	Data 	Data86 	Dat94  	Dat98 	QOS	Auth 	Deauth 	Assoc 	R.Asc 	D.Asc 	RTS 	CTS 	ACK 	EAPOL 	WPS 	RQX 	Resp 	NULL
+62	02:27:1C:71:94:47	1	YES	15	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+ESSID	
+Probe	
+DEST	FF:FF:FF:FF:FF:FF
 
 
 

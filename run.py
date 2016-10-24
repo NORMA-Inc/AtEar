@@ -265,16 +265,16 @@ def main():
         print "START AtEar-Beta...."
         # def AtEar-Beta.module.network.stop_monitor() line 314
         # Clear the self-made device.
-        stop_monitor()
+        #stop_monitor()
 
         # def AtEar-Beta.module.network.auto_monitor() line 272
         # Search for wireless devices, ensure that the support AP mode or monitor mode,
         # if support makes the device to the supported mode.
-        ret = auto_monitor()
-        if ret == False:
+        #ret = auto_monitor()
+        #if ret == False:
             # Not supported or Failed to create device in monitor.
-            stop_monitor()
-            return -1
+            #stop_monitor()
+            #return -1
 
 
         # Class "main_app" is a flask module.
@@ -298,5 +298,7 @@ if __name__ == '__main__':
 
     args = parser.parse_args()
 
-    if not args.iface:  sys.exit()
+    if not args.iface:
+        print 'Please check the interface'
+        sys.exit()
     main()

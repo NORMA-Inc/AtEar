@@ -1,1 +1,1 @@
-[]
+[{"attack": "Detected Beacon Flood", "src_mac": "30:52:CB:50:89:11", "dst_mac": "FF:FF:FF:FF:FF:FF", "Possible": "Broadcasted SSID Name []", "Time": "2016-10-24 16:48:59"}, ]
