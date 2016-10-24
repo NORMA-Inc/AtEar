@@ -11,7 +11,7 @@ import ast
 import sys
 import time, os
 from module.execute import execute
-
+from module.network import *
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
@@ -37,7 +37,7 @@ class main_app():
     '''
         @brief Flask module for interact with user.
     '''
-    def __init__(self, wids):
+    def __init__(self, interface):
         '''
             @brief Create flask-server module and run.
             * Set running config.
@@ -45,13 +45,11 @@ class main_app():
         '''
         self.app = Flask(__name__)
         self.run = False
-        self.wids_handle = wids
+        self.wids_handle = False
         self.scanner = None
         self.fake_ap = None
         self.pentesting = None
-        self.scan_iface = 'atear_dump'
-        self.pent_iface = 'atear_pentest'
-        self.ap_iface = 'atear_ap'
+        self.scan_iface = interface
         self.app.add_url_rule('/', 'index', self.index)
         self.app.add_url_rule('/tpl/<name>', 'load_tpl', self.load_tpl)
         self.app.add_url_rule('/app', 'app_view', self.app_view)
@@ -88,9 +86,22 @@ class main_app():
 
         if request.method == 'GET':
             if not self.scanner:
+                monitormode_change(self.scan_iface)
                 # Class Atear-Beta.module.airodump  line 106.
                 self.scanner = airodump.Scanner(self.scan_iface)
                 self.scanner.run()
+
+                # class  	AtEar-Beta.module.wids.Wireless_IDS
+                # Prepare a file to store the results.
+                print "[*] START AtEar-WIDS"
+                wids = Wireless_IDS(self.scan_iface)
+
+                # def AtEar-Beta.module.wids.Wireless_IDS.run(self) line 78
+                # Generate wids.run to child process.
+                wids.start()
+                self.wids_handle=True
+                print "[*] START AtEar-UI"
+
                 return "[]", 200
 
             else:
@@ -131,8 +142,9 @@ class main_app():
             # Create Fake-AP with parameters from user selected.
             if self.fake_ap:
                 self.fake_ap.stop()
+            monitormode_change(self.scan_iface)
             options = request.get_json()
-            self.fake_ap = APCreate(self.ap_iface, options['enc'], options['ssid'], options['password'])
+            self.fake_ap = APCreate(self.self.scan_iface, options['enc'], options['ssid'], options['password'])
             self.fake_ap.run()
 
         elif request.method == 'GET':
@@ -210,7 +222,7 @@ class main_app():
             if self.pentesting:
                 self.pentesting.stop()
             options = request.get_json()
-            self.pentesting = auto_pentest(self.pent_iface, options)
+            self.pentesting = auto_pentest(self.self.scan_iface, options)
             self.pentesting.run()
             return '', 200
 
@@ -248,7 +260,7 @@ def main():
         @brief AtEar main function.
     '''
     wids_process = False
-    from module.network import auto_monitor, stop_monitor
+
     try:
         print "START AtEar-Beta...."
         # def AtEar-Beta.module.network.stop_monitor() line 314
@@ -264,18 +276,9 @@ def main():
             stop_monitor()
             return -1
 
-        # class  	AtEar-Beta.module.wids.Wireless_IDS
-        # Prepare a file to store the results.
-        print "[*] START AtEar-WIDS"
-        wids = Wireless_IDS('atear_wids')
-
-        # def AtEar-Beta.module.wids.Wireless_IDS.run(self) line 78
-        # Generate wids.run to child process.
-        wids.start()
-        print "[*] START AtEar-UI"
 
         # Class "main_app" is a flask module.
-        main_app(wids)
+        main_app(args.iface)
 
     # Stop Signal
     except KeyboardInterrupt:
@@ -284,4 +287,16 @@ def main():
             wids_process.terminate()
 
 if __name__ == '__main__':
+    import argparse
+    parser = argparse.ArgumentParser()
+    group = parser.add_mutually_exclusive_group(required=True)
+
+    group.add_argument("--iface", type=str,
+                       help="monitoring interface")
+    parser.add_argument("--newdb", action='store_true',
+                        help="drop if table exist")
+
+    args = parser.parse_args()
+
+    if not args.iface:  sys.exit()
     main()

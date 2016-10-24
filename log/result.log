@@ -1,0 +1,5627 @@
+Line :   1 2016-10-24 16:38:04.194365000 90:9f:33:be:3b:4c -> ff:ff:ff:ff:ff:ff 802.11 294 Beacon frame, SN=828, FN=0, Flags=........, BI=100, SSID=Norma_2.4G_test, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 90:9F:33:BE:3B:4C = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 294
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : Norma_2.4G_test
+PSSID : 
+AESSID: Norma_2.4G_test
+-----------------------------------------------------
+Line :   2 2016-10-24 16:38:04.296652000 90:9f:33:be:3b:4c -> ff:ff:ff:ff:ff:ff 802.11 294 Beacon frame, SN=829, FN=0, Flags=........, BI=100, SSID=Norma_2.4G_test, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 90:9F:33:BE:3B:4C = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 294
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : Norma_2.4G_test
+PSSID : 
+AESSID: Norma_2.4G_test
+-----------------------------------------------------
+Line :   3 2016-10-24 16:38:05.349330000 00:40:5a:ae:e8:78 -> ff:ff:ff:ff:ff:ff 802.11 269 Beacon frame, SN=1110, FN=0, Flags=........, BI=100, SSID=Broadcast, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 00:40:5A:AE:E8:78 = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 269
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : Broadcast
+PSSID : 
+AESSID: Broadcast
+-----------------------------------------------------
+Line :   4 2016-10-24 16:38:05.363911000 00:26:66:cd:34:24 -> ff:ff:ff:ff:ff:ff 802.11 313 Beacon frame, SN=2218, FN=0, Flags=........, BI=100, SSID=GHD151222-001, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 00:26:66:CD:34:24 = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 313
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : GHD151222-001
+PSSID : 
+AESSID: GHD151222-001
+-----------------------------------------------------
+Line :   5 2016-10-24 16:38:05.406670000 90:9f:33:d3:b8:a2 -> ff:ff:ff:ff:ff:ff 802.11 282 Beacon frame, SN=1419, FN=0, Flags=........, BI=100, SSID=Norma_b, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 90:9F:33:D3:B8:A2 = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 282
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : Norma_b
+PSSID : 
+AESSID: Norma_b
+-----------------------------------------------------
+Line :   6 2016-10-24 16:38:05.466289000 00:26:66:cd:34:24 -> ff:ff:ff:ff:ff:ff 802.11 313 Beacon frame, SN=2219, FN=0, Flags=........, BI=100, SSID=GHD151222-001, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 00:26:66:CD:34:24 = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 313
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : GHD151222-001
+PSSID : 
+AESSID: GHD151222-001
+-----------------------------------------------------
+Line :   7 2016-10-24 16:38:05.509063000 90:9f:33:d3:b8:a2 -> ff:ff:ff:ff:ff:ff 802.11 282 Beacon frame, SN=1420, FN=0, Flags=........, BI=100, SSID=Norma_b, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 90:9F:33:D3:B8:A2 = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 282
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : Norma_b
+PSSID : 
+AESSID: Norma_b
+-----------------------------------------------------
+Line :   8 2016-10-24 16:38:05.568709000 00:26:66:cd:34:24 -> ff:ff:ff:ff:ff:ff 802.11 313 Beacon frame, SN=2220, FN=0, Flags=........, BI=100, SSID=GHD151222-001, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 00:26:66:CD:34:24 = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 313
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : GHD151222-001
+PSSID : 
+AESSID: GHD151222-001
+-----------------------------------------------------
+Line :   9 2016-10-24 16:38:06.481564000 06:09:b4:75:e3:93 -> ff:ff:ff:ff:ff:ff 802.11 236 Beacon frame, SN=599, FN=0, Flags=........, BI=100, SSID=ollehWiFi , ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 06:09:B4:75:E3:93 = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 236
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : ollehWiFi 
+PSSID : 
+AESSID: ollehWiFi 
+-----------------------------------------------------
+Line :  10 2016-10-24 16:38:06.505334000 64:e5:99:5b:4a:c0 -> ff:ff:ff:ff:ff:ff 802.11 279 Beacon frame, SN=516, FN=0, Flags=........, BI=100, SSID=Norma_Phone, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 64:E5:99:5B:4A:C0 = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 279
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : Norma_Phone
+PSSID : 
+AESSID: Norma_Phone
+-----------------------------------------------------
+Line :  11 2016-10-24 16:38:06.514528000 90:9f:33:64:76:b8 -> ff:ff:ff:ff:ff:ff 802.11 276 Beacon frame, SN=2729, FN=0, Flags=........, BI=100, SSID=neuracle, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 90:9F:33:64:76:B8 = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 276
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : neuracle
+PSSID : 
+AESSID: neuracle
+-----------------------------------------------------
+Line :  12 2016-10-24 16:38:06.530134000 00:09:b4:75:e3:93 -> ff:ff:ff:ff:ff:ff 802.11 289 Beacon frame, SN=611, FN=0, Flags=........, BI=100, SSID=ollehWiFi, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 00:09:B4:75:E3:93 = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 289
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : ollehWiFi
+PSSID : 
+AESSID: ollehWiFi
+-----------------------------------------------------
+Line :  13 2016-10-24 16:38:06.549408000 90:9f:33:be:3b:4c -> ff:ff:ff:ff:ff:ff 802.11 294 Beacon frame, SN=851, FN=0, Flags=........, BI=100, SSID=Norma_2.4G_test, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 90:9F:33:BE:3B:4C = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 294
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : Norma_2.4G_test
+PSSID : 
+AESSID: Norma_2.4G_test
+-----------------------------------------------------
+Line :  14 2016-10-24 16:38:06.554902000 90:9f:33:5f:e2:24 -> ff:ff:ff:ff:ff:ff 802.11 273 Beacon frame, SN=3917, FN=0, Flags=........, BI=100, SSID=kouno, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 90:9F:33:5F:E2:24 = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 273
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : kouno
+PSSID : 
+AESSID: kouno
+-----------------------------------------------------
+Line :  15 2016-10-24 16:38:06.581148000 06:09:b4:75:e3:93 -> ff:ff:ff:ff:ff:ff 802.11 236 Beacon frame, SN=600, FN=0, Flags=........, BI=100, SSID=ollehWiFi , ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 06:09:B4:75:E3:93 = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 236
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : ollehWiFi 
+PSSID : 
+AESSID: ollehWiFi 
+-----------------------------------------------------
+Line :  16 2016-10-24 16:38:06.607724000 64:e5:99:5b:4a:c0 -> ff:ff:ff:ff:ff:ff 802.11 279 Beacon frame, SN=517, FN=0, Flags=........, BI=100, SSID=Norma_Phone, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 64:E5:99:5B:4A:C0 = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 279
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : Norma_Phone
+PSSID : 
+AESSID: Norma_Phone
+-----------------------------------------------------
+Line :  17 2016-10-24 16:38:06.616880000 90:9f:33:64:76:b8 -> ff:ff:ff:ff:ff:ff 802.11 276 Beacon frame, SN=2730, FN=0, Flags=........, BI=100, SSID=neuracle, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 90:9F:33:64:76:B8 = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 276
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : neuracle
+PSSID : 
+AESSID: neuracle
+-----------------------------------------------------
+Line :  18 2016-10-24 16:38:06.632396000 00:09:b4:75:e3:93 -> ff:ff:ff:ff:ff:ff 802.11 289 Beacon frame, SN=612, FN=0, Flags=........, BI=100, SSID=ollehWiFi, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 00:09:B4:75:E3:93 = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 289
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : ollehWiFi
+PSSID : 
+AESSID: ollehWiFi
+-----------------------------------------------------
+Line :  19 2016-10-24 16:38:06.636936000              -> 78:59:5e:44:fb:59  802.11 28 Acknowledgement, Flags=........, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 2
+STYPE : ACKNOWLEDGEMENT
+BCast  : 0
+FR_MAC :  = 0
+TO_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC2 : 78:59:5E:44:FB:5917
+DTYPE  : FLAGS=........
+DTYPE2  : ACKNOWLEDGEMENT
+DTYPE3  : .
+WPS1  : 28
+WPS2  : .
+WPS3  : .
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line :  20 2016-10-24 16:38:06.657299000 90:9f:33:5f:e2:24 -> ff:ff:ff:ff:ff:ff 802.11 273 Beacon frame, SN=3918, FN=0, Flags=........, BI=100, SSID=kouno, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 90:9F:33:5F:E2:24 = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 273
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : kouno
+PSSID : 
+AESSID: kouno
+-----------------------------------------------------
+Line :  21 2016-10-24 16:38:06.686435000 06:09:b4:75:e3:93 -> ff:ff:ff:ff:ff:ff 802.11 236 Beacon frame, SN=601, FN=0, Flags=........, BI=100, SSID=ollehWiFi , ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 06:09:B4:75:E3:93 = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 236
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : ollehWiFi 
+PSSID : 
+AESSID: ollehWiFi 
+-----------------------------------------------------
+Line :  22 2016-10-24 16:38:06.710291000 64:e5:99:5b:4a:c0 -> ff:ff:ff:ff:ff:ff 802.11 279 Beacon frame, SN=518, FN=0, Flags=........, BI=100, SSID=Norma_Phone, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 64:E5:99:5B:4A:C0 = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 279
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : Norma_Phone
+PSSID : 
+AESSID: Norma_Phone
+-----------------------------------------------------
+Line :  23 2016-10-24 16:38:07.020001000 00:1d:7d:01:b3:b9 -> ff:ff:ff:ff:ff:ff 802.11 144 Data, SN=2699, FN=0, Flags=.p....F., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : DATA
+BCast  : 1
+FR_MAC : 00:1D:7D:01:B3:B9 = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : DATA
+DTYPE2  : 144
+DTYPE3  : SN=2699
+WPS1  : 802.11
+WPS2  : .P....F.
+WPS3  : .
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line :  24 2016-10-24 16:38:07.697684000 1c:a5:32:70:75:90 -> ff:ff:ff:ff:ff:ff 802.11 219 Beacon frame, SN=2470, FN=0, Flags=........, BI=100, SSID=Broadcast, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 1C:A5:32:70:75:90 = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 219
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : Broadcast
+PSSID : 
+AESSID: Broadcast
+-----------------------------------------------------
+Line :  25 2016-10-24 16:38:07.699405000 1c:a5:32:70:75:91 -> ff:ff:ff:ff:ff:ff 802.11 207 Beacon frame, SN=2471, FN=0, Flags=........, BI=100, SSID=U+Net7593, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 1C:A5:32:70:75:91 = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 207
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : U+Net7593
+PSSID : 
+AESSID: U+Net7593
+-----------------------------------------------------
+Line :  26 2016-10-24 16:38:07.702570000 bc:96:80:99:cf:f0 -> ff:ff:ff:ff:ff:ff 802.11 219 Beacon frame, SN=3514, FN=0, Flags=........, BI=100, SSID=Broadcast, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : BC:96:80:99:CF:F0 = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 219
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : Broadcast
+PSSID : 
+AESSID: Broadcast
+-----------------------------------------------------
+Line :  27 2016-10-24 16:38:07.799976000 1c:a5:32:70:75:90 -> ff:ff:ff:ff:ff:ff 802.11 219 Beacon frame, SN=2472, FN=0, Flags=........, BI=100, SSID=Broadcast, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 1C:A5:32:70:75:90 = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 219
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : Broadcast
+PSSID : 
+AESSID: Broadcast
+-----------------------------------------------------
+Line :  28 2016-10-24 16:38:07.801760000 1c:a5:32:70:75:91 -> ff:ff:ff:ff:ff:ff 802.11 207 Beacon frame, SN=2473, FN=0, Flags=........, BI=100, SSID=U+Net7593, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 1C:A5:32:70:75:91 = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 207
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : U+Net7593
+PSSID : 
+AESSID: U+Net7593
+-----------------------------------------------------
+Line :  29 2016-10-24 16:38:07.804707000 bc:96:80:99:cf:f0 -> ff:ff:ff:ff:ff:ff 802.11 219 Beacon frame, SN=3516, FN=0, Flags=........, BI=100, SSID=Broadcast, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : BC:96:80:99:CF:F0 = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 219
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : Broadcast
+PSSID : 
+AESSID: Broadcast
+-----------------------------------------------------
+Line :  30 2016-10-24 16:38:08.762543000 00:09:b4:75:1c:2b -> ff:ff:ff:ff:ff:ff 802.11 289 Beacon frame, SN=3421, FN=0, Flags=........, BI=100, SSID=ollehWiFi, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 00:09:B4:75:1C:2B = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 289
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : ollehWiFi
+PSSID : 
+AESSID: ollehWiFi
+-----------------------------------------------------
+Line :  31 2016-10-24 16:38:08.769067000 00:27:1c:ad:1a:d9 -> ff:ff:ff:ff:ff:ff 802.11 261 Beacon frame, SN=2175, FN=0, Flags=........, BI=100, SSID=U+Net1ADB, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 00:27:1C:AD:1A:D9 = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 261
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : U+Net1ADB
+PSSID : 
+AESSID: U+Net1ADB
+-----------------------------------------------------
+Line :  32 2016-10-24 16:38:08.775131000 00:09:b4:75:65:7b -> ff:ff:ff:ff:ff:ff 802.11 289 Beacon frame, SN=2703, FN=0, Flags=........, BI=100, SSID=ollehWiFi, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 00:09:B4:75:65:7B = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 289
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : ollehWiFi
+PSSID : 
+AESSID: ollehWiFi
+-----------------------------------------------------
+Line :  33 2016-10-24 16:38:08.831449000 00:09:b4:75:1c:3b -> ff:ff:ff:ff:ff:ff 802.11 289 Beacon frame, SN=596, FN=0, Flags=........, BI=100, SSID=ollehWiFi, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 00:09:B4:75:1C:3B = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 289
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : ollehWiFi
+PSSID : 
+AESSID: ollehWiFi
+-----------------------------------------------------
+Line :  34 2016-10-24 16:38:08.864495000 04:8d:38:b6:d2:5e -> ff:ff:ff:ff:ff:ff 802.11 360 Beacon frame, SN=1978, FN=0, Flags=........, BI=100, SSID=SO070VOIPD25C, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 04:8D:38:B6:D2:5E = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 360
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : SO070VOIPD25C
+PSSID : 
+AESSID: SO070VOIPD25C
+-----------------------------------------------------
+Line :  35 2016-10-24 16:38:08.865094000 00:09:b4:75:1c:2b -> ff:ff:ff:ff:ff:ff 802.11 289 Beacon frame, SN=3422, FN=0, Flags=........, BI=100, SSID=ollehWiFi, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 00:09:B4:75:1C:2B = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 289
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : ollehWiFi
+PSSID : 
+AESSID: ollehWiFi
+-----------------------------------------------------
+Line :  36 2016-10-24 16:38:08.877801000 00:09:b4:75:65:7b -> ff:ff:ff:ff:ff:ff 802.11 289 Beacon frame, SN=2704, FN=0, Flags=........, BI=100, SSID=ollehWiFi, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 00:09:B4:75:65:7B = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 289
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : ollehWiFi
+PSSID : 
+AESSID: ollehWiFi
+-----------------------------------------------------
+Line :  37 2016-10-24 16:38:08.905344000 00:27:1c:ad:1a:d8 -> ff:ff:ff:ff:ff:ff 802.11 271 Beacon frame, SN=2179, FN=0, Flags=........, BI=100, SSID=Broadcast, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 00:27:1C:AD:1A:D8 = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 271
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : Broadcast
+PSSID : 
+AESSID: Broadcast
+-----------------------------------------------------
+Line :  38 2016-10-24 16:38:08.916142000 06:09:b4:75:1c:2b -> ff:ff:ff:ff:ff:ff 802.11 236 Beacon frame, SN=3419, FN=0, Flags=........, BI=100, SSID=ollehWiFi , ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 06:09:B4:75:1C:2B = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 236
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : ollehWiFi 
+PSSID : 
+AESSID: ollehWiFi 
+-----------------------------------------------------
+Line :  39 2016-10-24 16:38:08.933900000 00:09:b4:75:1c:3b -> ff:ff:ff:ff:ff:ff 802.11 289 Beacon frame, SN=597, FN=0, Flags=........, BI=100, SSID=ollehWiFi, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 00:09:B4:75:1C:3B = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 289
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : ollehWiFi
+PSSID : 
+AESSID: ollehWiFi
+-----------------------------------------------------
+Line :  40 2016-10-24 16:38:08.941038000 00:09:b4:75:1c:2d -> ff:ff:ff:ff:ff:ff 802.11 219 Beacon frame, SN=3198, FN=0, Flags=........, BI=100, SSID=Broadcast, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 00:09:B4:75:1C:2D = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 219
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : Broadcast
+PSSID : 
+AESSID: Broadcast
+-----------------------------------------------------
+Line :  41 2016-10-24 16:38:08.967401000 00:09:b4:75:1c:2b -> ff:ff:ff:ff:ff:ff 802.11 289 Beacon frame, SN=3423, FN=0, Flags=........, BI=100, SSID=ollehWiFi, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 00:09:B4:75:1C:2B = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 289
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : ollehWiFi
+PSSID : 
+AESSID: ollehWiFi
+-----------------------------------------------------
+Line :  42 2016-10-24 16:38:08.973919000 00:27:1c:ad:1a:d9 -> ff:ff:ff:ff:ff:ff 802.11 261 Beacon frame, SN=2181, FN=0, Flags=........, BI=100, SSID=U+Net1ADB, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 00:27:1C:AD:1A:D9 = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 261
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : U+Net1ADB
+PSSID : 
+AESSID: U+Net1ADB
+-----------------------------------------------------
+Line :  43 2016-10-24 16:38:08.979911000 00:09:b4:75:65:7b -> ff:ff:ff:ff:ff:ff 802.11 289 Beacon frame, SN=2705, FN=0, Flags=........, BI=100, SSID=ollehWiFi, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 00:09:B4:75:65:7B = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 289
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : ollehWiFi
+PSSID : 
+AESSID: ollehWiFi
+-----------------------------------------------------
+Line :  44 2016-10-24 16:38:09.895961000 64:e5:99:51:e4:78 -> ff:ff:ff:ff:ff:ff 802.11 295 Beacon frame, SN=2967, FN=0, Flags=........, BI=100, SSID=Norma_2.4G, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 64:E5:99:51:E4:78 = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 295
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : Norma_2.4G
+PSSID : 
+AESSID: Norma_2.4G
+-----------------------------------------------------
+Line :  45 2016-10-24 16:38:09.943542000 00:30:0d:d4:3a:30 -> ff:ff:ff:ff:ff:ff 802.11 317 Beacon frame, SN=2315, FN=0, Flags=........, BI=100, SSID=ollehWiFi, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 00:30:0D:D4:3A:30 = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 317
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : ollehWiFi
+PSSID : 
+AESSID: ollehWiFi
+-----------------------------------------------------
+Line :  46 2016-10-24 16:38:09.944047000 06:30:0d:d4:3a:31 -> ff:ff:ff:ff:ff:ff 802.11 259 Beacon frame, SN=2316, FN=0, Flags=........, BI=100, SSID=ollehWiFi , ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 06:30:0D:D4:3A:31 = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 259
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : ollehWiFi 
+PSSID : 
+AESSID: ollehWiFi 
+-----------------------------------------------------
+Line :  47 2016-10-24 16:38:09.962083000 06:09:b4:75:2e:8b -> ff:ff:ff:ff:ff:ff 802.11 236 Beacon frame, SN=272, FN=0, Flags=........, BI=100, SSID=ollehWiFi , ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 06:09:B4:75:2E:8B = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 236
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : ollehWiFi 
+PSSID : 
+AESSID: ollehWiFi 
+-----------------------------------------------------
+Line :  48 2016-10-24 16:38:09.992931000 90:9f:33:63:1a:76 -> ff:ff:ff:ff:ff:ff 802.11 300 Beacon frame, SN=1359, FN=0, Flags=........, BI=100, SSID=Haimnano, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 90:9F:33:63:1A:76 = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 300
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : Haimnano
+PSSID : 
+AESSID: Haimnano
+-----------------------------------------------------
+Line :  49 2016-10-24 16:38:09.993937000 00:30:0d:d3:c8:50 -> ff:ff:ff:ff:ff:ff 802.11 317 Beacon frame, SN=1011, FN=0, Flags=........, BI=100, SSID=ollehWiFi, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 00:30:0D:D3:C8:50 = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 317
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : ollehWiFi
+PSSID : 
+AESSID: ollehWiFi
+-----------------------------------------------------
+Line :  50 2016-10-24 16:38:10.045046000 00:30:0d:d4:3a:30 -> ff:ff:ff:ff:ff:ff 802.11 317 Beacon frame, SN=2317, FN=0, Flags=........, BI=100, SSID=ollehWiFi, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 00:30:0D:D4:3A:30 = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 317
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : ollehWiFi
+PSSID : 
+AESSID: ollehWiFi
+-----------------------------------------------------
+Line :  51 2016-10-24 16:38:10.045273000 06:30:0d:d4:3a:31 -> ff:ff:ff:ff:ff:ff 802.11 259 Beacon frame, SN=2318, FN=0, Flags=........, BI=100, SSID=ollehWiFi , ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 06:30:0D:D4:3A:31 = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 259
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : ollehWiFi 
+PSSID : 
+AESSID: ollehWiFi 
+-----------------------------------------------------
+Line :  52 2016-10-24 16:38:10.063867000 06:09:b4:75:2e:8b -> ff:ff:ff:ff:ff:ff 802.11 236 Beacon frame, SN=273, FN=0, Flags=........, BI=100, SSID=ollehWiFi , ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 06:09:B4:75:2E:8B = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 236
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : ollehWiFi 
+PSSID : 
+AESSID: ollehWiFi 
+-----------------------------------------------------
+Line :  53 2016-10-24 16:38:10.095391000 90:9f:33:63:1a:76 -> ff:ff:ff:ff:ff:ff 802.11 300 Beacon frame, SN=1360, FN=0, Flags=........, BI=100, SSID=Haimnano, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 90:9F:33:63:1A:76 = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 300
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : Haimnano
+PSSID : 
+AESSID: Haimnano
+-----------------------------------------------------
+Line :  54 2016-10-24 16:38:10.100709000 64:e5:99:51:e4:78 -> ff:ff:ff:ff:ff:ff 802.11 295 Beacon frame, SN=2969, FN=0, Flags=........, BI=100, SSID=Norma_2.4G, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 64:E5:99:51:E4:78 = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 295
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : Norma_2.4G
+PSSID : 
+AESSID: Norma_2.4G
+-----------------------------------------------------
+Line :  55 2016-10-24 16:38:10.435579000              -> 90:9f:33:8f:f8:c0  802.11 28 Acknowledgement, Flags=........, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 2
+STYPE : ACKNOWLEDGEMENT
+BCast  : 0
+FR_MAC :  = 0
+TO_MAC : 90:9F:33:8F:F8:C0 = 17
+TO_MAC2 : 90:9F:33:8F:F8:C017
+DTYPE  : FLAGS=........
+DTYPE2  : ACKNOWLEDGEMENT
+DTYPE3  : .
+WPS1  : 28
+WPS2  : .
+WPS3  : .
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line :  56 2016-10-24 16:38:11.055075000 90:9f:33:be:3b:4c -> ff:ff:ff:ff:ff:ff 802.11 294 Beacon frame, SN=895, FN=0, Flags=........, BI=100, SSID=Norma_2.4G_test, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 90:9F:33:BE:3B:4C = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 294
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : Norma_2.4G_test
+PSSID : 
+AESSID: Norma_2.4G_test
+-----------------------------------------------------
+Line :  57 2016-10-24 16:38:11.062075000              -> 90:9f:33:8f:fc:cc  802.11 28 Acknowledgement, Flags=........, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 2
+STYPE : ACKNOWLEDGEMENT
+BCast  : 0
+FR_MAC :  = 0
+TO_MAC : 90:9F:33:8F:FC:CC = 17
+TO_MAC2 : 90:9F:33:8F:FC:CC17
+DTYPE  : FLAGS=........
+DTYPE2  : ACKNOWLEDGEMENT
+DTYPE3  : .
+WPS1  : 28
+WPS2  : .
+WPS3  : .
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line :  58 2016-10-24 16:38:11.067375000 90:9f:33:d6:f2:74 -> ff:ff:ff:ff:ff:ff 802.11 292 Beacon frame, SN=1639, FN=0, Flags=........, BI=100, SSID=Mureung, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 90:9F:33:D6:F2:74 = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 292
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : Mureung
+PSSID : 
+AESSID: Mureung
+-----------------------------------------------------
+Line :  59 2016-10-24 16:38:11.086662000 00:23:aa:60:4e:ed -> ff:ff:ff:ff:ff:ff 802.11 299 Beacon frame, SN=3949, FN=0, Flags=........, BI=100, SSID=SK_WiFiGIGA4EEE, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 00:23:AA:60:4E:ED = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 299
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : SK_WiFiGIGA4EEE
+PSSID : 
+AESSID: SK_WiFiGIGA4EEE
+-----------------------------------------------------
+Line :  60 2016-10-24 16:38:11.104288000 bc:44:86:b1:a0:0b -> ff:ff:ff:ff:ff:ff 802.11 170 Probe Request, SN=2598, FN=0, Flags=........, SSID=Broadcast, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : PROBE REQUEST
+BCast  : 1
+FR_MAC : BC:44:86:B1:A0:0B = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : PROBE
+DTYPE2  : 170
+DTYPE3  : REQUEST
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : 
+PSSID : Broadcast
+AESSID: 
+-----------------------------------------------------
+Line :  61 2016-10-24 16:38:11.107709000 90:9f:33:be:3b:4c -> bc:44:86:b1:a0:0b 802.11 396 Probe Response, SN=2278, FN=0, Flags=........, BI=100, SSID=Norma_2.4G_test, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : PROBE RESPONSE
+BCast  : 0
+FR_MAC : 90:9F:33:BE:3B:4C = 17
+TO_MAC : BC:44:86:B1:A0:0B = 17
+TO_MAC2 : 0
+DTYPE  : PROBE
+DTYPE2  : 396
+DTYPE3  : RESPONSE
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : Norma_2.4G_test
+PSSID : 
+AESSID: Norma_2.4G_test
+-----------------------------------------------------
+Line :  62 2016-10-24 16:38:11.107963000              -> 90:9f:33:be:3b:4c  802.11 28 Acknowledgement, Flags=........, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 2
+STYPE : ACKNOWLEDGEMENT
+BCast  : 0
+FR_MAC :  = 0
+TO_MAC : 90:9F:33:BE:3B:4C = 17
+TO_MAC2 : 90:9F:33:BE:3B:4C17
+DTYPE  : FLAGS=........
+DTYPE2  : ACKNOWLEDGEMENT
+DTYPE3  : .
+WPS1  : 28
+WPS2  : .
+WPS3  : .
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line :  63 2016-10-24 16:38:11.111196000 90:9f:33:d6:f2:74 -> bc:44:86:b1:a0:0b 802.11 384 Probe Response, SN=1372, FN=0, Flags=........, BI=100, SSID=Mureung, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : PROBE RESPONSE
+BCast  : 0
+FR_MAC : 90:9F:33:D6:F2:74 = 17
+TO_MAC : BC:44:86:B1:A0:0B = 17
+TO_MAC2 : 0
+DTYPE  : PROBE
+DTYPE2  : 384
+DTYPE3  : RESPONSE
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : Mureung
+PSSID : 
+AESSID: Mureung
+-----------------------------------------------------
+Line :  64 2016-10-24 16:38:11.119094000 90:9f:33:be:3b:4c -> bc:44:86:b1:a0:0b 802.11 396 Probe Response, SN=2280, FN=0, Flags=........, BI=100, SSID=Norma_2.4G_test, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : PROBE RESPONSE
+BCast  : 0
+FR_MAC : 90:9F:33:BE:3B:4C = 17
+TO_MAC : BC:44:86:B1:A0:0B = 17
+TO_MAC2 : 0
+DTYPE  : PROBE
+DTYPE2  : 396
+DTYPE3  : RESPONSE
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : Norma_2.4G_test
+PSSID : 
+AESSID: Norma_2.4G_test
+-----------------------------------------------------
+Line :  65 2016-10-24 16:38:11.119379000              -> 90:9f:33:be:3b:4c  802.11 28 Acknowledgement, Flags=........, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 2
+STYPE : ACKNOWLEDGEMENT
+BCast  : 0
+FR_MAC :  = 0
+TO_MAC : 90:9F:33:BE:3B:4C = 17
+TO_MAC2 : 90:9F:33:BE:3B:4C17
+DTYPE  : FLAGS=........
+DTYPE2  : ACKNOWLEDGEMENT
+DTYPE3  : .
+WPS1  : 28
+WPS2  : .
+WPS3  : .
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line :  66 2016-10-24 16:38:11.122758000 90:9f:33:d6:f2:74 -> bc:44:86:b1:a0:0b 802.11 384 Probe Response, SN=1374, FN=0, Flags=........, BI=100, SSID=Mureung, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : PROBE RESPONSE
+BCast  : 0
+FR_MAC : 90:9F:33:D6:F2:74 = 17
+TO_MAC : BC:44:86:B1:A0:0B = 17
+TO_MAC2 : 0
+DTYPE  : PROBE
+DTYPE2  : 384
+DTYPE3  : RESPONSE
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : Mureung
+PSSID : 
+AESSID: Mureung
+-----------------------------------------------------
+Line :  67 2016-10-24 16:38:11.140559000 12:23:aa:60:4e:ed -> ff:ff:ff:ff:ff:ff 802.11 259 Beacon frame, SN=3950, FN=0, Flags=........, BI=100, SSID=Broadcast, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 12:23:AA:60:4E:ED = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 259
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : Broadcast
+PSSID : 
+AESSID: Broadcast
+-----------------------------------------------------
+Line :  68 2016-10-24 16:38:11.144959000              -> 64:e5:99:6c:8d:d8  802.11 28 Acknowledgement, Flags=........, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 2
+STYPE : ACKNOWLEDGEMENT
+BCast  : 0
+FR_MAC :  = 0
+TO_MAC : 64:E5:99:6C:8D:D8 = 17
+TO_MAC2 : 64:E5:99:6C:8D:D817
+DTYPE  : FLAGS=........
+DTYPE2  : ACKNOWLEDGEMENT
+DTYPE3  : .
+WPS1  : 28
+WPS2  : .
+WPS3  : .
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line :  69 2016-10-24 16:38:11.147227000              -> 64:e5:99:6c:8d:d8  802.11 28 Acknowledgement, Flags=........, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 2
+STYPE : ACKNOWLEDGEMENT
+BCast  : 0
+FR_MAC :  = 0
+TO_MAC : 64:E5:99:6C:8D:D8 = 17
+TO_MAC2 : 64:E5:99:6C:8D:D817
+DTYPE  : FLAGS=........
+DTYPE2  : ACKNOWLEDGEMENT
+DTYPE3  : .
+WPS1  : 28
+WPS2  : .
+WPS3  : .
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line :  70 2016-10-24 16:38:11.152149000 bc:44:86:b1:a0:0b -> ff:ff:ff:ff:ff:ff 802.11 170 Probe Request, SN=2599, FN=0, Flags=........, SSID=Broadcast, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : PROBE REQUEST
+BCast  : 1
+FR_MAC : BC:44:86:B1:A0:0B = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : PROBE
+DTYPE2  : 170
+DTYPE3  : REQUEST
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : 
+PSSID : Broadcast
+AESSID: 
+-----------------------------------------------------
+Line :  71 2016-10-24 16:38:11.155475000 90:9f:33:be:3b:4c -> bc:44:86:b1:a0:0b 802.11 396 Probe Response, SN=2281, FN=0, Flags=........, BI=100, SSID=Norma_2.4G_test, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : PROBE RESPONSE
+BCast  : 0
+FR_MAC : 90:9F:33:BE:3B:4C = 17
+TO_MAC : BC:44:86:B1:A0:0B = 17
+TO_MAC2 : 0
+DTYPE  : PROBE
+DTYPE2  : 396
+DTYPE3  : RESPONSE
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : Norma_2.4G_test
+PSSID : 
+AESSID: Norma_2.4G_test
+-----------------------------------------------------
+Line :  72 2016-10-24 16:38:11.158108000 90:9f:33:be:3b:4c -> ff:ff:ff:ff:ff:ff 802.11 294 Beacon frame, SN=896, FN=0, Flags=........, BI=100, SSID=Norma_2.4G_test, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 90:9F:33:BE:3B:4C = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 294
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : Norma_2.4G_test
+PSSID : 
+AESSID: Norma_2.4G_test
+-----------------------------------------------------
+Line :  73 2016-10-24 16:38:11.161404000 90:9f:33:be:3b:4c -> bc:44:86:b1:a0:0b 802.11 396 Probe Response, SN=2282, FN=0, Flags=........, BI=100, SSID=Norma_2.4G_test, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : PROBE RESPONSE
+BCast  : 0
+FR_MAC : 90:9F:33:BE:3B:4C = 17
+TO_MAC : BC:44:86:B1:A0:0B = 17
+TO_MAC2 : 0
+DTYPE  : PROBE
+DTYPE2  : 396
+DTYPE3  : RESPONSE
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : Norma_2.4G_test
+PSSID : 
+AESSID: Norma_2.4G_test
+-----------------------------------------------------
+Line :  74 2016-10-24 16:38:11.168636000 90:9f:33:be:3b:4c -> bc:44:86:b1:a0:0b 802.11 396 Probe Response, SN=2283, FN=0, Flags=........, BI=100, SSID=Norma_2.4G_test, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : PROBE RESPONSE
+BCast  : 0
+FR_MAC : 90:9F:33:BE:3B:4C = 17
+TO_MAC : BC:44:86:B1:A0:0B = 17
+TO_MAC2 : 0
+DTYPE  : PROBE
+DTYPE2  : 396
+DTYPE3  : RESPONSE
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : Norma_2.4G_test
+PSSID : 
+AESSID: Norma_2.4G_test
+-----------------------------------------------------
+Line :  75 2016-10-24 16:38:11.174299000 90:9f:33:d6:f2:74 -> bc:44:86:b1:a0:0b 802.11 384 Probe Response, SN=1376, FN=0, Flags=........, BI=100, SSID=Mureung, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : PROBE RESPONSE
+BCast  : 0
+FR_MAC : 90:9F:33:D6:F2:74 = 17
+TO_MAC : BC:44:86:B1:A0:0B = 17
+TO_MAC2 : 0
+DTYPE  : PROBE
+DTYPE2  : 384
+DTYPE3  : RESPONSE
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : Mureung
+PSSID : 
+AESSID: Mureung
+-----------------------------------------------------
+Line :  76 2016-10-24 16:38:11.174511000              -> 90:9f:33:d6:f2:74  802.11 28 Acknowledgement, Flags=........, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 2
+STYPE : ACKNOWLEDGEMENT
+BCast  : 0
+FR_MAC :  = 0
+TO_MAC : 90:9F:33:D6:F2:74 = 17
+TO_MAC2 : 90:9F:33:D6:F2:7417
+DTYPE  : FLAGS=........
+DTYPE2  : ACKNOWLEDGEMENT
+DTYPE3  : .
+WPS1  : 28
+WPS2  : .
+WPS3  : .
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line :  77 2016-10-24 16:38:11.176934000 90:9f:33:d6:f2:74 -> ff:ff:ff:ff:ff:ff 802.11 292 Beacon frame, SN=1640, FN=0, Flags=........, BI=100, SSID=Mureung, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 90:9F:33:D6:F2:74 = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 292
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : Mureung
+PSSID : 
+AESSID: Mureung
+-----------------------------------------------------
+Line :  78 2016-10-24 16:38:11.180332000 90:9f:33:d6:f2:74 -> bc:44:86:b1:a0:0b 802.11 384 Probe Response, SN=1377, FN=0, Flags=........, BI=100, SSID=Mureung, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : PROBE RESPONSE
+BCast  : 0
+FR_MAC : 90:9F:33:D6:F2:74 = 17
+TO_MAC : BC:44:86:B1:A0:0B = 17
+TO_MAC2 : 0
+DTYPE  : PROBE
+DTYPE2  : 384
+DTYPE3  : RESPONSE
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : Mureung
+PSSID : 
+AESSID: Mureung
+-----------------------------------------------------
+Line :  79 2016-10-24 16:38:11.180650000              -> 90:9f:33:d6:f2:74  802.11 28 Acknowledgement, Flags=........, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 2
+STYPE : ACKNOWLEDGEMENT
+BCast  : 0
+FR_MAC :  = 0
+TO_MAC : 90:9F:33:D6:F2:74 = 17
+TO_MAC2 : 90:9F:33:D6:F2:7417
+DTYPE  : FLAGS=........
+DTYPE2  : ACKNOWLEDGEMENT
+DTYPE3  : .
+WPS1  : 28
+WPS2  : .
+WPS3  : .
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line :  80 2016-10-24 16:38:11.189086000 00:23:aa:60:4e:ed -> ff:ff:ff:ff:ff:ff 802.11 299 Beacon frame, SN=3951, FN=0, Flags=........, BI=100, SSID=SK_WiFiGIGA4EEE, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 00:23:AA:60:4E:ED = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 299
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : SK_WiFiGIGA4EEE
+PSSID : 
+AESSID: SK_WiFiGIGA4EEE
+-----------------------------------------------------
+Line :  81 2016-10-24 16:38:11.229647000 64:bc:0c:25:82:eb -> ff:ff:ff:ff:ff:ff 802.11 170 Probe Request, SN=3733, FN=0, Flags=........, SSID=Broadcast, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : PROBE REQUEST
+BCast  : 1
+FR_MAC : 64:BC:0C:25:82:EB = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : PROBE
+DTYPE2  : 170
+DTYPE3  : REQUEST
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : 
+PSSID : Broadcast
+AESSID: 
+-----------------------------------------------------
+Line :  82 2016-10-24 16:38:11.233025000 90:9f:33:be:3b:4c -> 64:bc:0c:25:82:eb 802.11 396 Probe Response, SN=2284, FN=0, Flags=........, BI=100, SSID=Norma_2.4G_test, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : PROBE RESPONSE
+BCast  : 0
+FR_MAC : 90:9F:33:BE:3B:4C = 17
+TO_MAC : 64:BC:0C:25:82:EB = 17
+TO_MAC2 : 0
+DTYPE  : PROBE
+DTYPE2  : 396
+DTYPE3  : RESPONSE
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : Norma_2.4G_test
+PSSID : 
+AESSID: Norma_2.4G_test
+-----------------------------------------------------
+Line :  83 2016-10-24 16:38:11.236365000 90:9f:33:be:3b:4c -> 64:bc:0c:25:82:eb 802.11 396 Probe Response, SN=2285, FN=0, Flags=........, BI=100, SSID=Norma_2.4G_test, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : PROBE RESPONSE
+BCast  : 0
+FR_MAC : 90:9F:33:BE:3B:4C = 17
+TO_MAC : 64:BC:0C:25:82:EB = 17
+TO_MAC2 : 0
+DTYPE  : PROBE
+DTYPE2  : 396
+DTYPE3  : RESPONSE
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : Norma_2.4G_test
+PSSID : 
+AESSID: Norma_2.4G_test
+-----------------------------------------------------
+Line :  84 2016-10-24 16:38:11.239731000 90:9f:33:be:3b:4c -> 64:bc:0c:25:82:eb 802.11 396 Probe Response, SN=2286, FN=0, Flags=........, BI=100, SSID=Norma_2.4G_test, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : PROBE RESPONSE
+BCast  : 0
+FR_MAC : 90:9F:33:BE:3B:4C = 17
+TO_MAC : 64:BC:0C:25:82:EB = 17
+TO_MAC2 : 0
+DTYPE  : PROBE
+DTYPE2  : 396
+DTYPE3  : RESPONSE
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : Norma_2.4G_test
+PSSID : 
+AESSID: Norma_2.4G_test
+-----------------------------------------------------
+Line :  85 2016-10-24 16:38:11.239963000              -> 90:9f:33:be:3b:4c  802.11 28 Acknowledgement, Flags=........, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 2
+STYPE : ACKNOWLEDGEMENT
+BCast  : 0
+FR_MAC :  = 0
+TO_MAC : 90:9F:33:BE:3B:4C = 17
+TO_MAC2 : 90:9F:33:BE:3B:4C17
+DTYPE  : FLAGS=........
+DTYPE2  : ACKNOWLEDGEMENT
+DTYPE3  : .
+WPS1  : 28
+WPS2  : .
+WPS3  : .
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line :  86 2016-10-24 16:38:11.259846000 90:9f:33:be:3b:4c -> ff:ff:ff:ff:ff:ff 802.11 294 Beacon frame, SN=897, FN=0, Flags=........, BI=100, SSID=Norma_2.4G_test, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 90:9F:33:BE:3B:4C = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 294
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : Norma_2.4G_test
+PSSID : 
+AESSID: Norma_2.4G_test
+-----------------------------------------------------
+Line :  87 2016-10-24 16:38:11.271839000 90:9f:33:d6:f2:74 -> ff:ff:ff:ff:ff:ff 802.11 292 Beacon frame, SN=1641, FN=0, Flags=........, BI=100, SSID=Mureung, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 90:9F:33:D6:F2:74 = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 292
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : Mureung
+PSSID : 
+AESSID: Mureung
+-----------------------------------------------------
+Line :  88 2016-10-24 16:38:12.283729000 90:9f:33:be:3b:4c -> ff:ff:ff:ff:ff:ff 802.11 294 Beacon frame, SN=907, FN=0, Flags=........, BI=100, SSID=Norma_2.4G_test, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 90:9F:33:BE:3B:4C = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 294
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : Norma_2.4G_test
+PSSID : 
+AESSID: Norma_2.4G_test
+-----------------------------------------------------
+Line :  89 2016-10-24 16:38:13.453627000 00:26:66:cd:34:24 -> ff:ff:ff:ff:ff:ff 802.11 313 Beacon frame, SN=2311, FN=0, Flags=........, BI=100, SSID=GHD151222-001, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 00:26:66:CD:34:24 = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 313
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : GHD151222-001
+PSSID : 
+AESSID: GHD151222-001
+-----------------------------------------------------
+Line :  90 2016-10-24 16:38:13.464786000 00:40:5a:ae:e8:79 -> ff:ff:ff:ff:ff:ff 802.11 276 Beacon frame, SN=2409, FN=0, Flags=........, BI=100, SSID=U+Net_Nex, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 00:40:5A:AE:E8:79 = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 276
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : U+Net_Nex
+PSSID : 
+AESSID: U+Net_Nex
+-----------------------------------------------------
+Line :  91 2016-10-24 16:38:13.496256000 90:9f:33:d3:b8:a2 -> ff:ff:ff:ff:ff:ff 802.11 282 Beacon frame, SN=1510, FN=0, Flags=........, BI=100, SSID=Norma_b, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 90:9F:33:D3:B8:A2 = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 282
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : Norma_b
+PSSID : 
+AESSID: Norma_b
+-----------------------------------------------------
+Line :  92 2016-10-24 16:38:13.541636000 00:40:5a:ae:e8:78 -> ff:ff:ff:ff:ff:ff 802.11 269 Beacon frame, SN=1190, FN=0, Flags=........, BI=100, SSID=Broadcast, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 00:40:5A:AE:E8:78 = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 269
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : Broadcast
+PSSID : 
+AESSID: Broadcast
+-----------------------------------------------------
+Line :  93 2016-10-24 16:38:13.598684000 90:9f:33:d3:b8:a2 -> ff:ff:ff:ff:ff:ff 802.11 282 Beacon frame, SN=1511, FN=0, Flags=........, BI=100, SSID=Norma_b, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 90:9F:33:D3:B8:A2 = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 282
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : Norma_b
+PSSID : 
+AESSID: Norma_b
+-----------------------------------------------------
+Line :  94 2016-10-24 16:38:14.542198000 90:9f:33:5f:e2:24 -> ff:ff:ff:ff:ff:ff 802.11 273 Beacon frame, SN=4008, FN=0, Flags=........, BI=100, SSID=kouno, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 90:9F:33:5F:E2:24 = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 273
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : kouno
+PSSID : 
+AESSID: kouno
+-----------------------------------------------------
+Line :  95 2016-10-24 16:38:14.543327000 00:1f:96:34:79:de -> 64:e5:99:5b:4a:c0 802.11 130 QoS Data, SN=890, FN=0, Flags=.p.....T, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : QOS
+BCast  : 0
+FR_MAC : 00:1F:96:34:79:DE = 17
+TO_MAC : 64:E5:99:5B:4A:C0 = 17
+TO_MAC2 : 0
+DTYPE  : QOS
+DTYPE2  : 130
+DTYPE3  : DATA
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : .P.....T
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line :  96 2016-10-24 16:38:14.543633000              -> 00:1f:96:34:79:de  802.11 28 Acknowledgement, Flags=........, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 2
+STYPE : ACKNOWLEDGEMENT
+BCast  : 0
+FR_MAC :  = 0
+TO_MAC : 00:1F:96:34:79:DE = 17
+TO_MAC2 : 00:1F:96:34:79:DE17
+DTYPE  : FLAGS=........
+DTYPE2  : ACKNOWLEDGEMENT
+DTYPE3  : .
+WPS1  : 28
+WPS2  : .
+WPS3  : .
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line :  97 2016-10-24 16:38:14.551766000 64:e5:99:5b:4a:c0 -> 00:1f:96:34:79:de 802.11 223 QoS Data, SN=2666, FN=0, Flags=.p..R.F., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : QOS
+BCast  : 0
+FR_MAC : 64:E5:99:5B:4A:C0 = 17
+TO_MAC : 00:1F:96:34:79:DE = 17
+TO_MAC2 : 0
+DTYPE  : QOS
+DTYPE2  : 223
+DTYPE3  : DATA
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : .P..R.F.
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line :  98 2016-10-24 16:38:14.552133000 64:e5:99:5b:4a:c0 -> 00:1f:96:34:79:de 802.11 223 QoS Data, SN=2666, FN=0, Flags=.p..R.F., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : QOS
+BCast  : 0
+FR_MAC : 64:E5:99:5B:4A:C0 = 17
+TO_MAC : 00:1F:96:34:79:DE = 17
+TO_MAC2 : 0
+DTYPE  : QOS
+DTYPE2  : 223
+DTYPE3  : DATA
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : .P..R.F.
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line :  99 2016-10-24 16:38:14.552467000 64:e5:99:5b:4a:c0 -> 00:1f:96:34:79:de 802.11 223 QoS Data, SN=2666, FN=0, Flags=.p..R.F., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : QOS
+BCast  : 0
+FR_MAC : 64:E5:99:5B:4A:C0 = 17
+TO_MAC : 00:1F:96:34:79:DE = 17
+TO_MAC2 : 0
+DTYPE  : QOS
+DTYPE2  : 223
+DTYPE3  : DATA
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : .P..R.F.
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 100 2016-10-24 16:38:14.553140000 64:e5:99:5b:4a:c0 -> 00:1f:96:34:79:de 802.11 223 QoS Data, SN=2666, FN=0, Flags=.p..R.F., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : QOS
+BCast  : 0
+FR_MAC : 64:E5:99:5B:4A:C0 = 17
+TO_MAC : 00:1F:96:34:79:DE = 17
+TO_MAC2 : 0
+DTYPE  : QOS
+DTYPE2  : 223
+DTYPE3  : DATA
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : .P..R.F.
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 101 2016-10-24 16:38:14.553846000 64:e5:99:5b:4a:c0 -> 00:1f:96:34:79:de 802.11 223 QoS Data, SN=2666, FN=0, Flags=.p..R.F., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : QOS
+BCast  : 0
+FR_MAC : 64:E5:99:5B:4A:C0 = 17
+TO_MAC : 00:1F:96:34:79:DE = 17
+TO_MAC2 : 0
+DTYPE  : QOS
+DTYPE2  : 223
+DTYPE3  : DATA
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : .P..R.F.
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 102 2016-10-24 16:38:14.555991000 64:e5:99:5b:4a:c0 -> 00:1f:96:34:79:de 802.11 223 QoS Data, SN=2666, FN=0, Flags=.p..R.F., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : QOS
+BCast  : 0
+FR_MAC : 64:E5:99:5B:4A:C0 = 17
+TO_MAC : 00:1F:96:34:79:DE = 17
+TO_MAC2 : 0
+DTYPE  : QOS
+DTYPE2  : 223
+DTYPE3  : DATA
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : .P..R.F.
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 103 2016-10-24 16:38:14.556316000              -> 64:e5:99:5b:4a:c0  802.11 28 Acknowledgement, Flags=........, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 2
+STYPE : ACKNOWLEDGEMENT
+BCast  : 0
+FR_MAC :  = 0
+TO_MAC : 64:E5:99:5B:4A:C0 = 17
+TO_MAC2 : 64:E5:99:5B:4A:C017
+DTYPE  : FLAGS=........
+DTYPE2  : ACKNOWLEDGEMENT
+DTYPE3  : .
+WPS1  : 28
+WPS2  : .
+WPS3  : .
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 104 2016-10-24 16:38:14.561613000 00:1f:96:34:79:de -> 64:e5:99:5b:4a:c0 802.11 124 QoS Data, SN=891, FN=0, Flags=.p.....T, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : QOS
+BCast  : 0
+FR_MAC : 00:1F:96:34:79:DE = 17
+TO_MAC : 64:E5:99:5B:4A:C0 = 17
+TO_MAC2 : 0
+DTYPE  : QOS
+DTYPE2  : 124
+DTYPE3  : DATA
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : .P.....T
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 105 2016-10-24 16:38:14.561943000              -> 00:1f:96:34:79:de  802.11 28 Acknowledgement, Flags=........, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 2
+STYPE : ACKNOWLEDGEMENT
+BCast  : 0
+FR_MAC :  = 0
+TO_MAC : 00:1F:96:34:79:DE = 17
+TO_MAC2 : 00:1F:96:34:79:DE17
+DTYPE  : FLAGS=........
+DTYPE2  : ACKNOWLEDGEMENT
+DTYPE3  : .
+WPS1  : 28
+WPS2  : .
+WPS3  : .
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 106 2016-10-24 16:38:14.594984000 64:e5:99:5b:4a:c0 -> ff:ff:ff:ff:ff:ff 802.11 279 Beacon frame, SN=608, FN=0, Flags=........, BI=100, SSID=Norma_Phone, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 64:E5:99:5B:4A:C0 = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 279
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : Norma_Phone
+PSSID : 
+AESSID: Norma_Phone
+-----------------------------------------------------
+Line : 107 2016-10-24 16:38:14.644632000 90:9f:33:5f:e2:24 -> ff:ff:ff:ff:ff:ff 802.11 273 Beacon frame, SN=4009, FN=0, Flags=........, BI=100, SSID=kouno, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 90:9F:33:5F:E2:24 = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 273
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : kouno
+PSSID : 
+AESSID: kouno
+-----------------------------------------------------
+Line : 108 2016-10-24 16:38:14.673688000 06:09:b4:75:e3:93 -> ff:ff:ff:ff:ff:ff 802.11 236 Beacon frame, SN=682, FN=0, Flags=........, BI=100, SSID=ollehWiFi , ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 06:09:B4:75:E3:93 = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 236
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : ollehWiFi 
+PSSID : 
+AESSID: ollehWiFi 
+-----------------------------------------------------
+Line : 109 2016-10-24 16:38:14.697423000 64:e5:99:5b:4a:c0 -> ff:ff:ff:ff:ff:ff 802.11 279 Beacon frame, SN=609, FN=0, Flags=........, BI=100, SSID=Norma_Phone, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 64:E5:99:5B:4A:C0 = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 279
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : Norma_Phone
+PSSID : 
+AESSID: Norma_Phone
+-----------------------------------------------------
+Line : 110 2016-10-24 16:38:14.706587000 90:9f:33:64:76:b8 -> ff:ff:ff:ff:ff:ff 802.11 276 Beacon frame, SN=2813, FN=0, Flags=........, BI=100, SSID=neuracle, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 90:9F:33:64:76:B8 = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 276
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : neuracle
+PSSID : 
+AESSID: neuracle
+-----------------------------------------------------
+Line : 111 2016-10-24 16:38:14.722036000 00:09:b4:75:e3:93 -> ff:ff:ff:ff:ff:ff 802.11 289 Beacon frame, SN=694, FN=0, Flags=........, BI=100, SSID=ollehWiFi, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 00:09:B4:75:E3:93 = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 289
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : ollehWiFi
+PSSID : 
+AESSID: ollehWiFi
+-----------------------------------------------------
+Line : 112 2016-10-24 16:38:14.747007000 90:9f:33:5f:e2:24 -> ff:ff:ff:ff:ff:ff 802.11 273 Beacon frame, SN=4010, FN=0, Flags=........, BI=100, SSID=kouno, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 90:9F:33:5F:E2:24 = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 273
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : kouno
+PSSID : 
+AESSID: kouno
+-----------------------------------------------------
+Line : 113 2016-10-24 16:38:15.684761000 1c:a5:32:70:75:90 -> ff:ff:ff:ff:ff:ff 802.11 219 Beacon frame, SN=2643, FN=0, Flags=........, BI=100, SSID=Broadcast, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 1C:A5:32:70:75:90 = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 219
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : Broadcast
+PSSID : 
+AESSID: Broadcast
+-----------------------------------------------------
+Line : 114 2016-10-24 16:38:15.686582000 1c:a5:32:70:75:91 -> ff:ff:ff:ff:ff:ff 802.11 207 Beacon frame, SN=2644, FN=0, Flags=........, BI=100, SSID=U+Net7593, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 1C:A5:32:70:75:91 = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 207
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : U+Net7593
+PSSID : 
+AESSID: U+Net7593
+-----------------------------------------------------
+Line : 115 2016-10-24 16:38:15.689744000 bc:96:80:99:cf:f0 -> ff:ff:ff:ff:ff:ff 802.11 219 Beacon frame, SN=3687, FN=0, Flags=........, BI=100, SSID=Broadcast, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : BC:96:80:99:CF:F0 = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 219
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : Broadcast
+PSSID : 
+AESSID: Broadcast
+-----------------------------------------------------
+Line : 116 2016-10-24 16:38:15.691320000 bc:96:80:99:cf:f1 -> ff:ff:ff:ff:ff:ff 802.11 207 Beacon frame, SN=3688, FN=0, Flags=........, BI=100, SSID=U+NetCFF3, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : BC:96:80:99:CF:F1 = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 207
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : U+NetCFF3
+PSSID : 
+AESSID: U+NetCFF3
+-----------------------------------------------------
+Line : 117 2016-10-24 16:38:15.789005000 1c:a5:32:70:75:90 -> ff:ff:ff:ff:ff:ff 802.11 219 Beacon frame, SN=2645, FN=0, Flags=........, BI=100, SSID=Broadcast, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 1C:A5:32:70:75:90 = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 219
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : Broadcast
+PSSID : 
+AESSID: Broadcast
+-----------------------------------------------------
+Line : 118 2016-10-24 16:38:15.790884000 1c:a5:32:70:75:91 -> ff:ff:ff:ff:ff:ff 802.11 207 Beacon frame, SN=2646, FN=0, Flags=........, BI=100, SSID=U+Net7593, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 1C:A5:32:70:75:91 = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 207
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : U+Net7593
+PSSID : 
+AESSID: U+Net7593
+-----------------------------------------------------
+Line : 119 2016-10-24 16:38:15.889744000 1c:a5:32:70:75:90 -> ff:ff:ff:ff:ff:ff 802.11 219 Beacon frame, SN=2647, FN=0, Flags=........, BI=100, SSID=Broadcast, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 1C:A5:32:70:75:90 = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 219
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : Broadcast
+PSSID : 
+AESSID: Broadcast
+-----------------------------------------------------
+Line : 120 2016-10-24 16:38:15.891342000 1c:a5:32:70:75:91 -> ff:ff:ff:ff:ff:ff 802.11 207 Beacon frame, SN=2648, FN=0, Flags=........, BI=100, SSID=U+Net7593, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 1C:A5:32:70:75:91 = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 207
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : U+Net7593
+PSSID : 
+AESSID: U+Net7593
+-----------------------------------------------------
+Line : 121 2016-10-24 16:38:15.894545000 bc:96:80:99:cf:f0 -> ff:ff:ff:ff:ff:ff 802.11 219 Beacon frame, SN=3691, FN=0, Flags=........, BI=100, SSID=Broadcast, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : BC:96:80:99:CF:F0 = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 219
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : Broadcast
+PSSID : 
+AESSID: Broadcast
+-----------------------------------------------------
+Line : 122 2016-10-24 16:38:16.815784000 00:09:b4:75:e3:95 -> ff:ff:ff:ff:ff:ff 802.11 219 Beacon frame, SN=3885, FN=0, Flags=........, BI=100, SSID=Broadcast, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 00:09:B4:75:E3:95 = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 219
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : Broadcast
+PSSID : 
+AESSID: Broadcast
+-----------------------------------------------------
+Line : 123 2016-10-24 16:38:16.827556000 00:09:b4:75:e4:25 -> ff:ff:ff:ff:ff:ff 802.11 219 Beacon frame, SN=1138, FN=0, Flags=........, BI=100, SSID=Broadcast, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 00:09:B4:75:E4:25 = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 219
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : Broadcast
+PSSID : 
+AESSID: Broadcast
+-----------------------------------------------------
+Line : 124 2016-10-24 16:38:16.851479000 04:8d:38:b6:d2:5e -> ff:ff:ff:ff:ff:ff 802.11 360 Beacon frame, SN=2136, FN=0, Flags=........, BI=100, SSID=SO070VOIPD25C, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 04:8D:38:B6:D2:5E = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 360
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : SO070VOIPD25C
+PSSID : 
+AESSID: SO070VOIPD25C
+-----------------------------------------------------
+Line : 125 2016-10-24 16:38:16.852266000 00:09:b4:75:1c:2b -> ff:ff:ff:ff:ff:ff 802.11 289 Beacon frame, SN=3502, FN=0, Flags=........, BI=100, SSID=ollehWiFi, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 00:09:B4:75:1C:2B = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 289
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : ollehWiFi
+PSSID : 
+AESSID: ollehWiFi
+-----------------------------------------------------
+Line : 126 2016-10-24 16:38:16.858837000 00:27:1c:ad:1a:d9 -> ff:ff:ff:ff:ff:ff 802.11 261 Beacon frame, SN=2413, FN=0, Flags=........, BI=100, SSID=U+Net1ADB, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 00:27:1C:AD:1A:D9 = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 261
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : U+Net1ADB
+PSSID : 
+AESSID: U+Net1ADB
+-----------------------------------------------------
+Line : 127 2016-10-24 16:38:16.864776000 00:09:b4:75:65:7b -> ff:ff:ff:ff:ff:ff 802.11 289 Beacon frame, SN=2782, FN=0, Flags=........, BI=100, SSID=ollehWiFi, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 00:09:B4:75:65:7B = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 289
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : ollehWiFi
+PSSID : 
+AESSID: ollehWiFi
+-----------------------------------------------------
+Line : 128 2016-10-24 16:38:16.877787000 00:09:b4:75:65:4b -> ff:ff:ff:ff:ff:ff 802.11 289 Beacon frame, SN=2324, FN=0, Flags=........, BI=100, SSID=ollehWiFi, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 00:09:B4:75:65:4B = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 289
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : ollehWiFi
+PSSID : 
+AESSID: ollehWiFi
+-----------------------------------------------------
+Line : 129 2016-10-24 16:38:16.886119000 00:09:b4:75:2e:8d -> ff:ff:ff:ff:ff:ff 802.11 219 Beacon frame, SN=3652, FN=0, Flags=........, BI=100, SSID=Broadcast, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 00:09:B4:75:2E:8D = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 219
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : Broadcast
+PSSID : 
+AESSID: Broadcast
+-----------------------------------------------------
+Line : 130 2016-10-24 16:38:16.903389000 06:09:b4:75:1c:2b -> ff:ff:ff:ff:ff:ff 802.11 236 Beacon frame, SN=3499, FN=0, Flags=........, BI=100, SSID=ollehWiFi , ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 06:09:B4:75:1C:2B = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 236
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : ollehWiFi 
+PSSID : 
+AESSID: ollehWiFi 
+-----------------------------------------------------
+Line : 131 2016-10-24 16:38:16.918155000 00:09:b4:75:e3:95 -> ff:ff:ff:ff:ff:ff 802.11 219 Beacon frame, SN=3886, FN=0, Flags=........, BI=100, SSID=Broadcast, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 00:09:B4:75:E3:95 = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 219
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : Broadcast
+PSSID : 
+AESSID: Broadcast
+-----------------------------------------------------
+Line : 132 2016-10-24 16:38:16.921182000 00:09:b4:75:1c:3b -> ff:ff:ff:ff:ff:ff 802.11 289 Beacon frame, SN=677, FN=0, Flags=........, BI=100, SSID=ollehWiFi, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 00:09:B4:75:1C:3B = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 289
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : ollehWiFi
+PSSID : 
+AESSID: ollehWiFi
+-----------------------------------------------------
+Line : 133 2016-10-24 16:38:16.953889000 04:8d:38:b6:d2:5e -> ff:ff:ff:ff:ff:ff 802.11 360 Beacon frame, SN=2138, FN=0, Flags=........, BI=100, SSID=SO070VOIPD25C, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 04:8D:38:B6:D2:5E = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 360
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : SO070VOIPD25C
+PSSID : 
+AESSID: SO070VOIPD25C
+-----------------------------------------------------
+Line : 134 2016-10-24 16:38:16.954602000 00:09:b4:75:1c:2b -> ff:ff:ff:ff:ff:ff 802.11 289 Beacon frame, SN=3503, FN=0, Flags=........, BI=100, SSID=ollehWiFi, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 00:09:B4:75:1C:2B = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 289
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : ollehWiFi
+PSSID : 
+AESSID: ollehWiFi
+-----------------------------------------------------
+Line : 135 2016-10-24 16:38:16.961208000 00:27:1c:ad:1a:d9 -> ff:ff:ff:ff:ff:ff 802.11 261 Beacon frame, SN=2416, FN=0, Flags=........, BI=100, SSID=U+Net1ADB, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 00:27:1C:AD:1A:D9 = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 261
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : U+Net1ADB
+PSSID : 
+AESSID: U+Net1ADB
+-----------------------------------------------------
+Line : 136 2016-10-24 16:38:16.967145000 00:09:b4:75:65:7b -> ff:ff:ff:ff:ff:ff 802.11 289 Beacon frame, SN=2783, FN=0, Flags=........, BI=100, SSID=ollehWiFi, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 00:09:B4:75:65:7B = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 289
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : ollehWiFi
+PSSID : 
+AESSID: ollehWiFi
+-----------------------------------------------------
+Line : 137 2016-10-24 16:38:16.988582000 00:09:b4:75:2e:8d -> ff:ff:ff:ff:ff:ff 802.11 219 Beacon frame, SN=3653, FN=0, Flags=........, BI=100, SSID=Broadcast, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 00:09:B4:75:2E:8D = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 219
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : Broadcast
+PSSID : 
+AESSID: Broadcast
+-----------------------------------------------------
+Line : 138 2016-10-24 16:38:17.020602000 00:09:b4:75:e3:95 -> ff:ff:ff:ff:ff:ff 802.11 219 Beacon frame, SN=3887, FN=0, Flags=........, BI=100, SSID=Broadcast, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 00:09:B4:75:E3:95 = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 219
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : Broadcast
+PSSID : 
+AESSID: Broadcast
+-----------------------------------------------------
+Line : 139 2016-10-24 16:38:17.023658000 00:09:b4:75:1c:3b -> ff:ff:ff:ff:ff:ff 802.11 289 Beacon frame, SN=678, FN=0, Flags=........, BI=100, SSID=ollehWiFi, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 00:09:B4:75:1C:3B = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 289
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : ollehWiFi
+PSSID : 
+AESSID: ollehWiFi
+-----------------------------------------------------
+Line : 140 2016-10-24 16:38:17.948583000 06:09:b4:75:2e:8b -> ff:ff:ff:ff:ff:ff 802.11 236 Beacon frame, SN=350, FN=0, Flags=........, BI=100, SSID=ollehWiFi , ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 06:09:B4:75:2E:8B = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 236
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : ollehWiFi 
+PSSID : 
+AESSID: ollehWiFi 
+-----------------------------------------------------
+Line : 141 2016-10-24 16:38:17.965737000 ac:ee:9e:a9:30:90 -> 64:e5:99:51:e4:78 802.11 42 Null function (No data), SN=529, FN=0, Flags=...PR..T, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : NULL FUNCTION
+BCast  : 0
+FR_MAC : AC:EE:9E:A9:30:90 = 17
+TO_MAC : 64:E5:99:51:E4:78 = 17
+TO_MAC2 : 0
+DTYPE  : NULL
+DTYPE2  : 42
+DTYPE3  : FUNCTION
+WPS1  : 802.11
+WPS2  : DATA)
+WPS3  : SN=529
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 142 2016-10-24 16:38:17.966364000 ac:ee:9e:a9:30:90 -> 64:e5:99:51:e4:78 802.11 42 Null function (No data), SN=529, FN=0, Flags=...PR..T, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : NULL FUNCTION
+BCast  : 0
+FR_MAC : AC:EE:9E:A9:30:90 = 17
+TO_MAC : 64:E5:99:51:E4:78 = 17
+TO_MAC2 : 0
+DTYPE  : NULL
+DTYPE2  : 42
+DTYPE3  : FUNCTION
+WPS1  : 802.11
+WPS2  : DATA)
+WPS3  : SN=529
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 143 2016-10-24 16:38:17.985518000 64:e5:99:51:e4:78 -> ff:ff:ff:ff:ff:ff 802.11 295 Beacon frame, SN=3046, FN=0, Flags=........, BI=100, SSID=Norma_2.4G, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 64:E5:99:51:E4:78 = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 295
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : Norma_2.4G
+PSSID : 
+AESSID: Norma_2.4G
+-----------------------------------------------------
+Line : 144 2016-10-24 16:38:17.986016000 68:5d:43:00:99:25 -> 64:e5:99:51:e4:78 802.11 44 QoS Null function (No data), SN=0, FN=0, Flags=...PR..T, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : QOS
+BCast  : 0
+FR_MAC : 68:5D:43:00:99:25 = 17
+TO_MAC : 64:E5:99:51:E4:78 = 17
+TO_MAC2 : 0
+DTYPE  : QOS
+DTYPE2  : 44
+DTYPE3  : NULL
+WPS1  : 802.11
+WPS2  : (NO
+WPS3  : DATA)
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 145 2016-10-24 16:38:17.986030000              -> 68:5d:43:00:99:25  802.11 28 Acknowledgement, Flags=........, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 2
+STYPE : ACKNOWLEDGEMENT
+BCast  : 0
+FR_MAC :  = 0
+TO_MAC : 68:5D:43:00:99:25 = 17
+TO_MAC2 : 68:5D:43:00:99:2517
+DTYPE  : FLAGS=........
+DTYPE2  : ACKNOWLEDGEMENT
+DTYPE3  : .
+WPS1  : 28
+WPS2  : .
+WPS3  : .
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 146 2016-10-24 16:38:18.030668000 ac:ee:9e:a9:30:90 -> 64:e5:99:51:e4:78 802.11 42 Null function (No data), SN=530, FN=0, Flags=.......T, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : NULL FUNCTION
+BCast  : 0
+FR_MAC : AC:EE:9E:A9:30:90 = 17
+TO_MAC : 64:E5:99:51:E4:78 = 17
+TO_MAC2 : 0
+DTYPE  : NULL
+DTYPE2  : 42
+DTYPE3  : FUNCTION
+WPS1  : 802.11
+WPS2  : DATA)
+WPS3  : SN=530
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 147 2016-10-24 16:38:18.030695000 ac:ee:9e:a9:30:90 -> 64:e5:99:51:e4:78 802.11 42 Null function (No data), SN=530, FN=0, Flags=....R..T, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : NULL FUNCTION
+BCast  : 0
+FR_MAC : AC:EE:9E:A9:30:90 = 17
+TO_MAC : 64:E5:99:51:E4:78 = 17
+TO_MAC2 : 0
+DTYPE  : NULL
+DTYPE2  : 42
+DTYPE3  : FUNCTION
+WPS1  : 802.11
+WPS2  : DATA)
+WPS3  : SN=530
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 148 2016-10-24 16:38:18.030898000 ac:ee:9e:a9:30:90 -> 64:e5:99:51:e4:78 802.11 42 Null function (No data), SN=530, FN=0, Flags=....R..T, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : NULL FUNCTION
+BCast  : 0
+FR_MAC : AC:EE:9E:A9:30:90 = 17
+TO_MAC : 64:E5:99:51:E4:78 = 17
+TO_MAC2 : 0
+DTYPE  : NULL
+DTYPE2  : 42
+DTYPE3  : FUNCTION
+WPS1  : 802.11
+WPS2  : DATA)
+WPS3  : SN=530
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 149 2016-10-24 16:38:18.031394000 ac:ee:9e:a9:30:90 -> 64:e5:99:51:e4:78 802.11 42 Null function (No data), SN=530, FN=0, Flags=....R..T, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : NULL FUNCTION
+BCast  : 0
+FR_MAC : AC:EE:9E:A9:30:90 = 17
+TO_MAC : 64:E5:99:51:E4:78 = 17
+TO_MAC2 : 0
+DTYPE  : NULL
+DTYPE2  : 42
+DTYPE3  : FUNCTION
+WPS1  : 802.11
+WPS2  : DATA)
+WPS3  : SN=530
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 150 2016-10-24 16:38:18.032111000 ac:ee:9e:a9:30:90 -> 64:e5:99:51:e4:78 802.11 42 Null function (No data), SN=530, FN=0, Flags=....R..T, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : NULL FUNCTION
+BCast  : 0
+FR_MAC : AC:EE:9E:A9:30:90 = 17
+TO_MAC : 64:E5:99:51:E4:78 = 17
+TO_MAC2 : 0
+DTYPE  : NULL
+DTYPE2  : 42
+DTYPE3  : FUNCTION
+WPS1  : 802.11
+WPS2  : DATA)
+WPS3  : SN=530
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 151 2016-10-24 16:38:18.032444000              -> ac:ee:9e:a9:30:90  802.11 28 Acknowledgement, Flags=........, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 2
+STYPE : ACKNOWLEDGEMENT
+BCast  : 0
+FR_MAC :  = 0
+TO_MAC : AC:EE:9E:A9:30:90 = 17
+TO_MAC2 : AC:EE:9E:A9:30:9017
+DTYPE  : FLAGS=........
+DTYPE2  : ACKNOWLEDGEMENT
+DTYPE3  : .
+WPS1  : 28
+WPS2  : .
+WPS3  : .
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 152 2016-10-24 16:38:18.032580000 ac:ee:9e:a9:30:90 -> 64:e5:99:51:e4:78 802.11 44 QoS Null function (No data), SN=531, FN=0, Flags=...P...T, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : QOS
+BCast  : 0
+FR_MAC : AC:EE:9E:A9:30:90 = 17
+TO_MAC : 64:E5:99:51:E4:78 = 17
+TO_MAC2 : 0
+DTYPE  : QOS
+DTYPE2  : 44
+DTYPE3  : NULL
+WPS1  : 802.11
+WPS2  : (NO
+WPS3  : DATA)
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 153 2016-10-24 16:38:18.032588000              -> ac:ee:9e:a9:30:90  802.11 28 Acknowledgement, Flags=........, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 2
+STYPE : ACKNOWLEDGEMENT
+BCast  : 0
+FR_MAC :  = 0
+TO_MAC : AC:EE:9E:A9:30:90 = 17
+TO_MAC2 : AC:EE:9E:A9:30:9017
+DTYPE  : FLAGS=........
+DTYPE2  : ACKNOWLEDGEMENT
+DTYPE3  : .
+WPS1  : 28
+WPS2  : .
+WPS3  : .
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 154 2016-10-24 16:38:18.032985000 64:e5:99:51:e4:78  -> ac:ee:9e:a9:30:90  802.11 38 802.11 Block Ack Req, Flags=........, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : 802.11
+BCast  : 0
+FR_MAC : 64:E5:99:51:E4:78 = 17
+TO_MAC : AC:EE:9E:A9:30:90 = 17
+TO_MAC2 : 0
+DTYPE  : 802.11
+DTYPE2  : 38
+DTYPE3  : BLOCK
+WPS1  : 802.11
+WPS2  : REQ
+WPS3  : ........
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 155 2016-10-24 16:38:18.050981000 06:09:b4:75:2e:8b -> ff:ff:ff:ff:ff:ff 802.11 236 Beacon frame, SN=351, FN=0, Flags=........, BI=100, SSID=ollehWiFi , ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 06:09:B4:75:2E:8B = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 236
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : ollehWiFi 
+PSSID : 
+AESSID: ollehWiFi 
+-----------------------------------------------------
+Line : 156 2016-10-24 16:38:18.082583000 90:9f:33:63:1a:76 -> ff:ff:ff:ff:ff:ff 802.11 300 Beacon frame, SN=1444, FN=0, Flags=........, BI=100, SSID=Haimnano, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 90:9F:33:63:1A:76 = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 300
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : Haimnano
+PSSID : 
+AESSID: Haimnano
+-----------------------------------------------------
+Line : 157 2016-10-24 16:38:18.082738000 68:5d:43:00:99:25 -> 64:e5:99:51:e4:78 802.11 44 QoS Null function (No data), SN=0, FN=0, Flags=.......T, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : QOS
+BCast  : 0
+FR_MAC : 68:5D:43:00:99:25 = 17
+TO_MAC : 64:E5:99:51:E4:78 = 17
+TO_MAC2 : 0
+DTYPE  : QOS
+DTYPE2  : 44
+DTYPE3  : NULL
+WPS1  : 802.11
+WPS2  : (NO
+WPS3  : DATA)
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 158 2016-10-24 16:38:18.082749000              -> 68:5d:43:00:99:25  802.11 28 Acknowledgement, Flags=........, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 2
+STYPE : ACKNOWLEDGEMENT
+BCast  : 0
+FR_MAC :  = 0
+TO_MAC : 68:5D:43:00:99:25 = 17
+TO_MAC2 : 68:5D:43:00:99:2517
+DTYPE  : FLAGS=........
+DTYPE2  : ACKNOWLEDGEMENT
+DTYPE3  : .
+WPS1  : 28
+WPS2  : .
+WPS3  : .
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 159 2016-10-24 16:38:18.083238000 64:e5:99:51:e4:78  -> 68:5d:43:00:99:25  802.11 38 802.11 Block Ack Req, Flags=........, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : 802.11
+BCast  : 0
+FR_MAC : 64:E5:99:51:E4:78 = 17
+TO_MAC : 68:5D:43:00:99:25 = 17
+TO_MAC2 : 0
+DTYPE  : 802.11
+DTYPE2  : 38
+DTYPE3  : BLOCK
+WPS1  : 802.11
+WPS2  : REQ
+WPS3  : ........
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 160 2016-10-24 16:38:18.083685000 68:5d:43:00:99:25  -> 64:e5:99:51:e4:78  802.11 46 802.11 Block Ack, Flags=........, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : 802.11
+BCast  : 0
+FR_MAC : 68:5D:43:00:99:25 = 17
+TO_MAC : 64:E5:99:51:E4:78 = 17
+TO_MAC2 : 0
+DTYPE  : 802.11
+DTYPE2  : 46
+DTYPE3  : BLOCK
+WPS1  : 802.11
+WPS2  : ........
+WPS3  : .
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 161 2016-10-24 16:38:18.087919000 64:e5:99:51:e4:78 -> ff:ff:ff:ff:ff:ff 802.11 295 Beacon frame, SN=3047, FN=0, Flags=........, BI=100, SSID=Norma_2.4G, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 64:E5:99:51:E4:78 = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 295
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : Norma_2.4G
+PSSID : 
+AESSID: Norma_2.4G
+-----------------------------------------------------
+Line : 162 2016-10-24 16:38:18.134176000 00:30:0d:d4:3a:30 -> ff:ff:ff:ff:ff:ff 802.11 317 Beacon frame, SN=2485, FN=0, Flags=........, BI=100, SSID=ollehWiFi, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 00:30:0D:D4:3A:30 = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 317
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : ollehWiFi
+PSSID : 
+AESSID: ollehWiFi
+-----------------------------------------------------
+Line : 163 2016-10-24 16:38:18.134671000 06:30:0d:d4:3a:31 -> ff:ff:ff:ff:ff:ff 802.11 259 Beacon frame, SN=2486, FN=0, Flags=........, BI=100, SSID=ollehWiFi , ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 06:30:0D:D4:3A:31 = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 259
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : ollehWiFi 
+PSSID : 
+AESSID: ollehWiFi 
+-----------------------------------------------------
+Line : 164 2016-10-24 16:38:18.153372000 06:09:b4:75:2e:8b -> ff:ff:ff:ff:ff:ff 802.11 236 Beacon frame, SN=352, FN=0, Flags=........, BI=100, SSID=ollehWiFi , ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 06:09:B4:75:2E:8B = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 236
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : ollehWiFi 
+PSSID : 
+AESSID: ollehWiFi 
+-----------------------------------------------------
+Line : 165 2016-10-24 16:38:18.184956000 90:9f:33:63:1a:76 -> ff:ff:ff:ff:ff:ff 802.11 300 Beacon frame, SN=1445, FN=0, Flags=........, BI=100, SSID=Haimnano, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 90:9F:33:63:1A:76 = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 300
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : Haimnano
+PSSID : 
+AESSID: Haimnano
+-----------------------------------------------------
+Line : 166 2016-10-24 16:38:18.190423000 64:e5:99:51:e4:78 -> ff:ff:ff:ff:ff:ff 802.11 295 Beacon frame, SN=3048, FN=0, Flags=........, BI=100, SSID=Norma_2.4G, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 64:E5:99:51:E4:78 = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 295
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : Norma_2.4G
+PSSID : 
+AESSID: Norma_2.4G
+-----------------------------------------------------
+Line : 167 2016-10-24 16:38:18.190459000 68:5d:43:00:99:25 -> 64:e5:99:51:e4:78 802.11 44 QoS Null function (No data), SN=0, FN=0, Flags=...P...T, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : QOS
+BCast  : 0
+FR_MAC : 68:5D:43:00:99:25 = 17
+TO_MAC : 64:E5:99:51:E4:78 = 17
+TO_MAC2 : 0
+DTYPE  : QOS
+DTYPE2  : 44
+DTYPE3  : NULL
+WPS1  : 802.11
+WPS2  : (NO
+WPS3  : DATA)
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 168 2016-10-24 16:38:18.190469000              -> 68:5d:43:00:99:25  802.11 28 Acknowledgement, Flags=........, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 2
+STYPE : ACKNOWLEDGEMENT
+BCast  : 0
+FR_MAC :  = 0
+TO_MAC : 68:5D:43:00:99:25 = 17
+TO_MAC2 : 68:5D:43:00:99:2517
+DTYPE  : FLAGS=........
+DTYPE2  : ACKNOWLEDGEMENT
+DTYPE3  : .
+WPS1  : 28
+WPS2  : .
+WPS3  : .
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 169 2016-10-24 16:38:19.144728000 90:9f:33:be:3b:4c -> ff:ff:ff:ff:ff:ff 802.11 294 Beacon frame, SN=974, FN=0, Flags=........, BI=100, SSID=Norma_2.4G_test, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 90:9F:33:BE:3B:4C = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 294
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : Norma_2.4G_test
+PSSID : 
+AESSID: Norma_2.4G_test
+-----------------------------------------------------
+Line : 170 2016-10-24 16:38:19.182881000 90:9f:33:be:3b:4c -> b8:27:eb:14:b9:21 802.11 396 Probe Response, SN=2341, FN=0, Flags=........, BI=100, SSID=Norma_2.4G_test, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : PROBE RESPONSE
+BCast  : 0
+FR_MAC : 90:9F:33:BE:3B:4C = 17
+TO_MAC : B8:27:EB:14:B9:21 = 17
+TO_MAC2 : 0
+DTYPE  : PROBE
+DTYPE2  : 396
+DTYPE3  : RESPONSE
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : Norma_2.4G_test
+PSSID : 
+AESSID: Norma_2.4G_test
+-----------------------------------------------------
+Line : 171 2016-10-24 16:38:19.186265000 90:9f:33:be:3b:4c -> b8:27:eb:14:b9:21 802.11 396 Probe Response, SN=2342, FN=0, Flags=........, BI=100, SSID=Norma_2.4G_test, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : PROBE RESPONSE
+BCast  : 0
+FR_MAC : 90:9F:33:BE:3B:4C = 17
+TO_MAC : B8:27:EB:14:B9:21 = 17
+TO_MAC2 : 0
+DTYPE  : PROBE
+DTYPE2  : 396
+DTYPE3  : RESPONSE
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : Norma_2.4G_test
+PSSID : 
+AESSID: Norma_2.4G_test
+-----------------------------------------------------
+Line : 172 2016-10-24 16:38:19.198927000 90:9f:33:be:3b:4c -> b8:27:eb:14:b9:21 802.11 396 Probe Response, SN=2344, FN=0, Flags=........, BI=100, SSID=Norma_2.4G_test, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : PROBE RESPONSE
+BCast  : 0
+FR_MAC : 90:9F:33:BE:3B:4C = 17
+TO_MAC : B8:27:EB:14:B9:21 = 17
+TO_MAC2 : 0
+DTYPE  : PROBE
+DTYPE2  : 396
+DTYPE3  : RESPONSE
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : Norma_2.4G_test
+PSSID : 
+AESSID: Norma_2.4G_test
+-----------------------------------------------------
+Line : 173 2016-10-24 16:38:19.202173000 90:9f:33:be:3b:4c -> b8:27:eb:14:b9:21 802.11 396 Probe Response, SN=2345, FN=0, Flags=........, BI=100, SSID=Norma_2.4G_test, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : PROBE RESPONSE
+BCast  : 0
+FR_MAC : 90:9F:33:BE:3B:4C = 17
+TO_MAC : B8:27:EB:14:B9:21 = 17
+TO_MAC2 : 0
+DTYPE  : PROBE
+DTYPE2  : 396
+DTYPE3  : RESPONSE
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : Norma_2.4G_test
+PSSID : 
+AESSID: Norma_2.4G_test
+-----------------------------------------------------
+Line : 174 2016-10-24 16:38:19.207569000 90:9f:33:be:3b:4c -> b8:27:eb:14:b9:21 802.11 396 Probe Response, SN=2346, FN=0, Flags=........, BI=100, SSID=Norma_2.4G_test, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : PROBE RESPONSE
+BCast  : 0
+FR_MAC : 90:9F:33:BE:3B:4C = 17
+TO_MAC : B8:27:EB:14:B9:21 = 17
+TO_MAC2 : 0
+DTYPE  : PROBE
+DTYPE2  : 396
+DTYPE3  : RESPONSE
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : Norma_2.4G_test
+PSSID : 
+AESSID: Norma_2.4G_test
+-----------------------------------------------------
+Line : 175 2016-10-24 16:38:19.208755000              -> 00:08:9f:89:f1:ad  802.11 28 Acknowledgement, Flags=........, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 2
+STYPE : ACKNOWLEDGEMENT
+BCast  : 0
+FR_MAC :  = 0
+TO_MAC : 00:08:9F:89:F1:AD = 17
+TO_MAC2 : 00:08:9F:89:F1:AD17
+DTYPE  : FLAGS=........
+DTYPE2  : ACKNOWLEDGEMENT
+DTYPE3  : .
+WPS1  : 28
+WPS2  : .
+WPS3  : .
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 176 2016-10-24 16:38:19.212049000              -> 64:e5:99:cb:3b:fa  802.11 28 Acknowledgement, Flags=........, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 2
+STYPE : ACKNOWLEDGEMENT
+BCast  : 0
+FR_MAC :  = 0
+TO_MAC : 64:E5:99:CB:3B:FA = 17
+TO_MAC2 : 64:E5:99:CB:3B:FA17
+DTYPE  : FLAGS=........
+DTYPE2  : ACKNOWLEDGEMENT
+DTYPE3  : .
+WPS1  : 28
+WPS2  : .
+WPS3  : .
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 177 2016-10-24 16:38:19.214321000              -> e0:3e:44:04:b9:21  802.11 28 Clear-to-send, Flags=...P...., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 2
+STYPE : CLEAR-TO-SEND
+BCast  : 0
+FR_MAC :  = 0
+TO_MAC : E0:3E:44:04:B9:21 = 17
+TO_MAC2 : E0:3E:44:04:B9:2117
+DTYPE  : FLAGS=...P....
+DTYPE2  : CLEAR-TO-SEND
+DTYPE3  : .
+WPS1  : 28
+WPS2  : .
+WPS3  : .
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 178 2016-10-24 16:38:19.218701000 b8:27:eb:14:b9:21 -> ff:ff:ff:ff:ff:ff 802.11 260 Probe Request, SN=1502, FN=0, Flags=........, SSID=Broadcast, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : PROBE REQUEST
+BCast  : 1
+FR_MAC : B8:27:EB:14:B9:21 = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : PROBE
+DTYPE2  : 260
+DTYPE3  : REQUEST
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : 
+PSSID : Broadcast
+AESSID: 
+-----------------------------------------------------
+Line : 179 2016-10-24 16:38:19.222082000 90:9f:33:be:3b:4c -> b8:27:eb:14:b9:21 802.11 396 Probe Response, SN=2347, FN=0, Flags=........, BI=100, SSID=Norma_2.4G_test, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : PROBE RESPONSE
+BCast  : 0
+FR_MAC : 90:9F:33:BE:3B:4C = 17
+TO_MAC : B8:27:EB:14:B9:21 = 17
+TO_MAC2 : 0
+DTYPE  : PROBE
+DTYPE2  : 396
+DTYPE3  : RESPONSE
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : Norma_2.4G_test
+PSSID : 
+AESSID: Norma_2.4G_test
+-----------------------------------------------------
+Line : 180 2016-10-24 16:38:19.222369000              -> 90:9f:33:be:3b:4c  802.11 28 Acknowledgement, Flags=...P...., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 2
+STYPE : ACKNOWLEDGEMENT
+BCast  : 0
+FR_MAC :  = 0
+TO_MAC : 90:9F:33:BE:3B:4C = 17
+TO_MAC2 : 90:9F:33:BE:3B:4C17
+DTYPE  : FLAGS=...P....
+DTYPE2  : ACKNOWLEDGEMENT
+DTYPE3  : .
+WPS1  : 28
+WPS2  : .
+WPS3  : .
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 181 2016-10-24 16:38:19.225959000 90:9f:33:be:3b:4c -> b8:27:eb:14:b9:21 802.11 396 Probe Response, SN=2348, FN=0, Flags=........, BI=100, SSID=Norma_2.4G_test, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : PROBE RESPONSE
+BCast  : 0
+FR_MAC : 90:9F:33:BE:3B:4C = 17
+TO_MAC : B8:27:EB:14:B9:21 = 17
+TO_MAC2 : 0
+DTYPE  : PROBE
+DTYPE2  : 396
+DTYPE3  : RESPONSE
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : Norma_2.4G_test
+PSSID : 
+AESSID: Norma_2.4G_test
+-----------------------------------------------------
+Line : 182 2016-10-24 16:38:19.226281000              -> 90:9f:33:be:3b:4c  802.11 28 Acknowledgement, Flags=...P...., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 2
+STYPE : ACKNOWLEDGEMENT
+BCast  : 0
+FR_MAC :  = 0
+TO_MAC : 90:9F:33:BE:3B:4C = 17
+TO_MAC2 : 90:9F:33:BE:3B:4C17
+DTYPE  : FLAGS=...P....
+DTYPE2  : ACKNOWLEDGEMENT
+DTYPE3  : .
+WPS1  : 28
+WPS2  : .
+WPS3  : .
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 183 2016-10-24 16:38:19.243576000 b8:27:eb:14:b9:21 -> ff:ff:ff:ff:ff:ff 802.11 260 Probe Request, SN=1503, FN=0, Flags=........, SSID=Broadcast, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : PROBE REQUEST
+BCast  : 1
+FR_MAC : B8:27:EB:14:B9:21 = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : PROBE
+DTYPE2  : 260
+DTYPE3  : REQUEST
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : 
+PSSID : Broadcast
+AESSID: 
+-----------------------------------------------------
+Line : 184 2016-10-24 16:38:19.246912000 90:9f:33:be:3b:4c -> b8:27:eb:14:b9:21 802.11 396 Probe Response, SN=2350, FN=0, Flags=........, BI=100, SSID=Norma_2.4G_test, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : PROBE RESPONSE
+BCast  : 0
+FR_MAC : 90:9F:33:BE:3B:4C = 17
+TO_MAC : B8:27:EB:14:B9:21 = 17
+TO_MAC2 : 0
+DTYPE  : PROBE
+DTYPE2  : 396
+DTYPE3  : RESPONSE
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : Norma_2.4G_test
+PSSID : 
+AESSID: Norma_2.4G_test
+-----------------------------------------------------
+Line : 185 2016-10-24 16:38:19.249473000 90:9f:33:be:3b:4c -> ff:ff:ff:ff:ff:ff 802.11 294 Beacon frame, SN=975, FN=0, Flags=........, BI=100, SSID=Norma_2.4G_test, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 90:9F:33:BE:3B:4C = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 294
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : Norma_2.4G_test
+PSSID : 
+AESSID: Norma_2.4G_test
+-----------------------------------------------------
+Line : 186 2016-10-24 16:38:19.252921000 90:9f:33:be:3b:4c -> b8:27:eb:14:b9:21 802.11 396 Probe Response, SN=2351, FN=0, Flags=........, BI=100, SSID=Norma_2.4G_test, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : PROBE RESPONSE
+BCast  : 0
+FR_MAC : 90:9F:33:BE:3B:4C = 17
+TO_MAC : B8:27:EB:14:B9:21 = 17
+TO_MAC2 : 0
+DTYPE  : PROBE
+DTYPE2  : 396
+DTYPE3  : RESPONSE
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : Norma_2.4G_test
+PSSID : 
+AESSID: Norma_2.4G_test
+-----------------------------------------------------
+Line : 187 2016-10-24 16:38:19.256272000 90:9f:33:be:3b:4c -> b8:27:eb:14:b9:21 802.11 396 Probe Response, SN=2352, FN=0, Flags=........, BI=100, SSID=Norma_2.4G_test, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : PROBE RESPONSE
+BCast  : 0
+FR_MAC : 90:9F:33:BE:3B:4C = 17
+TO_MAC : B8:27:EB:14:B9:21 = 17
+TO_MAC2 : 0
+DTYPE  : PROBE
+DTYPE2  : 396
+DTYPE3  : RESPONSE
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : Norma_2.4G_test
+PSSID : 
+AESSID: Norma_2.4G_test
+-----------------------------------------------------
+Line : 188 2016-10-24 16:38:19.259097000 90:9f:33:d6:f2:74 -> ff:ff:ff:ff:ff:ff 802.11 292 Beacon frame, SN=1719, FN=0, Flags=........, BI=100, SSID=Mureung, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 90:9F:33:D6:F2:74 = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 292
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : Mureung
+PSSID : 
+AESSID: Mureung
+-----------------------------------------------------
+Line : 189 2016-10-24 16:38:19.272206000              -> 00:26:66:7b:10:9c  802.11 28 Acknowledgement, Flags=...P...., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 2
+STYPE : ACKNOWLEDGEMENT
+BCast  : 0
+FR_MAC :  = 0
+TO_MAC : 00:26:66:7B:10:9C = 17
+TO_MAC2 : 00:26:66:7B:10:9C17
+DTYPE  : FLAGS=...P....
+DTYPE2  : ACKNOWLEDGEMENT
+DTYPE3  : .
+WPS1  : 28
+WPS2  : .
+WPS3  : .
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 190 2016-10-24 16:38:19.289692000 90:9f:33:be:3b:4c -> b8:27:eb:14:b9:21 802.11 396 Probe Response, SN=2353, FN=0, Flags=........, BI=100, SSID=Norma_2.4G_test, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : PROBE RESPONSE
+BCast  : 0
+FR_MAC : 90:9F:33:BE:3B:4C = 17
+TO_MAC : B8:27:EB:14:B9:21 = 17
+TO_MAC2 : 0
+DTYPE  : PROBE
+DTYPE2  : 396
+DTYPE3  : RESPONSE
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : Norma_2.4G_test
+PSSID : 
+AESSID: Norma_2.4G_test
+-----------------------------------------------------
+Line : 191 2016-10-24 16:38:19.292796000 90:9f:33:be:3b:4c -> b8:27:eb:14:b9:21 802.11 396 Probe Response, SN=2354, FN=0, Flags=........, BI=100, SSID=Norma_2.4G_test, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : PROBE RESPONSE
+BCast  : 0
+FR_MAC : 90:9F:33:BE:3B:4C = 17
+TO_MAC : B8:27:EB:14:B9:21 = 17
+TO_MAC2 : 0
+DTYPE  : PROBE
+DTYPE2  : 396
+DTYPE3  : RESPONSE
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : Norma_2.4G_test
+PSSID : 
+AESSID: Norma_2.4G_test
+-----------------------------------------------------
+Line : 192 2016-10-24 16:38:19.297592000 90:9f:33:be:3b:4c -> b8:27:eb:14:b9:21 802.11 396 Probe Response, SN=2355, FN=0, Flags=........, BI=100, SSID=Norma_2.4G_test, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : PROBE RESPONSE
+BCast  : 0
+FR_MAC : 90:9F:33:BE:3B:4C = 17
+TO_MAC : B8:27:EB:14:B9:21 = 17
+TO_MAC2 : 0
+DTYPE  : PROBE
+DTYPE2  : 396
+DTYPE3  : RESPONSE
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : Norma_2.4G_test
+PSSID : 
+AESSID: Norma_2.4G_test
+-----------------------------------------------------
+Line : 193 2016-10-24 16:38:19.297879000              -> 90:9f:33:be:3b:4c  802.11 28 Acknowledgement, Flags=...P...., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 2
+STYPE : ACKNOWLEDGEMENT
+BCast  : 0
+FR_MAC :  = 0
+TO_MAC : 90:9F:33:BE:3B:4C = 17
+TO_MAC2 : 90:9F:33:BE:3B:4C17
+DTYPE  : FLAGS=...P....
+DTYPE2  : ACKNOWLEDGEMENT
+DTYPE3  : .
+WPS1  : 28
+WPS2  : .
+WPS3  : .
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 194 2016-10-24 16:38:19.304832000              -> 00:26:66:7b:10:9c  802.11 28 Acknowledgement, Flags=...P...., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 2
+STYPE : ACKNOWLEDGEMENT
+BCast  : 0
+FR_MAC :  = 0
+TO_MAC : 00:26:66:7B:10:9C = 17
+TO_MAC2 : 00:26:66:7B:10:9C17
+DTYPE  : FLAGS=...P....
+DTYPE2  : ACKNOWLEDGEMENT
+DTYPE3  : .
+WPS1  : 28
+WPS2  : .
+WPS3  : .
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 195 2016-10-24 16:38:19.320247000 3c:a1:0d:1d:b4:c1 -> 64:e5:99:cb:3b:fa 802.11 46 QoS Null function (No data), SN=100, FN=0, Flags=...P...T, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : QOS
+BCast  : 0
+FR_MAC : 3C:A1:0D:1D:B4:C1 = 17
+TO_MAC : 64:E5:99:CB:3B:FA = 17
+TO_MAC2 : 0
+DTYPE  : QOS
+DTYPE2  : 46
+DTYPE3  : NULL
+WPS1  : 802.11
+WPS2  : (NO
+WPS3  : DATA)
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 196 2016-10-24 16:38:19.320535000              -> 3c:a1:0d:1d:b4:c1  802.11 28 Acknowledgement, Flags=........, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 2
+STYPE : ACKNOWLEDGEMENT
+BCast  : 0
+FR_MAC :  = 0
+TO_MAC : 3C:A1:0D:1D:B4:C1 = 17
+TO_MAC2 : 3C:A1:0D:1D:B4:C117
+DTYPE  : FLAGS=........
+DTYPE2  : ACKNOWLEDGEMENT
+DTYPE3  : .
+WPS1  : 28
+WPS2  : .
+WPS3  : .
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 197 2016-10-24 16:38:19.330042000 12:23:aa:60:4e:ed -> ff:ff:ff:ff:ff:ff 802.11 259 Beacon frame, SN=17, FN=0, Flags=........, BI=100, SSID=Broadcast, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 12:23:AA:60:4E:ED = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 259
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : Broadcast
+PSSID : 
+AESSID: Broadcast
+-----------------------------------------------------
+Line : 198 2016-10-24 16:38:19.643310000 00:40:5a:ae:e8:79 -> ac:5a:14:0c:8e:e4 802.11 270 Probe Response, SN=402, FN=0, Flags=....R..., BI=100, SSID=U+Net_Nex, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : PROBE RESPONSE
+BCast  : 0
+FR_MAC : 00:40:5A:AE:E8:79 = 17
+TO_MAC : AC:5A:14:0C:8E:E4 = 17
+TO_MAC2 : 0
+DTYPE  : PROBE
+DTYPE2  : 270
+DTYPE3  : RESPONSE
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ....R...
+SSID  : U+Net_Nex
+PSSID : 
+AESSID: U+Net_Nex
+-----------------------------------------------------
+Line : 199 2016-10-24 16:38:20.271354000 90:9f:33:be:3b:4c -> ff:ff:ff:ff:ff:ff 802.11 294 Beacon frame, SN=985, FN=0, Flags=........, BI=100, SSID=Norma_2.4G_test, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 90:9F:33:BE:3B:4C = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 294
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : Norma_2.4G_test
+PSSID : 
+AESSID: Norma_2.4G_test
+-----------------------------------------------------
+Line : 200 2016-10-24 16:38:21.391556000 90:9f:33:d3:b8:a0 -> 78:59:5e:44:fb:59 802.11 123 QoS Data, SN=3554, FN=0, Flags=.p....F., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : QOS
+BCast  : 0
+FR_MAC : 90:9F:33:D3:B8:A0 = 17
+TO_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC2 : 0
+DTYPE  : QOS
+DTYPE2  : 123
+DTYPE3  : DATA
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : .P....F.
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 201 2016-10-24 16:38:21.391575000              -> 90:9f:33:d3:b8:a2  802.11 28 Acknowledgement, Flags=........, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 2
+STYPE : ACKNOWLEDGEMENT
+BCast  : 0
+FR_MAC :  = 0
+TO_MAC : 90:9F:33:D3:B8:A2 = 17
+TO_MAC2 : 90:9F:33:D3:B8:A217
+DTYPE  : FLAGS=........
+DTYPE2  : ACKNOWLEDGEMENT
+DTYPE3  : .
+WPS1  : 28
+WPS2  : .
+WPS3  : .
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 202 2016-10-24 16:38:21.391945000 90:9f:33:d3:b8:a0 -> 78:59:5e:44:fb:59 802.11 123 QoS Data, SN=3555, FN=0, Flags=.p....F., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : QOS
+BCast  : 0
+FR_MAC : 90:9F:33:D3:B8:A0 = 17
+TO_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC2 : 0
+DTYPE  : QOS
+DTYPE2  : 123
+DTYPE3  : DATA
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : .P....F.
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 203 2016-10-24 16:38:21.391952000              -> 90:9f:33:d3:b8:a2  802.11 28 Acknowledgement, Flags=........, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 2
+STYPE : ACKNOWLEDGEMENT
+BCast  : 0
+FR_MAC :  = 0
+TO_MAC : 90:9F:33:D3:B8:A2 = 17
+TO_MAC2 : 90:9F:33:D3:B8:A217
+DTYPE  : FLAGS=........
+DTYPE2  : ACKNOWLEDGEMENT
+DTYPE3  : .
+WPS1  : 28
+WPS2  : .
+WPS3  : .
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 204 2016-10-24 16:38:21.423394000 90:9f:33:d3:b8:a0 -> 78:59:5e:44:fb:59 802.11 123 QoS Data, SN=3556, FN=0, Flags=.p....F., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : QOS
+BCast  : 0
+FR_MAC : 90:9F:33:D3:B8:A0 = 17
+TO_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC2 : 0
+DTYPE  : QOS
+DTYPE2  : 123
+DTYPE3  : DATA
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : .P....F.
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 205 2016-10-24 16:38:21.423427000              -> 90:9f:33:d3:b8:a2  802.11 28 Acknowledgement, Flags=........, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 2
+STYPE : ACKNOWLEDGEMENT
+BCast  : 0
+FR_MAC :  = 0
+TO_MAC : 90:9F:33:D3:B8:A2 = 17
+TO_MAC2 : 90:9F:33:D3:B8:A217
+DTYPE  : FLAGS=........
+DTYPE2  : ACKNOWLEDGEMENT
+DTYPE3  : .
+WPS1  : 28
+WPS2  : .
+WPS3  : .
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 206 2016-10-24 16:38:21.426763000 90:9f:33:d3:b8:a0 -> 78:59:5e:44:fb:59 802.11 131 QoS Data, SN=3557, FN=0, Flags=.p....F., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : QOS
+BCast  : 0
+FR_MAC : 90:9F:33:D3:B8:A0 = 17
+TO_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC2 : 0
+DTYPE  : QOS
+DTYPE2  : 131
+DTYPE3  : DATA
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : .P....F.
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 207 2016-10-24 16:38:21.426801000              -> 90:9f:33:d3:b8:a2  802.11 28 Acknowledgement, Flags=........, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 2
+STYPE : ACKNOWLEDGEMENT
+BCast  : 0
+FR_MAC :  = 0
+TO_MAC : 90:9F:33:D3:B8:A2 = 17
+TO_MAC2 : 90:9F:33:D3:B8:A217
+DTYPE  : FLAGS=........
+DTYPE2  : ACKNOWLEDGEMENT
+DTYPE3  : .
+WPS1  : 28
+WPS2  : .
+WPS3  : .
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 208 2016-10-24 16:38:21.427629000 78:59:5e:44:fb:59  -> 90:9f:33:d3:b8:a2  802.11 34 Request-to-send, Flags=........, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : REQUEST-TO-SEND
+BCast  : 0
+FR_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC : 90:9F:33:D3:B8:A2 = 17
+TO_MAC2 : 0
+DTYPE  : REQUEST-TO-SEND
+DTYPE2  : 34
+DTYPE3  : FLAGS=........
+WPS1  : 802.11
+WPS2  : .
+WPS3  : .
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 209 2016-10-24 16:38:21.427654000              -> 78:59:5e:44:fb:59  802.11 28 Clear-to-send, Flags=........, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 2
+STYPE : CLEAR-TO-SEND
+BCast  : 0
+FR_MAC :  = 0
+TO_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC2 : 78:59:5E:44:FB:5917
+DTYPE  : FLAGS=........
+DTYPE2  : CLEAR-TO-SEND
+DTYPE3  : .
+WPS1  : 28
+WPS2  : .
+WPS3  : .
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 210 2016-10-24 16:38:21.427658000 78:59:5e:44:fb:59 -> 90:9f:33:d3:b8:a0 802.11 123 QoS Data, SN=621, FN=0, Flags=.p.....T, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : QOS
+BCast  : 0
+FR_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC : 90:9F:33:D3:B8:A0 = 17
+TO_MAC2 : 0
+DTYPE  : QOS
+DTYPE2  : 123
+DTYPE3  : DATA
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : .P.....T
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 211 2016-10-24 16:38:21.427777000 90:9f:33:d3:b8:a2  -> 78:59:5e:44:fb:59  802.11 46 802.11 Block Ack, Flags=........, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : 802.11
+BCast  : 0
+FR_MAC : 90:9F:33:D3:B8:A2 = 17
+TO_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC2 : 0
+DTYPE  : 802.11
+DTYPE2  : 46
+DTYPE3  : BLOCK
+WPS1  : 802.11
+WPS2  : ........
+WPS3  : .
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 212 2016-10-24 16:38:21.432170000 78:59:5e:44:fb:59  -> 90:9f:33:d3:b8:a2  802.11 34 Request-to-send, Flags=........, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : REQUEST-TO-SEND
+BCast  : 0
+FR_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC : 90:9F:33:D3:B8:A2 = 17
+TO_MAC2 : 0
+DTYPE  : REQUEST-TO-SEND
+DTYPE2  : 34
+DTYPE3  : FLAGS=........
+WPS1  : 802.11
+WPS2  : .
+WPS3  : .
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 213 2016-10-24 16:38:21.432220000              -> 78:59:5e:44:fb:59  802.11 28 Clear-to-send, Flags=........, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 2
+STYPE : CLEAR-TO-SEND
+BCast  : 0
+FR_MAC :  = 0
+TO_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC2 : 78:59:5E:44:FB:5917
+DTYPE  : FLAGS=........
+DTYPE2  : CLEAR-TO-SEND
+DTYPE3  : .
+WPS1  : 28
+WPS2  : .
+WPS3  : .
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 214 2016-10-24 16:38:21.432227000 78:59:5e:44:fb:59 -> 90:9f:33:d3:b8:a0 802.11 501 QoS Data, SN=622, FN=0, Flags=.p.....T, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : QOS
+BCast  : 0
+FR_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC : 90:9F:33:D3:B8:A0 = 17
+TO_MAC2 : 0
+DTYPE  : QOS
+DTYPE2  : 501
+DTYPE3  : DATA
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : .P.....T
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 215 2016-10-24 16:38:21.432235000 90:9f:33:d3:b8:a2  -> 78:59:5e:44:fb:59  802.11 46 802.11 Block Ack, Flags=........, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : 802.11
+BCast  : 0
+FR_MAC : 90:9F:33:D3:B8:A2 = 17
+TO_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC2 : 0
+DTYPE  : 802.11
+DTYPE2  : 46
+DTYPE3  : BLOCK
+WPS1  : 802.11
+WPS2  : ........
+WPS3  : .
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 216 2016-10-24 16:38:21.452240000 00:40:5a:ae:e8:79 -> ff:ff:ff:ff:ff:ff 802.11 276 Beacon frame, SN=2487, FN=0, Flags=........, BI=100, SSID=U+Net_Nex, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 00:40:5A:AE:E8:79 = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 276
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : U+Net_Nex
+PSSID : 
+AESSID: U+Net_Nex
+-----------------------------------------------------
+Line : 217 2016-10-24 16:38:21.473676000 90:9f:33:d3:b8:a0 -> 78:59:5e:44:fb:59 802.11 1536 QoS Data, SN=3558, FN=0, Flags=.p....F., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : QOS
+BCast  : 0
+FR_MAC : 90:9F:33:D3:B8:A0 = 17
+TO_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC2 : 0
+DTYPE  : QOS
+DTYPE2  : 1536
+DTYPE3  : DATA
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : .P....F.
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 218 2016-10-24 16:38:21.473703000              -> 90:9f:33:d3:b8:a2  802.11 28 Acknowledgement, Flags=........, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 2
+STYPE : ACKNOWLEDGEMENT
+BCast  : 0
+FR_MAC :  = 0
+TO_MAC : 90:9F:33:D3:B8:A2 = 17
+TO_MAC2 : 90:9F:33:D3:B8:A217
+DTYPE  : FLAGS=........
+DTYPE2  : ACKNOWLEDGEMENT
+DTYPE3  : .
+WPS1  : 28
+WPS2  : .
+WPS3  : .
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 219 2016-10-24 16:38:21.474113000 90:9f:33:d3:b8:a0 -> 78:59:5e:44:fb:59 802.11 1536 QoS Data, SN=3559, FN=0, Flags=.p....F., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : QOS
+BCast  : 0
+FR_MAC : 90:9F:33:D3:B8:A0 = 17
+TO_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC2 : 0
+DTYPE  : QOS
+DTYPE2  : 1536
+DTYPE3  : DATA
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : .P....F.
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 220 2016-10-24 16:38:21.474266000 90:9f:33:d3:b8:a0 -> 78:59:5e:44:fb:59 802.11 1536 QoS Data, SN=3560, FN=0, Flags=.p....F., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : QOS
+BCast  : 0
+FR_MAC : 90:9F:33:D3:B8:A0 = 17
+TO_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC2 : 0
+DTYPE  : QOS
+DTYPE2  : 1536
+DTYPE3  : DATA
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : .P....F.
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 221 2016-10-24 16:38:21.474281000 78:59:5e:44:fb:59  -> 90:9f:33:d3:b8:a2  802.11 46 802.11 Block Ack, Flags=........, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : 802.11
+BCast  : 0
+FR_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC : 90:9F:33:D3:B8:A2 = 17
+TO_MAC2 : 0
+DTYPE  : 802.11
+DTYPE2  : 46
+DTYPE3  : BLOCK
+WPS1  : 802.11
+WPS2  : ........
+WPS3  : .
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 222 2016-10-24 16:38:21.474781000 90:9f:33:d3:b8:a0 -> 78:59:5e:44:fb:59 802.11 1536 QoS Data, SN=3561, FN=0, Flags=.p....F., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : QOS
+BCast  : 0
+FR_MAC : 90:9F:33:D3:B8:A0 = 17
+TO_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC2 : 0
+DTYPE  : QOS
+DTYPE2  : 1536
+DTYPE3  : DATA
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : .P....F.
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 223 2016-10-24 16:38:21.474961000 90:9f:33:d3:b8:a0 -> 78:59:5e:44:fb:59 802.11 1536 QoS Data, SN=3562, FN=0, Flags=.p....F., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : QOS
+BCast  : 0
+FR_MAC : 90:9F:33:D3:B8:A0 = 17
+TO_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC2 : 0
+DTYPE  : QOS
+DTYPE2  : 1536
+DTYPE3  : DATA
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : .P....F.
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 224 2016-10-24 16:38:21.475117000 90:9f:33:d3:b8:a0 -> 78:59:5e:44:fb:59 802.11 1536 QoS Data, SN=3563, FN=0, Flags=.p....F., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : QOS
+BCast  : 0
+FR_MAC : 90:9F:33:D3:B8:A0 = 17
+TO_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC2 : 0
+DTYPE  : QOS
+DTYPE2  : 1536
+DTYPE3  : DATA
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : .P....F.
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 225 2016-10-24 16:38:21.475124000 78:59:5e:44:fb:59  -> 90:9f:33:d3:b8:a2  802.11 46 802.11 Block Ack, Flags=........, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : 802.11
+BCast  : 0
+FR_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC : 90:9F:33:D3:B8:A2 = 17
+TO_MAC2 : 0
+DTYPE  : 802.11
+DTYPE2  : 46
+DTYPE3  : BLOCK
+WPS1  : 802.11
+WPS2  : ........
+WPS3  : .
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 226 2016-10-24 16:38:21.475495000 90:9f:33:d3:b8:a0 -> 78:59:5e:44:fb:59 802.11 1536 QoS Data, SN=3564, FN=0, Flags=.p....F., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : QOS
+BCast  : 0
+FR_MAC : 90:9F:33:D3:B8:A0 = 17
+TO_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC2 : 0
+DTYPE  : QOS
+DTYPE2  : 1536
+DTYPE3  : DATA
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : .P....F.
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 227 2016-10-24 16:38:21.475609000 90:9f:33:d3:b8:a0 -> 78:59:5e:44:fb:59 802.11 1152 QoS Data, SN=3565, FN=0, Flags=.p....F., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : QOS
+BCast  : 0
+FR_MAC : 90:9F:33:D3:B8:A0 = 17
+TO_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC2 : 0
+DTYPE  : QOS
+DTYPE2  : 1152
+DTYPE3  : DATA
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : .P....F.
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 228 2016-10-24 16:38:21.475634000 90:9f:33:d3:b8:a0 -> 78:59:5e:44:fb:59 802.11 123 QoS Data, SN=3566, FN=0, Flags=.p....F., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : QOS
+BCast  : 0
+FR_MAC : 90:9F:33:D3:B8:A0 = 17
+TO_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC2 : 0
+DTYPE  : QOS
+DTYPE2  : 123
+DTYPE3  : DATA
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : .P....F.
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 229 2016-10-24 16:38:21.475638000 90:9f:33:d3:b8:a0 -> 78:59:5e:44:fb:59 802.11 274 QoS Data, SN=3567, FN=0, Flags=.p....F., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : QOS
+BCast  : 0
+FR_MAC : 90:9F:33:D3:B8:A0 = 17
+TO_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC2 : 0
+DTYPE  : QOS
+DTYPE2  : 274
+DTYPE3  : DATA
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : .P....F.
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 230 2016-10-24 16:38:21.475641000 78:59:5e:44:fb:59  -> 90:9f:33:d3:b8:a2  802.11 46 802.11 Block Ack, Flags=........, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : 802.11
+BCast  : 0
+FR_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC : 90:9F:33:D3:B8:A2 = 17
+TO_MAC2 : 0
+DTYPE  : 802.11
+DTYPE2  : 46
+DTYPE3  : BLOCK
+WPS1  : 802.11
+WPS2  : ........
+WPS3  : .
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 231 2016-10-24 16:38:21.477576000 78:59:5e:44:fb:59  -> 90:9f:33:d3:b8:a2  802.11 34 Request-to-send, Flags=........, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : REQUEST-TO-SEND
+BCast  : 0
+FR_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC : 90:9F:33:D3:B8:A2 = 17
+TO_MAC2 : 0
+DTYPE  : REQUEST-TO-SEND
+DTYPE2  : 34
+DTYPE3  : FLAGS=........
+WPS1  : 802.11
+WPS2  : .
+WPS3  : .
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 232 2016-10-24 16:38:21.477586000              -> 78:59:5e:44:fb:59  802.11 28 Clear-to-send, Flags=........, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 2
+STYPE : CLEAR-TO-SEND
+BCast  : 0
+FR_MAC :  = 0
+TO_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC2 : 78:59:5E:44:FB:5917
+DTYPE  : FLAGS=........
+DTYPE2  : CLEAR-TO-SEND
+DTYPE3  : .
+WPS1  : 28
+WPS2  : .
+WPS3  : .
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 233 2016-10-24 16:38:21.477590000 78:59:5e:44:fb:59 -> 90:9f:33:d3:b8:a0 802.11 123 QoS Data, SN=623, FN=0, Flags=.p.....T, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : QOS
+BCast  : 0
+FR_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC : 90:9F:33:D3:B8:A0 = 17
+TO_MAC2 : 0
+DTYPE  : QOS
+DTYPE2  : 123
+DTYPE3  : DATA
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : .P.....T
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 234 2016-10-24 16:38:21.477618000 90:9f:33:d3:b8:a2  -> 78:59:5e:44:fb:59  802.11 46 802.11 Block Ack, Flags=........, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : 802.11
+BCast  : 0
+FR_MAC : 90:9F:33:D3:B8:A2 = 17
+TO_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC2 : 0
+DTYPE  : 802.11
+DTYPE2  : 46
+DTYPE3  : BLOCK
+WPS1  : 802.11
+WPS2  : ........
+WPS3  : .
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 235 2016-10-24 16:38:21.477811000 78:59:5e:44:fb:59  -> 90:9f:33:d3:b8:a2  802.11 34 Request-to-send, Flags=........, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : REQUEST-TO-SEND
+BCast  : 0
+FR_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC : 90:9F:33:D3:B8:A2 = 17
+TO_MAC2 : 0
+DTYPE  : REQUEST-TO-SEND
+DTYPE2  : 34
+DTYPE3  : FLAGS=........
+WPS1  : 802.11
+WPS2  : .
+WPS3  : .
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 236 2016-10-24 16:38:21.477817000              -> 78:59:5e:44:fb:59  802.11 28 Clear-to-send, Flags=........, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 2
+STYPE : CLEAR-TO-SEND
+BCast  : 0
+FR_MAC :  = 0
+TO_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC2 : 78:59:5E:44:FB:5917
+DTYPE  : FLAGS=........
+DTYPE2  : CLEAR-TO-SEND
+DTYPE3  : .
+WPS1  : 28
+WPS2  : .
+WPS3  : .
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 237 2016-10-24 16:38:21.477902000 78:59:5e:44:fb:59 -> 90:9f:33:d3:b8:a0 802.11 123 QoS Data, SN=624, FN=0, Flags=.p.....T, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : QOS
+BCast  : 0
+FR_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC : 90:9F:33:D3:B8:A0 = 17
+TO_MAC2 : 0
+DTYPE  : QOS
+DTYPE2  : 123
+DTYPE3  : DATA
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : .P.....T
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 238 2016-10-24 16:38:21.477919000 78:59:5e:44:fb:59 -> 90:9f:33:d3:b8:a0 802.11 123 QoS Data, SN=625, FN=0, Flags=.p.....T, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : QOS
+BCast  : 0
+FR_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC : 90:9F:33:D3:B8:A0 = 17
+TO_MAC2 : 0
+DTYPE  : QOS
+DTYPE2  : 123
+DTYPE3  : DATA
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : .P.....T
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 239 2016-10-24 16:38:21.477927000 78:59:5e:44:fb:59 -> 90:9f:33:d3:b8:a0 802.11 123 QoS Data, SN=626, FN=0, Flags=.p.....T, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : QOS
+BCast  : 0
+FR_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC : 90:9F:33:D3:B8:A0 = 17
+TO_MAC2 : 0
+DTYPE  : QOS
+DTYPE2  : 123
+DTYPE3  : DATA
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : .P.....T
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 240 2016-10-24 16:38:21.478035000 90:9f:33:d3:b8:a2  -> 78:59:5e:44:fb:59  802.11 46 802.11 Block Ack, Flags=........, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : 802.11
+BCast  : 0
+FR_MAC : 90:9F:33:D3:B8:A2 = 17
+TO_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC2 : 0
+DTYPE  : 802.11
+DTYPE2  : 46
+DTYPE3  : BLOCK
+WPS1  : 802.11
+WPS2  : ........
+WPS3  : .
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 241 2016-10-24 16:38:21.478089000 78:59:5e:44:fb:59  -> 90:9f:33:d3:b8:a2  802.11 34 Request-to-send, Flags=........, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : REQUEST-TO-SEND
+BCast  : 0
+FR_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC : 90:9F:33:D3:B8:A2 = 17
+TO_MAC2 : 0
+DTYPE  : REQUEST-TO-SEND
+DTYPE2  : 34
+DTYPE3  : FLAGS=........
+WPS1  : 802.11
+WPS2  : .
+WPS3  : .
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 242 2016-10-24 16:38:21.478178000              -> 78:59:5e:44:fb:59  802.11 28 Clear-to-send, Flags=........, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 2
+STYPE : CLEAR-TO-SEND
+BCast  : 0
+FR_MAC :  = 0
+TO_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC2 : 78:59:5E:44:FB:5917
+DTYPE  : FLAGS=........
+DTYPE2  : CLEAR-TO-SEND
+DTYPE3  : .
+WPS1  : 28
+WPS2  : .
+WPS3  : .
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 243 2016-10-24 16:38:21.478238000 78:59:5e:44:fb:59 -> 90:9f:33:d3:b8:a0 802.11 123 QoS Data, SN=627, FN=0, Flags=.p.....T, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : QOS
+BCast  : 0
+FR_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC : 90:9F:33:D3:B8:A0 = 17
+TO_MAC2 : 0
+DTYPE  : QOS
+DTYPE2  : 123
+DTYPE3  : DATA
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : .P.....T
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 244 2016-10-24 16:38:21.483516000 90:9f:33:d3:b8:a2 -> ff:ff:ff:ff:ff:ff 802.11 282 Beacon frame, SN=1601, FN=0, Flags=........, BI=100, SSID=Norma_b, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 90:9F:33:D3:B8:A2 = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 282
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : Norma_b
+PSSID : 
+AESSID: Norma_b
+-----------------------------------------------------
+Line : 245 2016-10-24 16:38:21.484333000 78:59:5e:44:fb:59  -> 90:9f:33:d3:b8:a2  802.11 34 Request-to-send, Flags=........, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : REQUEST-TO-SEND
+BCast  : 0
+FR_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC : 90:9F:33:D3:B8:A2 = 17
+TO_MAC2 : 0
+DTYPE  : REQUEST-TO-SEND
+DTYPE2  : 34
+DTYPE3  : FLAGS=........
+WPS1  : 802.11
+WPS2  : .
+WPS3  : .
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 246 2016-10-24 16:38:21.484341000              -> 78:59:5e:44:fb:59  802.11 28 Clear-to-send, Flags=........, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 2
+STYPE : CLEAR-TO-SEND
+BCast  : 0
+FR_MAC :  = 0
+TO_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC2 : 78:59:5E:44:FB:5917
+DTYPE  : FLAGS=........
+DTYPE2  : CLEAR-TO-SEND
+DTYPE3  : .
+WPS1  : 28
+WPS2  : .
+WPS3  : .
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 247 2016-10-24 16:38:21.484435000 78:59:5e:44:fb:59 -> 90:9f:33:d3:b8:a0 802.11 182 QoS Data, SN=628, FN=0, Flags=.p.....T, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : QOS
+BCast  : 0
+FR_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC : 90:9F:33:D3:B8:A0 = 17
+TO_MAC2 : 0
+DTYPE  : QOS
+DTYPE2  : 182
+DTYPE3  : DATA
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : .P.....T
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 248 2016-10-24 16:38:21.484441000 90:9f:33:d3:b8:a2  -> 78:59:5e:44:fb:59  802.11 46 802.11 Block Ack, Flags=........, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : 802.11
+BCast  : 0
+FR_MAC : 90:9F:33:D3:B8:A2 = 17
+TO_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC2 : 0
+DTYPE  : 802.11
+DTYPE2  : 46
+DTYPE3  : BLOCK
+WPS1  : 802.11
+WPS2  : ........
+WPS3  : .
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 249 2016-10-24 16:38:21.487435000 90:9f:33:d3:b8:a0 -> 78:59:5e:44:fb:59 802.11 1536 QoS Data, SN=3568, FN=0, Flags=.p....F., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : QOS
+BCast  : 0
+FR_MAC : 90:9F:33:D3:B8:A0 = 17
+TO_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC2 : 0
+DTYPE  : QOS
+DTYPE2  : 1536
+DTYPE3  : DATA
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : .P....F.
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 250 2016-10-24 16:38:21.487671000 90:9f:33:d3:b8:a0 -> 78:59:5e:44:fb:59 802.11 1536 QoS Data, SN=3569, FN=0, Flags=.p....F., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : QOS
+BCast  : 0
+FR_MAC : 90:9F:33:D3:B8:A0 = 17
+TO_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC2 : 0
+DTYPE  : QOS
+DTYPE2  : 1536
+DTYPE3  : DATA
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : .P....F.
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 251 2016-10-24 16:38:21.487688000 90:9f:33:d3:b8:a0 -> 78:59:5e:44:fb:59 802.11 384 QoS Data, SN=3570, FN=0, Flags=.p....F., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : QOS
+BCast  : 0
+FR_MAC : 90:9F:33:D3:B8:A0 = 17
+TO_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC2 : 0
+DTYPE  : QOS
+DTYPE2  : 384
+DTYPE3  : DATA
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : .P....F.
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 252 2016-10-24 16:38:21.487692000 78:59:5e:44:fb:59  -> 90:9f:33:d3:b8:a2  802.11 46 802.11 Block Ack, Flags=........, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : 802.11
+BCast  : 0
+FR_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC : 90:9F:33:D3:B8:A2 = 17
+TO_MAC2 : 0
+DTYPE  : 802.11
+DTYPE2  : 46
+DTYPE3  : BLOCK
+WPS1  : 802.11
+WPS2  : ........
+WPS3  : .
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 253 2016-10-24 16:38:21.490597000 78:59:5e:44:fb:59  -> 90:9f:33:d3:b8:a2  802.11 34 Request-to-send, Flags=........, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : REQUEST-TO-SEND
+BCast  : 0
+FR_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC : 90:9F:33:D3:B8:A2 = 17
+TO_MAC2 : 0
+DTYPE  : REQUEST-TO-SEND
+DTYPE2  : 34
+DTYPE3  : FLAGS=........
+WPS1  : 802.11
+WPS2  : .
+WPS3  : .
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 254 2016-10-24 16:38:21.490604000              -> 78:59:5e:44:fb:59  802.11 28 Clear-to-send, Flags=........, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 2
+STYPE : CLEAR-TO-SEND
+BCast  : 0
+FR_MAC :  = 0
+TO_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC2 : 78:59:5E:44:FB:5917
+DTYPE  : FLAGS=........
+DTYPE2  : CLEAR-TO-SEND
+DTYPE3  : .
+WPS1  : 28
+WPS2  : .
+WPS3  : .
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 255 2016-10-24 16:38:21.490683000 78:59:5e:44:fb:59 -> 90:9f:33:d3:b8:a0 802.11 123 QoS Data, SN=629, FN=0, Flags=.p.....T, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : QOS
+BCast  : 0
+FR_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC : 90:9F:33:D3:B8:A0 = 17
+TO_MAC2 : 0
+DTYPE  : QOS
+DTYPE2  : 123
+DTYPE3  : DATA
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : .P.....T
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 256 2016-10-24 16:38:21.490698000 90:9f:33:d3:b8:a2  -> 78:59:5e:44:fb:59  802.11 46 802.11 Block Ack, Flags=........, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : 802.11
+BCast  : 0
+FR_MAC : 90:9F:33:D3:B8:A2 = 17
+TO_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC2 : 0
+DTYPE  : 802.11
+DTYPE2  : 46
+DTYPE3  : BLOCK
+WPS1  : 802.11
+WPS2  : ........
+WPS3  : .
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 257 2016-10-24 16:38:21.509393000 78:59:5e:44:fb:59  -> 90:9f:33:d3:b8:a2  802.11 34 Request-to-send, Flags=........, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : REQUEST-TO-SEND
+BCast  : 0
+FR_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC : 90:9F:33:D3:B8:A2 = 17
+TO_MAC2 : 0
+DTYPE  : REQUEST-TO-SEND
+DTYPE2  : 34
+DTYPE3  : FLAGS=........
+WPS1  : 802.11
+WPS2  : .
+WPS3  : .
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 258 2016-10-24 16:38:21.509414000              -> 78:59:5e:44:fb:59  802.11 28 Clear-to-send, Flags=........, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 2
+STYPE : CLEAR-TO-SEND
+BCast  : 0
+FR_MAC :  = 0
+TO_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC2 : 78:59:5E:44:FB:5917
+DTYPE  : FLAGS=........
+DTYPE2  : CLEAR-TO-SEND
+DTYPE3  : .
+WPS1  : 28
+WPS2  : .
+WPS3  : .
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 259 2016-10-24 16:38:21.509515000 78:59:5e:44:fb:59 -> 90:9f:33:d3:b8:a0 802.11 368 QoS Data, SN=630, FN=0, Flags=.p.....T, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : QOS
+BCast  : 0
+FR_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC : 90:9F:33:D3:B8:A0 = 17
+TO_MAC2 : 0
+DTYPE  : QOS
+DTYPE2  : 368
+DTYPE3  : DATA
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : .P.....T
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 260 2016-10-24 16:38:21.509763000 78:59:5e:44:fb:59  -> 90:9f:33:d3:b8:a2  802.11 34 Request-to-send, Flags=........, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : REQUEST-TO-SEND
+BCast  : 0
+FR_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC : 90:9F:33:D3:B8:A2 = 17
+TO_MAC2 : 0
+DTYPE  : REQUEST-TO-SEND
+DTYPE2  : 34
+DTYPE3  : FLAGS=........
+WPS1  : 802.11
+WPS2  : .
+WPS3  : .
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 261 2016-10-24 16:38:21.509778000              -> 78:59:5e:44:fb:59  802.11 28 Clear-to-send, Flags=........, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 2
+STYPE : CLEAR-TO-SEND
+BCast  : 0
+FR_MAC :  = 0
+TO_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC2 : 78:59:5E:44:FB:5917
+DTYPE  : FLAGS=........
+DTYPE2  : CLEAR-TO-SEND
+DTYPE3  : .
+WPS1  : 28
+WPS2  : .
+WPS3  : .
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 262 2016-10-24 16:38:21.509878000 78:59:5e:44:fb:59 -> 90:9f:33:d3:b8:a0 802.11 368 QoS Data, SN=630, FN=0, Flags=.p..R..T, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : QOS
+BCast  : 0
+FR_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC : 90:9F:33:D3:B8:A0 = 17
+TO_MAC2 : 0
+DTYPE  : QOS
+DTYPE2  : 368
+DTYPE3  : DATA
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : .P..R..T
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 263 2016-10-24 16:38:21.509909000 90:9f:33:d3:b8:a2  -> 78:59:5e:44:fb:59  802.11 46 802.11 Block Ack, Flags=........, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : 802.11
+BCast  : 0
+FR_MAC : 90:9F:33:D3:B8:A2 = 17
+TO_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC2 : 0
+DTYPE  : 802.11
+DTYPE2  : 46
+DTYPE3  : BLOCK
+WPS1  : 802.11
+WPS2  : ........
+WPS3  : .
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 264 2016-10-24 16:38:21.523537000 78:59:5e:44:fb:59  -> 90:9f:33:d3:b8:a2  802.11 34 Request-to-send, Flags=........, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : REQUEST-TO-SEND
+BCast  : 0
+FR_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC : 90:9F:33:D3:B8:A2 = 17
+TO_MAC2 : 0
+DTYPE  : REQUEST-TO-SEND
+DTYPE2  : 34
+DTYPE3  : FLAGS=........
+WPS1  : 802.11
+WPS2  : .
+WPS3  : .
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 265 2016-10-24 16:38:21.523558000              -> 78:59:5e:44:fb:59  802.11 28 Clear-to-send, Flags=........, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 2
+STYPE : CLEAR-TO-SEND
+BCast  : 0
+FR_MAC :  = 0
+TO_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC2 : 78:59:5E:44:FB:5917
+DTYPE  : FLAGS=........
+DTYPE2  : CLEAR-TO-SEND
+DTYPE3  : .
+WPS1  : 28
+WPS2  : .
+WPS3  : .
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 266 2016-10-24 16:38:21.523981000 78:59:5e:44:fb:59  -> 90:9f:33:d3:b8:a2  802.11 34 Request-to-send, Flags=........, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : REQUEST-TO-SEND
+BCast  : 0
+FR_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC : 90:9F:33:D3:B8:A2 = 17
+TO_MAC2 : 0
+DTYPE  : REQUEST-TO-SEND
+DTYPE2  : 34
+DTYPE3  : FLAGS=........
+WPS1  : 802.11
+WPS2  : .
+WPS3  : .
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 267 2016-10-24 16:38:21.524012000              -> 78:59:5e:44:fb:59  802.11 28 Clear-to-send, Flags=........, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 2
+STYPE : CLEAR-TO-SEND
+BCast  : 0
+FR_MAC :  = 0
+TO_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC2 : 78:59:5E:44:FB:5917
+DTYPE  : FLAGS=........
+DTYPE2  : CLEAR-TO-SEND
+DTYPE3  : .
+WPS1  : 28
+WPS2  : .
+WPS3  : .
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 268 2016-10-24 16:38:21.524488000 78:59:5e:44:fb:59  -> 90:9f:33:d3:b8:a2  802.11 34 Request-to-send, Flags=........, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : REQUEST-TO-SEND
+BCast  : 0
+FR_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC : 90:9F:33:D3:B8:A2 = 17
+TO_MAC2 : 0
+DTYPE  : REQUEST-TO-SEND
+DTYPE2  : 34
+DTYPE3  : FLAGS=........
+WPS1  : 802.11
+WPS2  : .
+WPS3  : .
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 269 2016-10-24 16:38:21.524503000              -> 78:59:5e:44:fb:59  802.11 28 Clear-to-send, Flags=........, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 2
+STYPE : CLEAR-TO-SEND
+BCast  : 0
+FR_MAC :  = 0
+TO_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC2 : 78:59:5E:44:FB:5917
+DTYPE  : FLAGS=........
+DTYPE2  : CLEAR-TO-SEND
+DTYPE3  : .
+WPS1  : 28
+WPS2  : .
+WPS3  : .
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 270 2016-10-24 16:38:21.524640000 78:59:5e:44:fb:59 -> 90:9f:33:d3:b8:a0 802.11 352 QoS Data, SN=631, FN=0, Flags=.p..R..T, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : QOS
+BCast  : 0
+FR_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC : 90:9F:33:D3:B8:A0 = 17
+TO_MAC2 : 0
+DTYPE  : QOS
+DTYPE2  : 352
+DTYPE3  : DATA
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : .P..R..T
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 271 2016-10-24 16:38:21.524655000 90:9f:33:d3:b8:a2  -> 78:59:5e:44:fb:59  802.11 46 802.11 Block Ack, Flags=........, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : 802.11
+BCast  : 0
+FR_MAC : 90:9F:33:D3:B8:A2 = 17
+TO_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC2 : 0
+DTYPE  : 802.11
+DTYPE2  : 46
+DTYPE3  : BLOCK
+WPS1  : 802.11
+WPS2  : ........
+WPS3  : .
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 272 2016-10-24 16:38:21.525541000 90:9f:33:d3:b8:a0 -> 78:59:5e:44:fb:59 802.11 1536 QoS Data, SN=3571, FN=0, Flags=.p....F., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : QOS
+BCast  : 0
+FR_MAC : 90:9F:33:D3:B8:A0 = 17
+TO_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC2 : 0
+DTYPE  : QOS
+DTYPE2  : 1536
+DTYPE3  : DATA
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : .P....F.
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 273 2016-10-24 16:38:21.525735000 90:9f:33:d3:b8:a0 -> 78:59:5e:44:fb:59 802.11 1536 QoS Data, SN=3572, FN=0, Flags=.p....F., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : QOS
+BCast  : 0
+FR_MAC : 90:9F:33:D3:B8:A0 = 17
+TO_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC2 : 0
+DTYPE  : QOS
+DTYPE2  : 1536
+DTYPE3  : DATA
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : .P....F.
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 274 2016-10-24 16:38:21.525849000 90:9f:33:d3:b8:a0 -> 78:59:5e:44:fb:59 802.11 960 QoS Data, SN=3573, FN=0, Flags=.p....F., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : QOS
+BCast  : 0
+FR_MAC : 90:9F:33:D3:B8:A0 = 17
+TO_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC2 : 0
+DTYPE  : QOS
+DTYPE2  : 960
+DTYPE3  : DATA
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : .P....F.
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 275 2016-10-24 16:38:21.525886000 78:59:5e:44:fb:59  -> 90:9f:33:d3:b8:a2  802.11 46 802.11 Block Ack, Flags=........, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : 802.11
+BCast  : 0
+FR_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC : 90:9F:33:D3:B8:A2 = 17
+TO_MAC2 : 0
+DTYPE  : 802.11
+DTYPE2  : 46
+DTYPE3  : BLOCK
+WPS1  : 802.11
+WPS2  : ........
+WPS3  : .
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 276 2016-10-24 16:38:21.528836000 00:40:5a:ae:e8:78 -> ff:ff:ff:ff:ff:ff 802.11 269 Beacon frame, SN=1268, FN=0, Flags=........, BI=100, SSID=Broadcast, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 00:40:5A:AE:E8:78 = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 269
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : Broadcast
+PSSID : 
+AESSID: Broadcast
+-----------------------------------------------------
+Line : 277 2016-10-24 16:38:21.529233000 78:59:5e:44:fb:59  -> 90:9f:33:d3:b8:a2  802.11 34 Request-to-send, Flags=........, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : REQUEST-TO-SEND
+BCast  : 0
+FR_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC : 90:9F:33:D3:B8:A2 = 17
+TO_MAC2 : 0
+DTYPE  : REQUEST-TO-SEND
+DTYPE2  : 34
+DTYPE3  : FLAGS=........
+WPS1  : 802.11
+WPS2  : .
+WPS3  : .
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 278 2016-10-24 16:38:21.529249000              -> 78:59:5e:44:fb:59  802.11 28 Clear-to-send, Flags=........, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 2
+STYPE : CLEAR-TO-SEND
+BCast  : 0
+FR_MAC :  = 0
+TO_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC2 : 78:59:5E:44:FB:5917
+DTYPE  : FLAGS=........
+DTYPE2  : CLEAR-TO-SEND
+DTYPE3  : .
+WPS1  : 28
+WPS2  : .
+WPS3  : .
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 279 2016-10-24 16:38:21.529410000 78:59:5e:44:fb:59 -> 90:9f:33:d3:b8:a0 802.11 123 QoS Data, SN=632, FN=0, Flags=.p.....T, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : QOS
+BCast  : 0
+FR_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC : 90:9F:33:D3:B8:A0 = 17
+TO_MAC2 : 0
+DTYPE  : QOS
+DTYPE2  : 123
+DTYPE3  : DATA
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : .P.....T
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 280 2016-10-24 16:38:21.529419000 90:9f:33:d3:b8:a2  -> 78:59:5e:44:fb:59  802.11 46 802.11 Block Ack, Flags=........, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : 802.11
+BCast  : 0
+FR_MAC : 90:9F:33:D3:B8:A2 = 17
+TO_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC2 : 0
+DTYPE  : 802.11
+DTYPE2  : 46
+DTYPE3  : BLOCK
+WPS1  : 802.11
+WPS2  : ........
+WPS3  : .
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 281 2016-10-24 16:38:21.543656000 00:26:66:cd:34:24 -> ff:ff:ff:ff:ff:ff 802.11 313 Beacon frame, SN=2404, FN=0, Flags=........, BI=100, SSID=GHD151222-001, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 00:26:66:CD:34:24 = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 313
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : GHD151222-001
+PSSID : 
+AESSID: GHD151222-001
+-----------------------------------------------------
+Line : 282 2016-10-24 16:38:21.551802000 90:9f:33:d3:b8:a0 -> 78:59:5e:44:fb:59 802.11 123 QoS Data, SN=3574, FN=0, Flags=.p....F., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : QOS
+BCast  : 0
+FR_MAC : 90:9F:33:D3:B8:A0 = 17
+TO_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC2 : 0
+DTYPE  : QOS
+DTYPE2  : 123
+DTYPE3  : DATA
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : .P....F.
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 283 2016-10-24 16:38:21.551837000              -> 90:9f:33:d3:b8:a2  802.11 28 Acknowledgement, Flags=........, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 2
+STYPE : ACKNOWLEDGEMENT
+BCast  : 0
+FR_MAC :  = 0
+TO_MAC : 90:9F:33:D3:B8:A2 = 17
+TO_MAC2 : 90:9F:33:D3:B8:A217
+DTYPE  : FLAGS=........
+DTYPE2  : ACKNOWLEDGEMENT
+DTYPE3  : .
+WPS1  : 28
+WPS2  : .
+WPS3  : .
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 284 2016-10-24 16:38:21.561335000 90:9f:33:d3:b8:a0 -> 78:59:5e:44:fb:59 802.11 123 QoS Data, SN=3575, FN=0, Flags=.p....F., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : QOS
+BCast  : 0
+FR_MAC : 90:9F:33:D3:B8:A0 = 17
+TO_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC2 : 0
+DTYPE  : QOS
+DTYPE2  : 123
+DTYPE3  : DATA
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : .P....F.
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 285 2016-10-24 16:38:21.561392000              -> 90:9f:33:d3:b8:a2  802.11 28 Acknowledgement, Flags=........, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 2
+STYPE : ACKNOWLEDGEMENT
+BCast  : 0
+FR_MAC :  = 0
+TO_MAC : 90:9F:33:D3:B8:A2 = 17
+TO_MAC2 : 90:9F:33:D3:B8:A217
+DTYPE  : FLAGS=........
+DTYPE2  : ACKNOWLEDGEMENT
+DTYPE3  : .
+WPS1  : 28
+WPS2  : .
+WPS3  : .
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 286 2016-10-24 16:38:21.567286000 90:9f:33:d3:b8:a0 -> 78:59:5e:44:fb:59 802.11 123 QoS Data, SN=3576, FN=0, Flags=.p....F., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : QOS
+BCast  : 0
+FR_MAC : 90:9F:33:D3:B8:A0 = 17
+TO_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC2 : 0
+DTYPE  : QOS
+DTYPE2  : 123
+DTYPE3  : DATA
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : .P....F.
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 287 2016-10-24 16:38:21.567315000              -> 90:9f:33:d3:b8:a2  802.11 28 Acknowledgement, Flags=........, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 2
+STYPE : ACKNOWLEDGEMENT
+BCast  : 0
+FR_MAC :  = 0
+TO_MAC : 90:9F:33:D3:B8:A2 = 17
+TO_MAC2 : 90:9F:33:D3:B8:A217
+DTYPE  : FLAGS=........
+DTYPE2  : ACKNOWLEDGEMENT
+DTYPE3  : .
+WPS1  : 28
+WPS2  : .
+WPS3  : .
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 288 2016-10-24 16:38:21.567323000 78:59:5e:44:fb:59  -> 90:9f:33:d3:b8:a2  802.11 34 Request-to-send, Flags=........, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : REQUEST-TO-SEND
+BCast  : 0
+FR_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC : 90:9F:33:D3:B8:A2 = 17
+TO_MAC2 : 0
+DTYPE  : REQUEST-TO-SEND
+DTYPE2  : 34
+DTYPE3  : FLAGS=........
+WPS1  : 802.11
+WPS2  : .
+WPS3  : .
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 289 2016-10-24 16:38:21.567331000              -> 78:59:5e:44:fb:59  802.11 28 Clear-to-send, Flags=........, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 2
+STYPE : CLEAR-TO-SEND
+BCast  : 0
+FR_MAC :  = 0
+TO_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC2 : 78:59:5E:44:FB:5917
+DTYPE  : FLAGS=........
+DTYPE2  : CLEAR-TO-SEND
+DTYPE3  : .
+WPS1  : 28
+WPS2  : .
+WPS3  : .
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 290 2016-10-24 16:38:21.567338000 78:59:5e:44:fb:59 -> 90:9f:33:d3:b8:a0 802.11 123 QoS Data, SN=633, FN=0, Flags=.p.....T, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : QOS
+BCast  : 0
+FR_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC : 90:9F:33:D3:B8:A0 = 17
+TO_MAC2 : 0
+DTYPE  : QOS
+DTYPE2  : 123
+DTYPE3  : DATA
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : .P.....T
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 291 2016-10-24 16:38:21.567587000 78:59:5e:44:fb:59  -> 90:9f:33:d3:b8:a2  802.11 34 Request-to-send, Flags=........, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : REQUEST-TO-SEND
+BCast  : 0
+FR_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC : 90:9F:33:D3:B8:A2 = 17
+TO_MAC2 : 0
+DTYPE  : REQUEST-TO-SEND
+DTYPE2  : 34
+DTYPE3  : FLAGS=........
+WPS1  : 802.11
+WPS2  : .
+WPS3  : .
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 292 2016-10-24 16:38:21.567923000 78:59:5e:44:fb:59  -> 90:9f:33:d3:b8:a2  802.11 34 Request-to-send, Flags=........, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : REQUEST-TO-SEND
+BCast  : 0
+FR_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC : 90:9F:33:D3:B8:A2 = 17
+TO_MAC2 : 0
+DTYPE  : REQUEST-TO-SEND
+DTYPE2  : 34
+DTYPE3  : FLAGS=........
+WPS1  : 802.11
+WPS2  : .
+WPS3  : .
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 293 2016-10-24 16:38:21.567968000              -> 78:59:5e:44:fb:59  802.11 28 Clear-to-send, Flags=........, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 2
+STYPE : CLEAR-TO-SEND
+BCast  : 0
+FR_MAC :  = 0
+TO_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC2 : 78:59:5E:44:FB:5917
+DTYPE  : FLAGS=........
+DTYPE2  : CLEAR-TO-SEND
+DTYPE3  : .
+WPS1  : 28
+WPS2  : .
+WPS3  : .
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 294 2016-10-24 16:38:21.567977000 78:59:5e:44:fb:59 -> 90:9f:33:d3:b8:a0 802.11 123 QoS Data, SN=633, FN=0, Flags=.p..R..T, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : QOS
+BCast  : 0
+FR_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC : 90:9F:33:D3:B8:A0 = 17
+TO_MAC2 : 0
+DTYPE  : QOS
+DTYPE2  : 123
+DTYPE3  : DATA
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : .P..R..T
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 295 2016-10-24 16:38:21.567986000 78:59:5e:44:fb:59  -> 90:9f:33:d3:b8:a2  802.11 34 Request-to-send, Flags=........, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : REQUEST-TO-SEND
+BCast  : 0
+FR_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC : 90:9F:33:D3:B8:A2 = 17
+TO_MAC2 : 0
+DTYPE  : REQUEST-TO-SEND
+DTYPE2  : 34
+DTYPE3  : FLAGS=........
+WPS1  : 802.11
+WPS2  : .
+WPS3  : .
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 296 2016-10-24 16:38:21.567992000              -> 78:59:5e:44:fb:59  802.11 28 Clear-to-send, Flags=........, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 2
+STYPE : CLEAR-TO-SEND
+BCast  : 0
+FR_MAC :  = 0
+TO_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC2 : 78:59:5E:44:FB:5917
+DTYPE  : FLAGS=........
+DTYPE2  : CLEAR-TO-SEND
+DTYPE3  : .
+WPS1  : 28
+WPS2  : .
+WPS3  : .
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 297 2016-10-24 16:38:21.568157000 78:59:5e:44:fb:59 -> 90:9f:33:d3:b8:a0 802.11 123 QoS Data, SN=633, FN=0, Flags=.p..R..T, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : QOS
+BCast  : 0
+FR_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC : 90:9F:33:D3:B8:A0 = 17
+TO_MAC2 : 0
+DTYPE  : QOS
+DTYPE2  : 123
+DTYPE3  : DATA
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : .P..R..T
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 298 2016-10-24 16:38:21.568373000 78:59:5e:44:fb:59 -> 90:9f:33:d3:b8:a0 802.11 352 QoS Data, SN=634, FN=0, Flags=.p.....T, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : QOS
+BCast  : 0
+FR_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC : 90:9F:33:D3:B8:A0 = 17
+TO_MAC2 : 0
+DTYPE  : QOS
+DTYPE2  : 352
+DTYPE3  : DATA
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : .P.....T
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 299 2016-10-24 16:38:21.568681000 78:59:5e:44:fb:59  -> 90:9f:33:d3:b8:a2  802.11 34 Request-to-send, Flags=........, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : REQUEST-TO-SEND
+BCast  : 0
+FR_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC : 90:9F:33:D3:B8:A2 = 17
+TO_MAC2 : 0
+DTYPE  : REQUEST-TO-SEND
+DTYPE2  : 34
+DTYPE3  : FLAGS=........
+WPS1  : 802.11
+WPS2  : .
+WPS3  : .
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 300 2016-10-24 16:38:21.568697000              -> 78:59:5e:44:fb:59  802.11 28 Clear-to-send, Flags=........, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 2
+STYPE : CLEAR-TO-SEND
+BCast  : 0
+FR_MAC :  = 0
+TO_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC2 : 78:59:5E:44:FB:5917
+DTYPE  : FLAGS=........
+DTYPE2  : CLEAR-TO-SEND
+DTYPE3  : .
+WPS1  : 28
+WPS2  : .
+WPS3  : .
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 301 2016-10-24 16:38:21.568705000 78:59:5e:44:fb:59 -> 90:9f:33:d3:b8:a0 802.11 123 QoS Data, SN=633, FN=0, Flags=.p..R..T, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : QOS
+BCast  : 0
+FR_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC : 90:9F:33:D3:B8:A0 = 17
+TO_MAC2 : 0
+DTYPE  : QOS
+DTYPE2  : 123
+DTYPE3  : DATA
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : .P..R..T
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 302 2016-10-24 16:38:21.568714000 78:59:5e:44:fb:59 -> 90:9f:33:d3:b8:a0 802.11 352 QoS Data, SN=634, FN=0, Flags=.p..R..T, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : QOS
+BCast  : 0
+FR_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC : 90:9F:33:D3:B8:A0 = 17
+TO_MAC2 : 0
+DTYPE  : QOS
+DTYPE2  : 352
+DTYPE3  : DATA
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : .P..R..T
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 303 2016-10-24 16:38:21.569326000 78:59:5e:44:fb:59  -> 90:9f:33:d3:b8:a2  802.11 34 Request-to-send, Flags=........, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : REQUEST-TO-SEND
+BCast  : 0
+FR_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC : 90:9F:33:D3:B8:A2 = 17
+TO_MAC2 : 0
+DTYPE  : REQUEST-TO-SEND
+DTYPE2  : 34
+DTYPE3  : FLAGS=........
+WPS1  : 802.11
+WPS2  : .
+WPS3  : .
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 304 2016-10-24 16:38:21.569345000              -> 78:59:5e:44:fb:59  802.11 28 Clear-to-send, Flags=........, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 2
+STYPE : CLEAR-TO-SEND
+BCast  : 0
+FR_MAC :  = 0
+TO_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC2 : 78:59:5E:44:FB:5917
+DTYPE  : FLAGS=........
+DTYPE2  : CLEAR-TO-SEND
+DTYPE3  : .
+WPS1  : 28
+WPS2  : .
+WPS3  : .
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 305 2016-10-24 16:38:21.569354000 78:59:5e:44:fb:59 -> 90:9f:33:d3:b8:a0 802.11 123 QoS Data, SN=633, FN=0, Flags=.p..R..T, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : QOS
+BCast  : 0
+FR_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC : 90:9F:33:D3:B8:A0 = 17
+TO_MAC2 : 0
+DTYPE  : QOS
+DTYPE2  : 123
+DTYPE3  : DATA
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : .P..R..T
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 306 2016-10-24 16:38:21.569362000 78:59:5e:44:fb:59 -> 90:9f:33:d3:b8:a0 802.11 352 QoS Data, SN=634, FN=0, Flags=.p..R..T, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : QOS
+BCast  : 0
+FR_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC : 90:9F:33:D3:B8:A0 = 17
+TO_MAC2 : 0
+DTYPE  : QOS
+DTYPE2  : 352
+DTYPE3  : DATA
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : .P..R..T
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 307 2016-10-24 16:38:21.569679000 78:59:5e:44:fb:59  -> 90:9f:33:d3:b8:a2  802.11 34 Request-to-send, Flags=........, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : REQUEST-TO-SEND
+BCast  : 0
+FR_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC : 90:9F:33:D3:B8:A2 = 17
+TO_MAC2 : 0
+DTYPE  : REQUEST-TO-SEND
+DTYPE2  : 34
+DTYPE3  : FLAGS=........
+WPS1  : 802.11
+WPS2  : .
+WPS3  : .
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 308 2016-10-24 16:38:21.569732000              -> 78:59:5e:44:fb:59  802.11 28 Clear-to-send, Flags=........, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 2
+STYPE : CLEAR-TO-SEND
+BCast  : 0
+FR_MAC :  = 0
+TO_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC2 : 78:59:5E:44:FB:5917
+DTYPE  : FLAGS=........
+DTYPE2  : CLEAR-TO-SEND
+DTYPE3  : .
+WPS1  : 28
+WPS2  : .
+WPS3  : .
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 309 2016-10-24 16:38:21.569742000 78:59:5e:44:fb:59 -> 90:9f:33:d3:b8:a0 802.11 123 QoS Data, SN=633, FN=0, Flags=.p..R..T, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : QOS
+BCast  : 0
+FR_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC : 90:9F:33:D3:B8:A0 = 17
+TO_MAC2 : 0
+DTYPE  : QOS
+DTYPE2  : 123
+DTYPE3  : DATA
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : .P..R..T
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 310 2016-10-24 16:38:21.569753000 78:59:5e:44:fb:59 -> 90:9f:33:d3:b8:a0 802.11 352 QoS Data, SN=634, FN=0, Flags=.p..R..T, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : QOS
+BCast  : 0
+FR_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC : 90:9F:33:D3:B8:A0 = 17
+TO_MAC2 : 0
+DTYPE  : QOS
+DTYPE2  : 352
+DTYPE3  : DATA
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : .P..R..T
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 311 2016-10-24 16:38:21.569761000 90:9f:33:d3:b8:a2  -> 78:59:5e:44:fb:59  802.11 46 802.11 Block Ack, Flags=........, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : 802.11
+BCast  : 0
+FR_MAC : 90:9F:33:D3:B8:A2 = 17
+TO_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC2 : 0
+DTYPE  : 802.11
+DTYPE2  : 46
+DTYPE3  : BLOCK
+WPS1  : 802.11
+WPS2  : ........
+WPS3  : .
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 312 2016-10-24 16:38:21.586089000 90:9f:33:d3:b8:a2 -> ff:ff:ff:ff:ff:ff 802.11 282 Beacon frame, SN=1602, FN=0, Flags=........, BI=100, SSID=Norma_b, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 90:9F:33:D3:B8:A2 = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 282
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : Norma_b
+PSSID : 
+AESSID: Norma_b
+-----------------------------------------------------
+Line : 313 2016-10-24 16:38:21.612139000 90:9f:33:d3:b8:a0 -> 78:59:5e:44:fb:59 802.11 123 QoS Data, SN=3577, FN=0, Flags=.p..R.F., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : QOS
+BCast  : 0
+FR_MAC : 90:9F:33:D3:B8:A0 = 17
+TO_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC2 : 0
+DTYPE  : QOS
+DTYPE2  : 123
+DTYPE3  : DATA
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : .P..R.F.
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 314 2016-10-24 16:38:21.612901000 90:9f:33:d3:b8:a0 -> 78:59:5e:44:fb:59 802.11 123 QoS Data, SN=3577, FN=0, Flags=.p..R.F., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : QOS
+BCast  : 0
+FR_MAC : 90:9F:33:D3:B8:A0 = 17
+TO_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC2 : 0
+DTYPE  : QOS
+DTYPE2  : 123
+DTYPE3  : DATA
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : .P..R.F.
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 315 2016-10-24 16:38:21.612923000 90:9f:33:d3:b8:a0 -> 78:59:5e:44:fb:59 802.11 123 QoS Data, SN=3577, FN=0, Flags=.p..R.F., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : QOS
+BCast  : 0
+FR_MAC : 90:9F:33:D3:B8:A0 = 17
+TO_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC2 : 0
+DTYPE  : QOS
+DTYPE2  : 123
+DTYPE3  : DATA
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : .P..R.F.
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 316 2016-10-24 16:38:21.613847000 90:9f:33:d3:b8:a0 -> 78:59:5e:44:fb:59 802.11 123 QoS Data, SN=3577, FN=0, Flags=.p..R.F., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : QOS
+BCast  : 0
+FR_MAC : 90:9F:33:D3:B8:A0 = 17
+TO_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC2 : 0
+DTYPE  : QOS
+DTYPE2  : 123
+DTYPE3  : DATA
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : .P..R.F.
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 317 2016-10-24 16:38:21.615050000 90:9f:33:d3:b8:a0 -> 78:59:5e:44:fb:59 802.11 123 QoS Data, SN=3577, FN=0, Flags=.p..R.F., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : QOS
+BCast  : 0
+FR_MAC : 90:9F:33:D3:B8:A0 = 17
+TO_MAC : 78:59:5E:44:FB:59 = 17
+TO_MAC2 : 0
+DTYPE  : QOS
+DTYPE2  : 123
+DTYPE3  : DATA
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : .P..R.F.
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 318 2016-10-24 16:38:21.615099000              -> 90:9f:33:d3:b8:a2  802.11 28 Acknowledgement, Flags=........, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 2
+STYPE : ACKNOWLEDGEMENT
+BCast  : 0
+FR_MAC :  = 0
+TO_MAC : 90:9F:33:D3:B8:A2 = 17
+TO_MAC2 : 90:9F:33:D3:B8:A217
+DTYPE  : FLAGS=........
+DTYPE2  : ACKNOWLEDGEMENT
+DTYPE3  : .
+WPS1  : 28
+WPS2  : .
+WPS3  : .
+SSID  : 
+PSSID : 
+AESSID: 
+-----------------------------------------------------
+Line : 319 2016-10-24 16:38:21.631441000 00:40:5a:ae:e8:78 -> ff:ff:ff:ff:ff:ff 802.11 269 Beacon frame, SN=1269, FN=0, Flags=........, BI=100, SSID=Broadcast, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 00:40:5A:AE:E8:78 = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 269
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : Broadcast
+PSSID : 
+AESSID: Broadcast
+-----------------------------------------------------
+Line : 320 2016-10-24 16:38:22.504459000 00:09:b4:75:e3:93 -> ff:ff:ff:ff:ff:ff 802.11 289 Beacon frame, SN=770, FN=0, Flags=........, BI=100, SSID=ollehWiFi, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 00:09:B4:75:E3:93 = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 289
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : ollehWiFi
+PSSID : 
+AESSID: ollehWiFi
+-----------------------------------------------------
+Line : 321 2016-10-24 16:38:22.529601000 90:9f:33:5f:e2:24 -> ff:ff:ff:ff:ff:ff 802.11 273 Beacon frame, SN=17, FN=0, Flags=........, BI=100, SSID=kouno, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 90:9F:33:5F:E2:24 = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 273
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : kouno
+PSSID : 
+AESSID: kouno
+-----------------------------------------------------
+Line : 322 2016-10-24 16:38:22.555570000 06:09:b4:75:e3:93 -> ff:ff:ff:ff:ff:ff 802.11 236 Beacon frame, SN=759, FN=0, Flags=........, BI=100, SSID=ollehWiFi , ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 06:09:B4:75:E3:93 = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 236
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : ollehWiFi 
+PSSID : 
+AESSID: ollehWiFi 
+-----------------------------------------------------
+Line : 323 2016-10-24 16:38:22.582265000 64:e5:99:5b:4a:c0 -> ff:ff:ff:ff:ff:ff 802.11 279 Beacon frame, SN=702, FN=0, Flags=........, BI=100, SSID=Norma_Phone, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 64:E5:99:5B:4A:C0 = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 279
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : Norma_Phone
+PSSID : 
+AESSID: Norma_Phone
+-----------------------------------------------------
+Line : 324 2016-10-24 16:38:22.606822000 00:09:b4:75:e3:93 -> ff:ff:ff:ff:ff:ff 802.11 289 Beacon frame, SN=771, FN=0, Flags=........, BI=100, SSID=ollehWiFi, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 00:09:B4:75:E3:93 = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 289
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : ollehWiFi
+PSSID : 
+AESSID: ollehWiFi
+-----------------------------------------------------
+Line : 325 2016-10-24 16:38:22.631896000 90:9f:33:5f:e2:24 -> ff:ff:ff:ff:ff:ff 802.11 273 Beacon frame, SN=18, FN=0, Flags=........, BI=100, SSID=kouno, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 90:9F:33:5F:E2:24 = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 273
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : kouno
+PSSID : 
+AESSID: kouno
+-----------------------------------------------------
+Line : 326 2016-10-24 16:38:22.657984000 06:09:b4:75:e3:93 -> ff:ff:ff:ff:ff:ff 802.11 236 Beacon frame, SN=760, FN=0, Flags=........, BI=100, SSID=ollehWiFi , ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 06:09:B4:75:E3:93 = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 236
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : ollehWiFi 
+PSSID : 
+AESSID: ollehWiFi 
+-----------------------------------------------------
+Line : 327 2016-10-24 16:38:22.684710000 64:e5:99:5b:4a:c0 -> ff:ff:ff:ff:ff:ff 802.11 279 Beacon frame, SN=703, FN=0, Flags=........, BI=100, SSID=Norma_Phone, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 64:E5:99:5B:4A:C0 = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 279
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : Norma_Phone
+PSSID : 
+AESSID: Norma_Phone
+-----------------------------------------------------
+Line : 328 2016-10-24 16:38:22.709889000 00:09:b4:75:e3:93 -> ff:ff:ff:ff:ff:ff 802.11 289 Beacon frame, SN=772, FN=0, Flags=........, BI=100, SSID=ollehWiFi, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 00:09:B4:75:E3:93 = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 289
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : ollehWiFi
+PSSID : 
+AESSID: ollehWiFi
+-----------------------------------------------------
+Line : 329 2016-10-24 16:38:22.712303000 90:9f:33:d3:b8:a2 -> ff:ff:ff:ff:ff:ff 802.11 282 Beacon frame, SN=1613, FN=0, Flags=........, BI=100, SSID=Norma_b, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 90:9F:33:D3:B8:A2 = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 282
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : Norma_b
+PSSID : 
+AESSID: Norma_b
+-----------------------------------------------------
+Line : 330 2016-10-24 16:38:22.728763000 90:9f:33:be:3b:4c -> ff:ff:ff:ff:ff:ff 802.11 294 Beacon frame, SN=1009, FN=0, Flags=........, BI=100, SSID=Norma_2.4G_test, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 90:9F:33:BE:3B:4C = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 294
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : Norma_2.4G_test
+PSSID : 
+AESSID: Norma_2.4G_test
+-----------------------------------------------------
+Line : 331 2016-10-24 16:38:22.734300000 90:9f:33:5f:e2:24 -> ff:ff:ff:ff:ff:ff 802.11 273 Beacon frame, SN=19, FN=0, Flags=........, BI=100, SSID=kouno, ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., ., .,
+FoundType : 1
+STYPE : BEACON FRAME
+BCast  : 1
+FR_MAC : 90:9F:33:5F:E2:24 = 17
+TO_MAC : FF:FF:FF:FF:FF:FF = 17
+TO_MAC2 : 0
+DTYPE  : BEACON
+DTYPE2  : 273
+DTYPE3  : FRAME
+WPS1  : 802.11
+WPS2  : FN=0
+WPS3  : ........
+SSID  : kouno
+PSSID : 
+AESSID: kouno
+-----------------------------------------------------
