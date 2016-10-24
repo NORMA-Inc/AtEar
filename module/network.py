@@ -3,7 +3,7 @@ from libnmap.process import NmapProcess
 from libnmap.parser import NmapParser, NmapParserException
 from scapy.all import *
 import commands
-
+from subprocess import Popen
 logging.getLogger("scapy.runtime").setLevel(logging.WARNING)
 logging.getLogger("scapy.runtime").setLevel(logging.ERROR)
 
@@ -218,6 +218,35 @@ def network_host_ip(interface):
     up_hosts.remove(gateway)
     up_hosts.remove(ip)
     return ' / '.join(up_hosts)
+
+def monitormode_change(iface):
+    cmd = "rfkill unblock wlan"
+    Popen(cmd, shell=True).communicate()
+    time.sleep(0.5)
+
+    cmd = "ifconfig %s down"%(iface)
+    Popen(cmd, shell=True).communicate()
+    time.sleep(0.5)
+
+    cmd = "iwconfig %s mode managed"%(iface)
+    Popen(cmd, shell=True).communicate()
+    time.sleep(0.5)
+
+    cmd = "ifconfig %s up"%(iface)
+    Popen(cmd, shell=True).communicate()
+    time.sleep(0.5)
+
+    cmd = "ifconfig %s down"%(iface)
+    Popen(cmd, shell=True).communicate()
+    time.sleep(0.5)
+
+    cmd = "iwconfig %s mode monitor"%(iface)
+    Popen(cmd, shell=True).communicate()
+    time.sleep(0.5)
+
+    cmd = "ifconfig %s up"%(iface)
+    Popen(cmd, shell=True).communicate()
+    time.sleep(0.5)
 
 
 def arp_spoof(iface):
@@ -472,3 +501,7 @@ def w_interface_up():
     intf_list = out.replace('\tInterface','').split()
     for interface in intf_list:
         execute('ifconfig ' + interface + ' up')
+
+
+
+print get_interfaces()
