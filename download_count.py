@@ -25,7 +25,7 @@ full_names = []
 
 
 buf = io.StringIO()
-r = requests.get('https://api.github.com/users/NORMA-Company/repos')
+r = requests.get('https://api.github.com/users/NORMA-Inc/repos')
 myobj = r.json()
 
 for rep in myobj:
@@ -37,6 +37,7 @@ for full_name in full_names:
         r = requests.get('https://api.github.com/repos/' + full_name + '/releases')
         myobj = r.json()
         for p in myobj:
+            print p
             if "assets" in p:
                 for asset in p['assets']:
                     print((asset['name'] + ": " + str(asset['download_count']) +

@@ -254,51 +254,17 @@ class main_app():
                 return json.dumps({"message": []})
         return '', 200
 
-
-def main():
+if __name__ == '__main__':
     '''
         @brief AtEar main function.
     '''
     wids_process = False
-
     try:
         print "START AtEar-Beta...."
-        # def AtEar-Beta.module.network.stop_monitor() line 314
-        # Clear the self-made device.
-        #stop_monitor()
-
-        # def AtEar-Beta.module.network.auto_monitor() line 272
-        # Search for wireless devices, ensure that the support AP mode or monitor mode,
-        # if support makes the device to the supported mode.
-        #ret = auto_monitor()
-        #if ret == False:
-            # Not supported or Failed to create device in monitor.
-            #stop_monitor()
-            #return -1
-
-
-        # Class "main_app" is a flask module.
-        main_app(args.iface)
+        main_app('wlan0')
 
     # Stop Signal
     except KeyboardInterrupt:
         stop_monitor()
         if wids_process:
             wids_process.terminate()
-
-if __name__ == '__main__':
-    import argparse
-    parser = argparse.ArgumentParser()
-    group = parser.add_mutually_exclusive_group(required=True)
-
-    group.add_argument("--iface", type=str,
-                       help="monitoring interface")
-    parser.add_argument("--newdb", action='store_true',
-                        help="drop if table exist")
-
-    args = parser.parse_args()
-
-    if not args.iface:
-        print 'Please check the interface'
-        sys.exit()
-    main()

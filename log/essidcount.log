@@ -1,40 +1,63 @@
-08:5D:DD:24:8A:85, olleh_WiFi_8A81, 14
-64:E5:99:A5:9F:AC, ropnt, 11
-90:9F:33:8F:F8:C0, unifams, 7
-90:9F:33:90:06:A0, chamenc, 10
-04:8D:38:64:5C:40, Broadcast, 11
-00:40:5A:AE:E8:78, Broadcast, 18
-04:8D:38:64:5C:41, SO070VOIP5C3F, 10
-00:40:5A:AE:E8:79, U+Net_Nex, 16
-00:26:66:7B:10:9C, WEPL_multi, 6
-90:9F:33:7B:C3:D4, kumath, 12
-08:5D:DD:16:D8:CA, U+NetD8CC, 2
-90:9F:33:5F:E2:24, kouno, 1
-90:9F:33:D6:F2:74, Mureung, 5
-32:CD:A7:3E:B0:43, DIRECT-FjM2070 Series, 2
-90:9F:33:7E:D8:50, haimbio, 9
-32:CD:A7:30:9B:55, DIRECT-OHC470 Series, 15
-64:E5:99:74:7A:4C, iptimea-aaa, 18
-90:9F:33:BE:3B:4C, Norma_2.4G_test, 13
-00:26:66:38:52:3C, ssongnim, 18
-64:E5:99:CB:3B:FA, kounosoft, 14
-90:9F:33:8A:70:16, iptime1111, 9
-64:E5:99:6C:8D:D8, edu_tosel, 10
-00:27:1C:38:40:34, SK_WiFi4032, 3
-00:09:B4:75:E3:93, ollehWiFi, 1
-90:9F:33:F5:B8:84, Anam, 7
-64:E5:99:51:E4:78, Norma_2.4G, 1
-C8:3A:35:5E:21:B8, Tenda_5E21B8, 2
-06:09:B4:75:1C:3C, ollehWiFi , 1
-90:9F:33:D3:B8:A2, Norma_b, 3
-64:E5:99:1C:C1:1C, Charmfre_CNS, 5
-00:27:1C:71:94:47, SK_WiFi9445, 2
-64:E5:99:51:E4:7C, Norma_radius2, 1
-90:9F:33:8F:F1:AE, overdam, 5
-64:E5:99:39:15:88, hantechmedia, 1
-12:23:AA:60:4E:ED, Broadcast, 2
-00:90:4C:7E:00:64, 3H, 1
-00:30:0D:D4:05:50, ollehWiFi, 2
-06:30:0D:D4:05:51, ollehWiFi , 3
+90:9F:33:D6:F2:74, Mureung, 1 3
+90:9F:33:D3:B8:A2, Norma_b, 17
+04:8D:38:64:5C:40, Broadcast, 1
+1C:A5:32:70:75:90, Broadcast, 7
+00:26:66:38:52:3C, ssongnim, 5
+00:09:B4:75:E3:95, Broadcast, 2
+04:8D:38:B6:D2:5D, Broadcast, 4
+90:9F:33:D6:F2:76, Mureung5G, 4
+06:09:B4:75:1C:2C, ollehWiFi , 2
+00:26:66:86:B9:54, Siliconhands_N604R, 2
+06:09:B4:75:1C:3B, ollehWiFi , 2
+00:40:5A:AE:E8:78, Broadcast, 12
+00:30:0D:D3:C8:50, ollehWiFi, 2
+06:30:0D:D3:C8:51, ollehWiFi , 4
+00:30:0D:D4:3A:30, ollehWiFi, 6
+06:30:0D:D4:3A:31, ollehWiFi , 6
+00:09:B4:75:2E:8B, ollehWiFi, 2
+06:09:B4:75:2E:8B, ollehWiFi , 7
+06:09:B4:75:E3:93, ollehWiFi , 5
+64:E5:99:51:E4:78, Norma_2.4G, 7
+00:09:B4:75:E3:93, ollehWiFi, 4
+00:27:1C:AD:1A:D9, U+Net1ADB, 4
+0A:09:B4:75:2E:8C, olleh GiGA WiFi , 1
+64:E5:99:5B:4A:C0, Norma_Phone, 14
+90:9F:33:D6:F2:74, Mureung, 1
+90:9F:33:5F:E2:24, kouno, 9
+00:08:9F:6C:D3:BA, Siliconhands_G504, 1
+1C:A5:32:70:75:91, U+Net7593, 7
+32:CD:A7:3E:B0:43, DIRECT-FjM2070 Series, 1
+04:8D:38:B6:D2:5E, SO070VOIPD25C, 7
+90:9F:33:64:76:B8, neuracle, 4
+BC:96:80:99:CF:F0, Broadcast, 6
+BC:96:80:99:CF:F1, U+NetCFF3, 5
+90:9F:33:90:78:10, goodmaind, 3
+90:9F:33:8F:F1:AE, overdam, 2
+00:09:B4:75:1C:2D, Broadcast, 7
+00:09:B4:75:2E:8D, Broadcast, 3
+64:E5:99:74:7A:48, iptimea-aaa5g, 2
+90:9F:33:8F:FC:CC, nalja1, 1
+90:9F:33:F5:B8:84, Anam, 4
+C8:3A:35:07:FC:50, Iptime_test, 2
 00:09:B4:75:2E:8C, ollehWiFi, 1
-02:27:1C:71:94:47, Broadcast, 1
+08:5D:DD:16:D8:CA, U+NetD8CC, 2
+64:E5:99:FD:1E:F4, norma_rogueap, 8
+32:CD:A7:30:9B:55, DIRECT-OHC470 Series, 6
+12:23:AA:60:4E:ED, Broadcast, 4
+00:23:AA:60:4E:ED, SK_WiFiGIGA4EEE, 4
+90:9F:33:63:1A:76, Haimnano, 2
+00:08:9F:89:F1:AC, Broadcast, 6
+00:08:9F:89:F1:AD, myLGNet, 4
+64:E5:99:CB:3B:FA, kounosoft, 4
+00:30:0D:D4:05:50, ollehWiFi, 1
+06:30:0D:D4:05:51, ollehWiFi , 1
+90:9F:33:BE:3B:4C, Norma_2.4G_test, 2
+0A:09:B4:75:E3:94, olleh GiGA WiFi , 2
+06:09:B4:75:65:7B, ollehWiFi , 4
+90:9F:33:90:0A:0C, OP, 2
+00:09:B4:75:1C:3D, Broadcast, 4
+38:2C:4A:A0:F8:F0, MWSTORY, 1
+64:E5:99:6C:8D:D8, edu_tosel, 2
+90:9F:33:8F:F8:C0, unifams, 1
+00:27:1C:AD:1A:D8, Broadcast, 1
+00:27:1C:AD:1A:DA, U+zone, 1
