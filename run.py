@@ -75,7 +75,7 @@ class main_app():
     def scanstatus(self):
         ''' It responds to the airodump-scan results. '''
         # 먼저 진행 중이던 작업을 취소.
-        print self.scanner, self.pentesting, self.fake_ap, self.wids_handle
+        #print self.scanner, self.pentesting, self.fake_ap, self.wids_handle
         if self.pentesting:
             self.pentesting.stop()
             self.pentesting = None
@@ -86,7 +86,7 @@ class main_app():
 
         if request.method == 'GET':
             if not self.scanner:
-                monitormode_change(self.scan_iface)
+
                 # Class Atear-Beta.module.airodump  line 106.
                 self.scanner = airodump.Scanner(self.scan_iface)
                 self.scanner.run()
@@ -254,17 +254,23 @@ class main_app():
                 return json.dumps({"message": []})
         return '', 200
 
+def shutdown(signum, frame):
+    print "\nStopping monitoring mode..."
+    monitormode_change(iface, True)
+    os.system('fuser -k -n tcp 8080')
+    print "Bye"
+    sys.exit(1)
+
 if __name__ == '__main__':
     '''
         @brief AtEar main function.
     '''
     wids_process = False
-    try:
-        print "START AtEar-Beta...."
-        main_app('wlan0')
+    original_sigint = signal.getsignal(signal.SIGINT)
+    signal.signal(signal.SIGINT, shutdown)
 
-    # Stop Signal
-    except KeyboardInterrupt:
-        stop_monitor()
-        if wids_process:
-            wids_process.terminate()
+    print "Start AtEar-Beta...."
+    iface = 'wlan0'
+    print "Changing Monitoring mode..."
+    monitormode_change(iface)
+    main_app(iface)

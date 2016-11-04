@@ -219,7 +219,7 @@ def network_host_ip(interface):
     up_hosts.remove(ip)
     return ' / '.join(up_hosts)
 
-def monitormode_change(iface):
+def monitormode_change(iface, managed_flag = False):
     cmd = "rfkill unblock wlan"
     Popen(cmd, shell=True).communicate()
     time.sleep(0.3)
@@ -234,18 +234,18 @@ def monitormode_change(iface):
     cmd = "ifconfig %s up"%(iface)
     Popen(cmd, shell=True).communicate()
     time.sleep(0.5)
+    if not managed_flag:
+        cmd = "ifconfig %s down"%(iface)
+        Popen(cmd, shell=True).communicate()
+        time.sleep(0.5)
 
-    cmd = "ifconfig %s down"%(iface)
-    Popen(cmd, shell=True).communicate()
-    time.sleep(0.5)
+        cmd = "iwconfig %s mode monitor"%(iface)
+        Popen(cmd, shell=True).communicate()
+        time.sleep(0.5)
 
-    cmd = "iwconfig %s mode monitor"%(iface)
-    Popen(cmd, shell=True).communicate()
-    time.sleep(0.5)
-
-    cmd = "ifconfig %s up"%(iface)
-    Popen(cmd, shell=True).communicate()
-    time.sleep(0.5)
+        cmd = "ifconfig %s up"%(iface)
+        Popen(cmd, shell=True).communicate()
+        time.sleep(0.5)
 
 
 def arp_spoof(iface):

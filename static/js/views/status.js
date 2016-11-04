@@ -125,6 +125,9 @@ function($, _, Backbone, $, tpl, ScanStatuses, StatusScanTableView, StatusScanCh
 			}
 		},
 
+
+
+
 		scanSaveCheckModal: function(){
 			var self = this;
 			$('.scan-save.check').modal({

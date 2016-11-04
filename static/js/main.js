@@ -17,7 +17,7 @@ require([
 
 function($, _, Backbone, HiddenView, HeaderView, 
     ProjectListView, StatusView, FakeapView, PentestView, WidsView, 
-    tpl, HiddenModel, Project, Projects){
+    tpl, HiddenModel, scanSaveCheckModal,Project, Projects){
 	Backbone.View.prototype.close = function() {
         if (this.beforeClose) {
             this.beforeClose();
@@ -29,6 +29,8 @@ function($, _, Backbone, HiddenView, HeaderView,
     var AppRouter = Backbone.Router.extend({
     	initialize:function(){
             this.hidden();
+            this.statusView = new StatusView();
+
     	},
     	
     	routes: {
@@ -55,36 +57,51 @@ function($, _, Backbone, HiddenView, HeaderView,
 
         status: function(){
             this.before(function() {
+
                 this.headerView.activeMenu(1);
-                this.statusView = new StatusView();
                 this.showView('#content',this.statusView);
             });
         },
 
         fakeap: function(){
             this.before(function() {
-                this.headerView.activeMenu(3);
-                this.fakeapView = new FakeapView();
-                this.showView('#content',this.fakeapView);
-                this.fakeapView.afterRender();
+                if (this.statusView.scanSignal) {
+                    this.scanSignalCheckModal()
+                }
+                else{
+                    this.headerView.activeMenu(3);
+                    this.fakeapView = new FakeapView();
+                    this.showView('#content', this.fakeapView);
+                    this.fakeapView.afterRender();
+                }
             });
         },
 
         pentest: function(){
             this.before(function() {
-                this.headerView.activeMenu(2);
-                this.pentestView = new PentestView();
-                this.showView('#content',this.pentestView);
-                this.pentestView.afterRender();
+                if (this.statusView.scanSignal) {
+                    this.scanSignalCheckModal()
+                }
+                else {
+                    this.headerView.activeMenu(2);
+                    this.pentestView = new PentestView();
+                    this.showView('#content', this.pentestView);
+                    this.pentestView.afterRender();
+                }
             })
         },
 
         wids: function(){
             this.before(function() {
-                this.headerView.activeMenu(4);
-                this.widsView = new WidsView();
-                this.showView('#content',this.widsView);
-                this.widsView.afterRender();
+                if (this.statusView.scanSignal) {
+                    this.scanSignalCheckModal()
+                }
+                else{
+                    this.headerView.activeMenu(4);
+                    this.widsView = new WidsView();
+                    this.showView('#content',this.widsView);
+                    this.widsView.afterRender();
+                }
             });
         },
 
@@ -96,6 +113,13 @@ function($, _, Backbone, HiddenView, HeaderView,
     		this.currentView = view;
     		return view;
     	},
+
+        scanSignalCheckModal: function(){
+			var self = this;
+			$('.error-scan.check').modal({
+
+			}).modal('show');
+		},
 
         before: function(callback) {
             if ( this.headerView ) {
