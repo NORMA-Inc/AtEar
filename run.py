@@ -265,12 +265,19 @@ if __name__ == '__main__':
     '''
         @brief AtEar main function.
     '''
+    import argparse
+    parser = argparse.ArgumentParser()
+    group = parser.add_mutually_exclusive_group(required=True)
+    group.add_argument("--iface", type=str,
+                       help="monitoring interface")
+
+    args = parser.parse_args()
     wids_process = False
+
     original_sigint = signal.getsignal(signal.SIGINT)
     signal.signal(signal.SIGINT, shutdown)
 
     print "Start AtEar-Beta...."
-    iface = 'wlan0'
     print "Changing Monitoring mode..."
-    monitormode_change(iface)
-    main_app(iface)
+    monitormode_change(args.iface)
+    main_app(args.iface)
