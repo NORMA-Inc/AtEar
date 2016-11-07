@@ -15,7 +15,7 @@ from module.network import *
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
-
+BASEPATH = os.path.dirname(os.path.abspath(__file__))
 class PythonObjectEncoder(json.JSONEncoder):
     ''' @brief Encoder for hangul(Korean).
         @param obj:
@@ -94,6 +94,9 @@ class main_app():
                 # class  	AtEar-Beta.module.wids.Wireless_IDS
                 # Prepare a file to store the results.
                 print "[*] START AtEar-WIDS"
+                print BASEPATH
+                if not os.path.isdir(BASEPATH+'/log'):
+                    os.mkdir(BASEPATH+'/log')
                 wids = Wireless_IDS(self.scan_iface)
 
                 # def AtEar-Beta.module.wids.Wireless_IDS.run(self) line 78
