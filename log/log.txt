@@ -1,4 +1,0 @@
-2016-11-07 11:38:03 -  concerns found...
-
-      Possibility : Beacon Floo attacks.
-
